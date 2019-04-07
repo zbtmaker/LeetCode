@@ -5,12 +5,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/List/removeNthFromEnd19.java" line="21" mnemonic="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Tree/buildTree106$TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Tree/buildTree106$TreeNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Tree/buildTree106.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Tree/buildTree106.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/buildTree106.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/buildTree106.java" afterDir="false" />
-    </list>
+    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="修改buildTree106" />
     <ignored path="LeetCode.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -56,7 +51,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BackTracking/generateTrees95.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="22">
@@ -66,6 +61,15 @@
                 <element signature="e#340#341#0" expanded="true" />
                 <element signature="e#378#379#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Tree/buildTree106.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-92">
+              <caret line="52" column="12" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -81,6 +85,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -613,8 +618,30 @@
       <workItem from="1553874620114" duration="1604000" />
       <workItem from="1553960528438" duration="1879000" />
       <workItem from="1554562524624" duration="9283000" />
-      <workItem from="1554644371625" duration="146000" />
+      <workItem from="1554644371625" duration="600000" />
     </task>
+    <task id="LOCAL-00001" summary="修改buildTree106">
+      <created>1554644673454</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1554644673454</updated>
+    </task>
+    <task id="LOCAL-00002" summary="修改buildTree106">
+      <created>1554644715584</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1554644715584</updated>
+    </task>
+    <task id="LOCAL-00003" summary="修改buildTree106">
+      <created>1554644761116</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1554644761116</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -650,7 +677,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="796647000" />
+    <option name="totallyTimeSpent" value="797101000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -667,7 +694,7 @@
       <window_info anchor="top" id="Ant Build" order="0" side_tool="true" weight="0.24961714" />
       <window_info id="Image Layers" />
       <window_info id="Capture Tool" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48251748" visible="true" weight="0.23827533" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48251748" visible="true" weight="0.23827533" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Palette&#9;" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.5174825" side_tool="true" weight="0.21785174" />
@@ -680,8 +707,8 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32711864" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4969743" weight="0.32711864" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4969743" weight="0.3265306" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32993197" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32952693" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.53039515" side_tool="true" weight="0.3360522" />
       <window_info anchor="right" id="Capture Analysis" />
@@ -721,6 +748,35 @@
       <window_info anchor="right" id="Database" order="6" weight="0.32893" />
     </layout-to-restore>
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
       <collection />
@@ -733,9 +789,12 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+    <MESSAGE value="修改buildTree106" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改buildTree106" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1744,13 +1803,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tree/buildTree106.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DP/maximalRectangle85.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1188">
@@ -1767,6 +1819,13 @@
             <element signature="e#340#341#0" expanded="true" />
             <element signature="e#378#379#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tree/buildTree106.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-92">
+          <caret line="52" column="12" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
         </state>
       </provider>
     </entry>
