@@ -28,14 +28,23 @@ public class generateTrees95 {
             System.out.println("");
         }
     }
+<<<<<<< HEAD
     @Test
     public void test2(){
         generateTrees95 gen = new generateTrees95();
         List<TreeNode> result = gen.generateTreesII(3);
+=======
+
+    @Test
+    public void test2(){
+        generateTrees95 gen = new generateTrees95();
+        List<TreeNode> result = gen.generateTreesII(5);
+>>>>>>> df7ab62ae8dd04cb8342daf4857cc0bd56cd53ba
         for(TreeNode root : result){
             inorder(root);
             System.out.println("");
         }
+<<<<<<< HEAD
 
 
     }
@@ -48,6 +57,18 @@ public class generateTrees95 {
      * 3的右子树会重复的递归两次，而在以4,5为root的时候，3的左子树又会重复的递归多次，因此我们的
      * 每一个节点的左子树和右子树会重复的被计算。
      * 既然找到了这个源头，那么应该如何解决这个重复计算问题
+=======
+    }
+    /**
+     * 采用回溯的方式来解决问题，之前一直没有想好怎么解决这个问题。我们在实现这个问题时，
+     * 对于例子1,2,3,4,5,这个问题来说，当1为整个tree的root时，此时就会出现2,3,4,5作为
+     * 子树，因此我们需要返回2,3,4,5这几个数字组成的所有的子树排列，因此这里就可以确定
+     * 我们的递归的方法返回的是一个List<TreeNode>，然后需要确定2作为root的List<TreeNode>
+     * 以及3、4、5作为root的一个List<TreeNode>，这样一来我们将这些链表组合在一块就得到了
+     * 1作为root的下面所有子树的可能性，然后可以通过遍历的方式实现了。这里还有一个问题上面
+     * 以1为root的树只有右子树，不存在左子树。而以5为root的树只有左子树，不存在右子树
+     * 因此我们需要判断一下条件再进行遍历和组合操作
+>>>>>>> df7ab62ae8dd04cb8342daf4857cc0bd56cd53ba
      * @param n
      * @return
      */
@@ -103,6 +124,16 @@ public class generateTrees95 {
         inorder(root.right);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * 这里我将问题进一步分析后将上面的代码进行了改进，就是我的代码中出现了重复
+     * 递归的问题，那么为了解决这个问题。想到了由回溯->动态规划的方案，将每个节点
+     * 的左子树和右子树进行记录，这样一来，就不用计算多次。具体改进代码如下：
+     * @param n
+     * @return
+     */
+>>>>>>> df7ab62ae8dd04cb8342daf4857cc0bd56cd53ba
     public List<TreeNode> generateTreesII(int n) {
         if(n < 1){
             return new LinkedList<TreeNode>();
@@ -116,7 +147,11 @@ public class generateTrees95 {
 
 
     private List<TreeNode> recurGenerateTreesII(int left,int right,List<List<TreeNode>> leftTrees,
+<<<<<<< HEAD
                                               List<List<TreeNode>> rightTrees){
+=======
+                                                List<List<TreeNode>> rightTrees){
+>>>>>>> df7ab62ae8dd04cb8342daf4857cc0bd56cd53ba
         if(left > right){
             return null;
         }
@@ -187,6 +222,9 @@ public class generateTrees95 {
             treeList.add(new ArrayList<>());
         }
     }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> df7ab62ae8dd04cb8342daf4857cc0bd56cd53ba
 }
