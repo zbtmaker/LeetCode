@@ -5,7 +5,13 @@
     <bookmark url="file://$PROJECT_DIR$/src/List/removeNthFromEnd19.java" line="21" mnemonic="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="修改buildTree106" />
+    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add workspace.xml">
+      <change afterPath="$PROJECT_DIR$/src/Tree/lowestCommonAncestor235.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tree/lowestCommonAncestor236.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/BackTracking/generateTrees95.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/BackTracking/generateTrees95.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BackTracking/generateTrees95.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BackTracking/generateTrees95.java" afterDir="false" />
+    </list>
     <ignored path="LeetCode.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -45,31 +51,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DP/maximalRectangle85.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1188">
+            <state>
               <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BackTracking/generateTrees95.java">
+        <entry file="file://$PROJECT_DIR$/src/Tree/lowestCommonAncestor235.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="10" column="28" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="28" />
+            <state relative-caret-position="459">
+              <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#340#341#0" expanded="true" />
-                <element signature="e#378#379#0" expanded="true" />
+                <element signature="e#245#246#0" expanded="true" />
+                <element signature="e#283#284#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Tree/buildTree106.java">
+        <entry file="file://$PROJECT_DIR$/src/Tree/lowestCommonAncestor236.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-92">
-              <caret line="52" column="12" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
+            <state relative-caret-position="232">
+              <caret line="75" column="9" lean-forward="true" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
+              <folding>
+                <element signature="e#257#258#0" expanded="true" />
+                <element signature="e#295#296#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,6 +92,12 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>replace</find>
+      <find>set</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SIGN_OFF_COMMIT" value="true" />
@@ -90,8 +105,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Array/FourSum18.java" />
-        <option value="$PROJECT_DIR$/src/String/CompareVersionNumbers165.java" />
         <option value="$PROJECT_DIR$/src/String/ValidPalindrome125.java" />
         <option value="$PROJECT_DIR$/src/Unkown/FractiontoRecurringDecimal166.java" />
         <option value="$PROJECT_DIR$/src/Tree/connect117.java" />
@@ -141,6 +154,8 @@
         <option value="$PROJECT_DIR$/src/Tree/buildTree106.java" />
         <option value="$PROJECT_DIR$/src/BackTracking/generateTrees.java" />
         <option value="$PROJECT_DIR$/src/BackTracking/generateTrees95.java" />
+        <option value="$PROJECT_DIR$/src/Tree/lowestCommonAncestor235.java" />
+        <option value="$PROJECT_DIR$/src/Tree/lowestCommonAncestor236.java" />
       </list>
     </option>
   </component>
@@ -160,17 +175,18 @@
   <component name="MavenProjectNavigator">
     <treeState />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="62" />
+    <option name="y" value="144" />
+    <option name="width" value="507" />
+    <option name="height" value="461" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -178,23 +194,34 @@
               <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
               <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Tree" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555249207583" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JavaBasic" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Pagination" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -214,7 +241,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.generateTrees95.test1">
+  <component name="RunManager" selected="JUnit.lowestCommonAncestor236.test1">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -391,7 +418,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="generateTrees95.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="generateTrees95.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -401,23 +428,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="BackTracking" />
       <option name="MAIN_CLASS_NAME" value="BackTracking.generateTrees95" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="maximalRectangle85.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="DP.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="DP" />
-      <option name="MAIN_CLASS_NAME" value="DP.maximalRectangle85" />
       <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -425,51 +435,68 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="maximalRectangle85.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="lowestCommonAncestor235.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DP.*" />
+          <option name="PATTERN" value="Tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="DP" />
-      <option name="MAIN_CLASS_NAME" value="DP.maximalRectangle85" />
-      <option name="METHOD_NAME" value="test3" />
+      <option name="PACKAGE_NAME" value="Tree" />
+      <option name="MAIN_CLASS_NAME" value="Tree.lowestCommonAncestor235" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="maximalRectangle85.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="lowestCommonAncestor236.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DP.*" />
+          <option name="PATTERN" value="Tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="DP" />
-      <option name="MAIN_CLASS_NAME" value="DP.maximalRectangle85" />
-      <option name="METHOD_NAME" value="test4" />
+      <option name="PACKAGE_NAME" value="Tree" />
+      <option name="MAIN_CLASS_NAME" value="Tree.lowestCommonAncestor236" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="maximalRectangle85.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="lowestCommonAncestor236.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DP.*" />
+          <option name="PATTERN" value="Tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="DP" />
-      <option name="MAIN_CLASS_NAME" value="DP.maximalRectangle85" />
-      <option name="METHOD_NAME" value="test5" />
+      <option name="PACKAGE_NAME" value="Tree" />
+      <option name="MAIN_CLASS_NAME" value="Tree.lowestCommonAncestor236" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="lowestCommonAncestor236.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tree" />
+      <option name="MAIN_CLASS_NAME" value="Tree.lowestCommonAncestor236" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -538,19 +565,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.isPalindrome9" />
-      <item itemvalue="JUnit.maximalRectangle85.test2" />
-      <item itemvalue="JUnit.maximalRectangle85.test3" />
-      <item itemvalue="JUnit.maximalRectangle85.test4" />
-      <item itemvalue="JUnit.maximalRectangle85.test5" />
-      <item itemvalue="JUnit.generateTrees95.test1" />
+      <item itemvalue="JUnit.generateTrees95.test2" />
+      <item itemvalue="JUnit.lowestCommonAncestor235.test" />
+      <item itemvalue="JUnit.lowestCommonAncestor236.test" />
+      <item itemvalue="JUnit.lowestCommonAncestor236.test2" />
+      <item itemvalue="JUnit.lowestCommonAncestor236.test1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.generateTrees95.test1" />
-        <item itemvalue="JUnit.maximalRectangle85.test5" />
-        <item itemvalue="JUnit.maximalRectangle85.test4" />
-        <item itemvalue="JUnit.maximalRectangle85.test3" />
-        <item itemvalue="JUnit.maximalRectangle85.test2" />
+        <item itemvalue="JUnit.lowestCommonAncestor236.test1" />
+        <item itemvalue="JUnit.lowestCommonAncestor236.test2" />
+        <item itemvalue="JUnit.lowestCommonAncestor236.test" />
+        <item itemvalue="JUnit.lowestCommonAncestor235.test" />
+        <item itemvalue="JUnit.generateTrees95.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -618,7 +645,9 @@
       <workItem from="1553874620114" duration="1604000" />
       <workItem from="1553960528438" duration="1879000" />
       <workItem from="1554562524624" duration="9283000" />
-      <workItem from="1554644371625" duration="600000" />
+      <workItem from="1554644371625" duration="6257000" />
+      <workItem from="1554825075600" duration="716000" />
+      <workItem from="1555218794276" duration="11674000" />
     </task>
     <task id="LOCAL-00001" summary="修改buildTree106">
       <created>1554644673454</created>
@@ -641,43 +670,57 @@
       <option name="project" value="LOCAL" />
       <updated>1554644761116</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add vcs.xml">
+      <created>1554645047737</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1554645047737</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add workspace.xml">
+      <created>1554645072964</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1554645072964</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="generateTrees95_test1 - 2019.04.07 at 20h 17m 01s.xml">
-      <configuration name="generateTrees95.test1" configurationId="JUnit" />
+    <history-entry file="lowestCommonAncestor236_test2 - 2019.04.14 at 21h 35m 30s.xml">
+      <configuration name="lowestCommonAncestor236.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="generateTrees95_test1 - 2019.04.07 at 20h 17m 47s.xml">
-      <configuration name="generateTrees95.test1" configurationId="JUnit" />
+    <history-entry file="lowestCommonAncestor236_test2 - 2019.04.14 at 21h 36m 50s.xml">
+      <configuration name="lowestCommonAncestor236.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="generateTrees95_test1 - 2019.04.07 at 20h 19m 58s.xml">
-      <configuration name="generateTrees95.test1" configurationId="JUnit" />
+    <history-entry file="lowestCommonAncestor236_test2 - 2019.04.14 at 21h 37m 33s.xml">
+      <configuration name="lowestCommonAncestor236.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="generateTrees95_test1 - 2019.04.07 at 20h 21m 53s.xml">
-      <configuration name="generateTrees95.test1" configurationId="JUnit" />
+    <history-entry file="lowestCommonAncestor236_test2 - 2019.04.14 at 21h 37m 44s.xml">
+      <configuration name="lowestCommonAncestor236.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="generateTrees95_test1 - 2019.04.07 at 20h 27m 00s.xml">
-      <configuration name="generateTrees95.test1" configurationId="JUnit" />
+    <history-entry file="lowestCommonAncestor236_test2 - 2019.04.14 at 21h 37m 57s.xml">
+      <configuration name="lowestCommonAncestor236.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="generateTrees95_test1 - 2019.04.07 at 20h 27m 04s.xml">
-      <configuration name="generateTrees95.test1" configurationId="JUnit" />
+    <history-entry file="lowestCommonAncestor236_test2 - 2019.04.14 at 21h 38m 03s.xml">
+      <configuration name="lowestCommonAncestor236.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="generateTrees95_test1 - 2019.04.07 at 20h 27m 59s.xml">
-      <configuration name="generateTrees95.test1" configurationId="JUnit" />
+    <history-entry file="lowestCommonAncestor236_test2 - 2019.04.14 at 21h 39m 13s.xml">
+      <configuration name="lowestCommonAncestor236.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="generateTrees95_test1 - 2019.04.07 at 20h 31m 39s.xml">
-      <configuration name="generateTrees95.test1" configurationId="JUnit" />
+    <history-entry file="lowestCommonAncestor236_test2 - 2019.04.14 at 21h 39m 26s.xml">
+      <configuration name="lowestCommonAncestor236.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="generateTrees95_test1 - 2019.04.07 at 20h 31m 47s.xml">
-      <configuration name="generateTrees95.test1" configurationId="JUnit" />
+    <history-entry file="lowestCommonAncestor236_test2 - 2019.04.14 at 21h 39m 49s.xml">
+      <configuration name="lowestCommonAncestor236.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="generateTrees95_test1 - 2019.04.07 at 20h 31m 50s.xml">
-      <configuration name="generateTrees95.test1" configurationId="JUnit" />
+    <history-entry file="lowestCommonAncestor236_test1 - 2019.04.14 at 21h 39m 57s.xml">
+      <configuration name="lowestCommonAncestor236.test1" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="797101000" />
+    <option name="totallyTimeSpent" value="815148000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -689,21 +732,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info anchor="top" id="Ant Build" order="0" side_tool="true" weight="0.24961714" />
-      <window_info id="Image Layers" />
-      <window_info id="Capture Tool" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48251748" visible="true" weight="0.23827533" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48251748" weight="0.24583964" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Palette&#9;" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.5174825" side_tool="true" weight="0.21785174" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.5542373" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.46960485" weight="0.53050846" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.48184568" weight="0.5237288" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.46960485" weight="0.3265306" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.48184568" weight="0.42517006" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32711864" />
@@ -711,8 +753,7 @@
       <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32993197" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32952693" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.53039515" side_tool="true" weight="0.3360522" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
       <window_info anchor="right" id="Palette" order="2" />
@@ -720,6 +761,8 @@
       <window_info anchor="right" id="Coverage" order="4" sideWeight="0.5089514" side_tool="true" weight="0.32978722" />
       <window_info anchor="right" id="Maven Projects" order="5" sideWeight="0.4910486" weight="0.32978722" />
       <window_info anchor="right" id="Database" order="6" weight="0.32893" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
     <layout-to-restore>
       <window_info anchor="top" id="Ant Build" order="0" side_tool="true" weight="0.24961714" />
@@ -794,7 +837,9 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="修改buildTree106" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改buildTree106" />
+    <MESSAGE value="add vcs.xml" />
+    <MESSAGE value="add workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="add workspace.xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1443,35 +1488,32 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/BackTracking/generateTrees95.java</url>
-          <line>22</line>
+          <line>24</line>
           <properties />
           <option name="timeStamp" value="193" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/BackTracking/generateTrees95.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="195" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="result.get(1)" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/String/evalRPN150.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/LinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="683" column="13" selection-start-line="683" selection-start-column="13" selection-end-line="683" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/String/ladderLength127.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1490,13 +1532,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="434" selection-start-line="434" selection-end-line="434" />
         </state>
       </provider>
     </entry>
@@ -1594,13 +1629,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tree/binaryTreePaths257.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Tree/bstFromPreorder1008.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1664,21 +1692,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="482" column="9" selection-start-line="482" selection-start-column="9" selection-end-line="482" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Tree/constructMaximumBinaryTree654.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tree/buildTree105.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
@@ -1699,13 +1713,6 @@
           <folding>
             <element signature="imports" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tree/averageOfLevels637.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="17" column="5" selection-start-line="10" selection-start-column="4" selection-end-line="17" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1803,29 +1810,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DP/maximalRectangle85.java">
+    <entry file="file://$PROJECT_DIR$/src/Tree/averageOfLevels637.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+        <state relative-caret-position="-8">
+          <caret line="17" column="5" selection-start-line="10" selection-start-column="4" selection-end-line="17" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BackTracking/generateTrees95.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#340#341#0" expanded="true" />
-            <element signature="e#378#379#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="504">
+          <caret line="446" column="16" selection-start-line="446" selection-start-column="13" selection-end-line="446" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="58" column="67" selection-start-line="58" selection-start-column="60" selection-end-line="58" selection-end-column="67" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tree/buildTree106.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-92">
-          <caret line="52" column="12" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
+        <state relative-caret-position="1054">
+          <caret line="64" column="25" lean-forward="true" selection-start-line="64" selection-start-column="25" selection-end-line="65" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tree/binaryTreePaths257.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1094">
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tree/buildTree105.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-71">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BackTracking/generateTrees95.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="20" column="5" selection-start-line="13" selection-start-column="4" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#generateTrees#0;class#generateTrees95#0" />
+            <element signature="method#recurGenerateTrees#0;class#generateTrees95#0" />
+            <element signature="method#inorder#0;class#generateTrees95#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DP/maximalRectangle85.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tree/lowestCommonAncestor235.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+          <folding>
+            <element signature="e#245#246#0" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tree/lowestCommonAncestor236.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="75" column="9" lean-forward="true" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
+          <folding>
+            <element signature="e#257#258#0" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
