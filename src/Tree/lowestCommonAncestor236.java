@@ -74,6 +74,9 @@ public class lowestCommonAncestor236 {
         if(root == null){
             return false;
         }
+        if(c[0] != null){
+            return true;
+        }
         boolean rootFlag = false;
         if(root.val == p.val || root.val == q.val){
             rootFlag = true;
