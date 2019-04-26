@@ -5,10 +5,10 @@
     <bookmark url="file://$PROJECT_DIR$/src/List/removeNthFromEnd19.java" line="21" mnemonic="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="edit workspace.xml">
-      <change afterPath="$PROJECT_DIR$/src/Array/findKthLargest215.java" afterDir="false" />
+    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add findKthLargest215">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BackTracking/generateTrees95.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BackTracking/generateTrees95.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/BackTracking/generateTrees95.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/BackTracking/generateTrees95.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/findKthLargest215.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/findKthLargest215.java" afterDir="false" />
     </list>
     <ignored path="LeetCode.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,16 +46,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BackTracking/generateTrees95.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-901">
-              <caret line="80" column="28" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
+            <state relative-caret-position="374">
+              <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#376#377#0" expanded="true" />
-                <element signature="e#414#415#0" expanded="true" />
+                <element signature="e#368#369#0" expanded="true" />
+                <element signature="e#406#407#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Array/findKthLargest215.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -131,8 +140,8 @@
         <option value="$PROJECT_DIR$/src/BackTracking/generateTrees.java" />
         <option value="$PROJECT_DIR$/src/Tree/lowestCommonAncestor235.java" />
         <option value="$PROJECT_DIR$/src/Tree/lowestCommonAncestor236.java" />
-        <option value="$PROJECT_DIR$/src/Array/findKthLargest215.java" />
         <option value="$PROJECT_DIR$/src/BackTracking/generateTrees95.java" />
+        <option value="$PROJECT_DIR$/src/Array/findKthLargest215.java" />
       </list>
     </option>
   </component>
@@ -160,7 +169,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -177,24 +185,19 @@
               <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
               <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="BackTracking" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Tree" type="462c0819:PsiDirectoryNode" />
+              <item name="Array" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556289116332" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556291348259" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../redis-in-action/java" />
     <property name="project.structure.last.edited" value="Project" />
@@ -414,17 +417,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="lowestCommonAncestor235.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="generateTrees95.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tree.*" />
+          <option name="PATTERN" value="BackTracking.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Tree" />
-      <option name="MAIN_CLASS_NAME" value="Tree.lowestCommonAncestor235" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="PACKAGE_NAME" value="BackTracking" />
+      <option name="MAIN_CLASS_NAME" value="BackTracking.generateTrees95" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -544,19 +547,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.isPalindrome9" />
-      <item itemvalue="JUnit.lowestCommonAncestor235.test" />
       <item itemvalue="JUnit.lowestCommonAncestor236.test" />
       <item itemvalue="JUnit.lowestCommonAncestor236.test2" />
       <item itemvalue="JUnit.lowestCommonAncestor236.test1" />
       <item itemvalue="JUnit.findKthLargest215.test1" />
+      <item itemvalue="JUnit.generateTrees95.test2" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.findKthLargest215.test1" />
+        <item itemvalue="JUnit.generateTrees95.test2" />
         <item itemvalue="JUnit.lowestCommonAncestor236.test1" />
         <item itemvalue="JUnit.lowestCommonAncestor236.test2" />
         <item itemvalue="JUnit.lowestCommonAncestor236.test" />
-        <item itemvalue="JUnit.lowestCommonAncestor235.test" />
       </list>
     </recent_temporary>
   </component>
@@ -631,6 +634,7 @@
       <workItem from="1555818041238" duration="1642000" />
       <workItem from="1556025245294" duration="671000" />
       <workItem from="1556206969105" duration="1242000" />
+      <workItem from="1556288974489" duration="2250000" />
     </task>
     <task id="LOCAL-00001" summary="修改buildTree106">
       <created>1554644673454</created>
@@ -674,43 +678,50 @@
       <option name="project" value="LOCAL" />
       <updated>1555256732099</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add findKthLargest215">
+      <created>1556289211153</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1556289211153</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="lowestCommonAncestor236_test2 - 2019.04.14 at 21h 36m 50s.xml">
-      <configuration name="lowestCommonAncestor236.test2" configurationId="JUnit" />
+    <history-entry file="findKthLargest215_test1 - 2019.04.26 at 22h 53m 33s.xml">
+      <configuration name="findKthLargest215.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="lowestCommonAncestor236_test2 - 2019.04.14 at 21h 37m 33s.xml">
-      <configuration name="lowestCommonAncestor236.test2" configurationId="JUnit" />
+    <history-entry file="findKthLargest215_test1 - 2019.04.26 at 22h 54m 41s.xml">
+      <configuration name="findKthLargest215.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="lowestCommonAncestor236_test2 - 2019.04.14 at 21h 37m 44s.xml">
-      <configuration name="lowestCommonAncestor236.test2" configurationId="JUnit" />
+    <history-entry file="findKthLargest215_test1 - 2019.04.26 at 22h 55m 58s.xml">
+      <configuration name="findKthLargest215.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="lowestCommonAncestor236_test2 - 2019.04.14 at 21h 37m 57s.xml">
-      <configuration name="lowestCommonAncestor236.test2" configurationId="JUnit" />
+    <history-entry file="findKthLargest215_test1 - 2019.04.26 at 22h 57m 19s.xml">
+      <configuration name="findKthLargest215.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="lowestCommonAncestor236_test2 - 2019.04.14 at 21h 38m 03s.xml">
-      <configuration name="lowestCommonAncestor236.test2" configurationId="JUnit" />
+    <history-entry file="findKthLargest215_test1 - 2019.04.26 at 22h 59m 36s.xml">
+      <configuration name="findKthLargest215.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="lowestCommonAncestor236_test2 - 2019.04.14 at 21h 39m 13s.xml">
-      <configuration name="lowestCommonAncestor236.test2" configurationId="JUnit" />
+    <history-entry file="findKthLargest215_test1 - 2019.04.26 at 22h 59m 44s.xml">
+      <configuration name="findKthLargest215.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="lowestCommonAncestor236_test2 - 2019.04.14 at 21h 39m 26s.xml">
-      <configuration name="lowestCommonAncestor236.test2" configurationId="JUnit" />
+    <history-entry file="findKthLargest215_test1 - 2019.04.26 at 23h 04m 57s.xml">
+      <configuration name="findKthLargest215.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="lowestCommonAncestor236_test2 - 2019.04.14 at 21h 39m 49s.xml">
-      <configuration name="lowestCommonAncestor236.test2" configurationId="JUnit" />
+    <history-entry file="findKthLargest215_test1 - 2019.04.26 at 23h 05m 05s.xml">
+      <configuration name="findKthLargest215.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="lowestCommonAncestor236_test1 - 2019.04.14 at 21h 39m 57s.xml">
-      <configuration name="lowestCommonAncestor236.test1" configurationId="JUnit" />
+    <history-entry file="findKthLargest215_test1 - 2019.04.26 at 23h 06m 22s.xml">
+      <configuration name="findKthLargest215.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="findKthLargest215_test1 - 2019.04.25 at 23h 59m 50s.xml">
+    <history-entry file="findKthLargest215_test1 - 2019.04.26 at 23h 06m 26s.xml">
       <configuration name="findKthLargest215.test1" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="820189000" />
+    <option name="totallyTimeSpent" value="822439000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -726,7 +737,7 @@
     <editor active="true" />
     <layout>
       <window_info anchor="top" id="Ant Build" order="0" side_tool="true" weight="0.24961714" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48251748" visible="true" weight="0.25340393" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48251748" visible="true" weight="0.25718608" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Palette&#9;" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.5174825" side_tool="true" weight="0.21785174" />
@@ -736,12 +747,12 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.5542373" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.46960485" weight="0.3265306" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.48184568" weight="0.42517006" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.48184568" visible="true" weight="0.42517006" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32711864" />
       <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4969743" weight="0.3265306" />
-      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.33673468" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.34863946" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32952693" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.53039515" side_tool="true" weight="0.3360522" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
@@ -831,7 +842,8 @@
     <MESSAGE value="add vcs.xml" />
     <MESSAGE value="add workspace.xml" />
     <MESSAGE value="edit workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit workspace.xml" />
+    <MESSAGE value="add findKthLargest215" />
+    <option name="LAST_COMMIT_MESSAGE" value="add findKthLargest215" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1480,15 +1492,21 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/BackTracking/generateTrees95.java</url>
-          <line>25</line>
+          <line>23</line>
           <properties />
           <option name="timeStamp" value="193" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/BackTracking/generateTrees95.java</url>
-          <line>34</line>
+          <line>29</line>
           <properties />
           <option name="timeStamp" value="195" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/findKthLargest215.java</url>
+          <line>9</line>
+          <properties />
+          <option name="timeStamp" value="196" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -1506,20 +1524,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/String/longestValidParentheses32.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Unkown/reverse7.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Tree/numTrees96.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1841,10 +1845,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
-          <folding>
-            <element signature="e#283#284#0" expanded="true" />
-            <element signature="e#321#322#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1862,22 +1862,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Array/findKthLargest215.java">
+    <entry file="file://$PROJECT_DIR$/src/BackTracking/generateTrees95.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+        <state relative-caret-position="374">
+          <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#368#369#0" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BackTracking/generateTrees95.java">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-901">
-          <caret line="80" column="28" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#376#377#0" expanded="true" />
-            <element signature="e#414#415#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Array/findKthLargest215.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
         </state>
       </provider>
     </entry>
