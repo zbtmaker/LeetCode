@@ -1,7 +1,6 @@
 package BackTracking;
 
 import org.junit.Test;
-import sun.reflect.generics.tree.Tree;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -28,36 +27,15 @@ public class generateTrees95 {
             System.out.println("");
         }
     }
-<<<<<<< HEAD
-    @Test
-    public void test2(){
-        generateTrees95 gen = new generateTrees95();
-        List<TreeNode> result = gen.generateTreesII(3);
-=======
 
     @Test
     public void test2(){
         generateTrees95 gen = new generateTrees95();
         List<TreeNode> result = gen.generateTreesII(5);
->>>>>>> df7ab62ae8dd04cb8342daf4857cc0bd56cd53ba
         for(TreeNode root : result){
             inorder(root);
             System.out.println("");
         }
-<<<<<<< HEAD
-
-
-    }
-    /**
-     * 采用回溯的方式来解决问题，之前一直没有想好怎么解决这个问题，主要是受上一个题目中的
-     * 动态规划思想的影响，这一题其实也涉及到了一些重复计算，像哪些呢，只有一些一些节点的
-     * 1,2,3,4,5,这个题目中，整个算法中，我们重复计算了一些节点的左子树和右子树。
-     * 当1为左子树的时候，我们发现此时2的右子树会计算一次，当2为root的时候，此时又会递归的
-     * 计算一次2的右子树，同时，对于3来说，我们在计算3的时候，会发现，在计算以1,2位root的时候，
-     * 3的右子树会重复的递归两次，而在以4,5为root的时候，3的左子树又会重复的递归多次，因此我们的
-     * 每一个节点的左子树和右子树会重复的被计算。
-     * 既然找到了这个源头，那么应该如何解决这个重复计算问题
-=======
     }
     /**
      * 采用回溯的方式来解决问题，之前一直没有想好怎么解决这个问题。我们在实现这个问题时，
@@ -68,7 +46,6 @@ public class generateTrees95 {
      * 1作为root的下面所有子树的可能性，然后可以通过遍历的方式实现了。这里还有一个问题上面
      * 以1为root的树只有右子树，不存在左子树。而以5为root的树只有左子树，不存在右子树
      * 因此我们需要判断一下条件再进行遍历和组合操作
->>>>>>> df7ab62ae8dd04cb8342daf4857cc0bd56cd53ba
      * @param n
      * @return
      */
@@ -124,8 +101,6 @@ public class generateTrees95 {
         inorder(root.right);
     }
 
-<<<<<<< HEAD
-=======
     /**
      * 这里我将问题进一步分析后将上面的代码进行了改进，就是我的代码中出现了重复
      * 递归的问题，那么为了解决这个问题。想到了由回溯->动态规划的方案，将每个节点
@@ -133,7 +108,6 @@ public class generateTrees95 {
      * @param n
      * @return
      */
->>>>>>> df7ab62ae8dd04cb8342daf4857cc0bd56cd53ba
     public List<TreeNode> generateTreesII(int n) {
         if(n < 1){
             return new LinkedList<TreeNode>();
@@ -147,11 +121,7 @@ public class generateTrees95 {
 
 
     private List<TreeNode> recurGenerateTreesII(int left,int right,List<List<TreeNode>> leftTrees,
-<<<<<<< HEAD
-                                              List<List<TreeNode>> rightTrees){
-=======
                                                 List<List<TreeNode>> rightTrees){
->>>>>>> df7ab62ae8dd04cb8342daf4857cc0bd56cd53ba
         if(left > right){
             return null;
         }
@@ -222,9 +192,4 @@ public class generateTrees95 {
             treeList.add(new ArrayList<>());
         }
     }
-<<<<<<< HEAD
-
-
-=======
->>>>>>> df7ab62ae8dd04cb8342daf4857cc0bd56cd53ba
 }
