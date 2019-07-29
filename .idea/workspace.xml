@@ -5,10 +5,10 @@
     <bookmark url="file://$PROJECT_DIR$/src/List/removeNthFromEnd19.java" line="21" mnemonic="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add findKthLargest215">
+    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="edit findKthLargest215">
+      <change afterPath="$PROJECT_DIR$/src/Array/hIndex274.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/String/calculate227.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/BackTracking/generateTrees95.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/BackTracking/generateTrees95.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Array/findKthLargest215.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/findKthLargest215.java" afterDir="false" />
     </list>
     <ignored path="LeetCode.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,25 +46,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BackTracking/generateTrees95.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#368#369#0" expanded="true" />
-                <element signature="e#406#407#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Array/findKthLargest215.java">
+        <entry file="file://$PROJECT_DIR$/src/Array/hIndex274.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+            <state relative-caret-position="170">
+              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -91,8 +77,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Unkown/FractiontoRecurringDecimal166.java" />
-        <option value="$PROJECT_DIR$/src/Tree/connect117.java" />
         <option value="$PROJECT_DIR$/src/Tree/sortedListToBST109.java" />
         <option value="$PROJECT_DIR$/src/BackTracking/subsets78.java" />
         <option value="$PROJECT_DIR$/src/BackTracking/subsetsWithDup90.java" />
@@ -142,6 +126,8 @@
         <option value="$PROJECT_DIR$/src/Tree/lowestCommonAncestor236.java" />
         <option value="$PROJECT_DIR$/src/BackTracking/generateTrees95.java" />
         <option value="$PROJECT_DIR$/src/Array/findKthLargest215.java" />
+        <option value="$PROJECT_DIR$/src/String/calculate227.java" />
+        <option value="$PROJECT_DIR$/src/Array/hIndex274.java" />
       </list>
     </option>
   </component>
@@ -158,9 +144,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1386" />
+    <option name="x" value="3" />
+    <option name="width" value="688" />
     <option name="height" value="788" />
   </component>
   <component name="ProjectView">
@@ -168,7 +153,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -192,14 +176,15 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556291348259" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560004486378" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../redis-in-action/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tomcat" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -223,7 +208,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.findKthLargest215.test1">
+  <component name="RunManager" selected="JUnit.calculate227.test">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -400,6 +385,55 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="calculate227" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="String.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="String" />
+      <option name="MAIN_CLASS_NAME" value="String.calculate227" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="calculate227.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="String.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="String" />
+      <option name="MAIN_CLASS_NAME" value="String.calculate227" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="calculate227.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="String.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="String" />
+      <option name="MAIN_CLASS_NAME" value="String.calculate227" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="findKthLargest215.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
@@ -427,57 +461,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="BackTracking" />
       <option name="MAIN_CLASS_NAME" value="BackTracking.generateTrees95" />
-      <option name="METHOD_NAME" value="test2" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="lowestCommonAncestor236.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tree" />
-      <option name="MAIN_CLASS_NAME" value="Tree.lowestCommonAncestor236" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="lowestCommonAncestor236.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tree" />
-      <option name="MAIN_CLASS_NAME" value="Tree.lowestCommonAncestor236" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="lowestCommonAncestor236.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tree" />
-      <option name="MAIN_CLASS_NAME" value="Tree.lowestCommonAncestor236" />
       <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -547,19 +530,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.isPalindrome9" />
-      <item itemvalue="JUnit.lowestCommonAncestor236.test" />
-      <item itemvalue="JUnit.lowestCommonAncestor236.test2" />
-      <item itemvalue="JUnit.lowestCommonAncestor236.test1" />
       <item itemvalue="JUnit.findKthLargest215.test1" />
       <item itemvalue="JUnit.generateTrees95.test2" />
+      <item itemvalue="JUnit.calculate227" />
+      <item itemvalue="JUnit.calculate227.test" />
+      <item itemvalue="JUnit.calculate227.test1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.calculate227.test" />
+        <item itemvalue="JUnit.calculate227.test1" />
+        <item itemvalue="JUnit.calculate227" />
         <item itemvalue="JUnit.findKthLargest215.test1" />
         <item itemvalue="JUnit.generateTrees95.test2" />
-        <item itemvalue="JUnit.lowestCommonAncestor236.test1" />
-        <item itemvalue="JUnit.lowestCommonAncestor236.test2" />
-        <item itemvalue="JUnit.lowestCommonAncestor236.test" />
       </list>
     </recent_temporary>
   </component>
@@ -634,7 +617,15 @@
       <workItem from="1555818041238" duration="1642000" />
       <workItem from="1556025245294" duration="671000" />
       <workItem from="1556206969105" duration="1242000" />
-      <workItem from="1556288974489" duration="2250000" />
+      <workItem from="1556288974489" duration="3232000" />
+      <workItem from="1556294519715" duration="665000" />
+      <workItem from="1556551920168" duration="1307000" />
+      <workItem from="1556553750171" duration="450000" />
+      <workItem from="1556705617750" duration="1865000" />
+      <workItem from="1556964066576" duration="7294000" />
+      <workItem from="1557759466097" duration="157000" />
+      <workItem from="1560004168711" duration="389000" />
+      <workItem from="1563290040403" duration="201000" />
     </task>
     <task id="LOCAL-00001" summary="修改buildTree106">
       <created>1554644673454</created>
@@ -685,43 +676,50 @@
       <option name="project" value="LOCAL" />
       <updated>1556289211153</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="edit findKthLargest215">
+      <created>1556291432688</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1556291432688</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="findKthLargest215_test1 - 2019.04.26 at 22h 53m 33s.xml">
-      <configuration name="findKthLargest215.test1" configurationId="JUnit" />
+    <history-entry file="calculate227_test - 2019.05.04 at 20h 41m 20s.xml">
+      <configuration name="calculate227.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="findKthLargest215_test1 - 2019.04.26 at 22h 54m 41s.xml">
-      <configuration name="findKthLargest215.test1" configurationId="JUnit" />
+    <history-entry file="calculate227_test - 2019.05.04 at 20h 41m 44s.xml">
+      <configuration name="calculate227.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="findKthLargest215_test1 - 2019.04.26 at 22h 55m 58s.xml">
-      <configuration name="findKthLargest215.test1" configurationId="JUnit" />
+    <history-entry file="calculate227_test - 2019.05.04 at 20h 43m 34s.xml">
+      <configuration name="calculate227.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="findKthLargest215_test1 - 2019.04.26 at 22h 57m 19s.xml">
-      <configuration name="findKthLargest215.test1" configurationId="JUnit" />
+    <history-entry file="calculate227_test - 2019.05.04 at 20h 44m 35s.xml">
+      <configuration name="calculate227.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="findKthLargest215_test1 - 2019.04.26 at 22h 59m 36s.xml">
-      <configuration name="findKthLargest215.test1" configurationId="JUnit" />
+    <history-entry file="calculate227_test - 2019.05.04 at 20h 44m 52s.xml">
+      <configuration name="calculate227.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="findKthLargest215_test1 - 2019.04.26 at 22h 59m 44s.xml">
-      <configuration name="findKthLargest215.test1" configurationId="JUnit" />
+    <history-entry file="calculate227_test - 2019.05.04 at 20h 45m 37s.xml">
+      <configuration name="calculate227.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="findKthLargest215_test1 - 2019.04.26 at 23h 04m 57s.xml">
-      <configuration name="findKthLargest215.test1" configurationId="JUnit" />
+    <history-entry file="calculate227_test - 2019.05.04 at 20h 49m 33s.xml">
+      <configuration name="calculate227.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="findKthLargest215_test1 - 2019.04.26 at 23h 05m 05s.xml">
-      <configuration name="findKthLargest215.test1" configurationId="JUnit" />
+    <history-entry file="calculate227_test - 2019.05.04 at 20h 54m 08s.xml">
+      <configuration name="calculate227.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="findKthLargest215_test1 - 2019.04.26 at 23h 06m 22s.xml">
-      <configuration name="findKthLargest215.test1" configurationId="JUnit" />
+    <history-entry file="calculate227_test - 2019.05.04 at 21h 05m 27s.xml">
+      <configuration name="calculate227.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="findKthLargest215_test1 - 2019.04.26 at 23h 06m 26s.xml">
-      <configuration name="findKthLargest215.test1" configurationId="JUnit" />
+    <history-entry file="calculate227_test - 2019.05.04 at 21h 14m 00s.xml">
+      <configuration name="calculate227.test" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="822439000" />
+    <option name="totallyTimeSpent" value="835749000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -734,25 +732,24 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="top" id="Ant Build" order="0" side_tool="true" weight="0.24961714" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48251748" visible="true" weight="0.25718608" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4807198" visible="true" weight="0.17700455" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Palette&#9;" order="2" />
-      <window_info id="Favorites" order="3" sideWeight="0.5174825" side_tool="true" weight="0.21785174" />
+      <window_info id="Favorites" order="3" sideWeight="0.5192802" side_tool="true" weight="0.27120668" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Image Layers" order="5" />
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.5542373" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.46960485" weight="0.3265306" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.48184568" visible="true" weight="0.42517006" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.46960485" weight="0.54746836" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.48184568" weight="0.34968355" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32711864" />
       <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4969743" weight="0.3265306" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.34863946" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.37585035" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32952693" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.53039515" side_tool="true" weight="0.3360522" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
@@ -843,7 +840,8 @@
     <MESSAGE value="add workspace.xml" />
     <MESSAGE value="edit workspace.xml" />
     <MESSAGE value="add findKthLargest215" />
-    <option name="LAST_COMMIT_MESSAGE" value="add findKthLargest215" />
+    <MESSAGE value="edit findKthLargest215" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit findKthLargest215" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1508,6 +1506,12 @@
           <properties />
           <option name="timeStamp" value="196" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/String/calculate227.java</url>
+          <line>15</line>
+          <properties />
+          <option name="timeStamp" value="197" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -1524,41 +1528,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Tree/numTrees96.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/StrictMath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="269" column="28" selection-start-line="269" selection-start-column="28" selection-end-line="269" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Math.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="338" column="27" selection-start-line="338" selection-start-column="27" selection-end-line="338" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Unkown/isPerfectSquare367.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BackTracking/longestIncreasingPath329.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="92" column="52" selection-start-line="92" selection-start-column="52" selection-end-line="92" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Unkown/getSum371.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1862,10 +1831,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Array/findKthLargest215.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/String/evalRPN150.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/BackTracking/generateTrees95.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+        <state relative-caret-position="504">
+          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#368#369#0" expanded="true" />
@@ -1876,22 +1866,39 @@
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="77">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/NumberFormatException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        <state relative-caret-position="116">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Array/findKthLargest215.java">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+        <state relative-caret-position="366">
+          <caret line="203" selection-start-line="203" selection-end-line="203" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/String/calculate227.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Array/hIndex274.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
         </state>
       </provider>
     </entry>
