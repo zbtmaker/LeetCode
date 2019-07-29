@@ -5,10 +5,11 @@
     <bookmark url="file://$PROJECT_DIR$/src/List/removeNthFromEnd19.java" line="21" mnemonic="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="edit findKthLargest215">
-      <change afterPath="$PROJECT_DIR$/src/Array/hIndex274.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/String/calculate227.java" afterDir="false" />
+    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Array/rangeBitwiseAnd201.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/Array/rangeBitwiseAnd201Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode.iml" afterDir="false" />
     </list>
     <ignored path="LeetCode.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,11 +47,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Array/hIndex274.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
               <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/Array/rangeBitwiseAnd201Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Array/rangeBitwiseAnd201.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="129">
+              <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Array/jump45.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -77,9 +108,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Tree/sortedListToBST109.java" />
-        <option value="$PROJECT_DIR$/src/BackTracking/subsets78.java" />
-        <option value="$PROJECT_DIR$/src/BackTracking/subsetsWithDup90.java" />
         <option value="$PROJECT_DIR$/src/Array/canJump55.java" />
         <option value="$PROJECT_DIR$/src/String/lengthOfLastWord58.java" />
         <option value="$PROJECT_DIR$/src/String/WordLadder127.java" />
@@ -128,6 +156,9 @@
         <option value="$PROJECT_DIR$/src/Array/findKthLargest215.java" />
         <option value="$PROJECT_DIR$/src/String/calculate227.java" />
         <option value="$PROJECT_DIR$/src/Array/hIndex274.java" />
+        <option value="$PROJECT_DIR$/src/Array/rangeBitWiseAnd201.java" />
+        <option value="$PROJECT_DIR$/test/Array/rangeBitWiseAnd201Test.java" />
+        <option value="$PROJECT_DIR$/test/Array/rangeBitwiseAnd201Test.java" />
       </list>
     </option>
   </component>
@@ -153,6 +184,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -171,18 +204,27 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Array" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="Array" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560004486378" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564416831774" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../tomcat" />
     <property name="project.structure.last.edited" value="Project" />
@@ -208,7 +250,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.calculate227.test">
+  <component name="RunManager" selected="JUnit.rangeBitwiseAnd201Test.test2">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -434,7 +476,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="findKthLargest215.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="rangeBitwiseAnd201Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -443,7 +485,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Array" />
-      <option name="MAIN_CLASS_NAME" value="Array.findKthLargest215" />
+      <option name="MAIN_CLASS_NAME" value="Array.rangeBitwiseAnd201Test" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -451,16 +493,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="generateTrees95.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="rangeBitwiseAnd201Test.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="BackTracking.*" />
+          <option name="PATTERN" value="Array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="BackTracking" />
-      <option name="MAIN_CLASS_NAME" value="BackTracking.generateTrees95" />
+      <option name="PACKAGE_NAME" value="Array" />
+      <option name="MAIN_CLASS_NAME" value="Array.rangeBitwiseAnd201Test" />
       <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -530,19 +572,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.isPalindrome9" />
-      <item itemvalue="JUnit.findKthLargest215.test1" />
-      <item itemvalue="JUnit.generateTrees95.test2" />
       <item itemvalue="JUnit.calculate227" />
       <item itemvalue="JUnit.calculate227.test" />
       <item itemvalue="JUnit.calculate227.test1" />
+      <item itemvalue="JUnit.rangeBitwiseAnd201Test.test1" />
+      <item itemvalue="JUnit.rangeBitwiseAnd201Test.test2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.rangeBitwiseAnd201Test.test2" />
+        <item itemvalue="JUnit.rangeBitwiseAnd201Test.test1" />
         <item itemvalue="JUnit.calculate227.test" />
         <item itemvalue="JUnit.calculate227.test1" />
         <item itemvalue="JUnit.calculate227" />
-        <item itemvalue="JUnit.findKthLargest215.test1" />
-        <item itemvalue="JUnit.generateTrees95.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -626,6 +668,7 @@
       <workItem from="1557759466097" duration="157000" />
       <workItem from="1560004168711" duration="389000" />
       <workItem from="1563290040403" duration="201000" />
+      <workItem from="1564415711407" duration="1105000" />
     </task>
     <task id="LOCAL-00001" summary="修改buildTree106">
       <created>1554644673454</created>
@@ -683,43 +726,50 @@
       <option name="project" value="LOCAL" />
       <updated>1556291432688</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add caculate227 and hIndex274">
+      <created>1564415822338</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1564415822339</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="calculate227_test - 2019.05.04 at 20h 41m 20s.xml">
-      <configuration name="calculate227.test" configurationId="JUnit" />
+    <history-entry file="rangeBitWiseAnd201Test_test1 - 2019.07.30 at 00h 08m 32s.xml">
+      <configuration name="rangeBitWiseAnd201Test.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="calculate227_test - 2019.05.04 at 20h 41m 44s.xml">
-      <configuration name="calculate227.test" configurationId="JUnit" />
+    <history-entry file="rangeBitWiseAnd201Test_test1 - 2019.07.30 at 00h 09m 03s.xml">
+      <configuration name="rangeBitWiseAnd201Test.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="calculate227_test - 2019.05.04 at 20h 43m 34s.xml">
-      <configuration name="calculate227.test" configurationId="JUnit" />
+    <history-entry file="rangeBitWiseAnd201Test_test1 - 2019.07.30 at 00h 09m 30s.xml">
+      <configuration name="rangeBitWiseAnd201Test.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="calculate227_test - 2019.05.04 at 20h 44m 35s.xml">
-      <configuration name="calculate227.test" configurationId="JUnit" />
+    <history-entry file="rangeBitWiseAnd201Test_test1 - 2019.07.30 at 00h 10m 44s.xml">
+      <configuration name="rangeBitWiseAnd201Test.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="calculate227_test - 2019.05.04 at 20h 44m 52s.xml">
-      <configuration name="calculate227.test" configurationId="JUnit" />
+    <history-entry file="rangeBitWiseAnd201Test_test1 - 2019.07.30 at 00h 10m 59s.xml">
+      <configuration name="rangeBitWiseAnd201Test.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="calculate227_test - 2019.05.04 at 20h 45m 37s.xml">
-      <configuration name="calculate227.test" configurationId="JUnit" />
+    <history-entry file="rangeBitWiseAnd201Test_test1 - 2019.07.30 at 00h 11m 07s.xml">
+      <configuration name="rangeBitWiseAnd201Test.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="calculate227_test - 2019.05.04 at 20h 49m 33s.xml">
-      <configuration name="calculate227.test" configurationId="JUnit" />
+    <history-entry file="rangeBitWiseAnd201Test_test1 - 2019.07.30 at 00h 11m 59s.xml">
+      <configuration name="rangeBitWiseAnd201Test.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="calculate227_test - 2019.05.04 at 20h 54m 08s.xml">
-      <configuration name="calculate227.test" configurationId="JUnit" />
+    <history-entry file="rangeBitWiseAnd201Test_test1 - 2019.07.30 at 00h 12m 12s.xml">
+      <configuration name="rangeBitWiseAnd201Test.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="calculate227_test - 2019.05.04 at 21h 05m 27s.xml">
-      <configuration name="calculate227.test" configurationId="JUnit" />
+    <history-entry file="rangeBitWiseAnd201Test_test1 - 2019.07.30 at 00h 12m 24s.xml">
+      <configuration name="rangeBitWiseAnd201Test.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="calculate227_test - 2019.05.04 at 21h 14m 00s.xml">
-      <configuration name="calculate227.test" configurationId="JUnit" />
+    <history-entry file="rangeBitWiseAnd201Test_test2 - 2019.07.30 at 00h 12m 48s.xml">
+      <configuration name="rangeBitWiseAnd201Test.test2" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="835749000" />
+    <option name="totallyTimeSpent" value="836854000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -732,9 +782,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="top" id="Ant Build" order="0" side_tool="true" weight="0.24961714" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4807198" visible="true" weight="0.17700455" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4807198" visible="true" weight="0.17927383" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Palette&#9;" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.5192802" side_tool="true" weight="0.27120668" />
@@ -743,14 +794,14 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.5542373" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.46960485" weight="0.54746836" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.48184568" weight="0.34968355" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.46960485" weight="0.54591835" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.48184568" weight="0.34863946" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32711864" />
       <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4969743" weight="0.3265306" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.37585035" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32952693" />
+      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.37585035" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3282313" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.53039515" side_tool="true" weight="0.3360522" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -841,7 +892,8 @@
     <MESSAGE value="edit workspace.xml" />
     <MESSAGE value="add findKthLargest215" />
     <MESSAGE value="edit findKthLargest215" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit findKthLargest215" />
+    <MESSAGE value="add caculate227 and hIndex274" />
+    <option name="LAST_COMMIT_MESSAGE" value="add caculate227 and hIndex274" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1512,6 +1564,12 @@
           <properties />
           <option name="timeStamp" value="197" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/Array/rangeBitwiseAnd201Test.java</url>
+          <line>11</line>
+          <properties />
+          <option name="timeStamp" value="198" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -1528,27 +1586,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Unkown/getSum371.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Unkown/isPowerOfFour342.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="36" column="5" selection-start-line="12" selection-start-column="4" selection-end-line="36" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Unkown/isPowerOfTwo231.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="11" column="5" selection-start-line="6" selection-start-column="4" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Unkown/judgeSquareSum633.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1895,10 +1932,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Array/jump45.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Array/hIndex274.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Array/rangeBitwiseAnd201.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Array/rangeBitwiseAnd201Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
