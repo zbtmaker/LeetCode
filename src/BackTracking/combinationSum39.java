@@ -15,10 +15,10 @@ public class combinationSum39 {
     public static void main(String[] args){
         int[] candidates = new int[]{10,1,2,7,6,1,5};
         int target = 8;
-        /*List<List<Integer>> lists = combinationSumI(candidates,target);
+        List<List<Integer>> lists = new combinationSum39().combinationSumII(candidates,target);
         for(List arrayList:lists){
             System.out.println(Arrays.toString(arrayList.toArray()));
-        }*/
+        }
     }
 
     /**
