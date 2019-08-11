@@ -24,7 +24,7 @@ public class coinChange322 {
 
     @Test
     public void testCoinChangeII() {
-        List<Integer> result = new coinChange322().coinChangeII(new int[]{2}, 1);
+        List<Integer> result = new coinChange322().coinChangeII(new int[]{2,3,5}, 11);
         System.out.println(Arrays.toString(result.toArray()));
     }
 
@@ -84,14 +84,14 @@ public class coinChange322 {
                 if (i == coins[minIndex]) {
                     tmpList = new ArrayList<>();
                 }else{
-                    int index = i - minIndex - 2;
+                    int index = i - coins[minIndex] - 1;
                     tmpList = new ArrayList<>(result.get(index));
                 }
                 tmpList.add(coins[minIndex]);
                 result.add(tmpList);
             } else {
                 DP[i] = -1;
-                result.add(new ArrayList<Integer>());
+                result.add(new ArrayList<>());
             }
         }
         return result.get(amount - 1);
