@@ -17,31 +17,22 @@ public class LongestValidParentheses32 {
         if (null == s || s.length() == 0) {
             return 0;
         }
-        int last = 0;
         int maxLen = 0;
-        int len = 0;
         Stack<Character> stack = new Stack<>();
+        int len = 0;
+        int lastLen = 0;
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
-            if (ch == ')') {
-                boolean empty = stack.isEmpty();
-                if (empty) {
-                    len = 0;
-                    continue;
-                }
-                char tmpChar = stack.pop();
-                if (tmpChar == '(') {
-                    len += 2;
-                    if(empty){
-                        len = len + last;
-                    }
-                } else {
-                    len = 0;
-                }
-                maxLen = Math.max(len, maxLen);
-            } else {
+            if (ch == '(') {
                 stack.push(ch);
+            } else {
+                stack.pop();
+                len += 2;
             }
+            if (stack.isEmpty()) {
+                len += lastLen;
+            }
+            maxLen = Math.max(len, maxLen);
         }
         return maxLen;
     }

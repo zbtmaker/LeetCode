@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:添加LeetCode第50题,求一个数的指数运算">
-      <change afterPath="$PROJECT_DIR$/test/dp/LengthOfLIS300Test.java" afterDir="false" />
+    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成最长上升子序列--300">
+      <change afterPath="$PROJECT_DIR$/src/dp/IncreasingTriplet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/dp/IncreasingTripletTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Array/subsetsWithDup90.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/subsetsWithDup90.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dp/lengthOfLIS300.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/LengthOfLIS300.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/math/myPow50.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/MyPow50.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/array/rangeBitwiseAnd201Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/array/RangeBitwiseAnd201Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/math/TestMyPow50.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/math/MyPow50Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/stack/TestLongestValidParentheses32.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/stack/LongestValidParentheses32Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/stack/LongestValidParentheses32.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/stack/LongestValidParentheses32.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/subsetsWithDup90.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stack/LongestValidParentheses32.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stack/LongestValidParentheses32.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,14 +49,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Arquillian JUnit Test Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>replace</find>
-      <find>set</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -74,6 +67,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574694875500" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
@@ -82,12 +77,18 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="dp" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="DP" />
       <recent name="Array" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LengthOfLIS300Test">
+  <component name="RunManager" selected="JUnit.IncreasingTripletTest.test1">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -261,6 +262,23 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
     </configuration>
+    <configuration name="IncreasingTripletTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dp" />
+      <option name="MAIN_CLASS_NAME" value="dp.IncreasingTripletTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LengthOfLIS300Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
@@ -289,23 +307,6 @@
       <option name="PACKAGE_NAME" value="dp" />
       <option name="MAIN_CLASS_NAME" value="dp.LengthOfLIS300Test" />
       <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LengthOfLIS300Test.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dp" />
-      <option name="MAIN_CLASS_NAME" value="dp.LengthOfLIS300Test" />
-      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -418,17 +419,17 @@
       <item itemvalue="Application.isPalindrome9" />
       <item itemvalue="JUnit.LengthOfLIS300Test.test1" />
       <item itemvalue="JUnit.LengthOfLIS300Test" />
-      <item itemvalue="JUnit.LengthOfLIS300Test.test2" />
       <item itemvalue="JUnit.LengthOfLIS300Test.test3" />
       <item itemvalue="JUnit.LengthOfLIS300Test.test4" />
+      <item itemvalue="JUnit.IncreasingTripletTest.test1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.IncreasingTripletTest.test1" />
         <item itemvalue="JUnit.LengthOfLIS300Test" />
         <item itemvalue="JUnit.LengthOfLIS300Test.test1" />
         <item itemvalue="JUnit.LengthOfLIS300Test.test4" />
         <item itemvalue="JUnit.LengthOfLIS300Test.test3" />
-        <item itemvalue="JUnit.LengthOfLIS300Test.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -535,7 +536,7 @@
       <workItem from="1565794276899" duration="648000" />
       <workItem from="1570261666210" duration="17857000" />
       <workItem from="1574605097981" duration="6889000" />
-      <workItem from="1577592383754" duration="8404000" />
+      <workItem from="1577592383754" duration="10996000" />
     </task>
     <task id="LOCAL-00001" summary="修改buildTree106">
       <created>1554644673454</created>
@@ -628,7 +629,21 @@
       <option name="project" value="LOCAL" />
       <updated>1574694293551</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add:完成最长上升子序列--300">
+      <created>1577610388555</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1577610388555</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add:完成最长上升子序列--300">
+      <created>1577610505446</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1577610505446</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView">
@@ -678,29 +693,30 @@
     <MESSAGE value="add caculate227 and hIndex274" />
     <MESSAGE value="add rangeBitwiseAnd201" />
     <MESSAGE value="add:添加LeetCode第50题,求一个数的指数运算" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:添加LeetCode第50题,求一个数的指数运算" />
+    <MESSAGE value="add:完成最长上升子序列--300" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:完成最长上升子序列--300" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="352" y="162" key="CommitChangelistDialog2" timestamp="1577610426191">
+    <state x="352" y="162" key="CommitChangelistDialog2" timestamp="1577610505278">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="352" y="162" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1577610426191" />
-    <state width="1750" height="434" key="GridCell.Tab.0.bottom" timestamp="1577610098409">
+    <state x="352" y="162" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1577610505278" />
+    <state width="1750" height="397" key="GridCell.Tab.0.bottom" timestamp="1577616176168">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="434" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1577610098409" />
-    <state width="1750" height="434" key="GridCell.Tab.0.center" timestamp="1577610098408">
+    <state width="1750" height="397" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1577616176168" />
+    <state width="1750" height="397" key="GridCell.Tab.0.center" timestamp="1577616176167">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="434" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1577610098408" />
-    <state width="1750" height="434" key="GridCell.Tab.0.left" timestamp="1577610098407">
+    <state width="1750" height="397" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1577616176167" />
+    <state width="1750" height="397" key="GridCell.Tab.0.left" timestamp="1577616176166">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="434" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1577610098407" />
-    <state width="1750" height="434" key="GridCell.Tab.0.right" timestamp="1577610098408">
+    <state width="1750" height="397" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1577616176166" />
+    <state width="1750" height="397" key="GridCell.Tab.0.right" timestamp="1577616176168">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="434" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1577610098408" />
+    <state width="1750" height="397" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1577616176168" />
     <state width="1750" height="434" key="GridCell.Tab.1.bottom" timestamp="1577610098410">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -725,10 +741,14 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="679" y="345" key="chooseDestDirectoryDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1577610471196" />
-    <state x="674" y="294" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1577601453432">
+    <state x="674" y="294" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1577614986162">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="674" y="294" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1577601453432" />
+    <state x="674" y="294" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1577614986162" />
+    <state x="477" y="290" width="837" height="540" key="find.popup" timestamp="1577612375727">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="477" y="290" width="837" height="540" key="find.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1577612375727" />
     <state x="561" y="251" key="search.everywhere.popup" timestamp="1577592483179">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -1339,7 +1359,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/dp/LengthOfLIS300.java</url>
-          <line>34</line>
+          <line>33</line>
           <option name="timeStamp" value="210" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1349,12 +1369,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/dp/LengthOfLIS300.java</url>
-          <line>21</line>
+          <line>20</line>
           <option name="timeStamp" value="212" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/dp/LengthOfLIS300.java</url>
-          <line>68</line>
+          <line>67</line>
           <option name="timeStamp" value="214" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
