@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成最长上升子序列--300">
-      <change afterPath="$PROJECT_DIR$/src/dp/IncreasingTriplet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/dp/IncreasingTripletTest.java" afterDir="false" />
+    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:递增的三元子序列--334">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/stack/LongestValidParentheses32.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/stack/LongestValidParentheses32.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/array/subsetsWithDup90.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stack/LongestValidParentheses32.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stack/LongestValidParentheses32.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/subsetsWithDup90.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/DP/lengthOfLIS300.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/subarraySum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/SubarraySum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +76,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="array" />
       <recent name="dp" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -88,7 +87,7 @@
       <recent name="Array" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.IncreasingTripletTest.test1">
+  <component name="RunManager" selected="JUnit.SubarraySumTest.test2">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -313,34 +312,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LengthOfLIS300Test.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SubarraySumTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dp.*" />
+          <option name="PATTERN" value="array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dp" />
-      <option name="MAIN_CLASS_NAME" value="dp.LengthOfLIS300Test" />
-      <option name="METHOD_NAME" value="test3" />
+      <option name="PACKAGE_NAME" value="array" />
+      <option name="MAIN_CLASS_NAME" value="array.SubarraySumTest" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LengthOfLIS300Test.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SubarraySumTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dp.*" />
+          <option name="PATTERN" value="array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dp" />
-      <option name="MAIN_CLASS_NAME" value="dp.LengthOfLIS300Test" />
-      <option name="METHOD_NAME" value="test4" />
+      <option name="PACKAGE_NAME" value="array" />
+      <option name="MAIN_CLASS_NAME" value="array.SubarraySumTest" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -419,17 +418,17 @@
       <item itemvalue="Application.isPalindrome9" />
       <item itemvalue="JUnit.LengthOfLIS300Test.test1" />
       <item itemvalue="JUnit.LengthOfLIS300Test" />
-      <item itemvalue="JUnit.LengthOfLIS300Test.test3" />
-      <item itemvalue="JUnit.LengthOfLIS300Test.test4" />
       <item itemvalue="JUnit.IncreasingTripletTest.test1" />
+      <item itemvalue="JUnit.SubarraySumTest.test1" />
+      <item itemvalue="JUnit.SubarraySumTest.test2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SubarraySumTest.test2" />
+        <item itemvalue="JUnit.SubarraySumTest.test1" />
         <item itemvalue="JUnit.IncreasingTripletTest.test1" />
         <item itemvalue="JUnit.LengthOfLIS300Test" />
         <item itemvalue="JUnit.LengthOfLIS300Test.test1" />
-        <item itemvalue="JUnit.LengthOfLIS300Test.test4" />
-        <item itemvalue="JUnit.LengthOfLIS300Test.test3" />
       </list>
     </recent_temporary>
   </component>
@@ -536,7 +535,7 @@
       <workItem from="1565794276899" duration="648000" />
       <workItem from="1570261666210" duration="17857000" />
       <workItem from="1574605097981" duration="6889000" />
-      <workItem from="1577592383754" duration="10996000" />
+      <workItem from="1577592383754" duration="16473000" />
     </task>
     <task id="LOCAL-00001" summary="修改buildTree106">
       <created>1554644673454</created>
@@ -643,7 +642,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577610505446</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="add:递增的三元子序列--334">
+      <created>1577616224446</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1577616224446</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView">
@@ -694,61 +700,66 @@
     <MESSAGE value="add rangeBitwiseAnd201" />
     <MESSAGE value="add:添加LeetCode第50题,求一个数的指数运算" />
     <MESSAGE value="add:完成最长上升子序列--300" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:完成最长上升子序列--300" />
+    <MESSAGE value="add:递增的三元子序列--334" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:递增的三元子序列--334" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="352" y="162" key="CommitChangelistDialog2" timestamp="1577610505278">
+    <state x="352" y="162" key="CommitChangelistDialog2" timestamp="1577616224254">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="352" y="162" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1577610505278" />
-    <state width="1750" height="397" key="GridCell.Tab.0.bottom" timestamp="1577616176168">
+    <state x="352" y="162" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1577616224254" />
+    <state width="1750" height="434" key="GridCell.Tab.0.bottom" timestamp="1577628776767">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="397" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1577616176168" />
-    <state width="1750" height="397" key="GridCell.Tab.0.center" timestamp="1577616176167">
+    <state width="1750" height="434" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1577628776767" />
+    <state width="1750" height="434" key="GridCell.Tab.0.center" timestamp="1577628776765">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="397" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1577616176167" />
-    <state width="1750" height="397" key="GridCell.Tab.0.left" timestamp="1577616176166">
+    <state width="1750" height="434" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1577628776765" />
+    <state width="1750" height="434" key="GridCell.Tab.0.left" timestamp="1577628776764">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="397" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1577616176166" />
-    <state width="1750" height="397" key="GridCell.Tab.0.right" timestamp="1577616176168">
+    <state width="1750" height="434" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1577628776764" />
+    <state width="1750" height="434" key="GridCell.Tab.0.right" timestamp="1577628776766">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="397" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1577616176168" />
-    <state width="1750" height="434" key="GridCell.Tab.1.bottom" timestamp="1577610098410">
+    <state width="1750" height="434" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1577628776766" />
+    <state width="1750" height="434" key="GridCell.Tab.1.bottom" timestamp="1577628776769">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="434" key="GridCell.Tab.1.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1577610098410" />
-    <state width="1750" height="434" key="GridCell.Tab.1.center" timestamp="1577610098410">
+    <state width="1750" height="434" key="GridCell.Tab.1.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1577628776769" />
+    <state width="1750" height="434" key="GridCell.Tab.1.center" timestamp="1577628776768">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="434" key="GridCell.Tab.1.center/0.0.1792.1120@0.0.1792.1120" timestamp="1577610098410" />
-    <state width="1750" height="434" key="GridCell.Tab.1.left" timestamp="1577610098409">
+    <state width="1750" height="434" key="GridCell.Tab.1.center/0.0.1792.1120@0.0.1792.1120" timestamp="1577628776768" />
+    <state width="1750" height="434" key="GridCell.Tab.1.left" timestamp="1577628776768">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="434" key="GridCell.Tab.1.left/0.0.1792.1120@0.0.1792.1120" timestamp="1577610098409" />
-    <state width="1750" height="434" key="GridCell.Tab.1.right" timestamp="1577610098410">
+    <state width="1750" height="434" key="GridCell.Tab.1.left/0.0.1792.1120@0.0.1792.1120" timestamp="1577628776768" />
+    <state width="1750" height="434" key="GridCell.Tab.1.right" timestamp="1577628776769">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="434" key="GridCell.Tab.1.right/0.0.1792.1120@0.0.1792.1120" timestamp="1577610098410" />
+    <state width="1750" height="434" key="GridCell.Tab.1.right/0.0.1792.1120@0.0.1792.1120" timestamp="1577628776769" />
+    <state x="699" y="278" key="RollbackChangesDialog" timestamp="1577616285717">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="699" y="278" key="RollbackChangesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1577616285717" />
     <state width="500" height="445" key="SwitcherDM" timestamp="1577592422190">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="500" height="445" key="SwitcherDM/0.0.1792.1120@0.0.1792.1120" timestamp="1577592422190" />
-    <state x="679" y="345" key="chooseDestDirectoryDialog" timestamp="1577610471196">
+    <state x="679" y="345" key="chooseDestDirectoryDialog" timestamp="1577624097229">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="679" y="345" key="chooseDestDirectoryDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1577610471196" />
-    <state x="674" y="294" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1577614986162">
+    <state x="679" y="345" key="chooseDestDirectoryDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1577624097229" />
+    <state x="674" y="294" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1577625034826">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="674" y="294" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1577614986162" />
-    <state x="477" y="290" width="837" height="540" key="find.popup" timestamp="1577612375727">
+    <state x="674" y="294" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1577625034826" />
+    <state x="477" y="290" width="837" height="540" key="find.popup" timestamp="1577624071076">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="477" y="290" width="837" height="540" key="find.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1577612375727" />
+    <state x="477" y="290" width="837" height="540" key="find.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1577624071076" />
     <state x="561" y="251" key="search.everywhere.popup" timestamp="1577592483179">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -788,7 +799,7 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/array/subarraySum.java</url>
+          <url>file://$PROJECT_DIR$/src/array/SubarraySum.java</url>
           <line>9</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
@@ -1376,6 +1387,21 @@
           <url>file://$PROJECT_DIR$/src/dp/LengthOfLIS300.java</url>
           <line>67</line>
           <option name="timeStamp" value="214" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/array/SubarraySumTest.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="215" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/array/SubarraySum.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="216" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/array/SubarraySum.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="217" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/test/math/MyPow50Test.java</url>
