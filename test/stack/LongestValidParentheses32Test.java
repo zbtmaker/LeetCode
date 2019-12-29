@@ -9,7 +9,7 @@ import org.junit.Test;
  * @author Baitao Zou
  * date 2019/10/05
  */
-public class TestLongestValidParentheses32 {
+public class LongestValidParentheses32Test {
     public static LongestValidParentheses32 parentheses32 = new LongestValidParentheses32();
 
     @Test

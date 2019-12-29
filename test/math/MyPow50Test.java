@@ -3,7 +3,7 @@ package math;
 import org.junit.Before;
 import org.junit.Test;
 
-public class TestMyPow50 {
+public class MyPow50Test {
     private MyPow50 myPow50;
 
     @Before
