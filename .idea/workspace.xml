@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成MaxProduct152-动态规划方案完成，但超时，还需优化">
-      <change afterPath="$PROJECT_DIR$/test/array/SummaryRanges228Test.java" afterDir="false" />
+    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成SummaryRanges228-时间击败100%，空间击败80.77%">
+      <change afterPath="$PROJECT_DIR$/test/string/LengthOfLastWord58Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/DP/maxProduct152.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/array/summaryRanges228.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/SummaryRanges228.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/string/lengthOfLastWord58.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/LengthOfLastWord58.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +99,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SummaryRanges228Test.test5">
+  <component name="RunManager" selected="JUnit.LengthOfLastWord58Test.test9">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -270,50 +269,16 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
     </configuration>
-    <configuration name="SummaryRanges228Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LengthOfLastWord58Test.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="array.*" />
+          <option name="PATTERN" value="string.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.SummaryRanges228Test" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SummaryRanges228Test.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="array.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.SummaryRanges228Test" />
-      <option name="METHOD_NAME" value="test2" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SummaryRanges228Test.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="array.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.SummaryRanges228Test" />
+      <option name="PACKAGE_NAME" value="string" />
+      <option name="MAIN_CLASS_NAME" value="string.LengthOfLastWord58Test" />
       <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -321,16 +286,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SummaryRanges228Test.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LengthOfLastWord58Test.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="array.*" />
+          <option name="PATTERN" value="string.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.SummaryRanges228Test" />
+      <option name="PACKAGE_NAME" value="string" />
+      <option name="MAIN_CLASS_NAME" value="string.LengthOfLastWord58Test" />
       <option name="METHOD_NAME" value="test4" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -338,17 +303,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SummaryRanges228Test.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LengthOfLastWord58Test.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="array.*" />
+          <option name="PATTERN" value="string.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.SummaryRanges228Test" />
+      <option name="PACKAGE_NAME" value="string" />
+      <option name="MAIN_CLASS_NAME" value="string.LengthOfLastWord58Test" />
       <option name="METHOD_NAME" value="test5" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LengthOfLastWord58Test.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="string.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="string" />
+      <option name="MAIN_CLASS_NAME" value="string.LengthOfLastWord58Test" />
+      <option name="METHOD_NAME" value="test6" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LengthOfLastWord58Test.test9" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="string.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="string" />
+      <option name="MAIN_CLASS_NAME" value="string.LengthOfLastWord58Test" />
+      <option name="METHOD_NAME" value="test9" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -425,19 +424,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.isPalindrome9" />
-      <item itemvalue="JUnit.SummaryRanges228Test.test1" />
-      <item itemvalue="JUnit.SummaryRanges228Test.test2" />
-      <item itemvalue="JUnit.SummaryRanges228Test.test3" />
-      <item itemvalue="JUnit.SummaryRanges228Test.test4" />
-      <item itemvalue="JUnit.SummaryRanges228Test.test5" />
+      <item itemvalue="JUnit.LengthOfLastWord58Test.test4" />
+      <item itemvalue="JUnit.LengthOfLastWord58Test.test5" />
+      <item itemvalue="JUnit.LengthOfLastWord58Test.test6" />
+      <item itemvalue="JUnit.LengthOfLastWord58Test.test3" />
+      <item itemvalue="JUnit.LengthOfLastWord58Test.test9" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SummaryRanges228Test.test5" />
-        <item itemvalue="JUnit.SummaryRanges228Test.test4" />
-        <item itemvalue="JUnit.SummaryRanges228Test.test3" />
-        <item itemvalue="JUnit.SummaryRanges228Test.test2" />
-        <item itemvalue="JUnit.SummaryRanges228Test.test1" />
+        <item itemvalue="JUnit.LengthOfLastWord58Test.test9" />
+        <item itemvalue="JUnit.LengthOfLastWord58Test.test3" />
+        <item itemvalue="JUnit.LengthOfLastWord58Test.test4" />
+        <item itemvalue="JUnit.LengthOfLastWord58Test.test5" />
+        <item itemvalue="JUnit.LengthOfLastWord58Test.test6" />
       </list>
     </recent_temporary>
   </component>
@@ -540,7 +539,7 @@
       <workItem from="1578829870285" duration="5713000" />
       <workItem from="1578925854258" duration="2106000" />
       <workItem from="1579012753726" duration="1832000" />
-      <workItem from="1579015419841" duration="7061000" />
+      <workItem from="1579015419841" duration="9622000" />
     </task>
     <task id="LOCAL-00001" summary="修改buildTree106">
       <created>1554644673454</created>
@@ -675,7 +674,21 @@
       <option name="project" value="LOCAL" />
       <updated>1579100890974</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="add:完成SummaryRanges228-">
+      <created>1579103962367</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1579103962367</updated>
+    </task>
+    <task id="LOCAL-00021" summary="add:完成SummaryRanges228-时间击败100%，空间击败80.77%">
+      <created>1579104127990</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1579104127990</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TodoView">
@@ -730,7 +743,9 @@
     <MESSAGE value="add:子数组序列之和为K" />
     <MESSAGE value="add:完成MaxProduct152-暴力解决方案，动态规划方案待优化" />
     <MESSAGE value="add:完成MaxProduct152-动态规划方案完成，但超时，还需优化" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:完成MaxProduct152-动态规划方案完成，但超时，还需优化" />
+    <MESSAGE value="add:完成SummaryRanges228-" />
+    <MESSAGE value="add:完成SummaryRanges228-时间击败100%，空间击败80.77%" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:完成SummaryRanges228-时间击败100%，空间击败80.77%" />
   </component>
   <component name="WindowStateProjectService">
     <state x="352" y="162" key="CommitChangelistDialog2" timestamp="1577633057703">
@@ -1474,6 +1489,16 @@
           <url>file://$PROJECT_DIR$/src/array/SummaryRanges228.java</url>
           <line>20</line>
           <option name="timeStamp" value="228" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/string/LengthOfLastWord58.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="231" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/string/LengthOfLastWord58Test.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="232" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/test/math/MyPow50Test.java</url>
