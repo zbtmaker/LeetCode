@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:递增的三元子序列--334">
+    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:子数组序列之和为K">
+      <change afterPath="$PROJECT_DIR$/out/test/LeetCode/dp/MaxProduct152Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/LeetCode/string/CountAndSayTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/string/CountAndSay38.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/dp/MaxProduct152Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/string/CountAndSayTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/subsetsWithDup90.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/DP/lengthOfLIS300.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/array/subarraySum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/SubarraySum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/merge56$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/merge56$Interval.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/merge56.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Array/merge56.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/subarraySum.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Array/subarraySum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/DP/IncreasingTriplet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/DP/IncreasingTriplet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/DP/maxProduct152.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/DP/maxProduct152.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/META-INF/LeetCode.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/String/reverseWords151.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/String/reverseWords151.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/LeetCode/META-INF/LeetCode.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/LeetCode/META-INF/LeetCode.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/merge56.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/Merge56.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dp/maxProduct152.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/MaxProduct152.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/string/reverseWords151.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/ReverseWords151.java" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,8 +61,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Arquillian JUnit Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -69,9 +84,9 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
   </component>
   <component name="RecentsManager">
@@ -87,72 +102,19 @@
       <recent name="Array" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SubarraySumTest.test2">
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
-      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
-      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
-      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
-      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
-      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
-      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
-      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
-      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
-      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
-      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
-      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
-      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
-      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
-      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
-      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
-      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.MaxProduct152Test.test6">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -201,6 +163,67 @@
       <properties />
       <listeners />
       <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType">
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <Java />
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType">
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <Java />
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -261,7 +284,7 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
     </configuration>
-    <configuration name="IncreasingTripletTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MaxProduct152Test.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -270,76 +293,76 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="dp" />
-      <option name="MAIN_CLASS_NAME" value="dp.IncreasingTripletTest" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LengthOfLIS300Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dp" />
-      <option name="MAIN_CLASS_NAME" value="dp.LengthOfLIS300Test" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LengthOfLIS300Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dp" />
-      <option name="MAIN_CLASS_NAME" value="dp.LengthOfLIS300Test" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SubarraySumTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="array.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.SubarraySumTest" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SubarraySumTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="array.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.SubarraySumTest" />
+      <option name="MAIN_CLASS_NAME" value="dp.MaxProduct152Test" />
       <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaxProduct152Test.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dp" />
+      <option name="MAIN_CLASS_NAME" value="dp.MaxProduct152Test" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaxProduct152Test.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dp" />
+      <option name="MAIN_CLASS_NAME" value="dp.MaxProduct152Test" />
+      <option name="METHOD_NAME" value="test4" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaxProduct152Test.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dp" />
+      <option name="MAIN_CLASS_NAME" value="dp.MaxProduct152Test" />
+      <option name="METHOD_NAME" value="test5" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaxProduct152Test.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dp" />
+      <option name="MAIN_CLASS_NAME" value="dp.MaxProduct152Test" />
+      <option name="METHOD_NAME" value="test6" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -416,33 +439,21 @@
     </configuration>
     <list>
       <item itemvalue="Application.isPalindrome9" />
-      <item itemvalue="JUnit.LengthOfLIS300Test.test1" />
-      <item itemvalue="JUnit.LengthOfLIS300Test" />
-      <item itemvalue="JUnit.IncreasingTripletTest.test1" />
-      <item itemvalue="JUnit.SubarraySumTest.test1" />
-      <item itemvalue="JUnit.SubarraySumTest.test2" />
+      <item itemvalue="JUnit.MaxProduct152Test.test2" />
+      <item itemvalue="JUnit.MaxProduct152Test.test3" />
+      <item itemvalue="JUnit.MaxProduct152Test.test4" />
+      <item itemvalue="JUnit.MaxProduct152Test.test5" />
+      <item itemvalue="JUnit.MaxProduct152Test.test6" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SubarraySumTest.test2" />
-        <item itemvalue="JUnit.SubarraySumTest.test1" />
-        <item itemvalue="JUnit.IncreasingTripletTest.test1" />
-        <item itemvalue="JUnit.LengthOfLIS300Test" />
-        <item itemvalue="JUnit.LengthOfLIS300Test.test1" />
+        <item itemvalue="JUnit.MaxProduct152Test.test6" />
+        <item itemvalue="JUnit.MaxProduct152Test.test5" />
+        <item itemvalue="JUnit.MaxProduct152Test.test4" />
+        <item itemvalue="JUnit.MaxProduct152Test.test3" />
+        <item itemvalue="JUnit.MaxProduct152Test.test2" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -535,7 +546,15 @@
       <workItem from="1565794276899" duration="648000" />
       <workItem from="1570261666210" duration="17857000" />
       <workItem from="1574605097981" duration="6889000" />
-      <workItem from="1577592383754" duration="16473000" />
+      <workItem from="1577592383754" duration="16612000" />
+      <workItem from="1577718598063" duration="987000" />
+      <workItem from="1577865522600" duration="398000" />
+      <workItem from="1578065162822" duration="846000" />
+      <workItem from="1578673554534" duration="1030000" />
+      <workItem from="1578829870285" duration="5713000" />
+      <workItem from="1578925854258" duration="2106000" />
+      <workItem from="1579012753726" duration="1832000" />
+      <workItem from="1579015419841" duration="4031000" />
     </task>
     <task id="LOCAL-00001" summary="修改buildTree106">
       <created>1554644673454</created>
@@ -649,7 +668,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577616224446</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="add:子数组序列之和为K">
+      <created>1577633057951</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1577633057951</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView">
@@ -701,45 +727,50 @@
     <MESSAGE value="add:添加LeetCode第50题,求一个数的指数运算" />
     <MESSAGE value="add:完成最长上升子序列--300" />
     <MESSAGE value="add:递增的三元子序列--334" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:递增的三元子序列--334" />
+    <MESSAGE value="add:子数组序列之和为K" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:子数组序列之和为K" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="352" y="162" key="CommitChangelistDialog2" timestamp="1577616224254">
+    <state x="352" y="162" key="CommitChangelistDialog2" timestamp="1577633057703">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="352" y="162" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1577616224254" />
-    <state width="1750" height="434" key="GridCell.Tab.0.bottom" timestamp="1577628776767">
+    <state x="352" y="162" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1577633057703" />
+    <state x="100" y="100" width="1592" height="920" key="DiffContextDialog" timestamp="1577633160469">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="434" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1577628776767" />
-    <state width="1750" height="434" key="GridCell.Tab.0.center" timestamp="1577628776765">
+    <state x="100" y="100" width="1592" height="920" key="DiffContextDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1577633160469" />
+    <state width="1750" height="434" key="GridCell.Tab.0.bottom" timestamp="1577633160449">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="434" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1577628776765" />
-    <state width="1750" height="434" key="GridCell.Tab.0.left" timestamp="1577628776764">
+    <state width="1750" height="434" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1577633160449" />
+    <state width="1750" height="434" key="GridCell.Tab.0.center" timestamp="1577633160448">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="434" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1577628776764" />
-    <state width="1750" height="434" key="GridCell.Tab.0.right" timestamp="1577628776766">
+    <state width="1750" height="434" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1577633160448" />
+    <state width="1750" height="434" key="GridCell.Tab.0.left" timestamp="1577633160447">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="434" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1577628776766" />
-    <state width="1750" height="434" key="GridCell.Tab.1.bottom" timestamp="1577628776769">
+    <state width="1750" height="434" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1577633160447" />
+    <state width="1750" height="434" key="GridCell.Tab.0.right" timestamp="1577633160448">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="434" key="GridCell.Tab.1.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1577628776769" />
-    <state width="1750" height="434" key="GridCell.Tab.1.center" timestamp="1577628776768">
+    <state width="1750" height="434" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1577633160448" />
+    <state width="1750" height="434" key="GridCell.Tab.1.bottom" timestamp="1577633160450">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="434" key="GridCell.Tab.1.center/0.0.1792.1120@0.0.1792.1120" timestamp="1577628776768" />
-    <state width="1750" height="434" key="GridCell.Tab.1.left" timestamp="1577628776768">
+    <state width="1750" height="434" key="GridCell.Tab.1.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1577633160450" />
+    <state width="1750" height="434" key="GridCell.Tab.1.center" timestamp="1577633160449">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="434" key="GridCell.Tab.1.left/0.0.1792.1120@0.0.1792.1120" timestamp="1577628776768" />
-    <state width="1750" height="434" key="GridCell.Tab.1.right" timestamp="1577628776769">
+    <state width="1750" height="434" key="GridCell.Tab.1.center/0.0.1792.1120@0.0.1792.1120" timestamp="1577633160449" />
+    <state width="1750" height="434" key="GridCell.Tab.1.left" timestamp="1577633160449">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="434" key="GridCell.Tab.1.right/0.0.1792.1120@0.0.1792.1120" timestamp="1577628776769" />
+    <state width="1750" height="434" key="GridCell.Tab.1.left/0.0.1792.1120@0.0.1792.1120" timestamp="1577633160449" />
+    <state width="1750" height="434" key="GridCell.Tab.1.right" timestamp="1577633160450">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="434" key="GridCell.Tab.1.right/0.0.1792.1120@0.0.1792.1120" timestamp="1577633160450" />
     <state x="699" y="278" key="RollbackChangesDialog" timestamp="1577616285717">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -752,6 +783,10 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="679" y="345" key="chooseDestDirectoryDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1577624097229" />
+    <state x="573" y="385" key="com.intellij.ide.util.TipDialog" timestamp="1578065164080">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="573" y="385" key="com.intellij.ide.util.TipDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1578065164080" />
     <state x="674" y="294" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1577625034826">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -1403,6 +1438,36 @@
           <line>56</line>
           <option name="timeStamp" value="217" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/string/CountAndSay38.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="219" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/string/CountAndSayTest.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="220" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/dp/MaxProduct152Test.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="222" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/dp/MaxProduct152.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="223" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/dp/MaxProduct152Test.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="225" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/dp/MaxProduct152Test.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="226" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/test/math/MyPow50Test.java</url>
           <line>14</line>
@@ -1418,84 +1483,5 @@
         <watch expression="result.get(1)" />
       </configuration>
     </watches-manager>
-  </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>LeetCode</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
