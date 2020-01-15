@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成MaxProduct152-暴力解决方案，动态规划方案待优化">
+    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成MaxProduct152-动态规划方案完成，但超时，还需优化">
+      <change afterPath="$PROJECT_DIR$/test/array/SummaryRanges228Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/LeetCode/dp/MaxProduct152Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/LeetCode/dp/MaxProduct152Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dp/MaxProduct152.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/MaxProduct152.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/dp/MaxProduct152Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/dp/MaxProduct152Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/DP/maxProduct152.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/summaryRanges228.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/SummaryRanges228.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +100,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MaxProduct152Test.test1">
+  <component name="RunManager" selected="JUnit.SummaryRanges228Test.test5">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -270,16 +270,16 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
     </configuration>
-    <configuration name="MaxProduct152Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SummaryRanges228Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dp.*" />
+          <option name="PATTERN" value="array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dp" />
-      <option name="MAIN_CLASS_NAME" value="dp.MaxProduct152Test" />
+      <option name="PACKAGE_NAME" value="array" />
+      <option name="MAIN_CLASS_NAME" value="array.SummaryRanges228Test" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -287,16 +287,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaxProduct152Test.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SummaryRanges228Test.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dp.*" />
+          <option name="PATTERN" value="array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dp" />
-      <option name="MAIN_CLASS_NAME" value="dp.MaxProduct152Test" />
+      <option name="PACKAGE_NAME" value="array" />
+      <option name="MAIN_CLASS_NAME" value="array.SummaryRanges228Test" />
       <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -304,16 +304,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaxProduct152Test.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SummaryRanges228Test.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dp.*" />
+          <option name="PATTERN" value="array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dp" />
-      <option name="MAIN_CLASS_NAME" value="dp.MaxProduct152Test" />
+      <option name="PACKAGE_NAME" value="array" />
+      <option name="MAIN_CLASS_NAME" value="array.SummaryRanges228Test" />
       <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -321,16 +321,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaxProduct152Test.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SummaryRanges228Test.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dp.*" />
+          <option name="PATTERN" value="array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dp" />
-      <option name="MAIN_CLASS_NAME" value="dp.MaxProduct152Test" />
+      <option name="PACKAGE_NAME" value="array" />
+      <option name="MAIN_CLASS_NAME" value="array.SummaryRanges228Test" />
       <option name="METHOD_NAME" value="test4" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -338,16 +338,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaxProduct152Test.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SummaryRanges228Test.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dp.*" />
+          <option name="PATTERN" value="array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dp" />
-      <option name="MAIN_CLASS_NAME" value="dp.MaxProduct152Test" />
+      <option name="PACKAGE_NAME" value="array" />
+      <option name="MAIN_CLASS_NAME" value="array.SummaryRanges228Test" />
       <option name="METHOD_NAME" value="test5" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -425,19 +425,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.isPalindrome9" />
-      <item itemvalue="JUnit.MaxProduct152Test.test2" />
-      <item itemvalue="JUnit.MaxProduct152Test.test3" />
-      <item itemvalue="JUnit.MaxProduct152Test.test4" />
-      <item itemvalue="JUnit.MaxProduct152Test.test5" />
-      <item itemvalue="JUnit.MaxProduct152Test.test1" />
+      <item itemvalue="JUnit.SummaryRanges228Test.test1" />
+      <item itemvalue="JUnit.SummaryRanges228Test.test2" />
+      <item itemvalue="JUnit.SummaryRanges228Test.test3" />
+      <item itemvalue="JUnit.SummaryRanges228Test.test4" />
+      <item itemvalue="JUnit.SummaryRanges228Test.test5" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MaxProduct152Test.test1" />
-        <item itemvalue="JUnit.MaxProduct152Test.test2" />
-        <item itemvalue="JUnit.MaxProduct152Test.test3" />
-        <item itemvalue="JUnit.MaxProduct152Test.test4" />
-        <item itemvalue="JUnit.MaxProduct152Test.test5" />
+        <item itemvalue="JUnit.SummaryRanges228Test.test5" />
+        <item itemvalue="JUnit.SummaryRanges228Test.test4" />
+        <item itemvalue="JUnit.SummaryRanges228Test.test3" />
+        <item itemvalue="JUnit.SummaryRanges228Test.test2" />
+        <item itemvalue="JUnit.SummaryRanges228Test.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -540,7 +540,7 @@
       <workItem from="1578829870285" duration="5713000" />
       <workItem from="1578925854258" duration="2106000" />
       <workItem from="1579012753726" duration="1832000" />
-      <workItem from="1579015419841" duration="4894000" />
+      <workItem from="1579015419841" duration="7061000" />
     </task>
     <task id="LOCAL-00001" summary="修改buildTree106">
       <created>1554644673454</created>
@@ -668,7 +668,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579050906094</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="add:完成MaxProduct152-动态规划方案完成，但超时，还需优化">
+      <created>1579100890974</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1579100890974</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView">
@@ -722,7 +729,8 @@
     <MESSAGE value="add:递增的三元子序列--334" />
     <MESSAGE value="add:子数组序列之和为K" />
     <MESSAGE value="add:完成MaxProduct152-暴力解决方案，动态规划方案待优化" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:完成MaxProduct152-暴力解决方案，动态规划方案待优化" />
+    <MESSAGE value="add:完成MaxProduct152-动态规划方案完成，但超时，还需优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:完成MaxProduct152-动态规划方案完成，但超时，还需优化" />
   </component>
   <component name="WindowStateProjectService">
     <state x="352" y="162" key="CommitChangelistDialog2" timestamp="1577633057703">
@@ -1093,11 +1101,6 @@
           <option name="timeStamp" value="122" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/array/summaryRanges228.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="126" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/string/addBinary67.java</url>
           <line>8</line>
           <option name="timeStamp" value="127" />
@@ -1461,6 +1464,16 @@
           <url>file://$PROJECT_DIR$/test/dp/MaxProduct152Test.java</url>
           <line>59</line>
           <option name="timeStamp" value="226" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/array/SummaryRanges228Test.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="227" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/array/SummaryRanges228.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="228" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/test/math/MyPow50Test.java</url>
