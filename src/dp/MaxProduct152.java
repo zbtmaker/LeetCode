@@ -33,23 +33,29 @@ public class MaxProduct152 {
     /**
      * 上面我们使用的暴力方式会涉及到一些重复计算，因此我们可以优化一下。我们用一个数组
      * aux来记录前面i个数的乘积，其中aux[i]=nums[0]*nums[1]*nums[i],如此以来就有
-     * 下面的关系
-     * aux[i] = aux[i-1] * nums[i]
+     * 下面的关系：aux[i] = aux[i-1] * nums[i]。此时的采用一个数组记录前面子数组的
+     * 乘积，防止第三层循环。将时间复杂度变为O(N^2)，但是空间复杂度变为O(N)。但是这种方式
+     * 还是会超时。
      *
      * @param nums
-     * @return
+     * @return 最大乘积子数组
      */
     private int maxProductByDynamicProgramming(int[] nums) {
         int[] aux = new int[nums.length + 1];
         aux[0] = 1;
         int max = nums[0];
+        int zeroIndex = 0;
         for (int i = 1; i < nums.length + 1; i++) {
-            max = Math.max(max,nums[i - 1]);
-            aux[i] = aux[i - 1] * nums[i - 1];
-            for (int j = 0; j < i; j++) {
-                int mul = 0;
-                if (aux[j] != 0) {
-                    mul = nums[i - 1] * aux[i - 1] / aux[j];
+            max = Math.max(max, nums[i - 1]);
+            if (nums[i - 1] == 0) {
+                zeroIndex =  i;
+                aux[i] = 1;
+                continue;
+            }
+            for (int j = zeroIndex; j < i; j++) {
+                int mul = nums[i - 1] * aux[i - 1] / aux[j];
+                if (j == zeroIndex) {
+                    aux[i] = mul;
                 }
                 max = Math.max(max, mul);
             }

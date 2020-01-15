@@ -1,25 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:子数组序列之和为K">
-      <change afterPath="$PROJECT_DIR$/out/test/LeetCode/dp/MaxProduct152Test.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/LeetCode/string/CountAndSayTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/string/CountAndSay38.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/dp/MaxProduct152Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/string/CountAndSayTest.java" afterDir="false" />
+    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成MaxProduct152-暴力解决方案，动态规划方案待优化">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/merge56$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/merge56$Interval.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/merge56.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Array/merge56.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/subarraySum.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Array/subarraySum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/DP/IncreasingTriplet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/DP/IncreasingTriplet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/DP/maxProduct152.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/DP/maxProduct152.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/META-INF/LeetCode.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/String/reverseWords151.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/String/reverseWords151.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/LeetCode/META-INF/LeetCode.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/LeetCode/META-INF/LeetCode.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/array/merge56.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/Merge56.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dp/maxProduct152.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/MaxProduct152.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/string/reverseWords151.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/ReverseWords151.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/LeetCode/dp/MaxProduct152Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/LeetCode/dp/MaxProduct152Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dp/MaxProduct152.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/MaxProduct152.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/dp/MaxProduct152Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/dp/MaxProduct152Test.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -114,7 +100,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MaxProduct152Test.test6">
+  <component name="RunManager" selected="JUnit.MaxProduct152Test.test1">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -284,6 +270,23 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
     </configuration>
+    <configuration name="MaxProduct152Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dp" />
+      <option name="MAIN_CLASS_NAME" value="dp.MaxProduct152Test" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MaxProduct152Test.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
@@ -346,23 +349,6 @@
       <option name="PACKAGE_NAME" value="dp" />
       <option name="MAIN_CLASS_NAME" value="dp.MaxProduct152Test" />
       <option name="METHOD_NAME" value="test5" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MaxProduct152Test.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dp" />
-      <option name="MAIN_CLASS_NAME" value="dp.MaxProduct152Test" />
-      <option name="METHOD_NAME" value="test6" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -443,15 +429,15 @@
       <item itemvalue="JUnit.MaxProduct152Test.test3" />
       <item itemvalue="JUnit.MaxProduct152Test.test4" />
       <item itemvalue="JUnit.MaxProduct152Test.test5" />
-      <item itemvalue="JUnit.MaxProduct152Test.test6" />
+      <item itemvalue="JUnit.MaxProduct152Test.test1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MaxProduct152Test.test6" />
-        <item itemvalue="JUnit.MaxProduct152Test.test5" />
-        <item itemvalue="JUnit.MaxProduct152Test.test4" />
-        <item itemvalue="JUnit.MaxProduct152Test.test3" />
+        <item itemvalue="JUnit.MaxProduct152Test.test1" />
         <item itemvalue="JUnit.MaxProduct152Test.test2" />
+        <item itemvalue="JUnit.MaxProduct152Test.test3" />
+        <item itemvalue="JUnit.MaxProduct152Test.test4" />
+        <item itemvalue="JUnit.MaxProduct152Test.test5" />
       </list>
     </recent_temporary>
   </component>
@@ -554,7 +540,7 @@
       <workItem from="1578829870285" duration="5713000" />
       <workItem from="1578925854258" duration="2106000" />
       <workItem from="1579012753726" duration="1832000" />
-      <workItem from="1579015419841" duration="4031000" />
+      <workItem from="1579015419841" duration="4894000" />
     </task>
     <task id="LOCAL-00001" summary="修改buildTree106">
       <created>1554644673454</created>
@@ -675,7 +661,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577633057951</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="add:完成MaxProduct152-暴力解决方案，动态规划方案待优化">
+      <created>1579050906094</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1579050906094</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView">
@@ -728,7 +721,8 @@
     <MESSAGE value="add:完成最长上升子序列--300" />
     <MESSAGE value="add:递增的三元子序列--334" />
     <MESSAGE value="add:子数组序列之和为K" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:子数组序列之和为K" />
+    <MESSAGE value="add:完成MaxProduct152-暴力解决方案，动态规划方案待优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:完成MaxProduct152-暴力解决方案，动态规划方案待优化" />
   </component>
   <component name="WindowStateProjectService">
     <state x="352" y="162" key="CommitChangelistDialog2" timestamp="1577633057703">
@@ -1455,7 +1449,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/dp/MaxProduct152.java</url>
-          <line>9</line>
+          <line>13</line>
           <option name="timeStamp" value="223" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

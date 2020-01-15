@@ -58,6 +58,6 @@ public class MaxProduct152Test {
     @Test
     public void test6(){
         int max = maxProduct152.maxProduct(new int[]{1,0,-1,2,3,-5,-2});
-        Assert.assertEquals(max,2);
+        Assert.assertEquals(max,60);
     }
 }
