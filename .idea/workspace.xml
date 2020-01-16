@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成LengthOfLastWord58-时间击败44.48%，空间上击败78.84%,还有优化的空间">
-      <change afterPath="$PROJECT_DIR$/src/array/LargestRectangleArea84.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/array/LargestRectangleArea84Test.java" afterDir="false" />
+    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成LargestRectangleArea84-Brute Force的方式实现的，LeetCode执行超时">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/summaryRanges228.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/String/lengthOfLastWord58.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/String/lengthOfLastWord58.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/LargestRectangleArea84.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/LargestRectangleArea84.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -541,7 +538,7 @@
       <workItem from="1578829870285" duration="5713000" />
       <workItem from="1578925854258" duration="2106000" />
       <workItem from="1579012753726" duration="1832000" />
-      <workItem from="1579015419841" duration="11734000" />
+      <workItem from="1579015419841" duration="13593000" />
     </task>
     <task id="LOCAL-00001" summary="修改buildTree106">
       <created>1554644673454</created>
@@ -697,7 +694,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579107384729</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="add:完成LargestRectangleArea84-Brute Force的方式实现的，LeetCode执行超时">
+      <created>1579186754391</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1579186754391</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TodoView">
@@ -755,7 +759,8 @@
     <MESSAGE value="add:完成SummaryRanges228-" />
     <MESSAGE value="add:完成SummaryRanges228-时间击败100%，空间击败80.77%" />
     <MESSAGE value="add:完成LengthOfLastWord58-时间击败44.48%，空间上击败78.84%,还有优化的空间" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:完成LengthOfLastWord58-时间击败44.48%，空间上击败78.84%,还有优化的空间" />
+    <MESSAGE value="add:完成LargestRectangleArea84-Brute Force的方式实现的，LeetCode执行超时" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:完成LargestRectangleArea84-Brute Force的方式实现的，LeetCode执行超时" />
   </component>
   <component name="WindowStateProjectService">
     <state x="352" y="162" key="CommitChangelistDialog2" timestamp="1577633057703">
@@ -1512,13 +1517,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/array/LargestRectangleArea84.java</url>
-          <line>15</line>
+          <line>16</line>
           <option name="timeStamp" value="233" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/array/LargestRectangleArea84.java</url>
           <line>5</line>
           <option name="timeStamp" value="234" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/array/LargestRectangleArea84.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="236" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/array/LargestRectangleArea84Test.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="237" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/test/math/MyPow50Test.java</url>
