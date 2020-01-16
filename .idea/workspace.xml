@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成SummaryRanges228-时间击败100%，空间击败80.77%">
-      <change afterPath="$PROJECT_DIR$/test/string/LengthOfLastWord58Test.java" afterDir="false" />
+    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成LengthOfLastWord58-时间击败44.48%，空间上击败78.84%,还有优化的空间">
+      <change afterPath="$PROJECT_DIR$/src/array/LargestRectangleArea84.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/array/LargestRectangleArea84Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/string/lengthOfLastWord58.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/LengthOfLastWord58.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/summaryRanges228.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/String/lengthOfLastWord58.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/String/lengthOfLastWord58.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +101,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LengthOfLastWord58Test.test9">
+  <component name="RunManager" selected="JUnit.LargestRectangleArea84Test.test4">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -269,16 +271,67 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
     </configuration>
-    <configuration name="LengthOfLastWord58Test.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LargestRectangleArea84Test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="string.*" />
+          <option name="PATTERN" value="array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="string" />
-      <option name="MAIN_CLASS_NAME" value="string.LengthOfLastWord58Test" />
+      <option name="PACKAGE_NAME" value="array" />
+      <option name="MAIN_CLASS_NAME" value="array.LargestRectangleArea84Test" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LargestRectangleArea84Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="array" />
+      <option name="MAIN_CLASS_NAME" value="array.LargestRectangleArea84Test" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LargestRectangleArea84Test.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="array" />
+      <option name="MAIN_CLASS_NAME" value="array.LargestRectangleArea84Test" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LargestRectangleArea84Test.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="array" />
+      <option name="MAIN_CLASS_NAME" value="array.LargestRectangleArea84Test" />
       <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -286,68 +339,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LengthOfLastWord58Test.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LargestRectangleArea84Test.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="string.*" />
+          <option name="PATTERN" value="array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="string" />
-      <option name="MAIN_CLASS_NAME" value="string.LengthOfLastWord58Test" />
+      <option name="PACKAGE_NAME" value="array" />
+      <option name="MAIN_CLASS_NAME" value="array.LargestRectangleArea84Test" />
       <option name="METHOD_NAME" value="test4" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LengthOfLastWord58Test.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="string.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="string" />
-      <option name="MAIN_CLASS_NAME" value="string.LengthOfLastWord58Test" />
-      <option name="METHOD_NAME" value="test5" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LengthOfLastWord58Test.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="string.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="string" />
-      <option name="MAIN_CLASS_NAME" value="string.LengthOfLastWord58Test" />
-      <option name="METHOD_NAME" value="test6" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LengthOfLastWord58Test.test9" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="string.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="string" />
-      <option name="MAIN_CLASS_NAME" value="string.LengthOfLastWord58Test" />
-      <option name="METHOD_NAME" value="test9" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -424,19 +426,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.isPalindrome9" />
-      <item itemvalue="JUnit.LengthOfLastWord58Test.test4" />
-      <item itemvalue="JUnit.LengthOfLastWord58Test.test5" />
-      <item itemvalue="JUnit.LengthOfLastWord58Test.test6" />
-      <item itemvalue="JUnit.LengthOfLastWord58Test.test3" />
-      <item itemvalue="JUnit.LengthOfLastWord58Test.test9" />
+      <item itemvalue="JUnit.LargestRectangleArea84Test.test" />
+      <item itemvalue="JUnit.LargestRectangleArea84Test.test2" />
+      <item itemvalue="JUnit.LargestRectangleArea84Test.test1" />
+      <item itemvalue="JUnit.LargestRectangleArea84Test.test3" />
+      <item itemvalue="JUnit.LargestRectangleArea84Test.test4" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LengthOfLastWord58Test.test9" />
-        <item itemvalue="JUnit.LengthOfLastWord58Test.test3" />
-        <item itemvalue="JUnit.LengthOfLastWord58Test.test4" />
-        <item itemvalue="JUnit.LengthOfLastWord58Test.test5" />
-        <item itemvalue="JUnit.LengthOfLastWord58Test.test6" />
+        <item itemvalue="JUnit.LargestRectangleArea84Test.test4" />
+        <item itemvalue="JUnit.LargestRectangleArea84Test.test3" />
+        <item itemvalue="JUnit.LargestRectangleArea84Test.test2" />
+        <item itemvalue="JUnit.LargestRectangleArea84Test.test1" />
+        <item itemvalue="JUnit.LargestRectangleArea84Test.test" />
       </list>
     </recent_temporary>
   </component>
@@ -539,7 +541,7 @@
       <workItem from="1578829870285" duration="5713000" />
       <workItem from="1578925854258" duration="2106000" />
       <workItem from="1579012753726" duration="1832000" />
-      <workItem from="1579015419841" duration="9622000" />
+      <workItem from="1579015419841" duration="11734000" />
     </task>
     <task id="LOCAL-00001" summary="修改buildTree106">
       <created>1554644673454</created>
@@ -688,7 +690,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579104127990</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="add:完成LengthOfLastWord58-时间击败44.48%，空间上击败78.84%,还有优化的空间">
+      <created>1579107384729</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1579107384729</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView">
@@ -745,7 +754,8 @@
     <MESSAGE value="add:完成MaxProduct152-动态规划方案完成，但超时，还需优化" />
     <MESSAGE value="add:完成SummaryRanges228-" />
     <MESSAGE value="add:完成SummaryRanges228-时间击败100%，空间击败80.77%" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:完成SummaryRanges228-时间击败100%，空间击败80.77%" />
+    <MESSAGE value="add:完成LengthOfLastWord58-时间击败44.48%，空间上击败78.84%,还有优化的空间" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:完成LengthOfLastWord58-时间击败44.48%，空间上击败78.84%,还有优化的空间" />
   </component>
   <component name="WindowStateProjectService">
     <state x="352" y="162" key="CommitChangelistDialog2" timestamp="1577633057703">
@@ -1499,6 +1509,16 @@
           <url>file://$PROJECT_DIR$/test/string/LengthOfLastWord58Test.java</url>
           <line>10</line>
           <option name="timeStamp" value="232" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/array/LargestRectangleArea84.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="233" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/array/LargestRectangleArea84.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="234" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/test/math/MyPow50Test.java</url>
