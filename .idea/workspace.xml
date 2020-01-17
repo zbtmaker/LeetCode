@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成LargestRectangleArea84-Brute Force的方式实现的，LeetCode执行超时">
+    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成LargestRectangleArea84-Dynamic Programming的方式实现的，时间复杂度O(N^2),空间复杂度O(1)">
+      <change afterPath="$PROJECT_DIR$/out/production/LeetCode/Tree/ZigzagLevelOrder103$TreeNode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/LeetCode/Tree/ZigzagLevelOrder103.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/LeetCode/tree/ZigzagLevelOrder103Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tree/ZigzagLevelOrder103.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/tree/ZigzagLevelOrder103Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/array/LargestRectangleArea84.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/LargestRectangleArea84.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/LargestRectangleArea84.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Array/LargestRectangleArea84.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/DP/maximalRectangle85$Rectangular.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +104,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LargestRectangleArea84Test.test4">
+  <component name="RunManager" selected="JUnit.ZigzagLevelOrder103Test.test5">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -268,33 +274,16 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
     </configuration>
-    <configuration name="LargestRectangleArea84Test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ZigzagLevelOrder103Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="array.*" />
+          <option name="PATTERN" value="tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.LargestRectangleArea84Test" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LargestRectangleArea84Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="array.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.LargestRectangleArea84Test" />
+      <option name="PACKAGE_NAME" value="tree" />
+      <option name="MAIN_CLASS_NAME" value="tree.ZigzagLevelOrder103Test" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -302,16 +291,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LargestRectangleArea84Test.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ZigzagLevelOrder103Test.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="array.*" />
+          <option name="PATTERN" value="tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.LargestRectangleArea84Test" />
+      <option name="PACKAGE_NAME" value="tree" />
+      <option name="MAIN_CLASS_NAME" value="tree.ZigzagLevelOrder103Test" />
       <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -319,16 +308,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LargestRectangleArea84Test.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ZigzagLevelOrder103Test.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="array.*" />
+          <option name="PATTERN" value="tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.LargestRectangleArea84Test" />
+      <option name="PACKAGE_NAME" value="tree" />
+      <option name="MAIN_CLASS_NAME" value="tree.ZigzagLevelOrder103Test" />
       <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -336,17 +325,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LargestRectangleArea84Test.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ZigzagLevelOrder103Test.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="array.*" />
+          <option name="PATTERN" value="tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.LargestRectangleArea84Test" />
+      <option name="PACKAGE_NAME" value="tree" />
+      <option name="MAIN_CLASS_NAME" value="tree.ZigzagLevelOrder103Test" />
       <option name="METHOD_NAME" value="test4" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZigzagLevelOrder103Test.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tree" />
+      <option name="MAIN_CLASS_NAME" value="tree.ZigzagLevelOrder103Test" />
+      <option name="METHOD_NAME" value="test5" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -423,19 +429,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.isPalindrome9" />
-      <item itemvalue="JUnit.LargestRectangleArea84Test.test" />
-      <item itemvalue="JUnit.LargestRectangleArea84Test.test2" />
-      <item itemvalue="JUnit.LargestRectangleArea84Test.test1" />
-      <item itemvalue="JUnit.LargestRectangleArea84Test.test3" />
-      <item itemvalue="JUnit.LargestRectangleArea84Test.test4" />
+      <item itemvalue="JUnit.ZigzagLevelOrder103Test.test1" />
+      <item itemvalue="JUnit.ZigzagLevelOrder103Test.test2" />
+      <item itemvalue="JUnit.ZigzagLevelOrder103Test.test3" />
+      <item itemvalue="JUnit.ZigzagLevelOrder103Test.test4" />
+      <item itemvalue="JUnit.ZigzagLevelOrder103Test.test5" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LargestRectangleArea84Test.test4" />
-        <item itemvalue="JUnit.LargestRectangleArea84Test.test3" />
-        <item itemvalue="JUnit.LargestRectangleArea84Test.test2" />
-        <item itemvalue="JUnit.LargestRectangleArea84Test.test1" />
-        <item itemvalue="JUnit.LargestRectangleArea84Test.test" />
+        <item itemvalue="JUnit.ZigzagLevelOrder103Test.test5" />
+        <item itemvalue="JUnit.ZigzagLevelOrder103Test.test4" />
+        <item itemvalue="JUnit.ZigzagLevelOrder103Test.test3" />
+        <item itemvalue="JUnit.ZigzagLevelOrder103Test.test2" />
+        <item itemvalue="JUnit.ZigzagLevelOrder103Test.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -538,7 +544,7 @@
       <workItem from="1578829870285" duration="5713000" />
       <workItem from="1578925854258" duration="2106000" />
       <workItem from="1579012753726" duration="1832000" />
-      <workItem from="1579015419841" duration="13593000" />
+      <workItem from="1579015419841" duration="19010000" />
     </task>
     <task id="LOCAL-00001" summary="修改buildTree106">
       <created>1554644673454</created>
@@ -701,7 +707,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579186754391</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="add:完成LargestRectangleArea84-Dynamic Programming的方式实现的，时间复杂度O(N^2),空间复杂度O(1)">
+      <created>1579189321815</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1579189321815</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TodoView">
@@ -760,7 +773,8 @@
     <MESSAGE value="add:完成SummaryRanges228-时间击败100%，空间击败80.77%" />
     <MESSAGE value="add:完成LengthOfLastWord58-时间击败44.48%，空间上击败78.84%,还有优化的空间" />
     <MESSAGE value="add:完成LargestRectangleArea84-Brute Force的方式实现的，LeetCode执行超时" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:完成LargestRectangleArea84-Brute Force的方式实现的，LeetCode执行超时" />
+    <MESSAGE value="add:完成LargestRectangleArea84-Dynamic Programming的方式实现的，时间复杂度O(N^2),空间复杂度O(1)" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:完成LargestRectangleArea84-Dynamic Programming的方式实现的，时间复杂度O(N^2),空间复杂度O(1)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="352" y="162" key="CommitChangelistDialog2" timestamp="1577633057703">
@@ -1357,7 +1371,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/dp/maximalRectangle85.java</url>
-          <line>56</line>
+          <line>8</line>
           <option name="timeStamp" value="192" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1534,6 +1548,11 @@
           <url>file://$PROJECT_DIR$/test/array/LargestRectangleArea84Test.java</url>
           <line>13</line>
           <option name="timeStamp" value="237" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/tree/ZigzagLevelOrder103Test.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="238" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/test/math/MyPow50Test.java</url>
