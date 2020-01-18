@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成ZigzagLevelOrder103-使用栈的方式实现，时间复杂度为O(N),空间复杂度为O(N)">
-      <change afterPath="$PROJECT_DIR$/src/tree/Flatten114.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/tree/Flatten114Test.java" afterDir="false" />
+    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成Flatten114-使用栈的方式实现，相当于前序遍历。时间复杂度为O(N),空间复杂度为O(N)">
+      <change afterPath="$PROJECT_DIR$/src/tree/TreeCommonUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/tree/TreeCommonUtilsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Tree/ZigzagLevelOrder103.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Tree/ZigzagLevelOrder103.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/Flatten114.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/Flatten114.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,10 +70,10 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -100,7 +100,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Flatten114Test.test3">
+  <component name="RunManager" selected="JUnit.TreeCommonUtilsTest.testPostOrderTraverseByStack">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -321,7 +321,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ZigzagLevelOrder103Test.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TreeCommonUtilsTest.testPostOrderTraverseByStack" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -330,8 +330,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tree" />
-      <option name="MAIN_CLASS_NAME" value="tree.ZigzagLevelOrder103Test" />
-      <option name="METHOD_NAME" value="test4" />
+      <option name="MAIN_CLASS_NAME" value="tree.TreeCommonUtilsTest" />
+      <option name="METHOD_NAME" value="testPostOrderTraverseByStack" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -425,19 +425,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.isPalindrome9" />
-      <item itemvalue="JUnit.ZigzagLevelOrder103Test.test4" />
       <item itemvalue="JUnit.ZigzagLevelOrder103Test.test5" />
       <item itemvalue="JUnit.Flatten114Test.test1" />
       <item itemvalue="JUnit.Flatten114Test.test2" />
       <item itemvalue="JUnit.Flatten114Test.test3" />
+      <item itemvalue="JUnit.TreeCommonUtilsTest.testPostOrderTraverseByStack" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TreeCommonUtilsTest.testPostOrderTraverseByStack" />
         <item itemvalue="JUnit.Flatten114Test.test3" />
         <item itemvalue="JUnit.Flatten114Test.test2" />
         <item itemvalue="JUnit.Flatten114Test.test1" />
         <item itemvalue="JUnit.ZigzagLevelOrder103Test.test5" />
-        <item itemvalue="JUnit.ZigzagLevelOrder103Test.test4" />
       </list>
     </recent_temporary>
   </component>
@@ -541,7 +541,7 @@
       <workItem from="1578925854258" duration="2106000" />
       <workItem from="1579012753726" duration="1832000" />
       <workItem from="1579015419841" duration="20728000" />
-      <workItem from="1579339475296" duration="2952000" />
+      <workItem from="1579339475296" duration="12819000" />
     </task>
     <task id="LOCAL-00001" summary="修改buildTree106">
       <created>1554644673454</created>
@@ -718,7 +718,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579276095695</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="add:完成Flatten114-使用栈的方式实现，相当于前序遍历。时间复杂度为O(N),空间复杂度为O(N)">
+      <created>1579343488731</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1579343488731</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TodoView">
@@ -779,7 +786,8 @@
     <MESSAGE value="add:完成LargestRectangleArea84-Brute Force的方式实现的，LeetCode执行超时" />
     <MESSAGE value="add:完成LargestRectangleArea84-Dynamic Programming的方式实现的，时间复杂度O(N^2),空间复杂度O(1)" />
     <MESSAGE value="add:完成ZigzagLevelOrder103-使用栈的方式实现，时间复杂度为O(N),空间复杂度为O(N)" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:完成ZigzagLevelOrder103-使用栈的方式实现，时间复杂度为O(N),空间复杂度为O(N)" />
+    <MESSAGE value="add:完成Flatten114-使用栈的方式实现，相当于前序遍历。时间复杂度为O(N),空间复杂度为O(N)" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:完成Flatten114-使用栈的方式实现，相当于前序遍历。时间复杂度为O(N),空间复杂度为O(N)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="352" y="162" key="CommitChangelistDialog2" timestamp="1577633057703">
@@ -1568,6 +1576,11 @@
           <url>file://$PROJECT_DIR$/test/tree/Flatten114Test.java</url>
           <line>35</line>
           <option name="timeStamp" value="243" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/tree/TreeCommonUtilsTest.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="245" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/test/math/MyPow50Test.java</url>
