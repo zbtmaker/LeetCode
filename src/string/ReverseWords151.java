@@ -5,26 +5,33 @@ package string;
  */
 public class ReverseWords151 {
     public String reverseWords(String s) {
+        char[] chs = s.toCharArray();
+        chs = reverseString(chs, 0, chs.length - 1);
+        int start = 0;
+        while(start < chs.length){
+            while(chs[start] == ' '){
+
+            }
+            start ++;
+        }
 
         return null;
     }
 
-    private static char[] reverseString(String s) {
-        int i = 0;
-        int j = s.length() - 1;
-        char[] chs = s.toCharArray();
+    /**
+     * @param chs 字符数组
+     * @param i   起始位置
+     * @param j   结束位置
+     * @return 翻转后的数组
+     */
+    private static char[] reverseString(char[] chs, int i, int j) {
         while (i < j) {
-            char tmp = s.charAt(i);
+            char tmp = chs[i];
             chs[i] = chs[j];
             chs[j] = tmp;
-            i ++;
-            j --;
+            i++;
+            j--;
         }
         return chs;
-    }
-    public static void main(String[] args){
-        String s = "1234";
-        char[] chs = reverseString(s);
-        System.out.println(chs);
     }
 }
