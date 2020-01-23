@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成TreeCommonUtils二叉树工具类">
-      <change afterPath="$PROJECT_DIR$/src/array/SumRange303.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/array/SumRange303Test.java" afterDir="false" />
+    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成SumRange303-时间复杂度为O(M+N),空间复杂度为O(N)">
+      <change afterPath="$PROJECT_DIR$/test/array/CanPlaceFlowers605Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/array/CheckPossibility665Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/array/FindUnsortedSubarray581Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/string/ReverseWords151.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/ReverseWords151.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/canPlaceFlowers605.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/CanPlaceFlowers605.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/checkPossibility665.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/CheckPossibility665.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/findUnsortedSubarray581.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/FindUnsortedSubarray581.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/diameterOfBinaryTree543.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/DiameterOfBinaryTree543.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +104,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SumRange303Test.test3">
+  <component name="RunManager" selected="JUnit.CanPlaceFlowers605Test.test7">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -270,16 +274,16 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
     </configuration>
-    <configuration name="Flatten114Test.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CanPlaceFlowers605Test.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tree.*" />
+          <option name="PATTERN" value="array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tree" />
-      <option name="MAIN_CLASS_NAME" value="tree.Flatten114Test" />
+      <option name="PACKAGE_NAME" value="array" />
+      <option name="MAIN_CLASS_NAME" value="array.CanPlaceFlowers605Test" />
       <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -287,7 +291,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SumRange303Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CanPlaceFlowers605Test.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -296,15 +300,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.SumRange303Test" />
-      <option name="METHOD_NAME" value="test1" />
+      <option name="MAIN_CLASS_NAME" value="array.CanPlaceFlowers605Test" />
+      <option name="METHOD_NAME" value="test4" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SumRange303Test.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CanPlaceFlowers605Test.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -313,15 +317,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.SumRange303Test" />
-      <option name="METHOD_NAME" value="test2" />
+      <option name="MAIN_CLASS_NAME" value="array.CanPlaceFlowers605Test" />
+      <option name="METHOD_NAME" value="test5" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SumRange303Test.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CanPlaceFlowers605Test.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -330,25 +334,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.SumRange303Test" />
-      <option name="METHOD_NAME" value="test3" />
+      <option name="MAIN_CLASS_NAME" value="array.CanPlaceFlowers605Test" />
+      <option name="METHOD_NAME" value="test6" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TreeCommonUtilsTest.testPostOrderTraverseByStack" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CanPlaceFlowers605Test.test7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tree.*" />
+          <option name="PATTERN" value="array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tree" />
-      <option name="MAIN_CLASS_NAME" value="tree.TreeCommonUtilsTest" />
-      <option name="METHOD_NAME" value="testPostOrderTraverseByStack" />
+      <option name="PACKAGE_NAME" value="array" />
+      <option name="MAIN_CLASS_NAME" value="array.CanPlaceFlowers605Test" />
+      <option name="METHOD_NAME" value="test7" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -425,19 +429,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.isPalindrome9" />
-      <item itemvalue="JUnit.Flatten114Test.test3" />
-      <item itemvalue="JUnit.TreeCommonUtilsTest.testPostOrderTraverseByStack" />
-      <item itemvalue="JUnit.SumRange303Test.test1" />
-      <item itemvalue="JUnit.SumRange303Test.test2" />
-      <item itemvalue="JUnit.SumRange303Test.test3" />
+      <item itemvalue="JUnit.CanPlaceFlowers605Test.test3" />
+      <item itemvalue="JUnit.CanPlaceFlowers605Test.test4" />
+      <item itemvalue="JUnit.CanPlaceFlowers605Test.test5" />
+      <item itemvalue="JUnit.CanPlaceFlowers605Test.test6" />
+      <item itemvalue="JUnit.CanPlaceFlowers605Test.test7" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SumRange303Test.test3" />
-        <item itemvalue="JUnit.SumRange303Test.test2" />
-        <item itemvalue="JUnit.SumRange303Test.test1" />
-        <item itemvalue="JUnit.TreeCommonUtilsTest.testPostOrderTraverseByStack" />
-        <item itemvalue="JUnit.Flatten114Test.test3" />
+        <item itemvalue="JUnit.CanPlaceFlowers605Test.test7" />
+        <item itemvalue="JUnit.CanPlaceFlowers605Test.test6" />
+        <item itemvalue="JUnit.CanPlaceFlowers605Test.test5" />
+        <item itemvalue="JUnit.CanPlaceFlowers605Test.test4" />
+        <item itemvalue="JUnit.CanPlaceFlowers605Test.test3" />
       </list>
     </recent_temporary>
   </component>
@@ -542,7 +546,8 @@
       <workItem from="1579012753726" duration="1832000" />
       <workItem from="1579015419841" duration="20728000" />
       <workItem from="1579339475296" duration="13848000" />
-      <workItem from="1579427789566" duration="1834000" />
+      <workItem from="1579427789566" duration="4871000" />
+      <workItem from="1579772504605" duration="2449000" />
     </task>
     <task id="LOCAL-00001" summary="修改buildTree106">
       <created>1554644673454</created>
@@ -740,7 +745,21 @@
       <option name="project" value="LOCAL" />
       <updated>1579357475168</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="add:完成SumRange303-时间复杂度为O(M+N)">
+      <created>1579429709452</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1579429709452</updated>
+    </task>
+    <task id="LOCAL-00030" summary="add:完成SumRange303-时间复杂度为O(M+N),空间复杂度为O(N)">
+      <created>1579429762633</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1579429762633</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TodoView">
@@ -803,7 +822,9 @@
     <MESSAGE value="add:完成ZigzagLevelOrder103-使用栈的方式实现，时间复杂度为O(N),空间复杂度为O(N)" />
     <MESSAGE value="add:完成Flatten114-使用栈的方式实现，相当于前序遍历。时间复杂度为O(N),空间复杂度为O(N)" />
     <MESSAGE value="add:完成TreeCommonUtils二叉树工具类" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:完成TreeCommonUtils二叉树工具类" />
+    <MESSAGE value="add:完成SumRange303-时间复杂度为O(M+N)" />
+    <MESSAGE value="add:完成SumRange303-时间复杂度为O(M+N),空间复杂度为O(N)" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:完成SumRange303-时间复杂度为O(M+N),空间复杂度为O(N)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="352" y="162" key="CommitChangelistDialog2" timestamp="1577633057703">
@@ -1119,7 +1140,7 @@
           <option name="timeStamp" value="94" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/tree/diameterOfBinaryTree543.java</url>
+          <url>file://$PROJECT_DIR$/src/tree/DiameterOfBinaryTree543.java</url>
           <line>38</line>
           <option name="timeStamp" value="96" />
         </line-breakpoint>
@@ -1154,7 +1175,7 @@
           <option name="timeStamp" value="106" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/array/checkPossibility665.java</url>
+          <url>file://$PROJECT_DIR$/src/array/CheckPossibility665.java</url>
           <line>8</line>
           <option name="timeStamp" value="115" />
         </line-breakpoint>
@@ -1607,6 +1628,26 @@
           <url>file://$PROJECT_DIR$/src/array/SumRange303.java</url>
           <line>32</line>
           <option name="timeStamp" value="253" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/array/CanPlaceFlowers605.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="254" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/array/CanPlaceFlowers605Test.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="255" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/array/CanPlaceFlowers605Test.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="256" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/array/CanPlaceFlowers605Test.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="257" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/test/math/MyPow50Test.java</url>
