@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成Merge56-时间复杂度O(N^2+2*N),空间复杂度为O(1).时间复杂度">
-      <change afterPath="$PROJECT_DIR$/src/stack/MyQueue232.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/array/MaxSubarraySumCircular918Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/array/Merge56Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/stack/MyQueue232Test.java" afterDir="false" />
+    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成MyQueue232-时间复杂度O(1),空间复杂度为O(N)">
+      <change afterPath="$PROJECT_DIR$/out/production/LeetCode/math/IsHappy202.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/LeetCode/math/IsHappy202Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/math/IsHappy202.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/math/IsHappy202Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/SumRange303.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Array/SumRange303.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/canPlaceFlowers605.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Array/canPlaceFlowers605.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/checkPossibility665.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Array/checkPossibility665.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/findUnsortedSubarray581.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Array/findUnsortedSubarray581.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/maxSubarraySumCircular918.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Array/maxSubarraySumCircular918.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/maximumProduct628.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Array/maximumProduct628.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/merge56.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Array/merge56.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Tree/diameterOfBinaryTree543$TreeNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Tree/diameterOfBinaryTree543.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Tree/diameterOfBinaryTree543.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/array/Merge56.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/Merge56.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/array/maxSubarraySumCircular918.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/MaxSubarraySumCircular918.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/maximumProduct628.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/maximumProduct628.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +104,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Merge56Test.test4">
+  <component name="RunManager" selected="JUnit.IsHappy202Test.test3">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -281,16 +274,16 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
     </configuration>
-    <configuration name="Merge56Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IsHappy202Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="array.*" />
+          <option name="PATTERN" value="math.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.Merge56Test" />
+      <option name="PACKAGE_NAME" value="math" />
+      <option name="MAIN_CLASS_NAME" value="math.IsHappy202Test" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -298,16 +291,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Merge56Test.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IsHappy202Test.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="array.*" />
+          <option name="PATTERN" value="math.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.Merge56Test" />
+      <option name="PACKAGE_NAME" value="math" />
+      <option name="MAIN_CLASS_NAME" value="math.IsHappy202Test" />
       <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -315,16 +308,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Merge56Test.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IsHappy202Test.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="array.*" />
+          <option name="PATTERN" value="math.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.Merge56Test" />
+      <option name="PACKAGE_NAME" value="math" />
+      <option name="MAIN_CLASS_NAME" value="math.IsHappy202Test" />
       <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -436,19 +429,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.isPalindrome9" />
-      <item itemvalue="JUnit.Merge56Test.test1" />
-      <item itemvalue="JUnit.Merge56Test.test2" />
-      <item itemvalue="JUnit.Merge56Test.test3" />
       <item itemvalue="JUnit.MyQueue232Test.test1" />
       <item itemvalue="JUnit.Merge56Test.test4" />
+      <item itemvalue="JUnit.IsHappy202Test.test1" />
+      <item itemvalue="JUnit.IsHappy202Test.test2" />
+      <item itemvalue="JUnit.IsHappy202Test.test3" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.IsHappy202Test.test3" />
+        <item itemvalue="JUnit.IsHappy202Test.test2" />
+        <item itemvalue="JUnit.IsHappy202Test.test1" />
         <item itemvalue="JUnit.Merge56Test.test4" />
         <item itemvalue="JUnit.MyQueue232Test.test1" />
-        <item itemvalue="JUnit.Merge56Test.test3" />
-        <item itemvalue="JUnit.Merge56Test.test2" />
-        <item itemvalue="JUnit.Merge56Test.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -554,7 +547,8 @@
       <workItem from="1579015419841" duration="20728000" />
       <workItem from="1579339475296" duration="13848000" />
       <workItem from="1579427789566" duration="4871000" />
-      <workItem from="1579772504605" duration="11703000" />
+      <workItem from="1579772504605" duration="12256000" />
+      <workItem from="1579930012505" duration="3298000" />
     </task>
     <task id="LOCAL-00001" summary="修改buildTree106">
       <created>1554644673454</created>
@@ -773,7 +767,21 @@
       <option name="project" value="LOCAL" />
       <updated>1579779107080</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="add:完成Merge56-时间复杂度O(N^2+2*N),空间复杂度为O(1).时间复杂度有待改进">
+      <created>1579869824910</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1579869824910</updated>
+    </task>
+    <task id="LOCAL-00033" summary="add:完成MyQueue232-时间复杂度O(1),空间复杂度为O(N)">
+      <created>1579869872295</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1579869872295</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TodoView">
@@ -814,8 +822,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="修改buildTree106" />
-    <MESSAGE value="add vcs.xml" />
     <MESSAGE value="add workspace.xml" />
     <MESSAGE value="edit workspace.xml" />
     <MESSAGE value="add findKthLargest215" />
@@ -839,7 +845,9 @@
     <MESSAGE value="add:完成SumRange303-时间复杂度为O(M+N)" />
     <MESSAGE value="add:完成SumRange303-时间复杂度为O(M+N),空间复杂度为O(N)" />
     <MESSAGE value="add:完成CanPlaceFlowers605-时间复杂度O(N),空间复杂度为O(1)" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:完成CanPlaceFlowers605-时间复杂度O(N),空间复杂度为O(1)" />
+    <MESSAGE value="add:完成Merge56-时间复杂度O(N^2+2*N),空间复杂度为O(1).时间复杂度有待改进" />
+    <MESSAGE value="add:完成MyQueue232-时间复杂度O(1),空间复杂度为O(N)" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:完成MyQueue232-时间复杂度O(1),空间复杂度为O(N)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="352" y="162" key="CommitChangelistDialog2" timestamp="1577633057703">
@@ -1686,8 +1694,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/array/Merge56.java</url>
-          <line>18</line>
+          <line>21</line>
           <option name="timeStamp" value="264" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/math/IsHappy202Test.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="266" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/math/IsHappy202.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="268" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/test/math/MyPow50Test.java</url>
