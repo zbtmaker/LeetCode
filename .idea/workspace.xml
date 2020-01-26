@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成BSTIterator173-中序遍历采用非递归的方式">
-      <change afterPath="$PROJECT_DIR$/out/production/LeetCode/Tree/BSTIterator173.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/LeetCode/tree/BSTIterator173Test.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/BSTIterator173.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/tree/BSTIterator173Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Tree/TreeCommonUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Tree/TreeCommonUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/stack/Calculate227.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/stack/Calculate227.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/LeetCode/tree/TreeCommonUtilsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/LeetCode/tree/TreeCommonUtilsTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stack/Calculate227.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stack/Calculate227.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/TreeCommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/TreeCommonUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/tree/TreeCommonUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/tree/TreeCommonUtilsTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成BSTIterator173-中序遍历采用非递归、递归的方式实现" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -551,7 +539,7 @@
       <workItem from="1579339475296" duration="13848000" />
       <workItem from="1579427789566" duration="4871000" />
       <workItem from="1579772504605" duration="12256000" />
-      <workItem from="1579930012505" duration="21005000" />
+      <workItem from="1579930012505" duration="21374000" />
     </task>
     <task id="LOCAL-00001" summary="修改buildTree106">
       <created>1554644673454</created>
@@ -798,7 +786,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580025798272</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="add:完成BSTIterator173-中序遍历采用非递归、递归的方式实现">
+      <created>1580046302213</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1580046302213</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TodoView">
@@ -839,7 +834,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="add findKthLargest215" />
     <MESSAGE value="edit findKthLargest215" />
     <MESSAGE value="add caculate227 and hIndex274" />
     <MESSAGE value="add rangeBitwiseAnd201" />
@@ -864,7 +858,8 @@
     <MESSAGE value="add:完成MyQueue232-时间复杂度O(1),空间复杂度为O(N)" />
     <MESSAGE value="add:完成IsHappy202-运行时间过长，还有待优化的空间" />
     <MESSAGE value="add:完成Calculate227-运行时间过长，还有待优化的空间" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:完成Calculate227-运行时间过长，还有待优化的空间" />
+    <MESSAGE value="add:完成BSTIterator173-中序遍历采用非递归、递归的方式实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:完成BSTIterator173-中序遍历采用非递归、递归的方式实现" />
   </component>
   <component name="WindowStateProjectService">
     <state x="352" y="162" key="CommitChangelistDialog2" timestamp="1577633057703">
