@@ -115,19 +115,15 @@ public class TreeCommonUtils {
         }
         List<Integer> valList = new LinkedList<>();
         Stack<TreeNode> stack = new Stack<>();
-        TreeNode node = root;
-        stack.push(root);
-        while (!stack.isEmpty()) {
-            if (node.left != null) {
-                stack.push(node.left);
-                node = node.left;
+        TreeNode curNode = root;
+        while (!stack.isEmpty() || curNode != null) {
+            if (curNode != null) {
+                stack.push(curNode);
+                curNode = curNode.left;
             } else {
-                node = stack.pop();
-                valList.add(node.val);
-                if (node.right != null) {
-                    stack.push(node.right);
-                    node = node.right;
-                }
+                curNode = stack.pop();
+                valList.add(curNode.val);
+                curNode = curNode.right;
             }
         }
 

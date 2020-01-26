@@ -16,7 +16,7 @@ public class Calculate227 {
      */
     public int calculate(String s) {
         String str = replaceBlank(s);
-        if (str == null || str.length() == 0) {
+        if (str.length() == 0) {
             return 0;
         }
         int len = str.length();
@@ -29,7 +29,7 @@ public class Calculate227 {
                 k++;
             }
             String subString = str.substring(i, k);
-            int curNum = Integer.valueOf(subString);
+            int curNum = Integer.parseInt(subString);
             if (!strStack.isEmpty()) {
                 char ch = strStack.peek();
                 if (ch == '*') {
