@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成BSTIterator173-中序遍历采用非递归、递归的方式实现" />
+    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:InorderTraversal94-中序遍历采用非递归方式实现">
+      <change afterPath="$PROJECT_DIR$/src/stack/LRUCache146.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/stack/LRUCache146Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/string/ReverseVowels345Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/String/reverseString344.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/String/reverseString344.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/string/reverseString344.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/reverseString344.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/string/reverseVowels345.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/ReverseVowels345.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +103,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BSTIterator173Test.test4">
+  <component name="RunManager" selected="JUnit.ReverseVowels345Test.test7">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -265,50 +273,16 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
     </configuration>
-    <configuration name="BSTIterator173Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReverseVowels345Test.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tree.*" />
+          <option name="PATTERN" value="string.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tree" />
-      <option name="MAIN_CLASS_NAME" value="tree.BSTIterator173Test" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BSTIterator173Test.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tree" />
-      <option name="MAIN_CLASS_NAME" value="tree.BSTIterator173Test" />
-      <option name="METHOD_NAME" value="test2" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BSTIterator173Test.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tree" />
-      <option name="MAIN_CLASS_NAME" value="tree.BSTIterator173Test" />
+      <option name="PACKAGE_NAME" value="string" />
+      <option name="MAIN_CLASS_NAME" value="string.ReverseVowels345Test" />
       <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -316,16 +290,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BSTIterator173Test.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReverseVowels345Test.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tree.*" />
+          <option name="PATTERN" value="string.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tree" />
-      <option name="MAIN_CLASS_NAME" value="tree.BSTIterator173Test" />
+      <option name="PACKAGE_NAME" value="string" />
+      <option name="MAIN_CLASS_NAME" value="string.ReverseVowels345Test" />
       <option name="METHOD_NAME" value="test4" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -333,17 +307,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TreeCommonUtilsTest.testInOrderTraverseByStackOutList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReverseVowels345Test.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tree.*" />
+          <option name="PATTERN" value="string.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tree" />
-      <option name="MAIN_CLASS_NAME" value="tree.TreeCommonUtilsTest" />
-      <option name="METHOD_NAME" value="testInOrderTraverseByStackOutList" />
+      <option name="PACKAGE_NAME" value="string" />
+      <option name="MAIN_CLASS_NAME" value="string.ReverseVowels345Test" />
+      <option name="METHOD_NAME" value="test5" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReverseVowels345Test.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="string.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="string" />
+      <option name="MAIN_CLASS_NAME" value="string.ReverseVowels345Test" />
+      <option name="METHOD_NAME" value="test6" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReverseVowels345Test.test7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="string.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="string" />
+      <option name="MAIN_CLASS_NAME" value="string.ReverseVowels345Test" />
+      <option name="METHOD_NAME" value="test7" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -420,19 +428,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.isPalindrome9" />
-      <item itemvalue="JUnit.TreeCommonUtilsTest.testInOrderTraverseByStackOutList" />
-      <item itemvalue="JUnit.BSTIterator173Test.test4" />
-      <item itemvalue="JUnit.BSTIterator173Test.test1" />
-      <item itemvalue="JUnit.BSTIterator173Test.test2" />
-      <item itemvalue="JUnit.BSTIterator173Test.test3" />
+      <item itemvalue="JUnit.ReverseVowels345Test.test3" />
+      <item itemvalue="JUnit.ReverseVowels345Test.test4" />
+      <item itemvalue="JUnit.ReverseVowels345Test.test5" />
+      <item itemvalue="JUnit.ReverseVowels345Test.test6" />
+      <item itemvalue="JUnit.ReverseVowels345Test.test7" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BSTIterator173Test.test4" />
-        <item itemvalue="JUnit.BSTIterator173Test.test3" />
-        <item itemvalue="JUnit.BSTIterator173Test.test2" />
-        <item itemvalue="JUnit.BSTIterator173Test.test1" />
-        <item itemvalue="JUnit.TreeCommonUtilsTest.testInOrderTraverseByStackOutList" />
+        <item itemvalue="JUnit.ReverseVowels345Test.test7" />
+        <item itemvalue="JUnit.ReverseVowels345Test.test6" />
+        <item itemvalue="JUnit.ReverseVowels345Test.test5" />
+        <item itemvalue="JUnit.ReverseVowels345Test.test4" />
+        <item itemvalue="JUnit.ReverseVowels345Test.test3" />
       </list>
     </recent_temporary>
   </component>
@@ -539,7 +547,7 @@
       <workItem from="1579339475296" duration="13848000" />
       <workItem from="1579427789566" duration="4871000" />
       <workItem from="1579772504605" duration="12256000" />
-      <workItem from="1579930012505" duration="21374000" />
+      <workItem from="1579930012505" duration="27306000" />
     </task>
     <task id="LOCAL-00001" summary="修改buildTree106">
       <created>1554644673454</created>
@@ -793,7 +801,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580046302213</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="add:InorderTraversal94-中序遍历采用非递归方式实现">
+      <created>1580046862101</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1580046862101</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TodoView">
@@ -834,7 +849,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="edit findKthLargest215" />
     <MESSAGE value="add caculate227 and hIndex274" />
     <MESSAGE value="add rangeBitwiseAnd201" />
     <MESSAGE value="add:添加LeetCode第50题,求一个数的指数运算" />
@@ -859,7 +873,8 @@
     <MESSAGE value="add:完成IsHappy202-运行时间过长，还有待优化的空间" />
     <MESSAGE value="add:完成Calculate227-运行时间过长，还有待优化的空间" />
     <MESSAGE value="add:完成BSTIterator173-中序遍历采用非递归、递归的方式实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:完成BSTIterator173-中序遍历采用非递归、递归的方式实现" />
+    <MESSAGE value="add:InorderTraversal94-中序遍历采用非递归方式实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:InorderTraversal94-中序遍历采用非递归方式实现" />
   </component>
   <component name="WindowStateProjectService">
     <state x="352" y="162" key="CommitChangelistDialog2" timestamp="1577633057703">
@@ -1768,6 +1783,21 @@
           <url>file://$PROJECT_DIR$/src/tree/BSTIterator173.java</url>
           <line>23</line>
           <option name="timeStamp" value="288" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/string/ReverseVowels345.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="290" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/string/ReverseVowels345Test.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="291" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/string/ReverseVowels345Test.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="292" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/test/math/MyPow50Test.java</url>

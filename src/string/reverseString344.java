@@ -7,21 +7,25 @@ import org.junit.Test;
  */
 public class reverseString344 {
     @Test
-    public void test(){
-        char[] s = new char[]{'h','e','l','l','o'};
+    public void test() {
+        char[] s = new char[]{'h', 'e', 'l', 'l', 'o'};
         new reverseString344().reverseString(s);
         System.out.println(s);
     }
+
+    /**
+     * 双指针问题
+     * @param s
+     */
     public void reverseString(char[] s) {
-        int right = 0;
-        int left = s.length - 1;
-        while(right<left){
-            swap(s,right++,left--);
+        int left = 0;
+        int right = s.length - 1;
+        while (left < right) {
+            char temp = s[left];
+            s[left] = s[right];
+            s[right] = temp;
+            left++;
+            right--;
         }
-    }
-    private void swap(char[] s, int i,int j){
-        char temp = s[i];
-        s[i] = s[j];
-        s[j] = temp;
     }
 }
