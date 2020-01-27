@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:ReverseVowels345-采用快排的思想解决问题">
-      <change afterPath="$PROJECT_DIR$/test/string/ReverseWords151Test.java" afterDir="false" />
+    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:ReverseWords151-这个题目和之前的题目还是有些不同的，很好!">
+      <change afterPath="$PROJECT_DIR$/out/production/LeetCode/Array/MaxSlidingWindow239.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/LeetCode/META-INF/LeetCode.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/LeetCode/Array/MaxSlidingWindow239Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/array/MaxSlidingWindow239.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/array/MaxSlidingWindow239Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/String/reverseString344.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/String/reverseString344.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LeetCode/String/reverseWords151.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/String/reverseWords151.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/string/ReverseWords151.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/ReverseWords151.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/string/reverseString344.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/ReverseString344.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +103,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ReverseWords151Test.test5">
+  <component name="RunManager" selected="JUnit.MaxSlidingWindow239Test.test9">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -272,67 +273,16 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
     </configuration>
-    <configuration name="ReverseWords151Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MaxSlidingWindow239Test.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="string.*" />
+          <option name="PATTERN" value="array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="string" />
-      <option name="MAIN_CLASS_NAME" value="string.ReverseWords151Test" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReverseWords151Test.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="string.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="string" />
-      <option name="MAIN_CLASS_NAME" value="string.ReverseWords151Test" />
-      <option name="METHOD_NAME" value="test2" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReverseWords151Test.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="string.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="string" />
-      <option name="MAIN_CLASS_NAME" value="string.ReverseWords151Test" />
-      <option name="METHOD_NAME" value="test3" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReverseWords151Test.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="string.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="string" />
-      <option name="MAIN_CLASS_NAME" value="string.ReverseWords151Test" />
+      <option name="PACKAGE_NAME" value="array" />
+      <option name="MAIN_CLASS_NAME" value="array.MaxSlidingWindow239Test" />
       <option name="METHOD_NAME" value="test4" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -340,17 +290,68 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReverseWords151Test.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MaxSlidingWindow239Test.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="string.*" />
+          <option name="PATTERN" value="array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="string" />
-      <option name="MAIN_CLASS_NAME" value="string.ReverseWords151Test" />
+      <option name="PACKAGE_NAME" value="array" />
+      <option name="MAIN_CLASS_NAME" value="array.MaxSlidingWindow239Test" />
       <option name="METHOD_NAME" value="test5" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaxSlidingWindow239Test.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="array" />
+      <option name="MAIN_CLASS_NAME" value="array.MaxSlidingWindow239Test" />
+      <option name="METHOD_NAME" value="test6" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaxSlidingWindow239Test.test8" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="array" />
+      <option name="MAIN_CLASS_NAME" value="array.MaxSlidingWindow239Test" />
+      <option name="METHOD_NAME" value="test8" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaxSlidingWindow239Test.test9" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="array" />
+      <option name="MAIN_CLASS_NAME" value="array.MaxSlidingWindow239Test" />
+      <option name="METHOD_NAME" value="test9" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -427,19 +428,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.isPalindrome9" />
-      <item itemvalue="JUnit.ReverseWords151Test.test1" />
-      <item itemvalue="JUnit.ReverseWords151Test.test2" />
-      <item itemvalue="JUnit.ReverseWords151Test.test3" />
-      <item itemvalue="JUnit.ReverseWords151Test.test4" />
-      <item itemvalue="JUnit.ReverseWords151Test.test5" />
+      <item itemvalue="JUnit.MaxSlidingWindow239Test.test4" />
+      <item itemvalue="JUnit.MaxSlidingWindow239Test.test5" />
+      <item itemvalue="JUnit.MaxSlidingWindow239Test.test6" />
+      <item itemvalue="JUnit.MaxSlidingWindow239Test.test8" />
+      <item itemvalue="JUnit.MaxSlidingWindow239Test.test9" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ReverseWords151Test.test5" />
-        <item itemvalue="JUnit.ReverseWords151Test.test4" />
-        <item itemvalue="JUnit.ReverseWords151Test.test3" />
-        <item itemvalue="JUnit.ReverseWords151Test.test2" />
-        <item itemvalue="JUnit.ReverseWords151Test.test1" />
+        <item itemvalue="JUnit.MaxSlidingWindow239Test.test9" />
+        <item itemvalue="JUnit.MaxSlidingWindow239Test.test8" />
+        <item itemvalue="JUnit.MaxSlidingWindow239Test.test6" />
+        <item itemvalue="JUnit.MaxSlidingWindow239Test.test5" />
+        <item itemvalue="JUnit.MaxSlidingWindow239Test.test4" />
       </list>
     </recent_temporary>
   </component>
@@ -546,7 +547,7 @@
       <workItem from="1579339475296" duration="13848000" />
       <workItem from="1579427789566" duration="4871000" />
       <workItem from="1579772504605" duration="12256000" />
-      <workItem from="1579930012505" duration="30964000" />
+      <workItem from="1579930012505" duration="34640000" />
     </task>
     <task id="LOCAL-00001" summary="修改buildTree106">
       <created>1554644673454</created>
@@ -814,7 +815,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580116249784</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="add:ReverseWords151-这个题目和之前的题目还是有些不同的，很好!">
+      <created>1580120873889</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1580120873889</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TodoView">
@@ -855,7 +863,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="add rangeBitwiseAnd201" />
     <MESSAGE value="add:添加LeetCode第50题,求一个数的指数运算" />
     <MESSAGE value="add:完成最长上升子序列--300" />
     <MESSAGE value="add:递增的三元子序列--334" />
@@ -880,7 +887,8 @@
     <MESSAGE value="add:完成BSTIterator173-中序遍历采用非递归、递归的方式实现" />
     <MESSAGE value="add:InorderTraversal94-中序遍历采用非递归方式实现" />
     <MESSAGE value="add:ReverseVowels345-采用快排的思想解决问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:ReverseVowels345-采用快排的思想解决问题" />
+    <MESSAGE value="add:ReverseWords151-这个题目和之前的题目还是有些不同的，很好!" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:ReverseWords151-这个题目和之前的题目还是有些不同的，很好!" />
   </component>
   <component name="WindowStateProjectService">
     <state x="352" y="162" key="CommitChangelistDialog2" timestamp="1577633057703">
@@ -1819,6 +1827,21 @@
           <url>file://$PROJECT_DIR$/test/string/ReverseWords151Test.java</url>
           <line>43</line>
           <option name="timeStamp" value="297" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/array/MaxSlidingWindow239Test.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="298" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/array/MaxSlidingWindow239.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="299" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/array/MaxSlidingWindow239Test.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="302" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/test/math/MyPow50Test.java</url>
