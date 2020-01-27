@@ -5,11 +5,11 @@ import org.junit.Test;
 /**
  * Created by Administrator on 2019\2\8 0008.
  */
-public class reverseString344 {
+public class ReverseString344 {
     @Test
     public void test() {
         char[] s = new char[]{'h', 'e', 'l', 'l', 'o'};
-        new reverseString344().reverseString(s);
+        new ReverseString344().reverseString(s);
         System.out.println(s);
     }
 
