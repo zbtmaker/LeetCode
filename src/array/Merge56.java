@@ -25,9 +25,7 @@ public class Merge56 {
         for (int i = 1; i < intervals.length; i++) {
             int[] preIntervals = stack.peek();
             if (intervals[i][0] < preIntervals[1]) {
-                if (intervals[i][1] < preIntervals[1]) {
-                    // 这个时候不需要任何操坐[1,5][2,3]
-                } else if (intervals[i][1] > preIntervals[1]) {
+                if (intervals[i][1] > preIntervals[1]) {
                     // 这个时候就需要合并去区间，相当于[1,3],[2,6]
                     preIntervals = stack.pop();
                     preIntervals[1] = intervals[i][1];
