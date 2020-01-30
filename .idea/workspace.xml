@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:MaxSlidingWindow239-空间复杂度O(1)和时间复杂度为O(N^2),待优化">
-      <change afterPath="$PROJECT_DIR$/src/stack/MinStack155.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/stack/MinStack155Test.java" afterDir="false" />
+    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:MinStack155-借助一个辅助栈的思想解决该问题，时间复杂度为O(1),空间复杂度为O(N)">
+      <change afterPath="$PROJECT_DIR$/out/production/LeetCode/Array/Merge88.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/LeetCode/Array/FindPeakElement162Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/LeetCode/Array/Merge88Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/array/Merge88.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/array/FindPeakElement162Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/array/Merge88Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/MaxSlidingWindow239.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Array/MaxSlidingWindow239.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/LeetCode/Array/MaxSlidingWindow239Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/LeetCode/Array/MaxSlidingWindow239Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/array/MaxSlidingWindow239.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/MaxSlidingWindow239.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/array/MaxSlidingWindow239Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/array/MaxSlidingWindow239Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/findPeakElement162.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Array/findPeakElement162.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/stack/LRUCache146.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/stack/LRUCache146.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/LeetCode/stack/LRUCache146Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/LeetCode/stack/LRUCache146Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/findPeakElement162.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/FindPeakElement162.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stack/LRUCache146.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stack/LRUCache146.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/stack/LRUCache146Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/stack/LRUCache146Test.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +112,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MaxSlidingWindow239Test.test9">
+  <component name="RunManager" selected="JUnit.Merge88Test.test1">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -276,7 +282,7 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
     </configuration>
-    <configuration name="MaxSlidingWindow239Test.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FindPeakElement162Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -285,59 +291,42 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.MaxSlidingWindow239Test" />
-      <option name="METHOD_NAME" value="test5" />
+      <option name="MAIN_CLASS_NAME" value="array.FindPeakElement162Test" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaxSlidingWindow239Test.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LRUCache146Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="array.*" />
+          <option name="PATTERN" value="stack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.MaxSlidingWindow239Test" />
-      <option name="METHOD_NAME" value="test6" />
+      <option name="PACKAGE_NAME" value="stack" />
+      <option name="MAIN_CLASS_NAME" value="stack.LRUCache146Test" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaxSlidingWindow239Test.test7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LRUCache146Test.testLinkedHashMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="array.*" />
+          <option name="PATTERN" value="stack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.MaxSlidingWindow239Test" />
-      <option name="METHOD_NAME" value="test7" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MaxSlidingWindow239Test.test8" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="array.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.MaxSlidingWindow239Test" />
-      <option name="METHOD_NAME" value="test8" />
+      <option name="PACKAGE_NAME" value="stack" />
+      <option name="MAIN_CLASS_NAME" value="stack.LRUCache146Test" />
+      <option name="METHOD_NAME" value="testLinkedHashMap" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -355,6 +344,23 @@
       <option name="PACKAGE_NAME" value="array" />
       <option name="MAIN_CLASS_NAME" value="array.MaxSlidingWindow239Test" />
       <option name="METHOD_NAME" value="test9" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Merge88Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="array" />
+      <option name="MAIN_CLASS_NAME" value="array.Merge88Test" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -431,19 +437,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.isPalindrome9" />
-      <item itemvalue="JUnit.MaxSlidingWindow239Test.test5" />
-      <item itemvalue="JUnit.MaxSlidingWindow239Test.test6" />
-      <item itemvalue="JUnit.MaxSlidingWindow239Test.test7" />
-      <item itemvalue="JUnit.MaxSlidingWindow239Test.test8" />
       <item itemvalue="JUnit.MaxSlidingWindow239Test.test9" />
+      <item itemvalue="JUnit.LRUCache146Test.testLinkedHashMap" />
+      <item itemvalue="JUnit.LRUCache146Test.test1" />
+      <item itemvalue="JUnit.FindPeakElement162Test.test1" />
+      <item itemvalue="JUnit.Merge88Test.test1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Merge88Test.test1" />
+        <item itemvalue="JUnit.FindPeakElement162Test.test1" />
+        <item itemvalue="JUnit.LRUCache146Test.test1" />
+        <item itemvalue="JUnit.LRUCache146Test.testLinkedHashMap" />
         <item itemvalue="JUnit.MaxSlidingWindow239Test.test9" />
-        <item itemvalue="JUnit.MaxSlidingWindow239Test.test8" />
-        <item itemvalue="JUnit.MaxSlidingWindow239Test.test7" />
-        <item itemvalue="JUnit.MaxSlidingWindow239Test.test6" />
-        <item itemvalue="JUnit.MaxSlidingWindow239Test.test5" />
       </list>
     </recent_temporary>
   </component>
@@ -553,6 +559,9 @@
       <workItem from="1579930012505" duration="34988000" />
       <workItem from="1580176223488" duration="8522000" />
       <workItem from="1580220710529" duration="18000" />
+      <workItem from="1580267293942" duration="2912000" />
+      <workItem from="1580272216730" duration="1520000" />
+      <workItem from="1580355578900" duration="1676000" />
     </task>
     <task id="LOCAL-00001" summary="修改buildTree106">
       <created>1554644673454</created>
@@ -841,7 +850,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580130136091</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="add:MinStack155-借助一个辅助栈的思想解决该问题，时间复杂度为O(1),空间复杂度为O(N)">
+      <created>1580267421000</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1580267421000</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TodoView">
@@ -882,7 +898,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="add:递增的三元子序列--334" />
     <MESSAGE value="add:子数组序列之和为K" />
     <MESSAGE value="add:完成MaxProduct152-暴力解决方案，动态规划方案待优化" />
     <MESSAGE value="add:完成MaxProduct152-动态规划方案完成，但超时，还需优化" />
@@ -907,7 +922,8 @@
     <MESSAGE value="add:ReverseWords151-这个题目和之前的题目还是有些不同的，很好!" />
     <MESSAGE value="add:MaxSlidingWindow239-使用暴力的方式，时间复杂度为O(N^2),空间复杂度为O(1)" />
     <MESSAGE value="add:MaxSlidingWindow239-空间复杂度O(1)和时间复杂度为O(N^2),待优化" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:MaxSlidingWindow239-空间复杂度O(1)和时间复杂度为O(N^2),待优化" />
+    <MESSAGE value="add:MinStack155-借助一个辅助栈的思想解决该问题，时间复杂度为O(1),空间复杂度为O(N)" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:MinStack155-借助一个辅助栈的思想解决该问题，时间复杂度为O(1),空间复杂度为O(N)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="352" y="162" key="CommitChangelistDialog2" timestamp="1577633057703">
@@ -1891,6 +1907,26 @@
           <url>file://$PROJECT_DIR$/src/stack/MinStack155.java</url>
           <line>56</line>
           <option name="timeStamp" value="312" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/stack/LRUCache146Test.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="317" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/array/FindPeakElement162Test.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="318" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/array/FindPeakElement162.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="319" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/array/Merge88.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="324" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/test/math/MyPow50Test.java</url>
