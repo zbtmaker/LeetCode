@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成IsUgly263,使用最简单的暴力循环即可求的最优解">
-      <change afterPath="$PROJECT_DIR$/src/math/NthUglyNumber264.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/math/NthUglyNumber264Test.java" afterDir="false" />
+    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成NthUglyNumber264,使用暴力破解、Memorization、最优Dynamic Programming方式实现">
+      <change afterPath="$PROJECT_DIR$/out/production/LeetCode/math/NthSuperUglyNumber313.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/LeetCode/math/NthSuperUglyNumber313Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/math/NthSuperUglyNumber313.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/math/NthSuperUglyNumber313Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/math/IsUgly.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/LeetCode/math/IsUglyTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/math/NthUglyNumber264.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/math/NthUglyNumber264.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/math/NthUglyNumber264.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/NthUglyNumber264.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,7 +106,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.NthUglyNumber264Test">
+  <component name="RunManager" selected="JUnit.NthSuperUglyNumber313Test.test2">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -274,7 +276,7 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
     </configuration>
-    <configuration name="NthUglyNumber264Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NthSuperUglyNumber313Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -283,23 +285,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="math" />
-      <option name="MAIN_CLASS_NAME" value="math.NthUglyNumber264Test" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NthUglyNumber264Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="math.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="math" />
-      <option name="MAIN_CLASS_NAME" value="math.NthUglyNumber264Test" />
+      <option name="MAIN_CLASS_NAME" value="math.NthSuperUglyNumber313Test" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -307,7 +293,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NthUglyNumber264Test.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NthSuperUglyNumber313Test.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -316,7 +302,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="math" />
-      <option name="MAIN_CLASS_NAME" value="math.NthUglyNumber264Test" />
+      <option name="MAIN_CLASS_NAME" value="math.NthSuperUglyNumber313Test" />
       <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -324,7 +310,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NthUglyNumber264Test.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NthUglyNumber264Test.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -334,14 +320,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="math" />
       <option name="MAIN_CLASS_NAME" value="math.NthUglyNumber264Test" />
-      <option name="METHOD_NAME" value="test3" />
+      <option name="METHOD_NAME" value="test5" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NthUglyNumber264Test.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NthUglyNumber264Test.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -351,7 +337,24 @@
       </extension>
       <option name="PACKAGE_NAME" value="math" />
       <option name="MAIN_CLASS_NAME" value="math.NthUglyNumber264Test" />
-      <option name="METHOD_NAME" value="test4" />
+      <option name="METHOD_NAME" value="test6" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NthUglyNumber264Test.test7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="math.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="math" />
+      <option name="MAIN_CLASS_NAME" value="math.NthUglyNumber264Test" />
+      <option name="METHOD_NAME" value="test7" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -428,19 +431,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.isPalindrome9" />
-      <item itemvalue="JUnit.NthUglyNumber264Test.test4" />
-      <item itemvalue="JUnit.NthUglyNumber264Test.test3" />
-      <item itemvalue="JUnit.NthUglyNumber264Test.test2" />
-      <item itemvalue="JUnit.NthUglyNumber264Test.test1" />
-      <item itemvalue="JUnit.NthUglyNumber264Test" />
+      <item itemvalue="JUnit.NthUglyNumber264Test.test5" />
+      <item itemvalue="JUnit.NthUglyNumber264Test.test6" />
+      <item itemvalue="JUnit.NthUglyNumber264Test.test7" />
+      <item itemvalue="JUnit.NthSuperUglyNumber313Test.test1" />
+      <item itemvalue="JUnit.NthSuperUglyNumber313Test.test2" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.NthUglyNumber264Test" />
-        <item itemvalue="JUnit.NthUglyNumber264Test.test1" />
-        <item itemvalue="JUnit.NthUglyNumber264Test.test2" />
-        <item itemvalue="JUnit.NthUglyNumber264Test.test3" />
-        <item itemvalue="JUnit.NthUglyNumber264Test.test4" />
+        <item itemvalue="JUnit.NthSuperUglyNumber313Test.test2" />
+        <item itemvalue="JUnit.NthSuperUglyNumber313Test.test1" />
+        <item itemvalue="JUnit.NthUglyNumber264Test.test7" />
+        <item itemvalue="JUnit.NthUglyNumber264Test.test6" />
+        <item itemvalue="JUnit.NthUglyNumber264Test.test5" />
       </list>
     </recent_temporary>
   </component>
@@ -555,7 +558,7 @@
       <workItem from="1580355578900" duration="22609000" />
       <workItem from="1580538848838" duration="1545000" />
       <workItem from="1580793555403" duration="4950000" />
-      <workItem from="1581135382321" duration="8846000" />
+      <workItem from="1581135382321" duration="14498000" />
     </task>
     <task id="LOCAL-00001" summary="修改buildTree106">
       <created>1554644673454</created>
@@ -879,7 +882,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581138227329</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="add:完成NthUglyNumber264,使用暴力破解、Memorization、最优Dynamic Programming方式实现">
+      <created>1581151621848</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1581151621848</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TodoView">
@@ -920,7 +930,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="add:完成SummaryRanges228-时间击败100%，空间击败80.77%" />
     <MESSAGE value="add:完成LengthOfLastWord58-时间击败44.48%，空间上击败78.84%,还有优化的空间" />
     <MESSAGE value="add:完成LargestRectangleArea84-Brute Force的方式实现的，LeetCode执行超时" />
     <MESSAGE value="add:完成LargestRectangleArea84-Dynamic Programming的方式实现的，时间复杂度O(N^2),空间复杂度O(1)" />
@@ -945,7 +954,8 @@
     <MESSAGE value="add:完成Insert57-时间复杂度为O(N),空间复杂度为O(N),没有优化空间了" />
     <MESSAGE value="add:完成SortArrayUtils中MergeSort" />
     <MESSAGE value="add:完成IsUgly263,使用最简单的暴力循环即可求的最优解" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:完成IsUgly263,使用最简单的暴力循环即可求的最优解" />
+    <MESSAGE value="add:完成NthUglyNumber264,使用暴力破解、Memorization、最优Dynamic Programming方式实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:完成NthUglyNumber264,使用暴力破解、Memorization、最优Dynamic Programming方式实现" />
   </component>
   <component name="WindowStateProjectService">
     <state x="352" y="162" key="CommitChangelistDialog2" timestamp="1577633057703">
@@ -1995,6 +2005,36 @@
           <line>50</line>
           <option name="timeStamp" value="349" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/math/NthSuperUglyNumber313Test.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="351" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/math/NthSuperUglyNumber313.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="352" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/math/NthUglyNumber264Test.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="353" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/math/NthUglyNumber264.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="354" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/math/NthUglyNumber264.java</url>
+          <line>131</line>
+          <option name="timeStamp" value="355" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/math/NthUglyNumber264Test.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="356" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/test/math/MyPow50Test.java</url>
           <line>14</line>
@@ -2010,5 +2050,10 @@
         <watch expression="result.get(1)" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/LeetCode$NthUglyNumber264Test_test6.ic" NAME="NthUglyNumber264Test.test6 Coverage Results" MODIFIED="1581156775616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>math.*</FILTER>
+    </SUITE>
   </component>
 </project>
