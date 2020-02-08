@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成Insert57-时间复杂度为O(N),空间复杂度为O(N),没有优化空间了">
-      <change afterPath="$PROJECT_DIR$/src/array/SortArrayUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/string/MinWindow76.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/array/SortArrayUtilsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/string/MinWindow76Test.java" afterDir="false" />
+    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成SortArrayUtils中MergeSort">
+      <change afterPath="$PROJECT_DIR$/src/math/IsUgly263.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/math/IsUglyTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/Insert57.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Array/Insert57.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/merge56.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Array/merge56.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/SortArrayUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Array/SortArrayUtils.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +103,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SortArrayUtilsTest.testMergeSort1">
+  <component name="RunManager" selected="JUnit.IsUgly263Test.test9">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -237,20 +234,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="partition86" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="list.partition86" />
-      <module name="LeetCode" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="list.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="">
       <option name="arquillianRunConfiguration">
         <value>
@@ -290,68 +273,85 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
     </configuration>
-    <configuration name="MinWindow76Test.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IsUgly263Test.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="string.*" />
+          <option name="PATTERN" value="math.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="string" />
-      <option name="MAIN_CLASS_NAME" value="string.MinWindow76Test" />
-      <option name="METHOD_NAME" value="test3" />
+      <option name="PACKAGE_NAME" value="math" />
+      <option name="MAIN_CLASS_NAME" value="math.IsUgly263Test" />
+      <option name="METHOD_NAME" value="test4" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortArrayUtilsTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IsUgly263Test.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="array.*" />
+          <option name="PATTERN" value="math.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.SortArrayUtilsTest" />
-      <option name="METHOD_NAME" value="test1" />
+      <option name="PACKAGE_NAME" value="math" />
+      <option name="MAIN_CLASS_NAME" value="math.IsUgly263Test" />
+      <option name="METHOD_NAME" value="test5" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortArrayUtilsTest.testMergeSort1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IsUgly263Test.test7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="array.*" />
+          <option name="PATTERN" value="math.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.SortArrayUtilsTest" />
-      <option name="METHOD_NAME" value="testMergeSort1" />
+      <option name="PACKAGE_NAME" value="math" />
+      <option name="MAIN_CLASS_NAME" value="math.IsUgly263Test" />
+      <option name="METHOD_NAME" value="test7" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortArrayUtilsTest.testMergeSort2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IsUgly263Test.test8" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="array.*" />
+          <option name="PATTERN" value="math.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.SortArrayUtilsTest" />
-      <option name="METHOD_NAME" value="testMergeSort2" />
+      <option name="PACKAGE_NAME" value="math" />
+      <option name="MAIN_CLASS_NAME" value="math.IsUgly263Test" />
+      <option name="METHOD_NAME" value="test8" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IsUgly263Test.test9" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="math.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="math" />
+      <option name="MAIN_CLASS_NAME" value="math.IsUgly263Test" />
+      <option name="METHOD_NAME" value="test9" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -428,19 +428,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.isPalindrome9" />
-      <item itemvalue="Application.partition86" />
-      <item itemvalue="JUnit.MinWindow76Test.test3" />
-      <item itemvalue="JUnit.SortArrayUtilsTest.test1" />
-      <item itemvalue="JUnit.SortArrayUtilsTest.testMergeSort2" />
-      <item itemvalue="JUnit.SortArrayUtilsTest.testMergeSort1" />
+      <item itemvalue="JUnit.IsUgly263Test.test4" />
+      <item itemvalue="JUnit.IsUgly263Test.test5" />
+      <item itemvalue="JUnit.IsUgly263Test.test7" />
+      <item itemvalue="JUnit.IsUgly263Test.test8" />
+      <item itemvalue="JUnit.IsUgly263Test.test9" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SortArrayUtilsTest.testMergeSort1" />
-        <item itemvalue="JUnit.SortArrayUtilsTest.testMergeSort2" />
-        <item itemvalue="JUnit.SortArrayUtilsTest.test1" />
-        <item itemvalue="Application.partition86" />
-        <item itemvalue="JUnit.MinWindow76Test.test3" />
+        <item itemvalue="JUnit.IsUgly263Test.test9" />
+        <item itemvalue="JUnit.IsUgly263Test.test8" />
+        <item itemvalue="JUnit.IsUgly263Test.test7" />
+        <item itemvalue="JUnit.IsUgly263Test.test5" />
+        <item itemvalue="JUnit.IsUgly263Test.test4" />
       </list>
     </recent_temporary>
   </component>
@@ -554,7 +554,8 @@
       <workItem from="1580272216730" duration="1520000" />
       <workItem from="1580355578900" duration="22609000" />
       <workItem from="1580538848838" duration="1545000" />
-      <workItem from="1580793555403" duration="4605000" />
+      <workItem from="1580793555403" duration="4950000" />
+      <workItem from="1581135382321" duration="1954000" />
     </task>
     <task id="LOCAL-00001" summary="修改buildTree106">
       <created>1554644673454</created>
@@ -864,7 +865,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580390191113</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="add:完成SortArrayUtils中MergeSort">
+      <created>1580804109972</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1580804109973</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TodoView">
@@ -905,7 +913,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="add:完成MaxProduct152-动态规划方案完成，但超时，还需优化" />
     <MESSAGE value="add:完成SummaryRanges228-" />
     <MESSAGE value="add:完成SummaryRanges228-时间击败100%，空间击败80.77%" />
     <MESSAGE value="add:完成LengthOfLastWord58-时间击败44.48%，空间上击败78.84%,还有优化的空间" />
@@ -930,7 +937,8 @@
     <MESSAGE value="add:MinStack155-借助一个辅助栈的思想解决该问题，时间复杂度为O(1),空间复杂度为O(N)" />
     <MESSAGE value="add:完成Merge88-时间复杂度为O(M+N),空间复杂度为O(M+N)" />
     <MESSAGE value="add:完成Insert57-时间复杂度为O(N),空间复杂度为O(N),没有优化空间了" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:完成Insert57-时间复杂度为O(N),空间复杂度为O(N),没有优化空间了" />
+    <MESSAGE value="add:完成SortArrayUtils中MergeSort" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:完成SortArrayUtils中MergeSort" />
   </component>
   <component name="WindowStateProjectService">
     <state x="352" y="162" key="CommitChangelistDialog2" timestamp="1577633057703">
