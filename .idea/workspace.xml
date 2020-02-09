@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成LexicalOrder386，使用DFS的思想，最终实现方式采用递归的方式">
-      <change afterPath="$PROJECT_DIR$/out/production/LeetCode/String/MyAtoi8.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/LeetCode/string/MyAtoi8Test.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/string/MyAtoi8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/string/MyAtoi8Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/String/LexicalOrder386.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/String/LexicalOrder386.class" afterDir="false" />
-    </list>
+    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成Search33，使用binarySearch的思想，但是需要进行前置操作" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +99,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MyAtoi8Test.test16">
+  <component name="RunManager" selected="JUnit.Search33Test.test13">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -276,49 +269,32 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
     </configuration>
-    <configuration name="MyAtoi8Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Search33Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="string.*" />
+          <option name="PATTERN" value="array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="string" />
-      <option name="MAIN_CLASS_NAME" value="string.MyAtoi8Test" />
+      <option name="PACKAGE_NAME" value="array" />
+      <option name="MAIN_CLASS_NAME" value="array.Search33Test" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyAtoi8Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Search33Test.test10" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="string.*" />
+          <option name="PATTERN" value="array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="string" />
-      <option name="MAIN_CLASS_NAME" value="string.MyAtoi8Test" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyAtoi8Test.test10" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="string.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="string" />
-      <option name="MAIN_CLASS_NAME" value="string.MyAtoi8Test" />
+      <option name="PACKAGE_NAME" value="array" />
+      <option name="MAIN_CLASS_NAME" value="array.Search33Test" />
       <option name="METHOD_NAME" value="test10" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -326,34 +302,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyAtoi8Test.test15" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Search33Test.test11" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="string.*" />
+          <option name="PATTERN" value="array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="string" />
-      <option name="MAIN_CLASS_NAME" value="string.MyAtoi8Test" />
-      <option name="METHOD_NAME" value="test15" />
+      <option name="PACKAGE_NAME" value="array" />
+      <option name="MAIN_CLASS_NAME" value="array.Search33Test" />
+      <option name="METHOD_NAME" value="test11" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyAtoi8Test.test16" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Search33Test.test12" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="string.*" />
+          <option name="PATTERN" value="array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="string" />
-      <option name="MAIN_CLASS_NAME" value="string.MyAtoi8Test" />
-      <option name="METHOD_NAME" value="test16" />
+      <option name="PACKAGE_NAME" value="array" />
+      <option name="MAIN_CLASS_NAME" value="array.Search33Test" />
+      <option name="METHOD_NAME" value="test12" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Search33Test.test13" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="array" />
+      <option name="MAIN_CLASS_NAME" value="array.Search33Test" />
+      <option name="METHOD_NAME" value="test13" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -430,19 +423,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.isPalindrome9" />
-      <item itemvalue="JUnit.MyAtoi8Test" />
-      <item itemvalue="JUnit.MyAtoi8Test.test10" />
-      <item itemvalue="JUnit.MyAtoi8Test.test1" />
-      <item itemvalue="JUnit.MyAtoi8Test.test15" />
-      <item itemvalue="JUnit.MyAtoi8Test.test16" />
+      <item itemvalue="JUnit.Search33Test.test10" />
+      <item itemvalue="JUnit.Search33Test.test11" />
+      <item itemvalue="JUnit.Search33Test.test12" />
+      <item itemvalue="JUnit.Search33Test" />
+      <item itemvalue="JUnit.Search33Test.test13" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MyAtoi8Test.test16" />
-        <item itemvalue="JUnit.MyAtoi8Test" />
-        <item itemvalue="JUnit.MyAtoi8Test.test15" />
-        <item itemvalue="JUnit.MyAtoi8Test.test1" />
-        <item itemvalue="JUnit.MyAtoi8Test.test10" />
+        <item itemvalue="JUnit.Search33Test.test13" />
+        <item itemvalue="JUnit.Search33Test" />
+        <item itemvalue="JUnit.Search33Test.test12" />
+        <item itemvalue="JUnit.Search33Test.test11" />
+        <item itemvalue="JUnit.Search33Test.test10" />
       </list>
     </recent_temporary>
   </component>
@@ -558,21 +551,7 @@
       <workItem from="1580538848838" duration="1545000" />
       <workItem from="1580793555403" duration="4950000" />
       <workItem from="1581135382321" duration="19037000" />
-      <workItem from="1581214626073" duration="18249000" />
-    </task>
-    <task id="LOCAL-00003" summary="修改buildTree106">
-      <created>1554644761116</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1554644761116</updated>
-    </task>
-    <task id="LOCAL-00004" summary="add vcs.xml">
-      <created>1554645047737</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1554645047737</updated>
+      <workItem from="1581214626073" duration="24210000" />
     </task>
     <task id="LOCAL-00005" summary="add workspace.xml">
       <created>1554645072964</created>
@@ -903,7 +882,21 @@
       <option name="project" value="LOCAL" />
       <updated>1581231237865</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="add:完成MyAtoi8，需要注意的是对边界问题的测试，其中有些思想也是参考BigInteger">
+      <created>1581243830908</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1581243830908</updated>
+    </task>
+    <task id="LOCAL-00053" summary="add:完成Search33，使用binarySearch的思想，但是需要进行前置操作">
+      <created>1581254585690</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1581254585690</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TodoView">
@@ -944,8 +937,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="add:完成Flatten114-使用栈的方式实现，相当于前序遍历。时间复杂度为O(N),空间复杂度为O(N)" />
-    <MESSAGE value="add:完成TreeCommonUtils二叉树工具类" />
     <MESSAGE value="add:完成SumRange303-时间复杂度为O(M+N)" />
     <MESSAGE value="add:完成SumRange303-时间复杂度为O(M+N),空间复杂度为O(N)" />
     <MESSAGE value="add:完成CanPlaceFlowers605-时间复杂度O(N),空间复杂度为O(1)" />
@@ -969,7 +960,9 @@
     <MESSAGE value="add:完成CountPrimes204，纯暴力和使用Memorization也不能通过" />
     <MESSAGE value="add:完成LexicalOrder386，使用DFS解决问题，最终实现采用递归的方式实现" />
     <MESSAGE value="add:完成LexicalOrder386，使用DFS的思想，最终实现方式采用递归的方式" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:完成LexicalOrder386，使用DFS的思想，最终实现方式采用递归的方式" />
+    <MESSAGE value="add:完成MyAtoi8，需要注意的是对边界问题的测试，其中有些思想也是参考BigInteger" />
+    <MESSAGE value="add:完成Search33，使用binarySearch的思想，但是需要进行前置操作" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:完成Search33，使用binarySearch的思想，但是需要进行前置操作" />
   </component>
   <component name="WindowStateProjectService">
     <state x="352" y="162" key="CommitChangelistDialog2" timestamp="1577633057703">
@@ -2123,6 +2116,21 @@
           <url>file://$PROJECT_DIR$/test/string/MyAtoi8Test.java</url>
           <line>71</line>
           <option name="timeStamp" value="380" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/array/Search33Test.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="381" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/array/Search33.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="382" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/array/Search33.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="385" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/test/math/MyPow50Test.java</url>
