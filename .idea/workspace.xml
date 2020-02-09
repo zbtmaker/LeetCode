@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成CountPrimes204，纯暴力和使用Memorization也不能通过">
-      <change afterPath="$PROJECT_DIR$/out/production/LeetCode/String/LexicalOrder386.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/LeetCode/string/LexicalOrder386Test.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/string/LexicalOrder386.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/string/LexicalOrder386Test.java" afterDir="false" />
+    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成LexicalOrder386，使用DFS的思想，最终实现方式采用递归的方式">
+      <change afterPath="$PROJECT_DIR$/out/production/LeetCode/String/MyAtoi8.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/LeetCode/string/MyAtoi8Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/string/MyAtoi8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/string/MyAtoi8Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/String/LexicalOrder386.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/String/LexicalOrder386.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +106,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LexicalOrder386Test.test9">
+  <component name="RunManager" selected="JUnit.MyAtoi8Test.test16">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -275,7 +276,7 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
     </configuration>
-    <configuration name="LexicalOrder386Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyAtoi8Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -284,14 +285,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="string" />
-      <option name="MAIN_CLASS_NAME" value="string.LexicalOrder386Test" />
+      <option name="MAIN_CLASS_NAME" value="string.MyAtoi8Test" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LexicalOrder386Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyAtoi8Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -300,7 +301,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="string" />
-      <option name="MAIN_CLASS_NAME" value="string.LexicalOrder386Test" />
+      <option name="MAIN_CLASS_NAME" value="string.MyAtoi8Test" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -308,7 +309,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LexicalOrder386Test.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyAtoi8Test.test10" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -317,15 +318,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="string" />
-      <option name="MAIN_CLASS_NAME" value="string.LexicalOrder386Test" />
-      <option name="METHOD_NAME" value="test3" />
+      <option name="MAIN_CLASS_NAME" value="string.MyAtoi8Test" />
+      <option name="METHOD_NAME" value="test10" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LexicalOrder386Test.test7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyAtoi8Test.test15" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -334,15 +335,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="string" />
-      <option name="MAIN_CLASS_NAME" value="string.LexicalOrder386Test" />
-      <option name="METHOD_NAME" value="test7" />
+      <option name="MAIN_CLASS_NAME" value="string.MyAtoi8Test" />
+      <option name="METHOD_NAME" value="test15" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LexicalOrder386Test.test9" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyAtoi8Test.test16" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -351,8 +352,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="string" />
-      <option name="MAIN_CLASS_NAME" value="string.LexicalOrder386Test" />
-      <option name="METHOD_NAME" value="test9" />
+      <option name="MAIN_CLASS_NAME" value="string.MyAtoi8Test" />
+      <option name="METHOD_NAME" value="test16" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -429,19 +430,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.isPalindrome9" />
-      <item itemvalue="JUnit.LexicalOrder386Test.test3" />
-      <item itemvalue="JUnit.LexicalOrder386Test.test1" />
-      <item itemvalue="JUnit.LexicalOrder386Test" />
-      <item itemvalue="JUnit.LexicalOrder386Test.test7" />
-      <item itemvalue="JUnit.LexicalOrder386Test.test9" />
+      <item itemvalue="JUnit.MyAtoi8Test" />
+      <item itemvalue="JUnit.MyAtoi8Test.test10" />
+      <item itemvalue="JUnit.MyAtoi8Test.test1" />
+      <item itemvalue="JUnit.MyAtoi8Test.test15" />
+      <item itemvalue="JUnit.MyAtoi8Test.test16" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LexicalOrder386Test.test9" />
-        <item itemvalue="JUnit.LexicalOrder386Test.test7" />
-        <item itemvalue="JUnit.LexicalOrder386Test" />
-        <item itemvalue="JUnit.LexicalOrder386Test.test1" />
-        <item itemvalue="JUnit.LexicalOrder386Test.test3" />
+        <item itemvalue="JUnit.MyAtoi8Test.test16" />
+        <item itemvalue="JUnit.MyAtoi8Test" />
+        <item itemvalue="JUnit.MyAtoi8Test.test15" />
+        <item itemvalue="JUnit.MyAtoi8Test.test1" />
+        <item itemvalue="JUnit.MyAtoi8Test.test10" />
       </list>
     </recent_temporary>
   </component>
@@ -557,21 +558,7 @@
       <workItem from="1580538848838" duration="1545000" />
       <workItem from="1580793555403" duration="4950000" />
       <workItem from="1581135382321" duration="19037000" />
-      <workItem from="1581214626073" duration="8494000" />
-    </task>
-    <task id="LOCAL-00001" summary="修改buildTree106">
-      <created>1554644673454</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1554644673454</updated>
-    </task>
-    <task id="LOCAL-00002" summary="修改buildTree106">
-      <created>1554644715584</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1554644715584</updated>
+      <workItem from="1581214626073" duration="18249000" />
     </task>
     <task id="LOCAL-00003" summary="修改buildTree106">
       <created>1554644761116</created>
@@ -902,7 +889,21 @@
       <option name="project" value="LOCAL" />
       <updated>1581167054690</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="add:完成LexicalOrder386，使用DFS解决问题，最终实现采用递归的方式实现">
+      <created>1581231152255</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1581231152257</updated>
+    </task>
+    <task id="LOCAL-00051" summary="add:完成LexicalOrder386，使用DFS的思想，最终实现方式采用递归的方式">
+      <created>1581231237865</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1581231237865</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TodoView">
@@ -943,8 +944,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="add:完成LargestRectangleArea84-Dynamic Programming的方式实现的，时间复杂度O(N^2),空间复杂度O(1)" />
-    <MESSAGE value="add:完成ZigzagLevelOrder103-使用栈的方式实现，时间复杂度为O(N),空间复杂度为O(N)" />
     <MESSAGE value="add:完成Flatten114-使用栈的方式实现，相当于前序遍历。时间复杂度为O(N),空间复杂度为O(N)" />
     <MESSAGE value="add:完成TreeCommonUtils二叉树工具类" />
     <MESSAGE value="add:完成SumRange303-时间复杂度为O(M+N)" />
@@ -968,7 +967,9 @@
     <MESSAGE value="add:完成NthUglyNumber264,使用暴力破解、Memorization、最优Dynamic Programming方式实现" />
     <MESSAGE value="add:完成NthSuperUglyNumber313,使用Dynamic Programming方式解决可以参考NthUglyNumber264" />
     <MESSAGE value="add:完成CountPrimes204，纯暴力和使用Memorization也不能通过" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:完成CountPrimes204，纯暴力和使用Memorization也不能通过" />
+    <MESSAGE value="add:完成LexicalOrder386，使用DFS解决问题，最终实现采用递归的方式实现" />
+    <MESSAGE value="add:完成LexicalOrder386，使用DFS的思想，最终实现方式采用递归的方式" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:完成LexicalOrder386，使用DFS的思想，最终实现方式采用递归的方式" />
   </component>
   <component name="WindowStateProjectService">
     <state x="352" y="162" key="CommitChangelistDialog2" timestamp="1577633057703">
@@ -2083,6 +2084,46 @@
           <line>59</line>
           <option name="timeStamp" value="369" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/string/MyAtoi8Test.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="370" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/string/MyAtoi8.java</url>
+          <line>98</line>
+          <option name="timeStamp" value="371" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/string/MyAtoi8Test.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="372" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/string/MyAtoi8Test.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="374" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/string/MyAtoi8Test.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="375" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/string/MyAtoi8Test.java</url>
+          <line>95</line>
+          <option name="timeStamp" value="378" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/string/MyAtoi8.java</url>
+          <line>132</line>
+          <option name="timeStamp" value="379" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/string/MyAtoi8Test.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="380" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/test/math/MyPow50Test.java</url>
           <line>14</line>
@@ -2098,6 +2139,14 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="364" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/test/string/MyAtoi8Test.java</url>
+          <line>82</line>
+          <properties class="string.MyAtoi8Test" method="test12">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="376" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
