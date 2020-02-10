@@ -8,8 +8,8 @@ import java.util.Arrays;
  * @author baitao zou
  * date 2020/02/04
  */
-public class SortArrayUtilsTest {
-    private SortArrayUtils sortArrayUtils = new SortArrayUtils();
+public class ArrayUtilsTest {
+    private ArrayUtils sortArrayUtils = new ArrayUtils();
 
     @Test
     public void testMergeSort1() {

@@ -1,12 +1,14 @@
 package array;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author baitao zou
  * date 2020/02/04
  */
-public class SortArrayUtils {
+public class ArrayUtils {
 
     /**
      * 归并排序
@@ -103,5 +105,27 @@ public class SortArrayUtils {
      */
     private int partition(int[] arr, int left, int right) {
         return -1;
+    }
+
+
+    /**
+     * 统计每个int类型数据出现的次数
+     *
+     * @param nums 数组
+     * @return 统计Map
+     */
+    public static Map<Integer, Integer> count(int[] nums) {
+        Map<Integer, Integer> map = new HashMap<>();
+        if (nums == null || nums.length == 0) {
+            return map;
+        }
+        for (int i = 0; i < nums.length; i++) {
+            if (map.containsKey(nums[i])) {
+                map.put(nums[i], map.get(nums[i]) + 1);
+            } else {
+                map.put(nums[i], 1);
+            }
+        }
+        return map;
     }
 }

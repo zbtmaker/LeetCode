@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成Search33，使用binarySearch的思想,但是需要进行前置操作,找到旋转的位置">
-      <change afterPath="$PROJECT_DIR$/test/array/SingleNumber136Test.java" afterDir="false" />
+    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:优化SingleNumber136，使用异或算法将space complexity降为O(1)">
+      <change afterPath="$PROJECT_DIR$/src/array/SingleNumber137.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/array/SingleNumber260.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/array/SingleNumber260Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Hash/singleNumber136.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Hash/singleNumber136.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/LeetCode/Array/Search33Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/LeetCode/Array/Search33Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hash/singleNumber136.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hash/SingleNumber136.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/SortArrayUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Hash/singleNumber136.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/LeetCode/Array/SingleNumber136Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/LeetCode/Array/SingleNumber136Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/LeetCode/Array/SortArrayUtilsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/SortArrayUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/ArrayUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hash/SingleNumber136.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/SingleNumber136.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/array/SingleNumber136Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/array/SingleNumber136Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/array/SortArrayUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/array/ArrayUtilsTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,6 +89,7 @@
       <recent name="dp" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="array" />
       <recent name="math" />
       <recent name="stack" />
     </key>
@@ -105,7 +113,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SingleNumber136Test">
+  <component name="RunManager" selected="JUnit.SingleNumber260Test">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -291,23 +299,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Search33Test.test11" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="array.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.Search33Test" />
-      <option name="METHOD_NAME" value="test11" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Search33Test.test12" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
@@ -352,6 +343,22 @@
       </extension>
       <option name="PACKAGE_NAME" value="array" />
       <option name="MAIN_CLASS_NAME" value="array.SingleNumber136Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SingleNumber260Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="array" />
+      <option name="MAIN_CLASS_NAME" value="array.SingleNumber260Test" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -428,19 +435,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.isPalindrome9" />
-      <item itemvalue="JUnit.Search33Test.test11" />
       <item itemvalue="JUnit.Search33Test.test12" />
       <item itemvalue="JUnit.Search33Test" />
       <item itemvalue="JUnit.Search33Test.test13" />
       <item itemvalue="JUnit.SingleNumber136Test" />
+      <item itemvalue="JUnit.SingleNumber260Test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SingleNumber260Test" />
         <item itemvalue="JUnit.SingleNumber136Test" />
         <item itemvalue="JUnit.Search33Test.test13" />
         <item itemvalue="JUnit.Search33Test" />
         <item itemvalue="JUnit.Search33Test.test12" />
-        <item itemvalue="JUnit.Search33Test.test11" />
       </list>
     </recent_temporary>
   </component>
@@ -557,14 +564,7 @@
       <workItem from="1580793555403" duration="4950000" />
       <workItem from="1581135382321" duration="19037000" />
       <workItem from="1581214626073" duration="24508000" />
-      <workItem from="1581302143318" duration="1566000" />
-    </task>
-    <task id="LOCAL-00006" summary="edit workspace.xml">
-      <created>1555256732099</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1555256732099</updated>
+      <workItem from="1581302143318" duration="4078000" />
     </task>
     <task id="LOCAL-00007" summary="add findKthLargest215">
       <created>1556289211153</created>
@@ -902,7 +902,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581254676797</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="add:优化SingleNumber136，使用异或算法将space complexity降为O(1)">
+      <created>1581311421665</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1581311421667</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TodoView">
@@ -943,7 +950,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="add:完成SumRange303-时间复杂度为O(M+N),空间复杂度为O(N)" />
     <MESSAGE value="add:完成CanPlaceFlowers605-时间复杂度O(N),空间复杂度为O(1)" />
     <MESSAGE value="add:完成Merge56-时间复杂度O(N^2+2*N),空间复杂度为O(1).时间复杂度有待改进" />
     <MESSAGE value="add:完成MyQueue232-时间复杂度O(1),空间复杂度为O(N)" />
@@ -968,7 +974,8 @@
     <MESSAGE value="add:完成MyAtoi8，需要注意的是对边界问题的测试，其中有些思想也是参考BigInteger" />
     <MESSAGE value="add:完成Search33，使用binarySearch的思想，但是需要进行前置操作" />
     <MESSAGE value="add:完成Search33，使用binarySearch的思想,但是需要进行前置操作,找到旋转的位置" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:完成Search33，使用binarySearch的思想,但是需要进行前置操作,找到旋转的位置" />
+    <MESSAGE value="add:优化SingleNumber136，使用异或算法将space complexity降为O(1)" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:优化SingleNumber136，使用异或算法将space complexity降为O(1)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="352" y="162" key="CommitChangelistDialog2" timestamp="1577633057703">
@@ -1139,7 +1146,7 @@
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/hash/SingleNumber136.java</url>
+          <url>file://$PROJECT_DIR$/src/array/SingleNumber136.java</url>
           <line>15</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
@@ -1994,22 +2001,22 @@
           <option name="timeStamp" value="341" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/array/SortArrayUtilsTest.java</url>
+          <url>file://$PROJECT_DIR$/test/array/ArrayUtilsTest.java</url>
           <line>16</line>
           <option name="timeStamp" value="342" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/array/SortArrayUtils.java</url>
+          <url>file://$PROJECT_DIR$/src/array/ArrayUtils.java</url>
           <line>19</line>
           <option name="timeStamp" value="343" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/array/SortArrayUtils.java</url>
+          <url>file://$PROJECT_DIR$/src/array/ArrayUtils.java</url>
           <line>30</line>
           <option name="timeStamp" value="344" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/array/SortArrayUtils.java</url>
+          <url>file://$PROJECT_DIR$/src/array/ArrayUtils.java</url>
           <line>46</line>
           <option name="timeStamp" value="345" />
         </line-breakpoint>
@@ -2137,6 +2144,11 @@
           <url>file://$PROJECT_DIR$/src/array/Search33.java</url>
           <line>73</line>
           <option name="timeStamp" value="385" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/array/SingleNumber136Test.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="386" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/test/math/MyPow50Test.java</url>
