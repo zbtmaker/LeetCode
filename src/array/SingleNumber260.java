@@ -27,4 +27,5 @@ public class SingleNumber260 {
         }
         return result.stream().mapToInt(Integer::intValue).toArray();
     }
+
 }
