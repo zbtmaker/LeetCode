@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成SingleNumber260，使用HashMap统计方式实现">
-      <change afterPath="$PROJECT_DIR$/out/test/LeetCode/Array/SingleNumber137Test.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/array/SingleNumber137Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/LeetCode/Array/SpiralOrder54Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/array/SpiralOrder54Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/SingleNumber137.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Array/SingleNumber137.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/array/SingleNumber137.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/SingleNumber137.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/array/SingleNumber260.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/SingleNumber260.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/spiralOrder54.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Array/spiralOrder54.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/spiralOrder54.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/SpiralOrder54.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +107,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SingleNumber137Test">
+  <component name="RunManager" selected="JUnit.SpiralOrder54Test">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -277,7 +277,7 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
     </configuration>
-    <configuration name="Search33Test.test13" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SpiralOrder54Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -286,15 +286,31 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.Search33Test" />
-      <option name="METHOD_NAME" value="test13" />
+      <option name="MAIN_CLASS_NAME" value="array.SpiralOrder54Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpiralOrder54Test.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="array" />
+      <option name="MAIN_CLASS_NAME" value="array.SpiralOrder54Test" />
+      <option name="METHOD_NAME" value="test6" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SingleNumber136Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SpiralOrder54Test.test7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -303,47 +319,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.SingleNumber136Test" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SingleNumber137Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="array.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.SingleNumber137Test" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SingleNumber137Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="array.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.SingleNumber137Test" />
-      <option name="METHOD_NAME" value="test1" />
+      <option name="MAIN_CLASS_NAME" value="array.SpiralOrder54Test" />
+      <option name="METHOD_NAME" value="test7" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SingleNumber260Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SpiralOrder54Test.test8" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -352,8 +336,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.SingleNumber260Test" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="array.SpiralOrder54Test" />
+      <option name="METHOD_NAME" value="test8" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpiralOrder54Test.test9" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="array" />
+      <option name="MAIN_CLASS_NAME" value="array.SpiralOrder54Test" />
+      <option name="METHOD_NAME" value="test9" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -429,19 +431,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.isPalindrome9" />
-      <item itemvalue="JUnit.Search33Test.test13" />
-      <item itemvalue="JUnit.SingleNumber136Test" />
-      <item itemvalue="JUnit.SingleNumber260Test" />
-      <item itemvalue="JUnit.SingleNumber137Test.test1" />
-      <item itemvalue="JUnit.SingleNumber137Test" />
+      <item itemvalue="JUnit.SpiralOrder54Test.test6" />
+      <item itemvalue="JUnit.SpiralOrder54Test.test7" />
+      <item itemvalue="JUnit.SpiralOrder54Test" />
+      <item itemvalue="JUnit.SpiralOrder54Test.test8" />
+      <item itemvalue="JUnit.SpiralOrder54Test.test9" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SingleNumber137Test" />
-        <item itemvalue="JUnit.SingleNumber137Test.test1" />
-        <item itemvalue="JUnit.SingleNumber260Test" />
-        <item itemvalue="JUnit.SingleNumber136Test" />
-        <item itemvalue="JUnit.Search33Test.test13" />
+        <item itemvalue="JUnit.SpiralOrder54Test" />
+        <item itemvalue="JUnit.SpiralOrder54Test.test9" />
+        <item itemvalue="JUnit.SpiralOrder54Test.test8" />
+        <item itemvalue="JUnit.SpiralOrder54Test.test7" />
+        <item itemvalue="JUnit.SpiralOrder54Test.test6" />
       </list>
     </recent_temporary>
   </component>
@@ -1405,11 +1407,6 @@
           <option name="timeStamp" value="147" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/array/spiralOrder54.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="148" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/array/nextPermutation31.java</url>
           <line>10</line>
           <option name="timeStamp" value="149" />
@@ -2143,6 +2140,16 @@
           <url>file://$PROJECT_DIR$/test/array/SingleNumber136Test.java</url>
           <line>9</line>
           <option name="timeStamp" value="386" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/array/SpiralOrder54.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="388" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/array/SpiralOrder54Test.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="390" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/test/math/MyPow50Test.java</url>
