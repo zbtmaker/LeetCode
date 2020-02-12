@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成SingleNumber260，使用HashMap统计方式实现">
-      <change afterPath="$PROJECT_DIR$/out/test/LeetCode/Array/SpiralOrder54Test.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/array/SpiralOrder54Test.java" afterDir="false" />
+    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成SpiralOrder54，终于完成了这个恶魔题目">
+      <change afterPath="$PROJECT_DIR$/out/production/LeetCode/Array/GenerateMatrix59.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/LeetCode/Array/GenerateMatrix59Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/array/GenerateMatrix59.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/array/GenerateMatrix59Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/SingleNumber137.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Array/SingleNumber137.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/spiralOrder54.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Array/spiralOrder54.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/array/spiralOrder54.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/SpiralOrder54.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/spiralOrder54.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +107,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SpiralOrder54Test">
+  <component name="RunManager" selected="JUnit.GenerateMatrix59Test.test7">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -277,7 +277,7 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
     </configuration>
-    <configuration name="SpiralOrder54Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GenerateMatrix59Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -286,14 +286,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.SpiralOrder54Test" />
+      <option name="MAIN_CLASS_NAME" value="array.GenerateMatrix59Test" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpiralOrder54Test.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GenerateMatrix59Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -302,7 +302,41 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.SpiralOrder54Test" />
+      <option name="MAIN_CLASS_NAME" value="array.GenerateMatrix59Test" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GenerateMatrix59Test.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="array" />
+      <option name="MAIN_CLASS_NAME" value="array.GenerateMatrix59Test" />
+      <option name="METHOD_NAME" value="test5" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GenerateMatrix59Test.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="array" />
+      <option name="MAIN_CLASS_NAME" value="array.GenerateMatrix59Test" />
       <option name="METHOD_NAME" value="test6" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -310,7 +344,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpiralOrder54Test.test7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GenerateMatrix59Test.test7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -319,42 +353,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.SpiralOrder54Test" />
+      <option name="MAIN_CLASS_NAME" value="array.GenerateMatrix59Test" />
       <option name="METHOD_NAME" value="test7" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpiralOrder54Test.test8" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="array.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.SpiralOrder54Test" />
-      <option name="METHOD_NAME" value="test8" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpiralOrder54Test.test9" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="array.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.SpiralOrder54Test" />
-      <option name="METHOD_NAME" value="test9" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -431,19 +431,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.isPalindrome9" />
-      <item itemvalue="JUnit.SpiralOrder54Test.test6" />
-      <item itemvalue="JUnit.SpiralOrder54Test.test7" />
-      <item itemvalue="JUnit.SpiralOrder54Test" />
-      <item itemvalue="JUnit.SpiralOrder54Test.test8" />
-      <item itemvalue="JUnit.SpiralOrder54Test.test9" />
+      <item itemvalue="JUnit.GenerateMatrix59Test.test1" />
+      <item itemvalue="JUnit.GenerateMatrix59Test" />
+      <item itemvalue="JUnit.GenerateMatrix59Test.test5" />
+      <item itemvalue="JUnit.GenerateMatrix59Test.test6" />
+      <item itemvalue="JUnit.GenerateMatrix59Test.test7" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SpiralOrder54Test" />
-        <item itemvalue="JUnit.SpiralOrder54Test.test9" />
-        <item itemvalue="JUnit.SpiralOrder54Test.test8" />
-        <item itemvalue="JUnit.SpiralOrder54Test.test7" />
-        <item itemvalue="JUnit.SpiralOrder54Test.test6" />
+        <item itemvalue="JUnit.GenerateMatrix59Test.test7" />
+        <item itemvalue="JUnit.GenerateMatrix59Test.test6" />
+        <item itemvalue="JUnit.GenerateMatrix59Test" />
+        <item itemvalue="JUnit.GenerateMatrix59Test.test5" />
+        <item itemvalue="JUnit.GenerateMatrix59Test.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -561,13 +561,8 @@
       <workItem from="1581135382321" duration="19037000" />
       <workItem from="1581214626073" duration="24508000" />
       <workItem from="1581302143318" duration="9744000" />
-    </task>
-    <task id="LOCAL-00009" summary="add caculate227 and hIndex274">
-      <created>1564415822338</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1564415822339</updated>
+      <workItem from="1581472230523" duration="1330000" />
+      <workItem from="1581474803665" duration="2219000" />
     </task>
     <task id="LOCAL-00010" summary="add rangeBitwiseAnd201">
       <created>1564416855141</created>
@@ -905,7 +900,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581318395738</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="add:完成SpiralOrder54，终于完成了这个恶魔题目">
+      <created>1581433044344</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1581433044345</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TodoView">
@@ -946,7 +948,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="add:完成MyQueue232-时间复杂度O(1),空间复杂度为O(N)" />
     <MESSAGE value="add:完成IsHappy202-运行时间过长，还有待优化的空间" />
     <MESSAGE value="add:完成Calculate227-运行时间过长，还有待优化的空间" />
     <MESSAGE value="add:完成BSTIterator173-中序遍历采用非递归、递归的方式实现" />
@@ -971,7 +972,8 @@
     <MESSAGE value="add:优化SingleNumber136，使用异或算法将space complexity降为O(1)" />
     <MESSAGE value="add:完成SingleNumber137，使用HashMap统计实现" />
     <MESSAGE value="add:完成SingleNumber260，使用HashMap统计方式实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:完成SingleNumber260，使用HashMap统计方式实现" />
+    <MESSAGE value="add:完成SpiralOrder54，终于完成了这个恶魔题目" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:完成SpiralOrder54，终于完成了这个恶魔题目" />
   </component>
   <component name="WindowStateProjectService">
     <state x="352" y="162" key="CommitChangelistDialog2" timestamp="1577633057703">
@@ -2151,6 +2153,16 @@
           <line>91</line>
           <option name="timeStamp" value="390" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/array/GenerateMatrix59Test.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="395" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/array/GenerateMatrix59.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="396" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/test/math/MyPow50Test.java</url>
           <line>14</line>
@@ -2186,6 +2198,9 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LeetCode$NthUglyNumber264Test_test6.ic" NAME="NthUglyNumber264Test.test6 Coverage Results" MODIFIED="1581156775616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>math.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/LeetCode$GenerateMatrix59Test_test5.ic" NAME="GenerateMatrix59Test.test5 Coverage Results" MODIFIED="1581479018639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>array.*</FILTER>
     </SUITE>
   </component>
 </project>
