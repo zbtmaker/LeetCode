@@ -4,45 +4,50 @@ package array;
  * Created by Administrator on 2019\3\1 0001.
  */
 public class MaxSubarraySumCircular918 {
-    public static void main(String[] args) {
-        int[] A = new int[]{5, -3, 5};
-        int max = new MaxSubarraySumCircular918().maxSubarraySumCircular(A);
-        System.out.println(max);
+    /**
+     * 1、暴力方式: time complexity O(N), space complexity O(1)
+     *
+     * @param A 目标数组
+     * @return
+     */
+    public int maxSubarraySumCircular(int[] A) {
+        return maxSubarraySumCircularByBruteForce(A);
     }
 
     /**
-     * 这里我们实现一个循环的数组，这里是上面maxSubArray53的一个变种，将数组变为循环了。此时
-     * 因为循环，所以我们将数组长度变为原来的两倍。所以循环结束条件之一为i<nums.length;
-     * 测试案例 I ： 3,-1,2,-1。这个时候start = 0，但是end会走到4，但是这个时候需要退出循环，当 end > A.length 且 end == start的时候
-     * 表示这个时候所有元素都加上了，这个时候就不需要再继续了。
-     * 测试案例II ： 3,-1,-5,2,-1。这个时候取得最大值时start = 3，end = 5。
+     * 采用Brute Force方式解决，算法time complexity O(N^2), space complexity O(1).
      *
      * @param A
      * @return
      */
-    public int maxSubarraySumCircular(int[] A) {
-        int i = 0;
-        int sum = 0;
-        int len = A.length;
-        int max = A[0];
-        int start = 0;
-        while (i < 2 * len && start < A.length) {
-            max = Math.max(max, A[i % len]);
-            sum += A[i % len];
-            max = Math.max(max, sum);
-            if (sum <= 0) {
-                sum = 0;
-                start = i + 1;
+    private int maxSubarraySumCircularByBruteForce(int[] A) {
+        int max = Integer.MIN_VALUE;
+        for (int i = 0; i < A.length; i++) {
+            max = Math.max(max, A[i]);
+            if (A[i] <= 0) {
+                continue;
             }
-            i++;
-            if(i % len == start){
-                break;
+            int sum = A[i];
+            for (int j = i + 1; j < (A.length + i); j++) {
+                sum += A[j % A.length];
+                max = Math.max(max, sum);
             }
-
         }
         return max;
     }
+
     /**
-     * 实在不行，我们就直接brute-force就行了
+     * Brute Force 算法运行时间超了, 那么此时时间复杂度肯定是O(NlogN), O(N), O(logN),
+     * 如果是O(NlogN), 那么算法使用的是归并算法(Merge), 如果time complexity为O(N),一个
+     * 指针可能搞不定，那么就是双指针搞定，如果time complexity为O(log N), 那么算法大概是
+     * Binary Search. 综合分析，time complexity为O(N), 双指针问题。
+     *
+     * @param A
+     * @return
      */
+    private int maxSubarraySumCircularByDoublePointer(int[] A) {
+        int max = Integer.MAX_VALUE;
+
+        return max;
+    }
 }

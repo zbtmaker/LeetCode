@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成FindMin153，采用二分法Binary Search">
+    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成MaxProduct152，采用双指针实现time complexity O(N), space complexity O(1)">
+      <change afterPath="$PROJECT_DIR$/out/test/LeetCode/Array/MaxArea11Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/LeetCode/backtracking/Permute46Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/array/MaxArea11Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/backtracking/Permute46Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/findMin153.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Array/findMin153.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/LeetCode/Array/MajorityElement169Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/LeetCode/dp/MaxProduct152Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/LeetCode/dp/MaxProduct152Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dp/MaxProduct152.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/MaxProduct152.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/dp/MaxProduct152Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/dp/MaxProduct152Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/maxArea11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Array/maxArea11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/maxSubarraySumCircular918.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Array/maxSubarraySumCircular918.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/BackTracking/permute46.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/BackTracking/permute46.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/DP/MaxProduct152.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/DP/MaxProduct152.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/MaxSubarraySumCircular918.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/MaxSubarraySumCircular918.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/maxArea11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/MaxArea11.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backtracking/permute46.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backtracking/Permute46.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +113,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MaxProduct152Test">
+  <component name="RunManager" selected="JUnit.Permute46Test.test7">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -277,32 +283,16 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
     </configuration>
-    <configuration name="MaxProduct152Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Permute46Test.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dp.*" />
+          <option name="PATTERN" value="backtracking.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dp" />
-      <option name="MAIN_CLASS_NAME" value="dp.MaxProduct152Test" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MaxProduct152Test.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dp" />
-      <option name="MAIN_CLASS_NAME" value="dp.MaxProduct152Test" />
+      <option name="PACKAGE_NAME" value="backtracking" />
+      <option name="MAIN_CLASS_NAME" value="backtracking.Permute46Test" />
       <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -310,16 +300,50 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaxProduct152Test.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Permute46Test.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dp.*" />
+          <option name="PATTERN" value="backtracking.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dp" />
-      <option name="MAIN_CLASS_NAME" value="dp.MaxProduct152Test" />
+      <option name="PACKAGE_NAME" value="backtracking" />
+      <option name="MAIN_CLASS_NAME" value="backtracking.Permute46Test" />
+      <option name="METHOD_NAME" value="test4" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Permute46Test.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="backtracking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="backtracking" />
+      <option name="MAIN_CLASS_NAME" value="backtracking.Permute46Test" />
+      <option name="METHOD_NAME" value="test5" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Permute46Test.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="backtracking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="backtracking" />
+      <option name="MAIN_CLASS_NAME" value="backtracking.Permute46Test" />
       <option name="METHOD_NAME" value="test6" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -327,34 +351,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaxProduct152Test.test8" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Permute46Test.test7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dp.*" />
+          <option name="PATTERN" value="backtracking.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dp" />
-      <option name="MAIN_CLASS_NAME" value="dp.MaxProduct152Test" />
-      <option name="METHOD_NAME" value="test8" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MaxProduct152Test.test9" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dp" />
-      <option name="MAIN_CLASS_NAME" value="dp.MaxProduct152Test" />
-      <option name="METHOD_NAME" value="test9" />
+      <option name="PACKAGE_NAME" value="backtracking" />
+      <option name="MAIN_CLASS_NAME" value="backtracking.Permute46Test" />
+      <option name="METHOD_NAME" value="test7" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -431,19 +438,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.isPalindrome9" />
-      <item itemvalue="JUnit.MaxProduct152Test" />
-      <item itemvalue="JUnit.MaxProduct152Test.test6" />
-      <item itemvalue="JUnit.MaxProduct152Test.test3" />
-      <item itemvalue="JUnit.MaxProduct152Test.test8" />
-      <item itemvalue="JUnit.MaxProduct152Test.test9" />
+      <item itemvalue="JUnit.Permute46Test.test3" />
+      <item itemvalue="JUnit.Permute46Test.test4" />
+      <item itemvalue="JUnit.Permute46Test.test5" />
+      <item itemvalue="JUnit.Permute46Test.test6" />
+      <item itemvalue="JUnit.Permute46Test.test7" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MaxProduct152Test" />
-        <item itemvalue="JUnit.MaxProduct152Test.test9" />
-        <item itemvalue="JUnit.MaxProduct152Test.test8" />
-        <item itemvalue="JUnit.MaxProduct152Test.test6" />
-        <item itemvalue="JUnit.MaxProduct152Test.test3" />
+        <item itemvalue="JUnit.Permute46Test.test7" />
+        <item itemvalue="JUnit.Permute46Test.test6" />
+        <item itemvalue="JUnit.Permute46Test.test5" />
+        <item itemvalue="JUnit.Permute46Test.test4" />
+        <item itemvalue="JUnit.Permute46Test.test3" />
       </list>
     </recent_temporary>
   </component>
@@ -569,14 +576,9 @@
       <workItem from="1581596572571" duration="2386000" />
       <workItem from="1581651868255" duration="4921000" />
       <workItem from="1581687129013" duration="10249000" />
-      <workItem from="1581740981557" duration="3683000" />
-    </task>
-    <task id="LOCAL-00013" summary="add:添加LeetCode第50题,求一个数的指数运算">
-      <created>1574694293551</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1574694293551</updated>
+      <workItem from="1581740981557" duration="8802000" />
+      <workItem from="1581819778616" duration="6307000" />
+      <workItem from="1581945002413" duration="5983000" />
     </task>
     <task id="LOCAL-00014" summary="add:完成最长上升子序列--300">
       <created>1577610388555</created>
@@ -914,7 +916,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581605475387</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="add:完成MaxProduct152，采用双指针实现time complexity O(N), space complexity O(1)">
+      <created>1581749459775</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1581749459776</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TodoView">
@@ -955,7 +964,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="add:InorderTraversal94-中序遍历采用非递归方式实现" />
     <MESSAGE value="add:ReverseVowels345-采用快排的思想解决问题" />
     <MESSAGE value="add:ReverseWords151-这个题目和之前的题目还是有些不同的，很好!" />
     <MESSAGE value="add:MaxSlidingWindow239-使用暴力的方式，时间复杂度为O(N^2),空间复杂度为O(1)" />
@@ -980,7 +988,8 @@
     <MESSAGE value="add:完成GenerateMatrix59，采用的思路和SpiralOrder54一样的思路" />
     <MESSAGE value="add:完成MajorityElement169，采用Boyer-Moore 投票算法将space complexity提升为O(1)" />
     <MESSAGE value="add:完成FindMin153，采用二分法Binary Search" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:完成FindMin153，采用二分法Binary Search" />
+    <MESSAGE value="add:完成MaxProduct152，采用双指针实现time complexity O(N), space complexity O(1)" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:完成MaxProduct152，采用双指针实现time complexity O(N), space complexity O(1)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="352" y="162" key="CommitChangelistDialog2" timestamp="1577633057703">
@@ -1391,11 +1400,6 @@
           <option name="timeStamp" value="138" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/array/MaxSubarraySumCircular918.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="139" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/array/largestNumber179.java</url>
           <line>11</line>
           <option name="timeStamp" value="143" />
@@ -1796,11 +1800,6 @@
           <option name="timeStamp" value="258" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/array/MaxSubarraySumCircular918.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="259" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/test/array/MaxSubarraySumCircular918Test.java</url>
           <line>24</line>
           <option name="timeStamp" value="260" />
@@ -2195,6 +2194,36 @@
           <line>64</line>
           <option name="timeStamp" value="408" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/array/MaxArea11Test.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="412" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/array/MaxArea11.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="413" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/backtracking/Permute46Test.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="418" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/backtracking/Permute46.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="419" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/backtracking/Permute46.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="420" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/backtracking/Permute46.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="421" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/test/math/MyPow50Test.java</url>
           <line>14</line>
@@ -2218,6 +2247,22 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="376" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/test/array/MaxSubarraySumCircular918Test.java</url>
+          <line>13</line>
+          <properties class="array.MaxSubarraySumCircular918Test" method="test1">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="410" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/test/array/MaxSubarraySumCircular918Test.java</url>
+          <line>23</line>
+          <properties class="array.MaxSubarraySumCircular918Test" method="test3">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="411" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
