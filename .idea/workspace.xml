@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成MaxProduct152，采用双指针实现time complexity O(N), space complexity O(1)">
-      <change afterPath="$PROJECT_DIR$/out/test/LeetCode/Array/MaxArea11Test.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/LeetCode/backtracking/Permute46Test.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/array/MaxArea11Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/backtracking/Permute46Test.java" afterDir="false" />
+    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成Permute46，采用回溯算法思想解决问题">
+      <change afterPath="$PROJECT_DIR$/test/string/IsAdditiveNumber306Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/maxArea11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Array/maxArea11.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/maxSubarraySumCircular918.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Array/maxSubarraySumCircular918.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/BackTracking/permute46.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/BackTracking/permute46.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/DP/MaxProduct152.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/DP/MaxProduct152.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/array/MaxSubarraySumCircular918.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/MaxSubarraySumCircular918.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/array/maxArea11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/MaxArea11.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backtracking/permute46.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backtracking/Permute46.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/string/isAdditiveNumber306.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/IsAdditiveNumber306.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +104,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Permute46Test.test7">
+  <component name="RunManager" selected="JUnit.IsAdditiveNumber306Test.test13">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -283,85 +274,84 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
     </configuration>
-    <configuration name="Permute46Test.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IsAdditiveNumber306Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="backtracking.*" />
+          <option name="PATTERN" value="string.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="backtracking" />
-      <option name="MAIN_CLASS_NAME" value="backtracking.Permute46Test" />
-      <option name="METHOD_NAME" value="test3" />
+      <option name="PACKAGE_NAME" value="string" />
+      <option name="MAIN_CLASS_NAME" value="string.IsAdditiveNumber306Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IsAdditiveNumber306Test.test10" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="string.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="string" />
+      <option name="MAIN_CLASS_NAME" value="string.IsAdditiveNumber306Test" />
+      <option name="METHOD_NAME" value="test10" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Permute46Test.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IsAdditiveNumber306Test.test11" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="backtracking.*" />
+          <option name="PATTERN" value="string.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="backtracking" />
-      <option name="MAIN_CLASS_NAME" value="backtracking.Permute46Test" />
-      <option name="METHOD_NAME" value="test4" />
+      <option name="PACKAGE_NAME" value="string" />
+      <option name="MAIN_CLASS_NAME" value="string.IsAdditiveNumber306Test" />
+      <option name="METHOD_NAME" value="test11" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Permute46Test.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IsAdditiveNumber306Test.test12" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="backtracking.*" />
+          <option name="PATTERN" value="string.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="backtracking" />
-      <option name="MAIN_CLASS_NAME" value="backtracking.Permute46Test" />
-      <option name="METHOD_NAME" value="test5" />
+      <option name="PACKAGE_NAME" value="string" />
+      <option name="MAIN_CLASS_NAME" value="string.IsAdditiveNumber306Test" />
+      <option name="METHOD_NAME" value="test12" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Permute46Test.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IsAdditiveNumber306Test.test13" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="backtracking.*" />
+          <option name="PATTERN" value="string.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="backtracking" />
-      <option name="MAIN_CLASS_NAME" value="backtracking.Permute46Test" />
-      <option name="METHOD_NAME" value="test6" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Permute46Test.test7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="backtracking.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="backtracking" />
-      <option name="MAIN_CLASS_NAME" value="backtracking.Permute46Test" />
-      <option name="METHOD_NAME" value="test7" />
+      <option name="PACKAGE_NAME" value="string" />
+      <option name="MAIN_CLASS_NAME" value="string.IsAdditiveNumber306Test" />
+      <option name="METHOD_NAME" value="test13" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -438,19 +428,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.isPalindrome9" />
-      <item itemvalue="JUnit.Permute46Test.test3" />
-      <item itemvalue="JUnit.Permute46Test.test4" />
-      <item itemvalue="JUnit.Permute46Test.test5" />
-      <item itemvalue="JUnit.Permute46Test.test6" />
-      <item itemvalue="JUnit.Permute46Test.test7" />
+      <item itemvalue="JUnit.IsAdditiveNumber306Test" />
+      <item itemvalue="JUnit.IsAdditiveNumber306Test.test10" />
+      <item itemvalue="JUnit.IsAdditiveNumber306Test.test11" />
+      <item itemvalue="JUnit.IsAdditiveNumber306Test.test12" />
+      <item itemvalue="JUnit.IsAdditiveNumber306Test.test13" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Permute46Test.test7" />
-        <item itemvalue="JUnit.Permute46Test.test6" />
-        <item itemvalue="JUnit.Permute46Test.test5" />
-        <item itemvalue="JUnit.Permute46Test.test4" />
-        <item itemvalue="JUnit.Permute46Test.test3" />
+        <item itemvalue="JUnit.IsAdditiveNumber306Test.test13" />
+        <item itemvalue="JUnit.IsAdditiveNumber306Test" />
+        <item itemvalue="JUnit.IsAdditiveNumber306Test.test10" />
+        <item itemvalue="JUnit.IsAdditiveNumber306Test.test12" />
+        <item itemvalue="JUnit.IsAdditiveNumber306Test.test11" />
       </list>
     </recent_temporary>
   </component>
@@ -578,14 +568,8 @@
       <workItem from="1581687129013" duration="10249000" />
       <workItem from="1581740981557" duration="8802000" />
       <workItem from="1581819778616" duration="6307000" />
-      <workItem from="1581945002413" duration="5983000" />
-    </task>
-    <task id="LOCAL-00014" summary="add:完成最长上升子序列--300">
-      <created>1577610388555</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1577610388555</updated>
+      <workItem from="1581945002413" duration="6248000" />
+      <workItem from="1582101523876" duration="15813000" />
     </task>
     <task id="LOCAL-00015" summary="add:完成最长上升子序列--300">
       <created>1577610505446</created>
@@ -923,7 +907,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581749459776</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="add:完成Permute46，采用回溯算法思想解决问题">
+      <created>1581951130627</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1581951130628</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TodoView">
@@ -964,7 +955,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="add:ReverseVowels345-采用快排的思想解决问题" />
     <MESSAGE value="add:ReverseWords151-这个题目和之前的题目还是有些不同的，很好!" />
     <MESSAGE value="add:MaxSlidingWindow239-使用暴力的方式，时间复杂度为O(N^2),空间复杂度为O(1)" />
     <MESSAGE value="add:MaxSlidingWindow239-空间复杂度O(1)和时间复杂度为O(N^2),待优化" />
@@ -989,7 +979,8 @@
     <MESSAGE value="add:完成MajorityElement169，采用Boyer-Moore 投票算法将space complexity提升为O(1)" />
     <MESSAGE value="add:完成FindMin153，采用二分法Binary Search" />
     <MESSAGE value="add:完成MaxProduct152，采用双指针实现time complexity O(N), space complexity O(1)" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:完成MaxProduct152，采用双指针实现time complexity O(N), space complexity O(1)" />
+    <MESSAGE value="add:完成Permute46，采用回溯算法思想解决问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:完成Permute46，采用回溯算法思想解决问题" />
   </component>
   <component name="WindowStateProjectService">
     <state x="352" y="162" key="CommitChangelistDialog2" timestamp="1577633057703">
@@ -2223,6 +2214,21 @@
           <url>file://$PROJECT_DIR$/src/backtracking/Permute46.java</url>
           <line>56</line>
           <option name="timeStamp" value="421" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/lang/AbstractStringBuilder.java</url>
+          <line>1240</line>
+          <option name="timeStamp" value="422" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/string/IsAdditiveNumber306.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="424" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/string/IsAdditiveNumber306.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="425" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/test/math/MyPow50Test.java</url>
