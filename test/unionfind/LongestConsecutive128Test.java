@@ -20,12 +20,19 @@ public class LongestConsecutive128Test {
     @Test
     public void test2() {
         int result = longest.longestConsecutive(new int[]{2, 4, 100, 3, 4, 30, 5, 31, 1, 1});
-        Assert.assertEquals(result, 7);
+        Assert.assertEquals(result, 5);
     }
 
     @Test
     public void test3() {
         int result = longest.longestConsecutive(new int[]{5, 4, 100, 1, 4, 30, 3, 5, 2, 31, 1, 1});
-        Assert.assertEquals(result, 7);
+        Assert.assertEquals(result, 5);
+    }
+
+
+    @Test
+    public void test4() {
+        int result = longest.longestConsecutive(new int[]{1, 1});
+        Assert.assertEquals(result, 1);
     }
 }
