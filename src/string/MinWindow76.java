@@ -19,11 +19,16 @@ public class MinWindow76 {
      * @return 最小覆盖子串
      */
     public String minWindow(String s, String t) {
-        return minWindowByBruteForce(s, t);
+        /*return minWindowByBruteForce(s, t);*/
+        return minWindowBySlidingWindow(s, t);
     }
 
     /**
-     * 滑动窗口方式实现这个方案
+     * 滑动窗口方式实现这个方案,使用双指针的方式来实现这个窗口，
+     * 算法步骤：算法步骤left、right
+     * 1、首先left和right指向同一个位置，紧接着right指针往右走，如果s.substring(left,right + 1)满足条件
+     * 2、left往右走，如果发现仍然满足条件，此时就应该缩小窗口的大小，比较窗口大小和之前最小的窗口大小
+     * 3、如果此时发现窗口内的字符不能满足条件，此时就应该回到第2步，然后
      *
      * @param s 匹配字符串
      * @param t 目标字符串
@@ -34,11 +39,47 @@ public class MinWindow76 {
             return "";
         }
         Map<Character, Integer> targetMap = initialTargetMap(t);
-        int tLen = t.length();
-        for (int i = tLen - 1; i < s.length(); i++) {
+        int left = 0;
+        int right = 0;
+        int min = Integer.MAX_VALUE;
+        String minStr = "";
+        Map<Character, Integer> srcMap = new HashMap<>();
+        char ch;
+        while (right < s.length() && left <= right) {
+            while (right < s.length()) {
+                ch = s.charAt(right);
+                if (targetMap.containsKey(ch)) {
+                    if (srcMap.containsKey(ch)) {
+                        srcMap.put(ch, srcMap.get(ch) + 1);
+                    } else {
+                        srcMap.put(ch, 1);
+                    }
+                }
+                right++;
+                if (compareMap(srcMap, targetMap)) {
+                    int len = right - left;
+                    if (min > len) {
+                        min = len;
+                        minStr = s.substring(left, right);
+                    }
+                    break;
+                }
 
+            }
+            while (left <= right) {
+                ch = s.charAt(left);
+                if (targetMap.containsKey(ch)) {
+                    srcMap.put(ch, srcMap.get(ch) - 1);
+                }
+                left++;
+                if (!compareMap(srcMap, targetMap)) {
+                    break;
+                }
+
+            }
         }
-        return null;
+
+        return minStr;
     }
 
     /**
@@ -50,7 +91,7 @@ public class MinWindow76 {
      * @param t 目标字符串
      * @return 最小覆盖字符子串
      */
-    public String minWindowByBruteForce(String s, String t) {
+    private String minWindowByBruteForce(String s, String t) {
         if (t.length() > s.length()) {
             return "";
         }

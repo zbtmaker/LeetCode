@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成DecodeString394, 采用Stack的思想解决问题">
-      <change afterPath="$PROJECT_DIR$/src/array/CheckSubarraySum523.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/array/CheckSubarraySum523Test.java" afterDir="false" />
+    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成CheckSubarraySum523, 采用暴力算法方式，time complexity o(N^2), space complexity O(1)">
+      <change afterPath="$PROJECT_DIR$/src/array/CanFinish207.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/math/RangeBitwiseAnd201.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/unionfind/LongestConsecutive128.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/array/CanFinish207Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/math/RangeBitwiseAnd201Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/unionfind/LongestConsecutive128Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/String/MinWindow76.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/String/MinWindow76.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/LeetCode/Array/CheckSubarraySum523Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/LeetCode/Array/CheckSubarraySum523Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/string/MinWindow76.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/MinWindow76.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/array/CheckSubarraySum523Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/array/CheckSubarraySum523Test.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +63,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="/usr/local/Cellar/maven/3.6.3/libexec" />
+        <option name="userSettingsFile" value="/usr/local/Cellar/maven/3.6.3/libexec/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1VdoYi3J2rgACppMX4aIr5z82vd" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -72,7 +88,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -83,6 +99,9 @@
       <recent name="array" />
       <recent name="math" />
       <recent name="stack" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="DP" />
@@ -104,7 +123,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CheckSubarraySum523Test">
+  <component name="RunManager" selected="JUnit.CanFinish207Test">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -274,7 +293,7 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
     </configuration>
-    <configuration name="CheckSubarraySum523Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CanFinish207Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -283,14 +302,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.CheckSubarraySum523Test" />
+      <option name="MAIN_CLASS_NAME" value="array.CanFinish207Test" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheckSubarraySum523Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CanFinish207Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -299,7 +318,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.CheckSubarraySum523Test" />
+      <option name="MAIN_CLASS_NAME" value="array.CanFinish207Test" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -307,7 +326,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheckSubarraySum523Test.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CanFinish207Test.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -316,7 +335,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.CheckSubarraySum523Test" />
+      <option name="MAIN_CLASS_NAME" value="array.CanFinish207Test" />
       <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -324,34 +343,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheckSubarraySum523Test.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RangeBitwiseAnd201Test.test10" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="array.*" />
+          <option name="PATTERN" value="math.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.CheckSubarraySum523Test" />
-      <option name="METHOD_NAME" value="test4" />
+      <option name="PACKAGE_NAME" value="math" />
+      <option name="MAIN_CLASS_NAME" value="math.RangeBitwiseAnd201Test" />
+      <option name="METHOD_NAME" value="test10" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheckSubarraySum523Test.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RangeBitwiseAnd201Test.test11" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="array.*" />
+          <option name="PATTERN" value="math.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.CheckSubarraySum523Test" />
-      <option name="METHOD_NAME" value="test5" />
+      <option name="PACKAGE_NAME" value="math" />
+      <option name="MAIN_CLASS_NAME" value="math.RangeBitwiseAnd201Test" />
+      <option name="METHOD_NAME" value="test11" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -428,19 +447,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.isPalindrome9" />
-      <item itemvalue="JUnit.CheckSubarraySum523Test.test1" />
-      <item itemvalue="JUnit.CheckSubarraySum523Test.test2" />
-      <item itemvalue="JUnit.CheckSubarraySum523Test" />
-      <item itemvalue="JUnit.CheckSubarraySum523Test.test4" />
-      <item itemvalue="JUnit.CheckSubarraySum523Test.test5" />
+      <item itemvalue="JUnit.RangeBitwiseAnd201Test.test10" />
+      <item itemvalue="JUnit.RangeBitwiseAnd201Test.test11" />
+      <item itemvalue="JUnit.CanFinish207Test" />
+      <item itemvalue="JUnit.CanFinish207Test.test1" />
+      <item itemvalue="JUnit.CanFinish207Test.test2" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CheckSubarraySum523Test" />
-        <item itemvalue="JUnit.CheckSubarraySum523Test.test5" />
-        <item itemvalue="JUnit.CheckSubarraySum523Test.test4" />
-        <item itemvalue="JUnit.CheckSubarraySum523Test.test2" />
-        <item itemvalue="JUnit.CheckSubarraySum523Test.test1" />
+        <item itemvalue="JUnit.CanFinish207Test" />
+        <item itemvalue="JUnit.CanFinish207Test.test2" />
+        <item itemvalue="JUnit.CanFinish207Test.test1" />
+        <item itemvalue="JUnit.RangeBitwiseAnd201Test.test11" />
+        <item itemvalue="JUnit.RangeBitwiseAnd201Test.test10" />
       </list>
     </recent_temporary>
   </component>
@@ -571,14 +590,14 @@
       <workItem from="1581945002413" duration="6248000" />
       <workItem from="1582101523876" duration="16083000" />
       <workItem from="1582269129550" duration="16855000" />
-      <workItem from="1582336723458" duration="11336000" />
-    </task>
-    <task id="LOCAL-00017" summary="add:子数组序列之和为K">
-      <created>1577633057951</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1577633057951</updated>
+      <workItem from="1582336723458" duration="16398000" />
+      <workItem from="1582442511693" duration="1861000" />
+      <workItem from="1582689266633" duration="729000" />
+      <workItem from="1583041737759" duration="4855000" />
+      <workItem from="1583054145800" duration="3418000" />
+      <workItem from="1583242069701" duration="105000" />
+      <workItem from="1583329678808" duration="3648000" />
+      <workItem from="1583415939719" duration="651000" />
     </task>
     <task id="LOCAL-00018" summary="add:完成MaxProduct152-暴力解决方案，动态规划方案待优化">
       <created>1579050906094</created>
@@ -916,7 +935,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582347584187</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="add:完成CheckSubarraySum523, 采用暴力算法方式，time complexity o(N^2), space complexity O(1)">
+      <created>1582352694961</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1582352694961</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TodoView">
@@ -957,7 +983,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="add:MaxSlidingWindow239-空间复杂度O(1)和时间复杂度为O(N^2),待优化" />
     <MESSAGE value="add:MinStack155-借助一个辅助栈的思想解决该问题，时间复杂度为O(1),空间复杂度为O(N)" />
     <MESSAGE value="add:完成Merge88-时间复杂度为O(M+N),空间复杂度为O(M+N)" />
     <MESSAGE value="add:完成Insert57-时间复杂度为O(N),空间复杂度为O(N),没有优化空间了" />
@@ -982,7 +1007,8 @@
     <MESSAGE value="add:完成Permute46，采用回溯算法思想解决问题" />
     <MESSAGE value="add:完成IsAdditiveNumber306, 采用暴力的方式解决, time complexity O(N^2), space complexity O(1), time complexity 待优化" />
     <MESSAGE value="add:完成DecodeString394, 采用Stack的思想解决问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:完成DecodeString394, 采用Stack的思想解决问题" />
+    <MESSAGE value="add:完成CheckSubarraySum523, 采用暴力算法方式，time complexity o(N^2), space complexity O(1)" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:完成CheckSubarraySum523, 采用暴力算法方式，time complexity o(N^2), space complexity O(1)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="352" y="162" key="CommitChangelistDialog2" timestamp="1577633057703">
@@ -1978,13 +2004,8 @@
           <option name="timeStamp" value="337" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/string/MinWindow76Test.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="340" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/string/MinWindow76.java</url>
-          <line>53</line>
+          <line>94</line>
           <option name="timeStamp" value="341" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -2246,6 +2267,31 @@
           <url>file://$PROJECT_DIR$/src/array/CheckSubarraySum523.java</url>
           <line>47</line>
           <option name="timeStamp" value="432" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/string/MinWindow76.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="433" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/string/MinWindow76.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="435" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/math/RangeBitwiseAnd201.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="437" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/math/RangeBitwiseAnd201.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="438" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/math/RangeBitwiseAnd201Test.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="440" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/test/math/MyPow50Test.java</url>

@@ -36,7 +36,6 @@ public class CheckSubarraySum523Test {
 
     @Test
     public void test5() {
-        System.out.println(7 % -7);
         boolean flag = sum.checkSubarraySum(new int[]{0, 0, 0, 0, 0}, 0);
         Assert.assertTrue(flag);
     }
