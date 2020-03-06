@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成LongestConsecutive128, 采用Union Find的思想，实现的是重复数字计入最长连续长度，原题是不计入，所以该实现方法可以优化。">
+    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成LongestConsecutive128优化，待进一步优化">
+      <change afterPath="$PROJECT_DIR$/test/graph/CanFinish207Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/unionfind/LongestConsecutive128.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/unionfind/LongestConsecutive128.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/unionfind/LongestConsecutive128Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/unionfind/LongestConsecutive128Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Array/CanFinish207.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/graph/CanFinish207.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/graph/CanFinish207.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/CanFinish207.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/CanFinish207.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +117,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LongestConsecutive128Test.test4">
+  <component name="RunManager" selected="JUnit.CanFinish207Test.test3">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -289,62 +291,63 @@
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="array.*" />
+          <option name="PATTERN" value="graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="array" />
-      <option name="MAIN_CLASS_NAME" value="array.CanFinish207Test" />
+      <option name="PACKAGE_NAME" value="graph" />
+      <option name="MAIN_CLASS_NAME" value="graph.CanFinish207Test" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LongestConsecutive128Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CanFinish207Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="unionfind.*" />
+          <option name="PATTERN" value="graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="unionfind" />
-      <option name="MAIN_CLASS_NAME" value="unionfind.LongestConsecutive128Test" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LongestConsecutive128Test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="unionfind.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="unionfind" />
-      <option name="MAIN_CLASS_NAME" value="unionfind.LongestConsecutive128Test" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="PACKAGE_NAME" value="graph" />
+      <option name="MAIN_CLASS_NAME" value="graph.CanFinish207Test" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LongestConsecutive128Test.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CanFinish207Test.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="unionfind.*" />
+          <option name="PATTERN" value="graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="unionfind" />
-      <option name="MAIN_CLASS_NAME" value="unionfind.LongestConsecutive128Test" />
-      <option name="METHOD_NAME" value="test2" />
+      <option name="PACKAGE_NAME" value="graph" />
+      <option name="MAIN_CLASS_NAME" value="graph.CanFinish207Test" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CanFinish207Test.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="graph.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="graph" />
+      <option name="MAIN_CLASS_NAME" value="graph.CanFinish207Test" />
+      <option name="METHOD_NAME" value="test4" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -438,19 +441,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.isPalindrome9" />
-      <item itemvalue="JUnit.CanFinish207Test" />
-      <item itemvalue="JUnit.LongestConsecutive128Test.test" />
-      <item itemvalue="JUnit.LongestConsecutive128Test" />
-      <item itemvalue="JUnit.LongestConsecutive128Test.test2" />
       <item itemvalue="JUnit.LongestConsecutive128Test.test4" />
+      <item itemvalue="JUnit.CanFinish207Test.test1" />
+      <item itemvalue="JUnit.CanFinish207Test.test3" />
+      <item itemvalue="JUnit.CanFinish207Test.test4" />
+      <item itemvalue="JUnit.CanFinish207Test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LongestConsecutive128Test.test4" />
-        <item itemvalue="JUnit.LongestConsecutive128Test" />
-        <item itemvalue="JUnit.LongestConsecutive128Test.test2" />
-        <item itemvalue="JUnit.LongestConsecutive128Test.test" />
+        <item itemvalue="JUnit.CanFinish207Test.test3" />
         <item itemvalue="JUnit.CanFinish207Test" />
+        <item itemvalue="JUnit.CanFinish207Test.test4" />
+        <item itemvalue="JUnit.CanFinish207Test.test1" />
+        <item itemvalue="JUnit.LongestConsecutive128Test.test4" />
       </list>
     </recent_temporary>
   </component>
@@ -588,14 +591,8 @@
       <workItem from="1583054145800" duration="3418000" />
       <workItem from="1583242069701" duration="105000" />
       <workItem from="1583329678808" duration="3648000" />
-      <workItem from="1583415939719" duration="3589000" />
-    </task>
-    <task id="LOCAL-00019" summary="add:完成MaxProduct152-动态规划方案完成，但超时，还需优化">
-      <created>1579100890974</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1579100890974</updated>
+      <workItem from="1583415939719" duration="7616000" />
+      <workItem from="1583496637441" duration="425000" />
     </task>
     <task id="LOCAL-00020" summary="add:完成SummaryRanges228-">
       <created>1579103962367</created>
@@ -933,7 +930,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583417451990</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="add:完成LongestConsecutive128优化，待进一步优化">
+      <created>1583420156367</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1583420156367</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TodoView">
@@ -974,7 +978,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="add:完成Merge88-时间复杂度为O(M+N),空间复杂度为O(M+N)" />
     <MESSAGE value="add:完成Insert57-时间复杂度为O(N),空间复杂度为O(N),没有优化空间了" />
     <MESSAGE value="add:完成SortArrayUtils中MergeSort" />
     <MESSAGE value="add:完成IsUgly263,使用最简单的暴力循环即可求的最优解" />
@@ -999,7 +1002,8 @@
     <MESSAGE value="add:完成DecodeString394, 采用Stack的思想解决问题" />
     <MESSAGE value="add:完成CheckSubarraySum523, 采用暴力算法方式，time complexity o(N^2), space complexity O(1)" />
     <MESSAGE value="add:完成LongestConsecutive128, 采用Union Find的思想，实现的是重复数字计入最长连续长度，原题是不计入，所以该实现方法可以优化。" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:完成LongestConsecutive128, 采用Union Find的思想，实现的是重复数字计入最长连续长度，原题是不计入，所以该实现方法可以优化。" />
+    <MESSAGE value="add:完成LongestConsecutive128优化，待进一步优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:完成LongestConsecutive128优化，待进一步优化" />
   </component>
   <component name="WindowStateProjectService">
     <state x="352" y="162" key="CommitChangelistDialog2" timestamp="1577633057703">
@@ -2296,8 +2300,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/unionfind/LongestConsecutive128.java</url>
-          <line>64</line>
+          <line>65</line>
           <option name="timeStamp" value="443" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/graph/CanFinish207.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="444" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/graph/CanFinish207Test.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="445" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/test/math/MyPow50Test.java</url>
