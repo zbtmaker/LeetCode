@@ -41,19 +41,6 @@ public class FindItinerary332Test {
     }
 
     @Test
-    public void test2() {
-        Map<String, List<String>> map = new HashMap<>();
-        map.put("ATL", Arrays.asList("SFO", "JFK"));
-
-        List<String> edge = map.get("ATL");
-        System.out.println("Before Sort :");
-        map.get("ATL").forEach(System.out::println);
-        edge.sort(String::compareTo);
-        System.out.println("After Sort :");
-        map.get("ATL").forEach(System.out::println);
-    }
-
-    @Test
     public void test3() {
         List<List<String>> tickets = new ArrayList<>();
         List<String> t1 = new ArrayList<>();
@@ -84,6 +71,10 @@ public class FindItinerary332Test {
         Assert.assertArrayEquals(path.toArray(new String[0]), new String[]{"JFK", "ATL", "JFK", "SFO", "ATL", "SFO"});
     }
 
+    /**
+     * JFK->{KUL,NRT}
+     * NRT->{JFK}
+     */
     @Test
     public void test4() {
         List<List<String>> tickets = new ArrayList<>();
@@ -104,5 +95,62 @@ public class FindItinerary332Test {
 
         List<String> path = find.findItinerary(tickets);
         Assert.assertArrayEquals(path.toArray(new String[0]), new String[]{"JFK", "NRT", "JFK", "KUL"});
+    }
+
+    @Test
+    public void test5() {
+        List<List<String>> tickets = new ArrayList<>();
+        List<String> t1 = new ArrayList<>();
+        t1.add("EZE");
+        t1.add("AXA");
+        tickets.add(t1);
+
+        List<String> t2 = new ArrayList<>();
+        t2.add("TIA");
+        t2.add("ANU");
+        tickets.add(t2);
+
+        List<String> t3 = new ArrayList<>();
+        t3.add("ANU");
+        t3.add("JFK");
+        tickets.add(t3);
+
+        List<String> t5 = new ArrayList<>();
+        t5.add("JFK");
+        t5.add("ANU");
+        tickets.add(t5);
+
+        List<String> t6 = new ArrayList<>();
+        t6.add("ANU");
+        t6.add("EZE");
+        tickets.add(t6);
+
+        List<String> t7 = new ArrayList<>();
+        t7.add("TIA");
+        t7.add("ANU");
+        tickets.add(t7);
+
+        List<String> t8 = new ArrayList<>();
+        t8.add("AXA");
+        t8.add("TIA");
+        tickets.add(t8);
+
+        List<String> t9 = new ArrayList<>();
+        t9.add("TIA");
+        t9.add("JFK");
+        tickets.add(t9);
+
+        List<String> t10 = new ArrayList<>();
+        t10.add("ANU");
+        t10.add("TIA");
+        tickets.add(t10);
+
+        List<String> t11 = new ArrayList<>();
+        t11.add("JFK");
+        t11.add("TIA");
+        tickets.add(t11);
+
+        List<String> path = find.findItinerary(tickets);
+        Assert.assertArrayEquals(path.toArray(new String[0]), new String[]{"JFK", "ANU", "EZE", "AXA", "TIA", "ANU", "JFK", "TIA", "ANU", "TIA", "JFK"});
     }
 }
