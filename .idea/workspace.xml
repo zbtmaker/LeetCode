@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:NetworkDelayTime743, 采用Dijkstra Algorithm. 待优化点 - 实现带索引的优先队列">
+    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:FindItinerary332, 采用Depth First Search算法解决">
+      <change afterPath="$PROJECT_DIR$/out/production/LeetCode/unionfind/NumIslands200.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/LeetCode/unionfind/WeightedUnionFind.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/LeetCode/unionfind/NumIslands200Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/unionfind/NumIslands200.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/unionfind/WeightedUnionFind.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/unionfind/NumIslands200Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/graph/NetworkDelayTime743$Edge.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/graph/NetworkDelayTime743$Edge.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/graph/NetworkDelayTime743.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/graph/NetworkDelayTime743.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graph/FindItinerary332.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/FindItinerary332.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/graph/FindItinerary332Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/graph/FindItinerary332Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/graph/FindItinerary332.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/graph/FindItinerary332.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,17 +93,18 @@
       <recent name="dp" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="unionfind" />
       <recent name="graph" />
       <recent name="array" />
       <recent name="math" />
       <recent name="stack" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="DP" />
       <recent name="Array" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -118,7 +122,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FindItinerary332Test">
+  <component name="RunManager" selected="JUnit.NumIslands200Test">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -292,7 +296,7 @@
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="graph.*" />
+          <option name="PATTERN" value="unionfind.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -304,16 +308,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindItinerary332Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FindItinerary332Test.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="graph.*" />
+          <option name="PATTERN" value="unionfind.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="graph" />
       <option name="MAIN_CLASS_NAME" value="graph.FindItinerary332Test" />
+      <option name="METHOD_NAME" value="test5" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NumIslands200Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unionfind.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="unionfind" />
+      <option name="MAIN_CLASS_NAME" value="unionfind.NumIslands200Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NumIslands200Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unionfind.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="unionfind" />
+      <option name="MAIN_CLASS_NAME" value="unionfind.NumIslands200Test" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -321,50 +358,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindItinerary332Test.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NumIslands200Test.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="graph.*" />
+          <option name="PATTERN" value="unionfind.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="graph" />
-      <option name="MAIN_CLASS_NAME" value="graph.FindItinerary332Test" />
-      <option name="METHOD_NAME" value="test3" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FindItinerary332Test.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="graph.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="graph" />
-      <option name="MAIN_CLASS_NAME" value="graph.FindItinerary332Test" />
-      <option name="METHOD_NAME" value="test4" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FindItinerary332Test.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="graph.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="graph" />
-      <option name="MAIN_CLASS_NAME" value="graph.FindItinerary332Test" />
+      <option name="PACKAGE_NAME" value="unionfind" />
+      <option name="MAIN_CLASS_NAME" value="unionfind.NumIslands200Test" />
       <option name="METHOD_NAME" value="test5" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -442,19 +445,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.isPalindrome9" />
-      <item itemvalue="JUnit.FindItinerary332Test.test1" />
-      <item itemvalue="JUnit.FindItinerary332Test.test4" />
       <item itemvalue="JUnit.FindItinerary332Test" />
-      <item itemvalue="JUnit.FindItinerary332Test.test3" />
       <item itemvalue="JUnit.FindItinerary332Test.test5" />
+      <item itemvalue="JUnit.NumIslands200Test.test1" />
+      <item itemvalue="JUnit.NumIslands200Test" />
+      <item itemvalue="JUnit.NumIslands200Test.test5" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.NumIslands200Test" />
+        <item itemvalue="JUnit.NumIslands200Test.test5" />
+        <item itemvalue="JUnit.NumIslands200Test.test1" />
         <item itemvalue="JUnit.FindItinerary332Test" />
         <item itemvalue="JUnit.FindItinerary332Test.test5" />
-        <item itemvalue="JUnit.FindItinerary332Test.test4" />
-        <item itemvalue="JUnit.FindItinerary332Test.test3" />
-        <item itemvalue="JUnit.FindItinerary332Test.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -596,14 +599,7 @@
       <workItem from="1583496637441" duration="13284000" />
       <workItem from="1583542895611" duration="11120000" />
       <workItem from="1583594893478" duration="1938000" />
-      <workItem from="1583636413215" duration="8549000" />
-    </task>
-    <task id="LOCAL-00023" summary="add:完成LargestRectangleArea84-Brute Force的方式实现的，LeetCode执行超时">
-      <created>1579186754391</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1579186754391</updated>
+      <workItem from="1583636413215" duration="15404000" />
     </task>
     <task id="LOCAL-00024" summary="add:完成LargestRectangleArea84-Dynamic Programming的方式实现的，时间复杂度O(N^2),空间复杂度O(1)">
       <created>1579189321815</created>
@@ -941,7 +937,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583638788830</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="add:FindItinerary332, 采用Depth First Search算法解决">
+      <created>1583653841440</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1583653841441</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TodoView">
@@ -982,7 +985,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="add:完成NthUglyNumber264,使用暴力破解、Memorization、最优Dynamic Programming方式实现" />
     <MESSAGE value="add:完成NthSuperUglyNumber313,使用Dynamic Programming方式解决可以参考NthUglyNumber264" />
     <MESSAGE value="add:完成CountPrimes204，纯暴力和使用Memorization也不能通过" />
     <MESSAGE value="add:完成LexicalOrder386，使用DFS解决问题，最终实现采用递归的方式实现" />
@@ -1007,7 +1009,8 @@
     <MESSAGE value="add:完成CanFinish207和FindOrder210, 采用DFS算法思想实现，主要考察DFS和Topological Sort" />
     <MESSAGE value="add:完成FindItinerary332, 采用Union Find算法思想解决" />
     <MESSAGE value="add:NetworkDelayTime743, 采用Dijkstra Algorithm. 待优化点 - 实现带索引的优先队列" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:NetworkDelayTime743, 采用Dijkstra Algorithm. 待优化点 - 实现带索引的优先队列" />
+    <MESSAGE value="add:FindItinerary332, 采用Depth First Search算法解决" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:FindItinerary332, 采用Depth First Search算法解决" />
   </component>
   <component name="WindowStateProjectService">
     <state x="352" y="162" key="CommitChangelistDialog2" timestamp="1577633057703">
