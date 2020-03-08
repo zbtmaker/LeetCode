@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成CanFinish207和FindOrder210, 采用DFS算法思想实现，主要考察DFS和Topological Sort">
-      <change afterPath="$PROJECT_DIR$/out/production/LeetCode/graph/FindItinerary332.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/LeetCode/unionfind/FindRedundantConnection684.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/LeetCode/graph/FindItinerary332Test.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/LeetCode/unionfind/FindRedundantConnection684Test.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graph/FindItinerary332.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/unionfind/FindRedundantConnection684.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/graph/FindItinerary332Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/unionfind/FindRedundantConnection684Test.java" afterDir="false" />
+    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:完成FindItinerary332, 采用Union Find算法思想解决">
+      <change afterPath="$PROJECT_DIR$/src/graph/FindRedundantDirectedConnection685.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/graph/NetworkDelayTime743.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/graph/FindRedundantDirectedConnection685Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/graph/NetworkDelayTime743Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/graph/CanFinish207.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/graph/CanFinish207.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/unionfind/FindRedundantConnection684.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/unionfind/FindRedundantConnection684.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/LeetCode/unionfind/FindRedundantConnection684Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/LeetCode/unionfind/FindRedundantConnection684Test.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,19 +92,20 @@
       <recent name="dp" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="graph" />
       <recent name="array" />
       <recent name="math" />
       <recent name="stack" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="DP" />
       <recent name="Array" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -122,7 +120,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FindRedundantConnection684Test.test5">
+  <component name="RunManager" selected="JUnit.NetworkDelayTime743Test">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -292,16 +290,32 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
     </configuration>
-    <configuration name="FindRedundantConnection684Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NetworkDelayTime743Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="unionfind.*" />
+          <option name="PATTERN" value="graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="unionfind" />
-      <option name="MAIN_CLASS_NAME" value="unionfind.FindRedundantConnection684Test" />
+      <option name="PACKAGE_NAME" value="graph" />
+      <option name="MAIN_CLASS_NAME" value="graph.NetworkDelayTime743Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NetworkDelayTime743Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="graph.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="graph" />
+      <option name="MAIN_CLASS_NAME" value="graph.NetworkDelayTime743Test" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -309,16 +323,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindRedundantConnection684Test.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NetworkDelayTime743Test.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="unionfind.*" />
+          <option name="PATTERN" value="graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="unionfind" />
-      <option name="MAIN_CLASS_NAME" value="unionfind.FindRedundantConnection684Test" />
+      <option name="PACKAGE_NAME" value="graph" />
+      <option name="MAIN_CLASS_NAME" value="graph.NetworkDelayTime743Test" />
       <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -326,16 +340,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindRedundantConnection684Test.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NetworkDelayTime743Test.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="unionfind.*" />
+          <option name="PATTERN" value="graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="unionfind" />
-      <option name="MAIN_CLASS_NAME" value="unionfind.FindRedundantConnection684Test" />
+      <option name="PACKAGE_NAME" value="graph" />
+      <option name="MAIN_CLASS_NAME" value="graph.NetworkDelayTime743Test" />
       <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -343,34 +357,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindRedundantConnection684Test.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NetworkDelayTime743Test.testPriorityQueue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="unionfind.*" />
+          <option name="PATTERN" value="graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="unionfind" />
-      <option name="MAIN_CLASS_NAME" value="unionfind.FindRedundantConnection684Test" />
-      <option name="METHOD_NAME" value="test4" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FindRedundantConnection684Test.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="unionfind.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="unionfind" />
-      <option name="MAIN_CLASS_NAME" value="unionfind.FindRedundantConnection684Test" />
-      <option name="METHOD_NAME" value="test5" />
+      <option name="PACKAGE_NAME" value="graph" />
+      <option name="MAIN_CLASS_NAME" value="graph.NetworkDelayTime743Test" />
+      <option name="METHOD_NAME" value="testPriorityQueue" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -447,19 +444,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.isPalindrome9" />
-      <item itemvalue="JUnit.FindRedundantConnection684Test.test1" />
-      <item itemvalue="JUnit.FindRedundantConnection684Test.test2" />
-      <item itemvalue="JUnit.FindRedundantConnection684Test.test3" />
-      <item itemvalue="JUnit.FindRedundantConnection684Test.test4" />
-      <item itemvalue="JUnit.FindRedundantConnection684Test.test5" />
+      <item itemvalue="JUnit.NetworkDelayTime743Test.test1" />
+      <item itemvalue="JUnit.NetworkDelayTime743Test.test2" />
+      <item itemvalue="JUnit.NetworkDelayTime743Test" />
+      <item itemvalue="JUnit.NetworkDelayTime743Test.test3" />
+      <item itemvalue="JUnit.NetworkDelayTime743Test.testPriorityQueue" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FindRedundantConnection684Test.test5" />
-        <item itemvalue="JUnit.FindRedundantConnection684Test.test4" />
-        <item itemvalue="JUnit.FindRedundantConnection684Test.test3" />
-        <item itemvalue="JUnit.FindRedundantConnection684Test.test2" />
-        <item itemvalue="JUnit.FindRedundantConnection684Test.test1" />
+        <item itemvalue="JUnit.NetworkDelayTime743Test" />
+        <item itemvalue="JUnit.NetworkDelayTime743Test.test1" />
+        <item itemvalue="JUnit.NetworkDelayTime743Test.testPriorityQueue" />
+        <item itemvalue="JUnit.NetworkDelayTime743Test.test3" />
+        <item itemvalue="JUnit.NetworkDelayTime743Test.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -598,14 +595,10 @@
       <workItem from="1583242069701" duration="105000" />
       <workItem from="1583329678808" duration="3648000" />
       <workItem from="1583415939719" duration="7616000" />
-      <workItem from="1583496637441" duration="9595000" />
-    </task>
-    <task id="LOCAL-00021" summary="add:完成SummaryRanges228-时间击败100%，空间击败80.77%">
-      <created>1579104127990</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1579104127990</updated>
+      <workItem from="1583496637441" duration="13284000" />
+      <workItem from="1583542895611" duration="11120000" />
+      <workItem from="1583594893478" duration="1938000" />
+      <workItem from="1583636413215" duration="1993000" />
     </task>
     <task id="LOCAL-00022" summary="add:完成LengthOfLastWord58-时间击败44.48%，空间上击败78.84%,还有优化的空间">
       <created>1579107384729</created>
@@ -943,7 +936,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583497450737</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="add:完成FindItinerary332, 采用Union Find算法思想解决">
+      <created>1583507656083</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1583507656083</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TodoView">
@@ -984,7 +984,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="add:完成SortArrayUtils中MergeSort" />
     <MESSAGE value="add:完成IsUgly263,使用最简单的暴力循环即可求的最优解" />
     <MESSAGE value="add:完成NthUglyNumber264,使用暴力破解、Memorization、最优Dynamic Programming方式实现" />
     <MESSAGE value="add:完成NthSuperUglyNumber313,使用Dynamic Programming方式解决可以参考NthUglyNumber264" />
@@ -1009,7 +1008,8 @@
     <MESSAGE value="add:完成LongestConsecutive128, 采用Union Find的思想，实现的是重复数字计入最长连续长度，原题是不计入，所以该实现方法可以优化。" />
     <MESSAGE value="add:完成LongestConsecutive128优化，待进一步优化" />
     <MESSAGE value="add:完成CanFinish207和FindOrder210, 采用DFS算法思想实现，主要考察DFS和Topological Sort" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:完成CanFinish207和FindOrder210, 采用DFS算法思想实现，主要考察DFS和Topological Sort" />
+    <MESSAGE value="add:完成FindItinerary332, 采用Union Find算法思想解决" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:完成FindItinerary332, 采用Union Find算法思想解决" />
   </component>
   <component name="WindowStateProjectService">
     <state x="352" y="162" key="CommitChangelistDialog2" timestamp="1577633057703">
@@ -2328,6 +2328,16 @@
           <url>file://$PROJECT_DIR$/src/graph/FindItinerary332.java</url>
           <line>30</line>
           <option name="timeStamp" value="449" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/graph/FindRedundantDirectedConnection685.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="450" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/graph/NetworkDelayTime743.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="455" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/test/math/MyPow50Test.java</url>
