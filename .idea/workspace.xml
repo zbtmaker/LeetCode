@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:FindItinerary332, 采用Depth First Search算法解决">
-      <change afterPath="$PROJECT_DIR$/out/production/LeetCode/unionfind/NumIslands200.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/LeetCode/unionfind/WeightedUnionFind.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/LeetCode/unionfind/NumIslands200Test.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/unionfind/NumIslands200.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/unionfind/WeightedUnionFind.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/unionfind/NumIslands200Test.java" afterDir="false" />
+    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:NumIslands200, 采用Path compression Union Find算法解决">
+      <change afterPath="$PROJECT_DIR$/out/production/LeetCode/unionfind/CountServers1267.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/LeetCode/unionfind/MakeConnected1319.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/LeetCode/unionfind/CountServers1267Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/LeetCode/unionfind/MakeConnected1319Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/unionfind/CountServers1267.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/unionfind/MakeConnected1319.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/unionfind/CountServers1267Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/unionfind/MakeConnected1319Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/graph/FindItinerary332.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/graph/FindItinerary332.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/unionfind/NumIslands200.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/unionfind/NumIslands200.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -122,7 +124,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.NumIslands200Test">
+  <component name="RunManager" selected="JUnit.MakeConnected1319Test">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -292,7 +294,7 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
     </configuration>
-    <configuration name="FindItinerary332Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MakeConnected1319Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -300,15 +302,15 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="graph" />
-      <option name="MAIN_CLASS_NAME" value="graph.FindItinerary332Test" />
+      <option name="PACKAGE_NAME" value="unionfind" />
+      <option name="MAIN_CLASS_NAME" value="unionfind.MakeConnected1319Test" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindItinerary332Test.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MakeConnected1319Test.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -316,16 +318,16 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="graph" />
-      <option name="MAIN_CLASS_NAME" value="graph.FindItinerary332Test" />
-      <option name="METHOD_NAME" value="test5" />
+      <option name="PACKAGE_NAME" value="unionfind" />
+      <option name="MAIN_CLASS_NAME" value="unionfind.MakeConnected1319Test" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NumIslands200Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MakeConnected1319Test.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -334,31 +336,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="unionfind" />
-      <option name="MAIN_CLASS_NAME" value="unionfind.NumIslands200Test" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NumIslands200Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="unionfind.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="unionfind" />
-      <option name="MAIN_CLASS_NAME" value="unionfind.NumIslands200Test" />
-      <option name="METHOD_NAME" value="test1" />
+      <option name="MAIN_CLASS_NAME" value="unionfind.MakeConnected1319Test" />
+      <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NumIslands200Test.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MakeConnected1319Test.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -367,7 +353,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="unionfind" />
-      <option name="MAIN_CLASS_NAME" value="unionfind.NumIslands200Test" />
+      <option name="MAIN_CLASS_NAME" value="unionfind.MakeConnected1319Test" />
+      <option name="METHOD_NAME" value="test4" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MakeConnected1319Test.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unionfind.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="unionfind" />
+      <option name="MAIN_CLASS_NAME" value="unionfind.MakeConnected1319Test" />
       <option name="METHOD_NAME" value="test5" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -445,19 +448,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.isPalindrome9" />
-      <item itemvalue="JUnit.FindItinerary332Test" />
-      <item itemvalue="JUnit.FindItinerary332Test.test5" />
-      <item itemvalue="JUnit.NumIslands200Test.test1" />
-      <item itemvalue="JUnit.NumIslands200Test" />
-      <item itemvalue="JUnit.NumIslands200Test.test5" />
+      <item itemvalue="JUnit.MakeConnected1319Test.test2" />
+      <item itemvalue="JUnit.MakeConnected1319Test.test4" />
+      <item itemvalue="JUnit.MakeConnected1319Test.test3" />
+      <item itemvalue="JUnit.MakeConnected1319Test.test5" />
+      <item itemvalue="JUnit.MakeConnected1319Test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.NumIslands200Test" />
-        <item itemvalue="JUnit.NumIslands200Test.test5" />
-        <item itemvalue="JUnit.NumIslands200Test.test1" />
-        <item itemvalue="JUnit.FindItinerary332Test" />
-        <item itemvalue="JUnit.FindItinerary332Test.test5" />
+        <item itemvalue="JUnit.MakeConnected1319Test" />
+        <item itemvalue="JUnit.MakeConnected1319Test.test5" />
+        <item itemvalue="JUnit.MakeConnected1319Test.test4" />
+        <item itemvalue="JUnit.MakeConnected1319Test.test3" />
+        <item itemvalue="JUnit.MakeConnected1319Test.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -599,14 +602,9 @@
       <workItem from="1583496637441" duration="13284000" />
       <workItem from="1583542895611" duration="11120000" />
       <workItem from="1583594893478" duration="1938000" />
-      <workItem from="1583636413215" duration="15404000" />
-    </task>
-    <task id="LOCAL-00024" summary="add:完成LargestRectangleArea84-Dynamic Programming的方式实现的，时间复杂度O(N^2),空间复杂度O(1)">
-      <created>1579189321815</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1579189321815</updated>
+      <workItem from="1583636413215" duration="15594000" />
+      <workItem from="1583761613070" duration="63000" />
+      <workItem from="1583761679619" duration="4746000" />
     </task>
     <task id="LOCAL-00025" summary="add:完成ZigzagLevelOrder103-使用栈的方式实现，时间复杂度为O(N),空间复杂度为O(N)">
       <created>1579276095695</created>
@@ -944,7 +942,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583653841441</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="add:NumIslands200, 采用Path compression Union Find算法解决">
+      <created>1583680765778</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1583680765778</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TodoView">
@@ -985,7 +990,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="add:完成NthSuperUglyNumber313,使用Dynamic Programming方式解决可以参考NthUglyNumber264" />
     <MESSAGE value="add:完成CountPrimes204，纯暴力和使用Memorization也不能通过" />
     <MESSAGE value="add:完成LexicalOrder386，使用DFS解决问题，最终实现采用递归的方式实现" />
     <MESSAGE value="add:完成LexicalOrder386，使用DFS的思想，最终实现方式采用递归的方式" />
@@ -1010,7 +1014,8 @@
     <MESSAGE value="add:完成FindItinerary332, 采用Union Find算法思想解决" />
     <MESSAGE value="add:NetworkDelayTime743, 采用Dijkstra Algorithm. 待优化点 - 实现带索引的优先队列" />
     <MESSAGE value="add:FindItinerary332, 采用Depth First Search算法解决" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:FindItinerary332, 采用Depth First Search算法解决" />
+    <MESSAGE value="add:NumIslands200, 采用Path compression Union Find算法解决" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:NumIslands200, 采用Path compression Union Find算法解决" />
   </component>
   <component name="WindowStateProjectService">
     <state x="352" y="162" key="CommitChangelistDialog2" timestamp="1577633057703">
@@ -2339,6 +2344,21 @@
           <url>file://$PROJECT_DIR$/src/graph/FindItinerary332.java</url>
           <line>31</line>
           <option name="timeStamp" value="460" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/unionfind/MakeConnected1319.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="462" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/unionfind/MakeConnected1319.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="463" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/unionfind/MakeConnected1319.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="464" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/test/math/MyPow50Test.java</url>
