@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:MakeConnected1319, 采用Weighted Union Find算法, 无需优化">
-      <change afterPath="$PROJECT_DIR$/out/production/LeetCode/graph/EventualSafeNodes802.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/LeetCode/graph/EventualSafeNodes802Test.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graph/EventualSafeNodes802.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/graph/EventualSafeNodes802Test.java" afterDir="false" />
+    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:EventualSafeNodes802, 采用Depth First Search算法, 无需优化">
+      <change afterPath="$PROJECT_DIR$/src/graph/CanVisitAllRooms841.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/graph/CanVisitAllRooms841Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/unionfind/CountServers1267.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/unionfind/CountServers1267.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/unionfind/MakeConnected1319.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/unionfind/MakeConnected1319.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/unionfind/CountServers1267.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/unionfind/CountServers1267.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -122,7 +117,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EventualSafeNodes802Test.test1">
+  <component name="RunManager" selected="JUnit.CanVisitAllRooms841Test">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -292,6 +287,56 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
     </configuration>
+    <configuration name="CanVisitAllRooms841Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="graph.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="graph" />
+      <option name="MAIN_CLASS_NAME" value="graph.CanVisitAllRooms841Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CanVisitAllRooms841Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="graph.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="graph" />
+      <option name="MAIN_CLASS_NAME" value="graph.CanVisitAllRooms841Test" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CanVisitAllRooms841Test.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="graph.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="graph" />
+      <option name="MAIN_CLASS_NAME" value="graph.CanVisitAllRooms841Test" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EventualSafeNodes802Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
@@ -320,57 +365,6 @@
       <option name="PACKAGE_NAME" value="unionfind" />
       <option name="MAIN_CLASS_NAME" value="unionfind.MakeConnected1319Test" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MakeConnected1319Test.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="unionfind.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="unionfind" />
-      <option name="MAIN_CLASS_NAME" value="unionfind.MakeConnected1319Test" />
-      <option name="METHOD_NAME" value="test3" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MakeConnected1319Test.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="unionfind.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="unionfind" />
-      <option name="MAIN_CLASS_NAME" value="unionfind.MakeConnected1319Test" />
-      <option name="METHOD_NAME" value="test4" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MakeConnected1319Test.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="unionfind.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="unionfind" />
-      <option name="MAIN_CLASS_NAME" value="unionfind.MakeConnected1319Test" />
-      <option name="METHOD_NAME" value="test5" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -446,19 +440,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.isPalindrome9" />
-      <item itemvalue="JUnit.MakeConnected1319Test.test4" />
-      <item itemvalue="JUnit.MakeConnected1319Test.test3" />
-      <item itemvalue="JUnit.MakeConnected1319Test.test5" />
       <item itemvalue="JUnit.MakeConnected1319Test" />
       <item itemvalue="JUnit.EventualSafeNodes802Test.test1" />
+      <item itemvalue="JUnit.CanVisitAllRooms841Test.test1" />
+      <item itemvalue="JUnit.CanVisitAllRooms841Test.test2" />
+      <item itemvalue="JUnit.CanVisitAllRooms841Test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CanVisitAllRooms841Test" />
+        <item itemvalue="JUnit.CanVisitAllRooms841Test.test2" />
+        <item itemvalue="JUnit.CanVisitAllRooms841Test.test1" />
         <item itemvalue="JUnit.EventualSafeNodes802Test.test1" />
         <item itemvalue="JUnit.MakeConnected1319Test" />
-        <item itemvalue="JUnit.MakeConnected1319Test.test5" />
-        <item itemvalue="JUnit.MakeConnected1319Test.test4" />
-        <item itemvalue="JUnit.MakeConnected1319Test.test3" />
       </list>
     </recent_temporary>
   </component>
@@ -603,21 +597,7 @@
       <workItem from="1583636413215" duration="15594000" />
       <workItem from="1583761613070" duration="63000" />
       <workItem from="1583761679619" duration="4991000" />
-      <workItem from="1583848246537" duration="4002000" />
-    </task>
-    <task id="LOCAL-00026" summary="add:完成Flatten114-使用栈的方式实现，相当于前序遍历。时间复杂度为O(N),空间复杂度为O(N)">
-      <created>1579343488731</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1579343488731</updated>
-    </task>
-    <task id="LOCAL-00027" summary="add:完成TreeCommonUtils二叉树工具类">
-      <created>1579357419880</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1579357419880</updated>
+      <workItem from="1583848246537" duration="5144000" />
     </task>
     <task id="LOCAL-00028" summary="add:完成TreeCommonUtils二叉树工具类">
       <created>1579357475168</created>
@@ -948,7 +928,21 @@
       <option name="project" value="LOCAL" />
       <updated>1583769024358</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="add:EventualSafeNodes802, 采用Depth First Search算法, 无需优化">
+      <created>1583852520062</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1583852520063</updated>
+    </task>
+    <task id="LOCAL-00076" summary="add:EventualSafeNodes802, 采用Depth First Search算法, 无需优化">
+      <created>1583852598593</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1583852598593</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TodoView">
@@ -989,7 +983,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="add:完成LexicalOrder386，使用DFS解决问题，最终实现采用递归的方式实现" />
     <MESSAGE value="add:完成LexicalOrder386，使用DFS的思想，最终实现方式采用递归的方式" />
     <MESSAGE value="add:完成MyAtoi8，需要注意的是对边界问题的测试，其中有些思想也是参考BigInteger" />
     <MESSAGE value="add:完成Search33，使用binarySearch的思想，但是需要进行前置操作" />
@@ -1014,7 +1007,8 @@
     <MESSAGE value="add:FindItinerary332, 采用Depth First Search算法解决" />
     <MESSAGE value="add:NumIslands200, 采用Path compression Union Find算法解决" />
     <MESSAGE value="add:MakeConnected1319, 采用Weighted Union Find算法, 无需优化" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:MakeConnected1319, 采用Weighted Union Find算法, 无需优化" />
+    <MESSAGE value="add:EventualSafeNodes802, 采用Depth First Search算法, 无需优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:EventualSafeNodes802, 采用Depth First Search算法, 无需优化" />
   </component>
   <component name="WindowStateProjectService">
     <state x="352" y="162" key="CommitChangelistDialog2" timestamp="1577633057703">
