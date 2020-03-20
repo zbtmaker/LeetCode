@@ -25,7 +25,7 @@ public class CountServers1267Test {
     @Test
     public void test3() {
         int count = servers.countServers(new int[][]{{1,0,0,1,0},{0,0,0,0,0},{0,0,0,1,0}});
-        Assert.assertEquals(count, 0);
+        Assert.assertEquals(count, 3);
     }
 
 }

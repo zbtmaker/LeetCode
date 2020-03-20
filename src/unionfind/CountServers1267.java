@@ -13,22 +13,37 @@ import java.util.Arrays;
  */
 public class CountServers1267 {
 
+    /**
+     * 这里使用计数的方式统计每一行和每一列的服务器的数量，统计完以后，如果grid[i][j] == 1且
+     * 行或者列的服务器数量大于1的话，该服务器的是联通的
+     *
+     * @param grid
+     * @return
+     */
     public int countServers(int[][] grid) {
+        if (grid == null || grid.length <= 1) {
+            return 0;
+        }
         int row = grid.length;
         int col = grid[0].length;
-        int[] rowMarked = new int[row];
-        int[] colMarked = new int[col];
-        int[] size = new int[row * col];
-        Arrays.fill(size, 1);
+        int[] rowArr = new int[row];
+        int[] colArr = new int[col];
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
                 if (grid[i][j] == 1) {
-                    rowMarked[i] = rowMarked[i] + 1;
-                    colMarked[j] = rowMarked[j] + 1;
+                    rowArr[i] += 1;
+                    colArr[j] += 1;
                 }
             }
         }
-        int sum = 0;
-        return sum;
+        int count = 0;
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                if (grid[i][j] == 1 && (rowArr[i] > 1 || colArr[j] > 1)) {
+                    count++;
+                }
+            }
+        }
+        return count;
     }
 }
