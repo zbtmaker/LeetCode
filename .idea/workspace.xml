@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:EventualSafeNodes802, 采用Depth First Search算法, 无需优化">
-      <change afterPath="$PROJECT_DIR$/src/graph/CanVisitAllRooms841.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/graph/CanVisitAllRooms841Test.java" afterDir="false" />
+    <list default="true" id="33677caa-1971-4ccc-82e6-3544e580987d" name="Default" comment="add:CanVisitAllRooms841, 采用Breadth First Search算法, 待优化">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/string/NumSimilarGroups839.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/unionfind/RemoveStones947.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/string/NumSimilarGroups839Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/unionfind/RemoveStones947Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/graph/FindRedundantDirectedConnection685.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/graph/FindRedundantDirectedConnection685.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/unionfind/Solve130.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/unionfind/Solve130.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/LeetCode/graph/FindRedundantDirectedConnection685Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/LeetCode/graph/FindRedundantDirectedConnection685Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/LeetCode/unionfind/Solve130Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/LeetCode/unionfind/Solve130Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/FindRedundantDirectedConnection685.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/FindRedundantDirectedConnection685.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/math/totalHammingDistance477.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/TotalHammingDistance477.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/graph/FindRedundantDirectedConnection685Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/graph/FindRedundantDirectedConnection685Test.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,12 +74,16 @@
     </option>
   </component>
   <component name="ProjectId" id="1VdoYi3J2rgACppMX4aIr5z82vd" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574694875500" />
@@ -117,7 +131,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CanVisitAllRooms841Test">
+  <component name="RunManager" selected="JUnit.RemoveStones947Test">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -287,74 +301,7 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
     </configuration>
-    <configuration name="CanVisitAllRooms841Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="graph.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="graph" />
-      <option name="MAIN_CLASS_NAME" value="graph.CanVisitAllRooms841Test" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CanVisitAllRooms841Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="graph.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="graph" />
-      <option name="MAIN_CLASS_NAME" value="graph.CanVisitAllRooms841Test" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CanVisitAllRooms841Test.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="graph.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="graph" />
-      <option name="MAIN_CLASS_NAME" value="graph.CanVisitAllRooms841Test" />
-      <option name="METHOD_NAME" value="test2" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EventualSafeNodes802Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="graph.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="graph" />
-      <option name="MAIN_CLASS_NAME" value="graph.EventualSafeNodes802Test" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MakeConnected1319Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RemoveStones947Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -363,8 +310,76 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="unionfind" />
-      <option name="MAIN_CLASS_NAME" value="unionfind.MakeConnected1319Test" />
+      <option name="MAIN_CLASS_NAME" value="unionfind.RemoveStones947Test" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RemoveStones947Test.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unionfind.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="unionfind" />
+      <option name="MAIN_CLASS_NAME" value="unionfind.RemoveStones947Test" />
+      <option name="METHOD_NAME" value="test4" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solve130Test.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unionfind.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="unionfind" />
+      <option name="MAIN_CLASS_NAME" value="unionfind.Solve130Test" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solve130Test.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unionfind.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="unionfind" />
+      <option name="MAIN_CLASS_NAME" value="unionfind.Solve130Test" />
+      <option name="METHOD_NAME" value="test5" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solve130Test.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unionfind.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="unionfind" />
+      <option name="MAIN_CLASS_NAME" value="unionfind.Solve130Test" />
+      <option name="METHOD_NAME" value="test6" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -440,19 +455,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.isPalindrome9" />
-      <item itemvalue="JUnit.MakeConnected1319Test" />
-      <item itemvalue="JUnit.EventualSafeNodes802Test.test1" />
-      <item itemvalue="JUnit.CanVisitAllRooms841Test.test1" />
-      <item itemvalue="JUnit.CanVisitAllRooms841Test.test2" />
-      <item itemvalue="JUnit.CanVisitAllRooms841Test" />
+      <item itemvalue="JUnit.Solve130Test.test3" />
+      <item itemvalue="JUnit.Solve130Test.test5" />
+      <item itemvalue="JUnit.Solve130Test.test6" />
+      <item itemvalue="JUnit.RemoveStones947Test" />
+      <item itemvalue="JUnit.RemoveStones947Test.test4" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CanVisitAllRooms841Test" />
-        <item itemvalue="JUnit.CanVisitAllRooms841Test.test2" />
-        <item itemvalue="JUnit.CanVisitAllRooms841Test.test1" />
-        <item itemvalue="JUnit.EventualSafeNodes802Test.test1" />
-        <item itemvalue="JUnit.MakeConnected1319Test" />
+        <item itemvalue="JUnit.RemoveStones947Test" />
+        <item itemvalue="JUnit.RemoveStones947Test.test4" />
+        <item itemvalue="JUnit.Solve130Test.test6" />
+        <item itemvalue="JUnit.Solve130Test.test5" />
+        <item itemvalue="JUnit.Solve130Test.test3" />
       </list>
     </recent_temporary>
   </component>
@@ -597,42 +612,17 @@
       <workItem from="1583636413215" duration="15594000" />
       <workItem from="1583761613070" duration="63000" />
       <workItem from="1583761679619" duration="4991000" />
-      <workItem from="1583848246537" duration="5144000" />
-    </task>
-    <task id="LOCAL-00028" summary="add:完成TreeCommonUtils二叉树工具类">
-      <created>1579357475168</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1579357475168</updated>
-    </task>
-    <task id="LOCAL-00029" summary="add:完成SumRange303-时间复杂度为O(M+N)">
-      <created>1579429709452</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1579429709452</updated>
-    </task>
-    <task id="LOCAL-00030" summary="add:完成SumRange303-时间复杂度为O(M+N),空间复杂度为O(N)">
-      <created>1579429762633</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1579429762633</updated>
-    </task>
-    <task id="LOCAL-00031" summary="add:完成CanPlaceFlowers605-时间复杂度O(N),空间复杂度为O(1)">
-      <created>1579779107080</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1579779107080</updated>
-    </task>
-    <task id="LOCAL-00032" summary="add:完成Merge56-时间复杂度O(N^2+2*N),空间复杂度为O(1).时间复杂度有待改进">
-      <created>1579869824910</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1579869824910</updated>
+      <workItem from="1583848246537" duration="5640000" />
+      <workItem from="1583940520834" duration="1570000" />
+      <workItem from="1584026160717" duration="1647000" />
+      <workItem from="1584186735867" duration="291000" />
+      <workItem from="1584188945667" duration="19453000" />
+      <workItem from="1584369108136" duration="97000" />
+      <workItem from="1584369237163" duration="12000" />
+      <workItem from="1584369274792" duration="3998000" />
+      <workItem from="1584455573721" duration="2228000" />
+      <workItem from="1584547130973" duration="13000" />
+      <workItem from="1584715642682" duration="1287000" />
     </task>
     <task id="LOCAL-00033" summary="add:完成MyQueue232-时间复杂度O(1),空间复杂度为O(N)">
       <created>1579869872295</created>
@@ -942,7 +932,42 @@
       <option name="project" value="LOCAL" />
       <updated>1583852598593</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="add:CanVisitAllRooms841, 采用Breadth First Search算法, 待优化">
+      <created>1583855695840</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1583855695840</updated>
+    </task>
+    <task id="LOCAL-00078" summary="add:CalcEquations399, 采用Union Find和Breadth First Search算法, 待优化-只使用Union Find实现">
+      <created>1584278367151</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1584278367151</updated>
+    </task>
+    <task id="LOCAL-00079" summary="add:EquationsPossible990, 采用Union Find解决连通和不连通问题">
+      <created>1584283441970</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1584283441970</updated>
+    </task>
+    <task id="LOCAL-00080" summary="add:CanVisitAllRooms841, 采用Union Find算法, 待优化-采用DFS算法优化">
+      <created>1584373534101</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1584373534101</updated>
+    </task>
+    <task id="LOCAL-00081" summary="add:FindCircleNum547, 采用Union Find算法, 无需优化">
+      <created>1584456021885</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1584456021885</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TodoView">
@@ -980,14 +1005,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="add:完成LexicalOrder386，使用DFS的思想，最终实现方式采用递归的方式" />
-    <MESSAGE value="add:完成MyAtoi8，需要注意的是对边界问题的测试，其中有些思想也是参考BigInteger" />
-    <MESSAGE value="add:完成Search33，使用binarySearch的思想，但是需要进行前置操作" />
-    <MESSAGE value="add:完成Search33，使用binarySearch的思想,但是需要进行前置操作,找到旋转的位置" />
-    <MESSAGE value="add:优化SingleNumber136，使用异或算法将space complexity降为O(1)" />
     <MESSAGE value="add:完成SingleNumber137，使用HashMap统计实现" />
     <MESSAGE value="add:完成SingleNumber260，使用HashMap统计方式实现" />
     <MESSAGE value="add:完成SpiralOrder54，终于完成了这个恶魔题目" />
@@ -1008,7 +1029,12 @@
     <MESSAGE value="add:NumIslands200, 采用Path compression Union Find算法解决" />
     <MESSAGE value="add:MakeConnected1319, 采用Weighted Union Find算法, 无需优化" />
     <MESSAGE value="add:EventualSafeNodes802, 采用Depth First Search算法, 无需优化" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:EventualSafeNodes802, 采用Depth First Search算法, 无需优化" />
+    <MESSAGE value="add:CanVisitAllRooms841, 采用Breadth First Search算法, 待优化" />
+    <MESSAGE value="add:CalcEquations399, 采用Union Find和Breadth First Search算法, 待优化-只使用Union Find实现" />
+    <MESSAGE value="add:EquationsPossible990, 采用Union Find解决连通和不连通问题" />
+    <MESSAGE value="add:CanVisitAllRooms841, 采用Union Find算法, 待优化-采用DFS算法优化" />
+    <MESSAGE value="add:FindCircleNum547, 采用Union Find算法, 无需优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:FindCircleNum547, 采用Union Find算法, 无需优化" />
   </component>
   <component name="WindowStateProjectService">
     <state x="352" y="162" key="CommitChangelistDialog2" timestamp="1577633057703">
@@ -2319,11 +2345,6 @@
           <option name="timeStamp" value="445" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/graph/FindRedundantDirectedConnection685.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="450" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/graph/NetworkDelayTime743.java</url>
           <line>31</line>
           <option name="timeStamp" value="455" />
@@ -2362,6 +2383,31 @@
           <url>file://$PROJECT_DIR$/src/graph/EventualSafeNodes802.java</url>
           <line>52</line>
           <option name="timeStamp" value="466" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/string/NumSimilarGroups839.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="467" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/string/NumSimilarGroups839.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="468" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/graph/CalcEquation399Test.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="472" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/unionfind/Solve130.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="473" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/unionfind/Solve130.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="474" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/test/math/MyPow50Test.java</url>
