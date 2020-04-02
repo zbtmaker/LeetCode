@@ -1,5 +1,7 @@
 package string;
 
+import unionfind.WeightedUnionFind;
+
 /**
  * @author baitao zou
  * date 2020/03/12
@@ -8,13 +10,20 @@ public class NumSimilarGroups839 {
 
     private static final int DIFF = 2;
 
+    /**
+     * 方法一：暴力算法+并查集算法
+     *
+     * @param A 目标数组
+     * @return 群组个数
+     */
     public int numSimilarGroups(String[] A) {
         return numSimilarGroupsByBruteForce(A);
     }
 
     /**
-     * we use brute force method to solve this problem, the time complexity is O(N^2),
-     * space complexity is O(1).
+     * 这个题目通过UnionFind的方式就可以解决，但是我们可以看到
+     * 算法的时间复杂度和空间复杂度都很高，time complexity 为
+     * O(N^2logN),space complexity为O(N).
      *
      * @param A
      * @return
@@ -24,14 +33,16 @@ public class NumSimilarGroups839 {
             return 0;
         }
         int sum = 0;
-        for (int i = 0; i < A.length - 1; i++) {
-            for (int j = i + 1; j < A.length; j++) {
+        int len = A.length;
+        WeightedUnionFind union = new WeightedUnionFind(len);
+        for (int i = 0; i < len - 1; i++) {
+            for (int j = i + 1; j < len; j++) {
                 if (compareString(A[i], A[j])) {
-                    sum++;
+                    union.union(i, j);
                 }
             }
         }
-        return sum;
+        return union.getGroup();
     }
 
     private boolean compareString(String str1, String str2) {
