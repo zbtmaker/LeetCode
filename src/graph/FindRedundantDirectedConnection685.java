@@ -7,12 +7,6 @@ package graph;
  */
 public class FindRedundantDirectedConnection685 {
 
-    private static final int UNCYCLE = 0;
-
-    private static final int CYCLE = 1;
-
-    private static final int DUPLICATE = 2;
-
     /**
      * The Breadth first search can't solve this problem.
      * From the description of this we can know ,every
@@ -23,14 +17,19 @@ public class FindRedundantDirectedConnection685 {
      * @return
      */
     public int[] findRedundantDirectedConnection(int[][] edges) {
-        int[] id = initId(edges.length);
-        int[] marked = new int[2];
+        int[] id = initId(edges.length + 1);
+        int[][] redundant = new int[2][2];
+        redundant[0][0] = -1;
         for (int[] edge : edges) {
-            if (union(edge[0], edge[1], id)) {
-                return edge;
+            if (union(edge, id, redundant)) {
+                if (redundant[0][0] == -1) {
+                    return edge;
+                } else {
+                    return redundant[0];
+                }
             }
         }
-        return marked;
+        return redundant[1];
     }
 
     private int[] initId(int len) {
@@ -49,21 +48,23 @@ public class FindRedundantDirectedConnection685 {
     }
 
     /**
-     * @param p  the parent vertex
-     * @param c  the child vertex
-     * @param id the index
+     * @param edge 边 edge[0] -> edge[1]
+     * @param id   the index
      * @return
      */
-    private boolean union(int p, int c, int[] id) {
-        int pRoot = root(p, id);
-        int cRoot = root(c, id);
-        if (pRoot == cRoot) {
-            return true;
-        }
-        if (cRoot != c) {
+    private boolean union(int[] edge, int[] id, int[][] redundant) {
+        int parentId = root(edge[0], id);
+        int childId = root(edge[1], id);
+        if (childId != edge[1]) {
+            redundant[0][0] = childId;
+            redundant[0][1] = edge[1];
+            redundant[1] = edge;
             return false;
         }
-        id[cRoot] = pRoot;
+        if (parentId == childId) {
+            return true;
+        }
+        id[childId] = parentId;
         return false;
     }
 }
