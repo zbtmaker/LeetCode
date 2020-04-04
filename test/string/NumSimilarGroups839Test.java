@@ -22,4 +22,10 @@ public class NumSimilarGroups839Test {
         int result = group.numSimilarGroups(new String[]{"blw","bwl","wlb"});
         Assert.assertEquals(result, 1);
     }
+
+    @Test
+    public void test3() {
+        int result = group.numSimilarGroups(new String[]{"abc","abc"});
+        Assert.assertEquals(result, 1);
+    }
 }
