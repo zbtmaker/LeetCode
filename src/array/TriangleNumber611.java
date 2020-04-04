@@ -3,6 +3,8 @@ package array;
 import java.util.Arrays;
 
 /**
+ * 给定一个包含非负整数的数组，你的任务是统计其中可以组成三角形三条边的三元组个数。
+ *
  * @author baitao zou
  * date 2020/04/04
  */
@@ -64,11 +66,11 @@ public class TriangleNumber611 {
         Arrays.sort(nums);
         int count = 0;
         for (int i = 0; i < nums.length - 2; i++) {
-            if(nums[i] == 0){
+            if (nums[i] == 0) {
                 continue;
             }
             for (int j = i + 1; j < nums.length - 1; j++) {
-                if(nums[j] == 0){
+                if (nums[j] == 0) {
                     continue;
                 }
                 int target = nums[i] + nums[j];
