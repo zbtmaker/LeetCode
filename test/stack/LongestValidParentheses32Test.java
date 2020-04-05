@@ -13,22 +13,38 @@ public class LongestValidParentheses32Test {
     public static LongestValidParentheses32 parentheses32 = new LongestValidParentheses32();
 
     @Test
-    public void test1(){
-        String str = ")()";
-        int maxLen = parentheses32.longestValidParentheses(str);
-        Assert.assertEquals(maxLen,2);
+    public void test1() {
+        int maxLen = parentheses32.longestValidParentheses(")()");
+        Assert.assertEquals(maxLen, 2);
     }
 
     @Test
-    public void test2(){
-        String str = "(()";
-        int maxLen = parentheses32.longestValidParentheses(str);
-        Assert.assertEquals(maxLen,2);
+    public void test2() {
+        int maxLen = parentheses32.longestValidParentheses("(()");
+        Assert.assertEquals(maxLen, 2);
     }
+
     @Test
-    public void test3(){
-        String str = "(()())";
-        int maxLen = parentheses32.longestValidParentheses(str);
-        Assert.assertEquals(maxLen,6);
+    public void test3() {
+        int maxLen = parentheses32.longestValidParentheses("(()())");
+        Assert.assertEquals(maxLen, 6);
+    }
+
+    @Test
+    public void test4() {
+        int maxLen = parentheses32.longestValidParentheses("(()()))()()()())");
+        Assert.assertEquals(maxLen, 8);
+    }
+
+    @Test
+    public void test5() {
+        int maxLen = parentheses32.longestValidParentheses("()(()");
+        Assert.assertEquals(maxLen, 2);
+    }
+
+    @Test
+    public void test6() {
+        int maxLen = parentheses32.longestValidParentheses("()(())");
+        Assert.assertEquals(maxLen, 6);
     }
 }
