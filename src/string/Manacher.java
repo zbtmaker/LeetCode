@@ -109,8 +109,8 @@ public class Manacher {
                 radius[i] = radius[2*center - i];
             }
         }
-        for(int i = 0;i<radius.length;i++){
-            System.out.println(radius[i]);
+        for (int value : radius) {
+            System.out.println(value);
         }
         return radius;
     }
