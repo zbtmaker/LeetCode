@@ -8,27 +8,20 @@ public class MiddleNode876 {
         int val;
         ListNode next;
 
-        ListNode(int x) {
+        public ListNode(int x) {
             val = x;
         }
-    }
 
-    public static void main(String[] args) {
-        deleteDuplicates83 del = new deleteDuplicates83();
+        public void setNext(ListNode next) {
+            this.next = next;
+        }
 
-        ListNode headA = new ListNode(1);
-        ListNode h1 = new ListNode(2);
-        ListNode h2 = new ListNode(3);
-        ListNode h3 = new ListNode(4);
-        headA.next = h1;
-        h1.next = h2;
-        h2.next = h3;
+        public ListNode getNext() {
+            return this.next;
+        }
 
-        ListNode curNode = new MiddleNode876().middleNode(headA);
-
-        while (curNode != null) {
-            System.out.println(curNode.val);
-            curNode = curNode.next;
+        public int getVal() {
+            return this.val;
         }
     }
 
@@ -39,10 +32,18 @@ public class MiddleNode876 {
      * @return
      */
     public ListNode middleNode(ListNode head) {
-        return middleNodeTwoPoint(head);
+        return middleNodeSlowAndFast(head);
     }
 
 
+    /**
+     * 第一种方式是采用计数的方式，给定计数器count1 = 1,指针p1 = head从链表的头部走到尾部，统计处链表的长度len;
+     * 然后给一个指针p2走count2 = (len>>1) + 1，count2 = 1，当count2 = (len>>1)+1时表示指针刚好处在链表的中间
+     * （奇数链表的正中间，偶数链表的后半部链表的其实位置）
+     *
+     * @param head
+     * @return
+     */
     private ListNode middleNodeCount(ListNode head) {
         ListNode curNode = head;
         int count = 0;
@@ -59,7 +60,25 @@ public class MiddleNode876 {
         return curNode;
     }
 
-    private ListNode middleNodeTwoPoint(ListNode head) {
+    /**
+     * 第二终方式使用dijkstra提出的快慢指针解决有环图的算法思路，其实快慢指针是对我们第一种算法的一个优化。
+     * 我们给定两个指针slow和fast，其中slow每次只走一步，而fast每次都走两步。这里我们可以分奇链表和偶链表
+     * 来讨论。
+     * 偶链表：1->2->3->4
+     * initial: slow = 1, fast = 1;
+     * step1: slow = 2, fast = 3;
+     * setp2: slow = 3, fast = null;
+     * 此时fast = null了，应该马上停止循环，返回slow指针
+     * 奇链表: 1->2->3
+     * initial: slow = 1, fast = 1;
+     * step1: slow = 2, fast = 3
+     * 此时发现slow已经处在链表的中间位置了，那么也应该退出循环，条件是什么呢，就是fast.next = null
+     * 因此我们综上奇偶链表，我们就能得到我们循环退出条件，都能满足我们找到指针中点的位置
+     *
+     * @param head
+     * @return
+     */
+    private ListNode middleNodeSlowAndFast(ListNode head) {
         ListNode fast = head;
         ListNode slow = head;
         while (fast != null && fast.next != null) {
