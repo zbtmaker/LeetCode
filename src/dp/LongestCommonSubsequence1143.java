@@ -19,6 +19,16 @@ public class LongestCommonSubsequence1143 {
      * @return
      */
     public int longestCommonSubsequence(String text1, String text2) {
+        return longestCommonSubsequenceByOneDimensionDP(text1, text2);
+    }
+
+    /**
+     * 使用二维数组实现最长共公子序列
+     * @param text1
+     * @param text2
+     * @return
+     */
+    private int longestCommonSubsequenceByTwoDimensionDP(String text1, String text2) {
         if (text1 == null || text2 == null || text1.length() == 0 || text2.length() == 0) {
             return 0;
         }
@@ -35,5 +45,34 @@ public class LongestCommonSubsequence1143 {
             }
         }
         return dp[len1][len2];
+    }
+
+    /**
+     * 使用两个一维数组实现了最长公共子序列
+     * @param text1
+     * @param text2
+     * @return
+     */
+    private int longestCommonSubsequenceByOneDimensionDP(String text1, String text2) {
+        if (text1 == null || text2 == null || text1.length() == 0 || text2.length() == 0) {
+            return 0;
+        }
+        int len1 = text1.length();
+        int len2 = text2.length();
+        int[] dp1 = new int[len2 + 1];
+        int[] dp2 = new int[len2 + 1];
+        for (int i = 1; i <= len1; i++) {
+            for (int j = 1; j <= len2; j++) {
+                if (text1.charAt(i - 1) == text2.charAt(j - 1)) {
+                    dp2[j] = dp1[j - 1] + 1;
+                } else {
+                    dp2[j] = Math.max(dp1[j], dp2[j - 1]);
+                }
+            }
+            int[] tmp = dp1;
+            dp1 = dp2;
+            dp2 = tmp;
+        }
+        return dp1[len2];
     }
 }
