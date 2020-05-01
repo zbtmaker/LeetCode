@@ -14,9 +14,9 @@ import java.util.Arrays;
  * 二、主要分为两种大情况，第一种大情况
  * （I）当前字符在回文右边界的右边，此时暴力方法来扩回文
  * （II）当前字符i在回文右边界的内部，此时可以将情况分为三种情况（其中i'表示与回文中心对称的点）
- *      （a） 如果i'的回文半径在回文左边界的内部，此时i的回文半径与i'的回文半径相等
- *      （b） 如果i'的回文半径在回文左边界的外部，此时i的回文半径与i'的回文半径相等
- *      （c） 如果i'的回文半径与回文左边界重合，此时i的回文半径需要使用暴力进行扩展
+ * （a） 如果i'的回文半径在回文左边界的内部，此时i的回文半径与i'的回文半径相等
+ * （b） 如果i'的回文半径在回文左边界的外部，此时i的回文半径与i'的回文半径相等
+ * （c） 如果i'的回文半径与回文左边界重合，此时i的回文半径需要使用暴力进行扩展
  * 三、变量说明
  * R：表示最右回文右边界
  * radius：记录每个字符的回文半径，初始化为1
@@ -27,101 +27,115 @@ import java.util.Arrays;
  * VersionII 是在VersionI的改进版本，将两种情况(I)和(II-c)进行合并，将(II-a)和(II-b)进行合并
  */
 public class Manacher {
-    @Test
-    public void test1(){
-        String str = "cbbd";
-        new Manacher().manacherII(str);
+
+
+    public static int[] manacher(String str) {
+        return manacherII(str);
     }
-    public int[] manacherI(String str){
-        str = preManacher(str);
-        char[] chs = str.toCharArray();
-        int[] radius = new int[chs.length];
-        Arrays.fill(radius,1);
+
+    private static int[] manacherI(String str) {
+        StringBuilder sb = preManacher(str);
+        printStringBuilder(sb);
+        int size = sb.length();
+        int[] radius = new int[size];
+        Arrays.fill(radius, 1);
         int R = -1;
         int center = -1;
-        for(int i =0;i<chs.length;i++){
+        for (int i = 0; i < size; i++) {
+            radius[i] = 1;
             int count = radius[i];
-            if(i>R){
-                int left = i-1;
-                int right = i+1;
-                while(left>= 0 && right< chs.length && chs[left] ==  chs[right]){
-                    count ++;
-                    left --;
-                    right ++;
+            if (i > R) {
+                int left = i - 1;
+                int right = i + 1;
+                while (left >= 0 && right < size && sb.charAt(left) == sb.charAt(right)) {
+                    count++;
+                    left--;
+                    right++;
                 }
                 radius[i] = count;
                 center = i;
-                R = (right - 1)> R? (right -1):R;
-            }else{
-                if(i+radius[2*center-i] - 1 == R){
-                    count = radius[2*center-i];
-                    int left = i - radius[2*center-i];
-                    int right = i + radius[2*center-i];
-                    while(left>= 0 && right< chs.length && chs[left] ==  chs[right]){
-                        count ++;
-                        left --;
-                        right ++;
+                R = (right - 1) > R ? (right - 1) : R;
+            } else {
+                if (i + radius[2 * center - i] - 1 == R) {
+                    count = radius[2 * center - i];
+                    int left = i - radius[2 * center - i];
+                    int right = i + radius[2 * center - i];
+                    while (left >= 0 && right < size && sb.charAt(left) == sb.charAt(right)) {
+                        count++;
+                        left--;
+                        right++;
                     }
                     radius[i] = count;
-                    if(R<right-1){
+                    if (R < right - 1) {
                         center = i;
-                        R = right-1;
+                        R = right - 1;
                     }
 
-                }else if(i + radius[2*center-i]-1>R){
+                } else if (i + radius[2 * center - i] - 1 > R) {
                     radius[i] = R - i + 1;
-                }else{
-                    radius[i] = radius[2*center - i];
+                } else {
+                    radius[i] = radius[2 * center - i];
                 }
             }
         }
-        for(int i = 0;i<radius.length;i++){
-            System.out.println(radius[i]);
-        }
+        printRadius(radius);
         return radius;
     }
-    public int[] manacherII(String str){
-        str = preManacher(str);
-        char[] chs = str.toCharArray();
-        int[] radius = new int[chs.length];
-        Arrays.fill(radius,1);
+
+    private static int[] manacherII(String str) {
+        StringBuilder sb = preManacher(str);
+        printStringBuilder(sb);
+        int size = sb.length();
+        int[] radius = new int[sb.length()];
         int R = -1;
         int center = -1;
-        for(int i =0;i<chs.length;i++){
-            if(i > R || i+radius[2*center-i] - 1 == R){
-                int temp = i>R ? i:center;
-                int count = radius[2*temp-i];
-                int left = i - radius[2*temp-i];
-                int right = i + radius[2*temp-i];
-                while(left>= 0 && right< chs.length && chs[left] ==  chs[right]){
-                    count ++;
-                    left --;
-                    right ++;
+        for (int i = 0; i < size; i++) {
+            radius[i] = 1;
+            if (i > R || i + radius[2 * center - i] - 1 == R) {
+                int temp = i > R ? i : center;
+                int count = radius[2 * temp - i];
+                int left = i - radius[2 * temp - i];
+                int right = i + radius[2 * temp - i];
+                while (left >= 0 && right < size && sb.charAt(left) == sb.charAt(right)) {
+                    count++;
+                    left--;
+                    right++;
                 }
                 radius[i] = count;
-                if(R<right-1){
+                if (R < right - 1) {
                     center = i;
-                    R = right-1;
+                    R = right - 1;
                 }
-            }else if(i + radius[2*center-i]-1>R){
+            } else if (i + radius[2 * center - i] - 1 > R) {
                 radius[i] = R - i + 1;
-            }else{
-                radius[i] = radius[2*center - i];
+            } else {
+                radius[i] = radius[2 * center - i];
             }
         }
-        for (int value : radius) {
-            System.out.println(value);
-        }
+        printRadius(radius);
         return radius;
     }
-    public String preManacher(String str){
-        StringBuilder sb = new StringBuilder(str.length()>>1+1);
 
-        for(int i = 0;i<str.length();i++){
+    private static StringBuilder preManacher(String str) {
+        StringBuilder sb = new StringBuilder(str.length() >> 1 + 1);
+        for (int i = 0; i < str.length(); i++) {
             sb.append('#');
             sb.append(str.charAt(i));
         }
         sb.append('#');
-        return sb.toString();
+        return sb;
+    }
+
+    private static void printStringBuilder(StringBuilder sb) {
+        for (int i = 0; i < sb.length(); i++) {
+            System.out.print(sb.charAt(i) + " ");
+        }
+        System.out.println();
+    }
+
+    private static void printRadius(int[] radius) {
+        for (int value : radius) {
+            System.out.print(value + " ");
+        }
     }
 }
