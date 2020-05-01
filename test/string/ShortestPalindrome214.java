@@ -20,7 +20,7 @@ public class ShortestPalindrome214 {
      * @return
      */
     public String shortestPalindrome(String s) {
-        return shortestPalindromeByOneDimensionDP(s);
+        return shortestPalindromeByManacher(s);
     }
 
     private String shortestPalindromeByTwoDimensionDP(String s) {
@@ -108,5 +108,83 @@ public class ShortestPalindrome214 {
         }
         sb.append(s);
         return sb.toString();
+    }
+
+
+    /**
+     * 1、通过Manacher算法得到每个位置的最大的回文半径
+     * 2、遍历回文半径数组，找到回文半径涵盖了预处理后字符串数组的index=1的位置最大的回文半径的位置MaxIndex
+     * 3、得到需要添加到当前字符s前面的能够构成的最短回文，例如cbba，index=1，表示从1开始以及后面的字符需要添加到s字符前。
+     * 4、从s.length()-1到index，一次append进StringBuilder中，然后append(s)
+     *
+     * @return
+     */
+    private String shortestPalindromeByManacher(String s) {
+        if (s == null || s.length() == 0) {
+            return s;
+        }
+        StringBuilder sb = preManacher(s);
+        int size = sb.length();
+        int[] radius = new int[sb.length()];
+        int R = -1;
+        int center = -1;
+        for (int i = 0; i < size; i++) {
+            radius[i] = 1;
+            if (i > R || i + radius[2 * center - i] - 1 == R) {
+                int temp = i > R ? i : center;
+                int count = radius[2 * temp - i];
+                int left = i - radius[2 * temp - i];
+                int right = i + radius[2 * temp - i];
+                while (left >= 0 && right < size && sb.charAt(left) == sb.charAt(right)) {
+                    count++;
+                    left--;
+                    right++;
+                }
+                radius[i] = count;
+                if (R < right - 1) {
+                    center = i;
+                    R = right - 1;
+                }
+            } else if (i + radius[2 * center - i] - 1 > R) {
+                radius[i] = R - i + 1;
+            } else {
+                radius[i] = radius[2 * center - i];
+            }
+        }
+        int max = 2;
+        int maxIndex = 1;
+        for (int i = 2; i < radius.length; i++) {
+            int left = i - radius[i] + 1;
+            //表明这个回文包含了
+            if (left <= 1 && max < radius[i]) {
+                max = radius[i];
+                maxIndex = i;
+            }
+        }
+        int left = maxIndex - radius[maxIndex] + 1;
+        int right = maxIndex + radius[maxIndex] - 1;
+        int index = 0;
+        for (int i = left; i <= right; i++) {
+            if (sb.charAt(i) != '#') {
+                index++;
+            }
+        }
+
+        StringBuilder result = new StringBuilder();
+        for (int j = s.length() - 1; j >= index; j--) {
+            result.append(s.charAt(j));
+        }
+        result.append(s);
+        return result.toString();
+    }
+
+    private StringBuilder preManacher(String str) {
+        StringBuilder sb = new StringBuilder(str.length() >> 1 + 1);
+        for (int i = 0; i < str.length(); i++) {
+            sb.append('#');
+            sb.append(str.charAt(i));
+        }
+        sb.append('#');
+        return sb;
     }
 }
