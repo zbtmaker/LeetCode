@@ -6,7 +6,7 @@ package greedy;
  */
 public class WiggleMaxLength376 {
     public int wiggleMaxLength(int[] nums) {
-        return wiggleMaxLengthByGreedy(nums);
+        return wiggleMaxLengthByDP(nums);
     }
 
     /**
@@ -58,12 +58,12 @@ public class WiggleMaxLength376 {
      * 如果nums[i-1] == nums[i]，那么这个时候最后即飞升序也非降序。因此以i结尾的数组的摆动序列长度
      * 和i-1的长度是一致的。
      * 这里其实最主要的就是我们用down和up两个数组来记录了以i结尾升序和降序的摆动序列，这样我们就不需要
-     * 再计算之前状态了。感觉这个题目可最大乘积子数组有些相似之处，但是又有些不同。还需要好好理解贪心算法。
+     * 再计算之前状态了。这个题目和MinSwap801有些相似
      *
      * @param nums
      * @return
      */
-    private int wiggleMaxLengthByGreedy(int[] nums) {
+    private int wiggleMaxLengthByDP(int[] nums) {
         int len = nums.length;
         if (nums.length <= 1) {
             return len;
@@ -86,4 +86,29 @@ public class WiggleMaxLength376 {
         }
         return Math.max(down[len - 1], up[len - 1]);
     }
+
+    /**
+     * 空间优化有的动态规划
+     *
+     * @param nums
+     * @return
+     */
+    private int wiggleMaxLengthByDPOpt(int[] nums) {
+        int len = nums.length;
+        if (nums.length <= 1) {
+            return len;
+        }
+        int up = 1;
+        int down = 1;
+        for (int i = 1; i < len; i++) {
+            if (nums[i] > nums[i - 1]) {
+                up = down + 1;
+            } else if (nums[i] < nums[i - 1]) {
+                down = up + 1;
+            }
+        }
+        return Math.max(up, down);
+    }
+
+
 }
