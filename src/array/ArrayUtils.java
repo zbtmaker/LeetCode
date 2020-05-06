@@ -128,4 +128,20 @@ public class ArrayUtils {
         }
         return map;
     }
+
+    /**
+     * 交换数组中的元素位置i和位置j的元素
+     *
+     * @param nums
+     * @param i
+     * @param j
+     */
+    public static void swap(int[] nums, int i, int j) {
+        if (i == j) {
+            return;
+        }
+        nums[i] = nums[i] ^ nums[j];
+        nums[j] = nums[i] ^ nums[j];
+        nums[i] = nums[i] ^ nums[j];
+    }
 }
