@@ -1,11 +1,8 @@
-package stack;
+package design;
 
-import com.oracle.webservices.internal.api.message.BasePropertySet;
+import design.LRUCache146;
 import org.junit.Assert;
 import org.junit.Test;
-import org.omg.PortableInterceptor.INACTIVE;
-
-import java.util.*;
 
 /**
  * @author baitao zou
