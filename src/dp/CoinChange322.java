@@ -15,39 +15,35 @@ import java.util.List;
  * <p>
  * 硬币变种(I):就是给定一个coins集合，集合中有重复的元素，但是每种元素只能用一次。
  */
-public class coinChange322 {
-    @Test
-    public void testCoinChange() {
-        int count = new coinChange322().coinChange(new int[]{3, 5, 7}, 13);
-        System.out.println(count);
-    }
+public class CoinChange322 {
 
-    @Test
-    public void testCoinChangeII() {
-        List<Integer> result = new coinChange322().coinChangeII(new int[]{3, 5, 7}, 6);
-        System.out.println(Arrays.toString(result.toArray()));
-    }
 
+    /**
+     * 这里需要注意的就是如何进行初始化，光有递推公式不能解决所有的问题。
+     *
+     * @param coins
+     * @param amount
+     * @return
+     */
     public int coinChange(int[] coins, int amount) {
-        Arrays.sort(coins);
-        int[] DP = new int[amount + 1];
-        for (int i = 1; i < DP.length; i++) {
-            int min = Integer.MAX_VALUE;
-            for (int j = 0; j < coins.length; j++) {
-                if (coins[j] > i) {
-                    break;
-                }
-                if (DP[i - coins[j]] >= 0) {
-                    min = Math.min(min, DP[i - coins[j]]);
-                }
-            }
-            if (min != Integer.MAX_VALUE) {
-                DP[i] = min + 1;
-            } else {
-                DP[i] = -1;
+        int[] dp = new int[amount + 1];
+        for (int coin : coins) {
+            if (coin <= amount) {
+                dp[coin] = 1;
             }
         }
-        return DP[amount];
+        for (int i = 1; i <= amount; i++) {
+            dp[i] = Integer.MAX_VALUE;
+            for (int coin : coins) {
+                if (coin <= i && dp[i - coin] != -1) {
+                    dp[i] = Math.min(dp[i], dp[i - coin] + 1);
+                }
+            }
+            if (dp[i] == Integer.MAX_VALUE) {
+                dp[i] = -1;
+            }
+        }
+        return dp[amount];
     }
 
     /**
@@ -57,8 +53,8 @@ public class coinChange322 {
      * @param amount
      * @return
      */
-    public List<Integer> coinChangeII(int[] coins, int amount) {
-        if(amount <= 0){
+    private List<Integer> coinChangeII(int[] coins, int amount) {
+        if (amount <= 0) {
             return new ArrayList<>();
         }
         Arrays.sort(coins);
@@ -83,7 +79,7 @@ public class coinChange322 {
                 List<Integer> tmpList;
                 if (i == coins[minIndex]) {
                     tmpList = new ArrayList<>();
-                }else{
+                } else {
                     int index = i - coins[minIndex] - 1;
                     tmpList = new ArrayList<>(result.get(index));
                 }
