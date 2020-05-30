@@ -5,6 +5,11 @@ import java.util.Map;
 import java.util.Set;
 
 /**
+ * LeetCode76 :https://leetcode-cn.com/problems/minimum-window-substring/
+ * 给你一个字符串 S、一个字符串 T，请在字符串 S 里面找出：包含 T 所有字符的最小子串。
+ * <p>
+ * 双指针算法参考链接:https://labuladong.gitbook.io/algo/suan-fa-si-wei-xi-lie/hua-dong-chuang-kou-ji-qiao
+ *
  * @author baitao zou
  * date 2020/01/31
  */
@@ -20,7 +25,7 @@ public class MinWindow76 {
      */
     public String minWindow(String s, String t) {
         /*return minWindowByBruteForce(s, t);*/
-        return minWindowBySlidingWindow(s, t);
+        return minWindowByDoublePoint(s, t);
     }
 
     /**
@@ -34,52 +39,45 @@ public class MinWindow76 {
      * @param t 目标字符串
      * @return 最小覆盖字符子串
      */
-    public String minWindowBySlidingWindow(String s, String t) {
-        if (t.length() > s.length()) {
+    public String minWindowByDoublePoint(String s, String t) {
+        if (s.length() == 0 || t.length() == 0) {
             return "";
         }
-        Map<Character, Integer> targetMap = initialTargetMap(t);
-        int left = 0;
-        int right = 0;
-        int min = Integer.MAX_VALUE;
-        String minStr = "";
-        Map<Character, Integer> srcMap = new HashMap<>();
-        char ch;
-        while (right < s.length() && left <= right) {
-            while (right < s.length()) {
-                ch = s.charAt(right);
-                if (targetMap.containsKey(ch)) {
-                    if (srcMap.containsKey(ch)) {
-                        srcMap.put(ch, srcMap.get(ch) + 1);
-                    } else {
-                        srcMap.put(ch, 1);
-                    }
+        Map<Character, Integer> needs = initialTargetMap(t);
+        Map<Character, Integer> window = new HashMap<>();
+        int left = 0, right = 0;
+        int start = 0, min = Integer.MAX_VALUE;
+        int match = 0;
+        while (right < s.length()) {
+            char ch = s.charAt(right);
+            if (needs.containsKey(ch)) {
+                int value = window.get(ch) == null ? 0 : window.get(ch);
+                value++;
+                window.put(ch, value);
+                if (value == needs.get(ch)) {
+                    match++;
                 }
-                right++;
-                if (compareMap(srcMap, targetMap)) {
-                    int len = right - left;
-                    if (min > len) {
-                        min = len;
-                        minStr = s.substring(left, right);
-                    }
-                    break;
-                }
-
             }
-            while (left <= right) {
-                ch = s.charAt(left);
-                if (targetMap.containsKey(ch)) {
-                    srcMap.put(ch, srcMap.get(ch) - 1);
+            right++;
+            while (match == needs.size()) {
+                if (right - left < min) {
+                    start = left;
+                    min = right - left;
+                }
+                char ch2 = s.charAt(left);
+                if (needs.containsKey(ch2)) {
+                    int curVal = window.get(ch2);
+                    int value = Math.max(curVal - 1, 0);
+                    window.put(ch2, value);
+                    if (value < needs.get(ch2)) {
+                        match--;
+                    }
                 }
                 left++;
-                if (!compareMap(srcMap, targetMap)) {
-                    break;
-                }
-
             }
         }
-
-        return minStr;
+        return min == Integer.MAX_VALUE ? "" : s.substring(start
+                , min+start);
     }
 
     /**
