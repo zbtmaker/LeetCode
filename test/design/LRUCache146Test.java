@@ -1,17 +1,14 @@
 package design;
 
-import design.LRUCache146;
+import junit.framework.TestCase;
 import org.junit.Assert;
-import org.junit.Test;
 
 /**
- * @author baitao zou
+ * @author Baitao Zou
  * date 2020/01/27
  */
-public class LRUCache146Test {
+public class LRUCache146Test extends TestCase {
 
-
-    @Test
     public void test1() {
         LRUCache146 cache = new LRUCache146(2);
         cache.put(1, 1);
@@ -25,7 +22,6 @@ public class LRUCache146Test {
         Assert.assertEquals(cache.get(4), 4);
     }
 
-    @Test
     public void test2() {
         LRUCache146 cache = new LRUCache146(2);
         Assert.assertEquals(cache.get(2), -1);
@@ -37,7 +33,6 @@ public class LRUCache146Test {
         Assert.assertEquals(cache.get(2), 6);
     }
 
-    @Test
     public void test3() {
         LRUCache146 cache = new LRUCache146(2);
         cache.put(2, 1);
