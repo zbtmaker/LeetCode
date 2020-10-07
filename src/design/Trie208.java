@@ -11,27 +11,23 @@ public class Trie208 {
      * 前缀树的根节点
      */
     private final Node root;
-    /**
-     * 用来存储放入的字符串
-     */
-    private final Set<String> set;
-
     private static final char EMPTY = ' ';
 
     /**
      * 内部类用于记录当前节点的字符以及其子节点的字符
      */
-    private static class Node {
+    public static class Node {
         private char val;
+        private boolean flag;
         private Map<Character, Node> children;
 
         Node(char val) {
             this.val = val;
+            flag = false;
         }
     }
 
     Trie208() {
-        set = new HashSet<>();
         root = new Node(EMPTY);
     }
 
@@ -42,12 +38,12 @@ public class Trie208 {
      * @param word 字符
      */
     public void insert(String word) {
-        set.add(word);
         insert(word, 0, root);
     }
 
     private void insert(String word, int index, Node root) {
         if (index == word.length()) {
+            root.flag = true;
             return;
         }
         char ch = word.charAt(index);
@@ -75,7 +71,20 @@ public class Trie208 {
      * @return true-存在 ｜ false-不存在
      */
     public boolean search(String word) {
-        return set.contains(word);
+        Node cur = root;
+        for (int i = 0; i < word.length(); i++) {
+            Map<Character, Node> children = cur.children;
+            if (children == null) {
+                return false;
+            }
+            char ch = word.charAt(i);
+            Node node = children.get(ch);
+            if (node == null) {
+                return false;
+            }
+            cur = node;
+        }
+        return cur.flag;
     }
 
     /**
