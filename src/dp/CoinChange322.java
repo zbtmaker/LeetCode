@@ -1,7 +1,5 @@
 package dp;
 
-import org.junit.Test;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -21,27 +19,24 @@ public class CoinChange322 {
     /**
      * 这里需要注意的就是如何进行初始化，光有递推公式不能解决所有的问题。
      *
-     * @param coins
-     * @param amount
-     * @return
+     * @param coins  金币数组
+     * @param amount 总金额
+     * @return 最小硬币数
      */
     public int coinChange(int[] coins, int amount) {
         int[] dp = new int[amount + 1];
-        for (int coin : coins) {
-            if (coin <= amount) {
-                dp[coin] = 1;
-            }
-        }
         for (int i = 1; i <= amount; i++) {
-            dp[i] = Integer.MAX_VALUE;
+            int min = Integer.MAX_VALUE;
             for (int coin : coins) {
-                if (coin <= i && dp[i - coin] != -1) {
-                    dp[i] = Math.min(dp[i], dp[i - coin] + 1);
+                if (i == coin) {
+                    min = 0;
+                    break;
+                }
+                if (i > coin && dp[i - coin] != -1) {
+                    min = Math.min(min, dp[i - coin]);
                 }
             }
-            if (dp[i] == Integer.MAX_VALUE) {
-                dp[i] = -1;
-            }
+            dp[i] = min != Integer.MAX_VALUE ? min + 1 : -1;
         }
         return dp[amount];
     }
@@ -49,9 +44,9 @@ public class CoinChange322 {
     /**
      * 输出其中一个结果
      *
-     * @param coins
-     * @param amount
-     * @return
+     * @param coins  金币数组
+     * @param amount 总金额
+     * @return 最小硬币数
      */
     private List<Integer> coinChangeII(int[] coins, int amount) {
         if (amount <= 0) {
