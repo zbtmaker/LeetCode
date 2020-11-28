@@ -15,6 +15,16 @@ import java.util.*;
 public class NumIslands200 {
 
     public int numIslands(char[][] grid) {
+        return numIslandsByDFS(grid);
+    }
+
+    /**
+     * 采用Union Find方式
+     *
+     * @param grid 二维数组
+     * @return 岛数量
+     */
+    private int numIslandsByUnionFind(char[][] grid) {
         if (grid == null || grid.length == 0) {
             return 0;
         }
@@ -52,6 +62,11 @@ public class NumIslands200 {
         return count[0];
     }
 
+    /**
+     * @param row 二维数组行
+     * @param col 二维数组列
+     * @return 初始化根节点
+     */
     private int[] initId(int row, int col) {
         int len = row * col;
         int[] id = new int[len];
@@ -61,6 +76,12 @@ public class NumIslands200 {
         return id;
     }
 
+    /**
+     * 统计矩阵中岛屿数量
+     *
+     * @param grid 二维矩阵
+     * @return 字符 '1' 数量
+     */
     private int countLand(char[][] grid) {
         int count = 0;
         for (char[] chs : grid) {
@@ -95,5 +116,62 @@ public class NumIslands200 {
             size[qid] += size[pid];
         }
         count[0] = count[0] - 1;
+    }
+
+    /**
+     * @param grid 二维矩阵
+     * @return 岛数量
+     */
+    private int numIslandsByDFS(char[][] grid) {
+        int row = grid.length, col = grid[0].length;
+
+        int[] islands = new int[1];
+        islands[0] = countLand(grid);
+
+        boolean[] flag = new boolean[row * col];
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                dfs(grid, i, j, flag, islands);
+            }
+        }
+        return islands[0];
+    }
+
+    /**
+     * @param grid    二维矩阵
+     * @param i       行
+     * @param j       列
+     * @param flag    标识是否发送过
+     * @param islands 孤立岛屿数量
+     * @return 是否有节点相连
+     */
+    private boolean dfs(char[][] grid, int i, int j, boolean[] flag, int[] islands) {
+        int row = grid.length, col = grid[0].length;
+        if (i < 0 || i >= row || j < 0 || j >= col) {
+            return false;
+        }
+        if (grid[i][j] == '0') {
+            return false;
+        }
+
+        if (flag[i * col + j]) {
+            return false;
+        }
+
+        flag[i * col + j] = true;
+
+        if (dfs(grid, i - 1, j, flag, islands)) {
+            islands[0] -= 1;
+        }
+        if (dfs(grid, i + 1, j, flag, islands)) {
+            islands[0] -= 1;
+        }
+        if (dfs(grid, i, j - 1, flag, islands)) {
+            islands[0] -= 1;
+        }
+        if (dfs(grid, i, j + 1, flag, islands)) {
+            islands[0] -= 1;
+        }
+        return true;
     }
 }
