@@ -4,15 +4,6 @@ package list;
  * Created by Administrator on 2019\2\19 0019.
  */
 public class DeleteDuplicates83 {
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
-
     /**
      * 其实链表的操作和数组的操作一致，无需多言
      *
