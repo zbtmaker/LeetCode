@@ -12,22 +12,22 @@ public class MiddleNode876Test {
 
     @Test
     public void test1() {
-        MiddleNode876.ListNode head = new MiddleNode876.ListNode(1);
-        MiddleNode876.ListNode second = new MiddleNode876.ListNode(2);
+        ListNode head = new ListNode(1);
+        ListNode second = new ListNode(2);
         head.next = second;
-        MiddleNode876.ListNode result = middle.middleNode(head);
+        ListNode result = middle.middleNode(head);
         traverseList(result);
     }
 
 
     @Test
     public void test2() {
-        MiddleNode876.ListNode head = new MiddleNode876.ListNode(1);
-        MiddleNode876.ListNode second = new MiddleNode876.ListNode(2);
-        MiddleNode876.ListNode third = new MiddleNode876.ListNode(3);
+        ListNode head = new ListNode(1);
+        ListNode second = new ListNode(2);
+        ListNode third = new ListNode(3);
         head.next = second;
         second.next = third;
-        MiddleNode876.ListNode result = middle.middleNode(head);
+        ListNode result = middle.middleNode(head);
         traverseList(result);
     }
 
@@ -36,7 +36,7 @@ public class MiddleNode876Test {
      *
      * @param head
      */
-    private void traverseList(MiddleNode876.ListNode head) {
+    private void traverseList(ListNode head) {
         while (head != null) {
             System.out.println(head.val);
             head = head.next;

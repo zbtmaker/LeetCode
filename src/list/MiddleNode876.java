@@ -4,26 +4,6 @@ package list;
  * Created by Administrator on 2019\2\19 0019.
  */
 public class MiddleNode876 {
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        public ListNode(int x) {
-            val = x;
-        }
-
-        public void setNext(ListNode next) {
-            this.next = next;
-        }
-
-        public ListNode getNext() {
-            return this.next;
-        }
-
-        public int getVal() {
-            return this.val;
-        }
-    }
 
     /**
      * 通过计数的方式来计算结果
