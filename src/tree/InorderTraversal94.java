@@ -9,24 +9,25 @@ import java.util.Stack;
  * date 2020/01/26
  */
 public class InorderTraversal94 {
-    public List<Integer> inorderTraversal(TreeCommonUtils.TreeNode root) {
-        List<Integer> nodeList = new LinkedList<>();
-        Stack<TreeCommonUtils.TreeNode> nodeStack = new Stack<>();
-
-        TreeCommonUtils.TreeNode currentNode = root;
-
-        while(nodeStack.size()!=0 || currentNode != null){
-            if(currentNode != null){
-                nodeStack.push(currentNode);
-                currentNode = currentNode.left;
-            }else{
-                currentNode = nodeStack.pop();
-
-                nodeList.add(currentNode.val);
-
-                currentNode = currentNode.right;
+    /**
+     * @param root 二叉树根节点
+     * @return 中序遍历结果
+     */
+    public List<Integer> inorderTraversal(TreeNode root) {
+        Stack<TreeNode> stack = new Stack<>();
+        List<Integer> result = new LinkedList<>();
+        TreeNode node = root;
+        while (!stack.empty() || node != null) {
+            while (node != null) {
+                stack.push(node);
+                node = node.left;
+            }
+            if (!stack.empty()) {
+                node = stack.pop();
+                result.add(node.val);
+                node = node.right;
             }
         }
-        return nodeList;
+        return result;
     }
 }
