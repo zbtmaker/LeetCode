@@ -8,11 +8,6 @@ import java.util.List;
  * Created by Administrator on 2019\2\25 0025.
  */
 public class RightSideView199 {
-
-    private List<Integer> rightViews = new LinkedList<>();
-
-    private int level = -1;
-
     /**
      * 层次遍历方法，采用程序中的栈和JVM的调用栈实现
      *
@@ -90,35 +85,5 @@ public class RightSideView199 {
             i++;
         }
         recur(nextNodes, result);
-    }
-
-    /**
-     * 时间复杂度O(N)，空间复杂度O(1)
-     *
-     * @param root 二叉树根节点
-     * @return 右视图数组
-     */
-    public List<Integer> rightSideViewByRecurII(TreeNode root) {
-        inorder(root, 0);
-        return this.rightViews;
-    }
-
-    /**
-     * 中序遍历，root，right，left顺序，如果是当前行的第一个元素，那么就添加到数组中，直接遍历
-     *
-     * @param root     子树根节点
-     * @param curLevel 当前行数
-     */
-    private void inorder(TreeNode root, int curLevel) {
-        if (root == null) {
-            return;
-        }
-        if (curLevel > level) {
-            this.level = curLevel;
-            rightViews.add(root.val);
-        }
-
-        inorder(root.right, curLevel + 1);
-        inorder(root.left, curLevel + 1);
     }
 }
