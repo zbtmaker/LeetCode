@@ -1,92 +1,55 @@
 package tree;
 
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Stack;
+import java.util.*;
 
+/**
+ * @author Baitao zou
+ * date 2021/01/03
+ */
 public class ZigzagLevelOrder103 {
-
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
-    }
+    private List<List<Integer>> result = new LinkedList<>();
 
     /**
-     * 这里我使用两个栈的方式来实现这个问题。一个栈pushStack是用来存，然后另一个栈用来存pushStack
-     * 中pop出来的元素。同时我们用count来记录奇偶行，奇数行时，从pushStack中pop出来的元素然后将其
-     * right,left子树放到另一个栈中，如果count为偶数，则按照当前节点的left,right放入到另一个栈中
-     * 每一层执行完毕之后，count ++。依次往复执行完毕
+     * 时间复杂度o(N),空间复杂度其实是O(2^?)
+     * 这里我们用层次遍历的方式遍历每一个节点，层次遍历逻辑不变，还是从左至右遍历每一层的节点，
+     * 但是将节点的值添加到结果数组中的时候，如果上一层采用的是从左往右，那么这一层就采用从右
+     * 往左的方式添加。这里可以借用LinkedList的addFirst和addLast方法。
+     *
      * @param root 二叉树的根
-     * @return
+     * @return z形遍历结果
      */
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
-        if(root == null){
-            return new LinkedList<>();
+        return zigzagLevelOrderByRecur(root);
+    }
+
+    private List<List<Integer>> zigzagLevelOrderByRecur(TreeNode root) {
+        if (root == null) {
+            return this.result;
         }
-        List<List<Integer>> result = new LinkedList<>();
-        List<Integer> tmpList;
-        Stack<TreeNode> popStack = new Stack<>();
-        Stack<TreeNode> pushStack = new Stack<>();
-        popStack.add(root);
-        int count = 0;
-        while(!popStack.isEmpty() || !pushStack.isEmpty()){
-            tmpList = new LinkedList<>();
-            if(!popStack.isEmpty()){
-                while(!popStack.isEmpty()){
-                    TreeNode node = popStack.pop();
-                    tmpList.add(node.val);
-                    TreeNode rightNode = node.right;
-                    TreeNode leftNode = node.left;
+        recur(Collections.singletonList(root), true);
+        return this.result;
+    }
 
-                    if(count % 2 == 0){
-                        if(node.left != null){
-                            pushStack.push(leftNode);
-                        }
-                        if(node.right != null){
-                            pushStack.push(rightNode);
-                        }
-                    }else{
-                        if(node.right != null){
-                            pushStack.push(rightNode);
-                        }
-                        if(node.left != null){
-                            pushStack.push(rightNode);
-                        }
-                    }
-                }
-
-            }else{
-                while(!pushStack.isEmpty()){
-                    TreeNode node = pushStack.pop();
-                    tmpList.add(node.val);
-                    TreeNode rightNode = node.right;
-                    TreeNode leftNode = node.left;
-
-                    if(count % 2 == 0){
-                        if(node.left != null){
-                            popStack.push(leftNode);
-                        }
-                        if(node.right != null){
-                            popStack.push(rightNode);
-                        }
-                    }else{
-                        if(node.right != null){
-                            popStack.push(rightNode);
-                        }
-                        if(node.left != null){
-                            popStack.push(leftNode);
-                        }
-                    }
-                }
+    private void recur(List<TreeNode> curTreeNodes, boolean orderLeft) {
+        if (curTreeNodes == null || curTreeNodes.size() == 0) {
+            return;
+        }
+        LinkedList<TreeNode> nextTreeNodes = new LinkedList<>();
+        LinkedList<Integer> curValues = new LinkedList<>();
+        for (TreeNode treeNode : curTreeNodes) {
+            if (orderLeft) {
+                curValues.addFirst(treeNode.val);
+            } else {
+                curValues.addLast(treeNode.val);
             }
-            count ++;
-            result.add(tmpList);
+            if (treeNode.left != null) {
+                nextTreeNodes.add(treeNode.left);
+            }
+            if (treeNode.right != null) {
+                nextTreeNodes.add(treeNode.right);
+            }
         }
-        return result;
+        result.add(curValues);
+        recur(nextTreeNodes, !orderLeft);
     }
 }
