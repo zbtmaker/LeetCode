@@ -25,7 +25,7 @@ public class NumDecodings91 {
      * @return 分解次数
      */
     public int numDecodings(String s) {
-        return numDecodingsByUpDownMemorization(s);
+        return numDecodingsByTopDownMemorization(s);
     }
 
     /**
@@ -71,43 +71,45 @@ public class NumDecodings91 {
     }
 
     /**
-     * 采用自顶向下的递归方式
+     * 采用自顶向下的深度优先遍历
      *
      * @param s 目标字符串
      * @return
      */
-    private int numDecodingsByUpDown(String s) {
-        return recurUpDown(s, s.length() - 1);
+    private int numDecodingsByTopDown(String s) {
+        return recurTopDown(s, s.length() - 1);
     }
 
     /**
-     * 自顶向下递归
+     * 自顶向下深度优先遍历
      *
      * @param s     目标字符串
      * @param index 当前位置
      * @return 当前递归能够获得的最大次数
      */
-    private int recurUpDown(String s, int index) {
+    private int recurTopDown(String s, int index) {
         if (index < 0) {
             return 1;
         }
         int sum = 0;
         if (s.charAt(index) != '0') {
-            sum += recurUpDown(s, index - 1);
+            sum += recurTopDown(s, index - 1);
         }
         if (index - 1 >= 0 && (s.charAt(index - 1) == '1' || (s.charAt(index - 1) == '2' && s.charAt(index) - '0' <= 6))) {
-            sum += recurUpDown(s, index - 2);
+            sum += recurTopDown(s, index - 2);
         }
         return sum;
     }
 
     /**
+     * 自顶向下深度优先遍历+Memorization
+     *
      * @param s 目标字符串
      * @return 字符串分解方式种类
      */
-    private int numDecodingsByUpDownMemorization(String s) {
+    private int numDecodingsByTopDownMemorization(String s) {
         int len = s.length();
-        return recurUpDownByMemorization(s, len - 1, new int[len]);
+        return recurTopDownByMemorization(s, len - 1, new int[len]);
     }
 
     /**
@@ -118,7 +120,7 @@ public class NumDecodings91 {
      * @param dp    用于记录index长度字符串能够分割的次数
      * @return 分解的方式种类
      */
-    private int recurUpDownByMemorization(String s, int index, int[] dp) {
+    private int recurTopDownByMemorization(String s, int index, int[] dp) {
         if (index < 0) {
             return 1;
         }
@@ -126,10 +128,10 @@ public class NumDecodings91 {
             return dp[index];
         }
         if (s.charAt(index) != '0') {
-            dp[index] += recurUpDownByMemorization(s, index - 1, dp);
+            dp[index] += recurTopDownByMemorization(s, index - 1, dp);
         }
         if (index - 1 >= 0 && (s.charAt(index - 1) == '1' || (s.charAt(index - 1) == '2' && s.charAt(index) - '0' <= 6))) {
-            dp[index] += recurUpDownByMemorization(s, index - 2, dp);
+            dp[index] += recurTopDownByMemorization(s, index - 2, dp);
         }
         return dp[index];
     }
@@ -177,42 +179,5 @@ public class NumDecodings91 {
             }
         }
         return aux[len];
-    }
-
-    /**
-     * 常数时间算法解决算法问题
-     *
-     * @param s
-     * @return
-     */
-    private int numDecodingsByDPConstant(String s) {
-        if (s.length() == 0 || s.charAt(0) == '0') {
-            return 0;
-        }
-        int fir = 1;
-        int sec = 1;
-        for (int i = 2; i <= s.length(); i++) {
-            char curChar = s.charAt(i - 1);
-            char lastChar = s.charAt(i - 2);
-            int tmp = 0;
-            if (curChar == '0') {
-                if (lastChar > '0' && lastChar < '3') {
-                    tmp = fir;
-                } else {
-                    return 0;
-                }
-            } else {
-                if (lastChar == '0') {
-                    tmp = sec;
-                } else if (lastChar == '1' || lastChar == '2' && curChar > '0' && curChar <= '6') {
-                    tmp = fir + sec;
-                } else {
-                    tmp = sec;
-                }
-            }
-            fir = sec;
-            sec = tmp;
-        }
-        return sec;
     }
 }
