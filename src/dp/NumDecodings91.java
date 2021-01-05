@@ -14,27 +14,40 @@ package dp;
  * 链接：https://leetcode-cn.com/problems/decode-ways
  */
 public class NumDecodings91 {
+    private int count = 0;
 
+    /**
+     * 这个题目其实有一个问题其实和上楼梯是类似的问题，上楼梯是每一次能够走一步或者走两步，但是这个问题
+     * 并不是每次都能够走两步，这个走两步还是走一步是要根据两个字符串能不能满足一个字符串来算的。但是这个题目也是要
+     * 分清是一个排列问题还是一个组合问题，这个是至关重要的，那么我们来分析一下这个问题是一个排列问题还是一个组合问题。
+     *
+     * @param s 字符串
+     * @return 分解次数
+     */
     public int numDecodings(String s) {
-        return numDecodingsByDPConstant(s);
+        return numDecodingsByUpDownMemorization(s);
     }
 
     /**
      * 这个题目使用回溯的方式来解决，对于任意一个位置，要么取一位，要么取两位。
      * 同时，如果去两位不成，那么直接返回，取一位的时候如果发现这个位是零，那么发现实行不通的则返回。
+     * 如果一个题目能够通过递归的方式解决，那么这个题目再不要求时间复杂度的情况下可以从自底向上的方式进行
+     * 递归，这样能够很快解决一个问题，但是也可以通过自顶向下的方式来思考一下问题，因为这样思考问题有助于得到
+     * 得到重复子问题计算，从而想到使用记忆化递归的方式，也就是我们经常说的DP的另一种形式，Memorization。然后
+     * 根据Memorization可以写出自底向上的递归方式，然后通过降维的方式将二维DP优化成一维DP。最终既能够优化
+     * time complexity，又能够优化space complexity。
      *
-     * @param s
+     * @param s 目标字符串
      * @return
      */
     private int numDecodingsByBacktracking(String s) {
-        int[] count = new int[]{0};
-        recurNumDecodings(s, 0, count);
-        return count[0];
+        recurNumDecodings(s, 0);
+        return this.count;
     }
 
-    private void recurNumDecodings(String s, int index, int[] count) {
+    private void recurNumDecodings(String s, int index) {
         if (index >= s.length()) {
-            count[0] += 1;
+            this.count++;
             return;
         }
 
@@ -44,7 +57,7 @@ public class NumDecodings91 {
         if (num1 < 1 || num1 > 26) {
             return;
         }
-        recurNumDecodings(s, index + 1, count);
+        recurNumDecodings(s, index + 1);
 
         //caseII 每一个位置取两位
         if (index + 1 >= s.length()) {
@@ -54,7 +67,71 @@ public class NumDecodings91 {
         if (num2 < 1 || num2 > 26) {
             return;
         }
-        recurNumDecodings(s, index + 2, count);
+        recurNumDecodings(s, index + 2);
+    }
+
+    /**
+     * 采用自顶向下的递归方式
+     *
+     * @param s 目标字符串
+     * @return
+     */
+    private int numDecodingsByUpDown(String s) {
+        return recurUpDown(s, s.length() - 1);
+    }
+
+    /**
+     * 自顶向下递归
+     *
+     * @param s     目标字符串
+     * @param index 当前位置
+     * @return 当前递归能够获得的最大次数
+     */
+    private int recurUpDown(String s, int index) {
+        if (index < 0) {
+            return 1;
+        }
+        int sum = 0;
+        if (s.charAt(index) != '0') {
+            sum += recurUpDown(s, index - 1);
+        }
+        if (index - 1 >= 0 && (s.charAt(index - 1) == '1' || (s.charAt(index - 1) == '2' && s.charAt(index) - '0' <= 6))) {
+            sum += recurUpDown(s, index - 2);
+        }
+        return sum;
+    }
+
+    /**
+     * @param s 目标字符串
+     * @return 字符串分解方式种类
+     */
+    private int numDecodingsByUpDownMemorization(String s) {
+        int len = s.length();
+        return recurUpDownByMemorization(s, len - 1, new int[len]);
+    }
+
+    /**
+     * 记忆化自顶向下递归
+     *
+     * @param s     目标字符串
+     * @param index 字符串索引
+     * @param dp    用于记录index长度字符串能够分割的次数
+     * @return 分解的方式种类
+     */
+    private int recurUpDownByMemorization(String s, int index, int[] dp) {
+        if (index < 0) {
+            return 1;
+        }
+        if (dp[index] != 0) {
+            return dp[index];
+        }
+        if (s.charAt(index) != '0') {
+            dp[index] += recurUpDownByMemorization(s, index - 1, dp);
+        }
+        if (index - 1 >= 0 && (s.charAt(index - 1) == '1' || (s.charAt(index - 1) == '2' && s.charAt(index) - '0' <= 6))) {
+            dp[index] += recurUpDownByMemorization(s, index - 2, dp);
+        }
+        return dp[index];
     }
 
     /**
