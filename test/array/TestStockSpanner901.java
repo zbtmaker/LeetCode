@@ -9,7 +9,6 @@ import org.junit.Assert;
  */
 public class TestStockSpanner901 extends TestCase {
 
-    //1,1,1,2,1,4,6
     public void test1() {
         StockSpanner901 stock = new StockSpanner901();
         Assert.assertEquals(stock.next(100), 1);

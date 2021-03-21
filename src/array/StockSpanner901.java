@@ -7,19 +7,19 @@ import java.util.ArrayDeque;
  * date 2021/03/21
  */
 public class StockSpanner901 {
-    private ArrayDeque<Position> arrayDeque;
+    private ArrayDeque<Pair> arrayDeque;
 
-    public class Position {
+    public class Pair {
         int price;
         int count;
 
-        public Position(int price, int count) {
+        Pair(int price, int count) {
             this.price = price;
             this.count = count;
         }
     }
 
-    public StockSpanner901() {
+    StockSpanner901() {
         arrayDeque = new ArrayDeque<>();
     }
 
@@ -28,7 +28,7 @@ public class StockSpanner901 {
         while (!arrayDeque.isEmpty() && arrayDeque.peekLast().price <= price) {
             count += arrayDeque.pollLast().count;
         }
-        arrayDeque.addLast(new Position(price, count));
+        arrayDeque.addLast(new Pair(price, count));
         return count;
     }
 }
