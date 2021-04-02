@@ -1,7 +1,5 @@
 package array;
 
-import sun.awt.image.ImageWatched;
-
 import java.util.*;
 
 /**
@@ -17,7 +15,7 @@ public class MaxSlidingWindow239 {
      */
     public int[] maxSlidingWindow(int[] nums, int k) {
 //        return maxSlidingWindowByBruteForce(nums, k);
-        return maxSlidingWindowByStack(nums, k);
+        return maxSlidingWindowByDequeue(nums, k);
     }
 
     /**
@@ -42,38 +40,21 @@ public class MaxSlidingWindow239 {
         return result.stream().mapToInt(Integer::intValue).toArray();
     }
 
-    private int[] maxSlidingWindowByStack(int[] nums, int k) {
-        if (nums == null || nums.length == 0) {
-            return new int[0];
-        }
-        List<Integer> result = new LinkedList<>();
-        Deque<Integer> pushDeque = new ArrayDeque<>();
-        Deque<Integer> maxDeque = new ArrayDeque<>();
-        for (int i = 0; i < Math.min(nums.length, k); i++) {
-            pushDeque.push(nums[i]);
-            if (maxDeque.isEmpty()) {
-                maxDeque.push(nums[i]);
-            } else {
-                int max = maxDeque.peek();
-                if (max < nums[i]){
-                    maxDeque.push(nums[i]);
+    private int[] maxSlidingWindowByDequeue(int[] nums, int k) {
+        int len = nums.length;
+        int[] result = new int[len - k + 1];
+        WindowQueue windowQueue = new WindowQueue();
+        for (int i = 0; i < len; i++) {
+            windowQueue.push(nums[i]);
+            if (i + 1 - k >= 0) {
+                int max = windowQueue.max();
+                result[i + 1 - k] = max;
+                if (nums[i + 1 - k] == max) {
+                    windowQueue.poll();
                 }
             }
         }
-        result.add(maxDeque.peek());
-        for (int j = k; j < nums.length; j++) {
-            int val = pushDeque.pollLast();
-            int max = maxDeque.getLast();
-            if(val == max){
-                maxDeque.pollLast();
-            }
-            pushDeque.push(nums[j]);
-            max = maxDeque.getLast();
-            if(nums[j] >= max){
-                maxDeque.push(nums[j]);
-            }
-            result.add(maxDeque.getLast());
-        }
-        return result.stream().mapToInt(Integer::intValue).toArray();
+        return result;
     }
+
 }

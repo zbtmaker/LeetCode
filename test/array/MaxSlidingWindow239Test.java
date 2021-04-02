@@ -62,14 +62,7 @@ public class MaxSlidingWindow239Test {
     @Test
     public void test8() {
         int[] nums = new int[]{1, 3, -1, -3, 5, 3, 6, 7};
-        int[] result = slide.maxSlidingWindow(nums, 9);
-        Assert.assertArrayEquals(result, new int[]{7});
-    }
-
-    @Test
-    public void test9() {
-        int[] nums = new int[]{1, 3, -1, -3, 5, 3, 6, 7};
         int[] result = slide.maxSlidingWindow(nums, 2);
-        Assert.assertArrayEquals(result, new int[]{3,3,-1,5,5,6,7});
+        Assert.assertArrayEquals(result, new int[]{3, 3, -1, 5, 5, 6, 7});
     }
 }
