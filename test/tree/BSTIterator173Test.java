@@ -14,11 +14,11 @@ public class BSTIterator173Test {
 
     @Test
     public void test1() {
-        TreeCommonUtils.TreeNode root = new TreeCommonUtils.TreeNode(7);
-        TreeCommonUtils.TreeNode node1 = new TreeCommonUtils.TreeNode(3);
-        TreeCommonUtils.TreeNode node2 = new TreeCommonUtils.TreeNode(15);
-        TreeCommonUtils.TreeNode node3 = new TreeCommonUtils.TreeNode(9);
-        TreeCommonUtils.TreeNode node4 = new TreeCommonUtils.TreeNode(20);
+        TreeNode root = new TreeNode(7);
+        TreeNode node1 = new TreeNode(3);
+        TreeNode node2 = new TreeNode(15);
+        TreeNode node3 = new TreeNode(9);
+        TreeNode node4 = new TreeNode(20);
         root.left = node1;
         root.right = node2;
         node2.left = node3;
@@ -37,7 +37,7 @@ public class BSTIterator173Test {
 
     @Test
     public void test2() {
-        TreeCommonUtils.TreeNode root = new TreeCommonUtils.TreeNode(7);
+        TreeNode root = new TreeNode(7);
         iterator = new BSTIterator173(root);
         Assert.assertTrue(iterator.hasNext());
         Assert.assertEquals(iterator.next(), 7);
@@ -51,10 +51,10 @@ public class BSTIterator173Test {
 
     @Test
     public void test4() {
-        TreeCommonUtils.TreeNode root = new TreeCommonUtils.TreeNode(4);
-        TreeCommonUtils.TreeNode node1 = new TreeCommonUtils.TreeNode(3);
-        TreeCommonUtils.TreeNode node2 = new TreeCommonUtils.TreeNode(2);
-        TreeCommonUtils.TreeNode node3 = new TreeCommonUtils.TreeNode(1);
+        TreeNode root = new TreeNode(4);
+        TreeNode node1 = new TreeNode(3);
+        TreeNode node2 = new TreeNode(2);
+        TreeNode node3 = new TreeNode(1);
 
         root.left = node1;
         node1.left = node2;

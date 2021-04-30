@@ -20,18 +20,17 @@ public class BSTIterator173 {
      *
      * @param root
      */
-    public BSTIterator173(TreeCommonUtils.TreeNode root) {
+    public BSTIterator173(TreeNode root) {
         list = new LinkedList<>();
         if (root == null) {
             return;
         }
-//        inOrderStack(root,list);
         inOrderRecursive(root, list);
     }
 
-    private void inOrderStack(TreeCommonUtils.TreeNode root, List<Integer> list) {
-        Stack<TreeCommonUtils.TreeNode> stack = new Stack<>();
-        TreeCommonUtils.TreeNode curNode = root;
+    private void inOrderStack(TreeNode root, List<Integer> list) {
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode curNode = root;
         while (!stack.isEmpty() || curNode != null) {
             if (curNode != null) {
                 stack.push(curNode);
@@ -50,7 +49,7 @@ public class BSTIterator173 {
      * @param root
      * @param list
      */
-    private void inOrderRecursive(TreeCommonUtils.TreeNode root, List<Integer> list) {
+    private void inOrderRecursive(TreeNode root, List<Integer> list) {
         if (root == null) {
             return;
         }
