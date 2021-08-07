@@ -12,24 +12,6 @@ package tree;
 public class PseudoPalindromicPaths1457 {
     private static final int ARR_SIZE = 10;
 
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
 
     public int pseudoPalindromicPaths(TreeNode root) {
         if (root == null) {

@@ -1,15 +1,22 @@
 package list;
 
+import junit.framework.TestCase;
 import org.junit.Test;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 /**
  * @author baitao zou
  * date 2020/04/25
  */
-public class ReverseList206Test {
+public class ReverseList206Test extends TestCase {
     private ReverseList206 reverse = new ReverseList206();
 
-    @Test
     public void test1() {
         ReverseList206.ListNode head = new ReverseList206.ListNode(1);
         ReverseList206.ListNode h1 = new ReverseList206.ListNode(2);
@@ -26,7 +33,6 @@ public class ReverseList206Test {
         print(cur);
     }
 
-    @Test
     public void test2() {
         ReverseList206.ListNode head = new ReverseList206.ListNode(1);
 
@@ -34,7 +40,6 @@ public class ReverseList206Test {
         print(cur);
     }
 
-    @Test
     public void test3() {
         ReverseList206.ListNode head = new ReverseList206.ListNode(1);
         head.next = new ReverseList206.ListNode(2);
@@ -42,7 +47,6 @@ public class ReverseList206Test {
         print(cur);
     }
 
-    @Test
     public void test4() {
         ReverseList206.ListNode head = new ReverseList206.ListNode(1);
         ReverseList206.ListNode h1 = new ReverseList206.ListNode(2);
@@ -54,10 +58,18 @@ public class ReverseList206Test {
         print(cur);
     }
 
-    @Test
     public void test5() {
         ReverseList206.ListNode cur = reverse.reverseList(null);
         print(cur);
+    }
+
+    public void test6() {
+
+        IntStream.rangeClosed(0, 3).boxed().collect(Collectors.toList());
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.stream().mapToInt(Integer::intValue).toArray();
+        int[][] arr = new int[1][];
     }
 
     private void print(ReverseList206.ListNode head) {

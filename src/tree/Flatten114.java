@@ -3,22 +3,21 @@ package tree;
 import java.util.Stack;
 
 public class Flatten114 {
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
-    }
-
     /**
      * 从右边看这个问题，其实就是一个前序遍历的方式可以实现，但是借助栈的思想特别
      *
      * @param root 树的根
      */
     public void flatten(TreeNode root) {
+        preOrderTraverseByRecursive(root);
+    }
+
+    /**
+     * 借助栈的方式实现先序遍历
+     *
+     * @param root 二叉树的根
+     */
+    private void preOrderTraverseByStack(TreeNode root) {
         if (root == null) {
             return;
         }
@@ -41,16 +40,12 @@ public class Flatten114 {
         }
     }
 
-    /**
-     * 借助栈的方式实现先序遍历
-     *
-     * @param root 二叉树的根
-     */
-    public void preOrderTraverseByStack(TreeNode root) {
-        Stack<TreeNode> stack = new Stack<>();
+    private void preOrderTraverseByRecur(TreeNode root) {
+        if (root == null) {
+            return;
+        }
 
     }
-
 
     /**
      * 递归的方式实现先序遍历

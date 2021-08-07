@@ -4,14 +4,15 @@ import org.junit.Test;
 
 public class Flatten114Test {
     private Flatten114 flatten114 = new Flatten114();
+
     @Test
-    public void test1(){
-        Flatten114.TreeNode node1 = new Flatten114.TreeNode(1);
-        Flatten114.TreeNode node2 = new Flatten114.TreeNode(2);
-        Flatten114.TreeNode node3 = new Flatten114.TreeNode(5);
-        Flatten114.TreeNode node4 = new Flatten114.TreeNode(3);
-        Flatten114.TreeNode node5 = new Flatten114.TreeNode(4);
-        Flatten114.TreeNode node6 = new Flatten114.TreeNode(6);
+    public void test1() {
+        TreeNode node1 = new TreeNode(1);
+        TreeNode node2 = new TreeNode(2);
+        TreeNode node3 = new TreeNode(5);
+        TreeNode node4 = new TreeNode(3);
+        TreeNode node5 = new TreeNode(4);
+        TreeNode node6 = new TreeNode(6);
 
         node1.left = node2;
         node1.right = node3;
@@ -26,9 +27,9 @@ public class Flatten114Test {
     }
 
     @Test
-    public void test2(){
-        Flatten114.TreeNode node1 = new Flatten114.TreeNode(1);
-        Flatten114.TreeNode node2 = new Flatten114.TreeNode(2);
+    public void test2() {
+        TreeNode node1 = new TreeNode(1);
+        TreeNode node2 = new TreeNode(2);
 
         node1.left = node2;
 
@@ -37,8 +38,8 @@ public class Flatten114Test {
     }
 
     @Test
-    public void test3(){
-        Flatten114.TreeNode node1 = new Flatten114.TreeNode(1);
+    public void test3() {
+        TreeNode node1 = new TreeNode(1);
 
         flatten114.flatten(node1);
         flatten114.preOrderTraverseByRecursive(node1);

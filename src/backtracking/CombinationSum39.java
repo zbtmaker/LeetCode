@@ -18,40 +18,30 @@ public class CombinationSum39 {
      * @return
      */
     public List<List<Integer>> combinationSumI(int[] candidates, int target) {
-        List<List<Integer>> list = new ArrayList<List<Integer>>();
-        Map<String, String> map = new HashMap<String, String>();
-        int sum = 0;
-        for (int i = 0; i < candidates.length; i++) {
-            sum += candidates[i];
-            ArrayList<Integer> array = new ArrayList<Integer>();
-            array.add(candidates[i]);
-            combinationSumI(candidates, target, sum, i + 1, list, array, map);
-            sum = 0;
-        }
+        List<List<Integer>> list = new LinkedList<>();
+        combinationSumI(candidates, target, 0, list, new LinkedList<Integer>(), new HashSet<>());
         return list;
     }
 
-    private void combinationSumI(int[] candidates, int target,
-                                 int sum, int index, List<List<Integer>> list,
-                                 ArrayList<Integer> array, Map<String, String> map) {
-        if (sum == target) {
-            ArrayList<Integer> arrayList = new ArrayList<>(array);
-            Collections.sort(arrayList);
-
-            if (!map.containsKey(arrayList.toString())) {
-                map.put(arrayList.toString(), "string");
-                list.add(new ArrayList<Integer>(array));
+    private void combinationSumI(int[] candidates, int target, int index, List<List<Integer>> list,
+                                 LinkedList<Integer> array, HashSet<List<Integer>> map) {
+        if (target == 0) {
+            if (!map.contains(array)) {
+                List<Integer> tmp = new LinkedList<>(array);
+                map.add(tmp);
+                list.add(tmp);
             }
             return;
         }
-        if (sum < target) {
-            for (int i = index; i < candidates.length; i++) {
-                sum += candidates[i];
-                array.add(candidates[i]);
-                combinationSumI(candidates, target, sum, i + 1, list, array, map);
-                array.remove(array.size() - 1);
-                sum -= candidates[i];
-            }
+        if (target < 0) {
+            return;
+        }
+        for (int i = index; i < candidates.length; i++) {
+            target -= candidates[i];
+            array.add(candidates[i]);
+            combinationSumI(candidates, target, i, list, array, map);
+            array.removeLast();
+            target += candidates[i];
         }
     }
 
@@ -61,38 +51,31 @@ public class CombinationSum39 {
      * @return
      */
     public List<List<Integer>> combinationSumII(int[] candidates, int target) {
-        List<List<Integer>> list = new ArrayList<List<Integer>>();
+        List<List<Integer>> list = new LinkedList<>();
         Arrays.sort(candidates);
-        int sum = 0;
-        for (int i = 0; i < candidates.length; i++) {
-            if (i > 0 && candidates[i] == candidates[i - 1]) {
-                continue;
-            }
-            sum += candidates[i];
-            ArrayList<Integer> array = new ArrayList<Integer>();
-            array.add(candidates[i]);
-            combinationSumII(candidates, target, sum, i + 1, list, array);
-            sum = 0;
-        }
+        combinationSumII(candidates, target, 0, list, new LinkedList<>(), new HashSet<>());
         return list;
     }
 
     private void combinationSumII(int[] candidates, int target,
-                                  int sum, int index, List<List<Integer>> list,
-                                  ArrayList<Integer> array) {
-        if (sum == target) {
-            list.add(new ArrayList<Integer>(array));
-            return;
-        }
-        if (sum < target) {
-            for (int i = index; i < candidates.length; i++) {
-                sum += candidates[i];
-                array.add(candidates[i]);
-                combinationSumII(candidates, target, sum, i + 1, list, array);
-                array.remove(array.size() - 1);
-                sum -= candidates[i];
+                                  int index, List<List<Integer>> result,
+                                  LinkedList<Integer> array, HashSet<List<Integer>> set) {
+        if (0 == target) {
+            if(!set.contains(array)) {
+                List<Integer> tmp = new LinkedList<>(array);
+                set.add(tmp);
+                result.add(tmp);
             }
         }
-
+        if (target < 0) {
+            return;
+        }
+        for (int i = index; i < candidates.length; i++) {
+            target -= candidates[i];
+            array.add(candidates[i]);
+            combinationSumII(candidates, target, i + 1, result, array, set);
+            array.removeLast();
+            target += candidates[i];
+        }
     }
 }

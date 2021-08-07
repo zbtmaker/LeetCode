@@ -29,4 +29,11 @@ public class FindRedundantDirectedConnection685Test {
         int[] result = directed.findRedundantDirectedConnection(new int[][]{{1, 2}, {2, 3}, {3, 4}, {4, 1}, {1, 5}});
         Assert.assertArrayEquals(result, new int[]{4, 1});
     }
+
+    @Test
+    public void test4() {
+        int[] result = directed.findRedundantDirectedConnection(new int[][]{{3,4},{4,1},{1,2},{2,3},{5,1}});
+        Assert.assertArrayEquals(result, new int[]{4, 1});
+    }
+
 }

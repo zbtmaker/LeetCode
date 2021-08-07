@@ -13,23 +13,13 @@ import java.util.Stack;
  */
 public class TreeCommonUtils {
 
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
-    }
-
     /**
      * 后序遍历：堆栈方式
      *
      * @param root 二叉树根节点
      * @return 二叉树所有节点值
      */
-    public List<Integer> postOrderTraversalOutList(TreeNode root) {
+    public static List<Integer> postOrderTraversalOutList(TreeNode root) {
         TreeNode node = root;
         List<Integer> list = new LinkedList<>();
         Stack<TreeNode> stack = new Stack<TreeNode>();
@@ -56,7 +46,7 @@ public class TreeCommonUtils {
      *
      * @param root 根节点
      */
-    public void postOrderTraverseByStack(TreeNode root) {
+    public static void postOrderTraverseByStack(TreeNode root) {
         TreeNode node = root;
         Stack<TreeNode> stack = new Stack<TreeNode>();
         TreeNode lastNodeVisited = null;
@@ -80,7 +70,7 @@ public class TreeCommonUtils {
      *
      * @param root 二叉树根节点
      */
-    public void postOrderTraverseByRecursiveOutList(TreeNode root, List<Integer> valList) {
+    public static void postOrderTraverseByRecursiveOutList(TreeNode root, List<Integer> valList) {
         if (root == null) {
             return;
         }
@@ -94,7 +84,7 @@ public class TreeCommonUtils {
      *
      * @param root 二叉树根节点
      */
-    public void postOrderTraverseByRecursive(TreeNode root) {
+    public static void postOrderTraverseByRecursive(TreeNode root) {
         if (root == null) {
             return;
         }
@@ -109,7 +99,7 @@ public class TreeCommonUtils {
      * @param root 二叉树根节点
      * @return 二叉树所有节点的值
      */
-    public List<Integer> inOrderTraverseByStackOutList(TreeNode root) {
+    public static List<Integer> inOrderTraverseByStackOutList(TreeNode root) {
         if (root == null) {
             return new LinkedList<>();
         }
@@ -136,7 +126,7 @@ public class TreeCommonUtils {
      * @param root    子树的根节点
      * @param valList 存储节点值的集合
      */
-    public void inOrderTraverseByRecursiveOutList(TreeNode root, List<Integer> valList) {
+    public static void inOrderTraverseByRecursiveOutList(TreeNode root, List<Integer> valList) {
         if (root == null) {
             return;
         }
@@ -150,7 +140,7 @@ public class TreeCommonUtils {
      *
      * @param root 根节点
      */
-    public void inOrderTraverseByRecursive(TreeNode root) {
+    public static void inOrderTraverseByRecursive(TreeNode root) {
         if (root == null) {
             return;
         }
@@ -164,7 +154,7 @@ public class TreeCommonUtils {
      *
      * @param root 二叉树的根
      */
-    public void preOrderTraverseByStack(TreeNode root) {
+    public static void preOrderTraverseByStack(TreeNode root) {
         if (root == null) {
             return;
         }
@@ -188,7 +178,7 @@ public class TreeCommonUtils {
      * @param root 根节点
      * @return 所有节点的值集合
      */
-    public List<Integer> preOrderTraverseByStackOutList(TreeNode root) {
+    public static List<Integer> preOrderTraverseByStackOutList(TreeNode root) {
         if (root == null) {
             return new LinkedList<>();
         }
@@ -214,7 +204,7 @@ public class TreeCommonUtils {
      *
      * @param root 二叉树的根
      */
-    public void preOrderTraverseByRecursive(TreeNode root) {
+    public static void preOrderTraverseByRecursive(TreeNode root) {
         if (root == null) {
             return;
         }
@@ -229,12 +219,40 @@ public class TreeCommonUtils {
      * @param root    子树的根节点
      * @param valList 保存节点值的List
      */
-    public void preOrderTraverseByRecursiveList(TreeNode root, List<Integer> valList) {
+    public static void preOrderTraverseByRecursiveList(TreeNode root, List<Integer> valList) {
         if (root == null) {
             return;
         }
         valList.add(root.val);
         preOrderTraverseByRecursive(root.left);
         preOrderTraverseByRecursive(root.right);
+    }
+
+    public static TreeNode sortedArrayToBST(int[] nums) {
+        if (nums == null) {
+            return null;
+        }
+        return recurSortedArrayToBST(nums, 0, nums.length - 1);
+    }
+
+    /**
+     * 这是递归程序。
+     *
+     * @param nums
+     * @param left
+     * @param right
+     * @return
+     */
+    private static TreeNode recurSortedArrayToBST(int[] nums, int left, int right) {
+        if (left > right) {
+            return null;
+        }
+        int middle = (left + right) >> 1;
+        TreeNode node = new TreeNode(nums[middle]);
+
+        node.left = recurSortedArrayToBST(nums, left, middle - 1);
+        node.right = recurSortedArrayToBST(nums, middle + 1, right);
+
+        return node;
     }
 }

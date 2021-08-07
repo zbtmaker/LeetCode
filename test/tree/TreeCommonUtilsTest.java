@@ -1,6 +1,5 @@
 package tree;
 
-import org.junit.Before;
 import org.junit.Test;
 
 import java.util.List;
@@ -16,11 +15,11 @@ public class TreeCommonUtilsTest {
 
     @Test
     public void testPostOrderTraverseByStack() {
-        TreeCommonUtils.TreeNode node1 = new TreeCommonUtils.TreeNode(7);
-        TreeCommonUtils.TreeNode node2 = new TreeCommonUtils.TreeNode(3);
-        TreeCommonUtils.TreeNode node3 = new TreeCommonUtils.TreeNode(15);
-        TreeCommonUtils.TreeNode node4 = new TreeCommonUtils.TreeNode(9);
-        TreeCommonUtils.TreeNode node5 = new TreeCommonUtils.TreeNode(20);
+        TreeNode node1 = new TreeNode(7);
+        TreeNode node2 = new TreeNode(3);
+        TreeNode node3 = new TreeNode(15);
+        TreeNode node4 = new TreeNode(9);
+        TreeNode node5 = new TreeNode(20);
 
         node1.left = node2;
         node1.right = node3;
@@ -33,10 +32,10 @@ public class TreeCommonUtilsTest {
 
     @Test
     public void testInOrderTraverseByStackOutList() {
-        TreeCommonUtils.TreeNode node1 = new TreeCommonUtils.TreeNode(4);
-        TreeCommonUtils.TreeNode node2 = new TreeCommonUtils.TreeNode(3);
-        TreeCommonUtils.TreeNode node3 = new TreeCommonUtils.TreeNode(2);
-        TreeCommonUtils.TreeNode node4 = new TreeCommonUtils.TreeNode(1);
+        TreeNode node1 = new TreeNode(4);
+        TreeNode node2 = new TreeNode(3);
+        TreeNode node3 = new TreeNode(2);
+        TreeNode node4 = new TreeNode(1);
 
         node1.left = node2;
         node2.left = node3;
@@ -48,10 +47,10 @@ public class TreeCommonUtilsTest {
 
     @Test
     public void testPreOrderTraverseByStackOutList() {
-        TreeCommonUtils.TreeNode node1 = new TreeCommonUtils.TreeNode(4);
-        TreeCommonUtils.TreeNode node2 = new TreeCommonUtils.TreeNode(3);
-        TreeCommonUtils.TreeNode node3 = new TreeCommonUtils.TreeNode(2);
-        TreeCommonUtils.TreeNode node4 = new TreeCommonUtils.TreeNode(1);
+        TreeNode node1 = new TreeNode(4);
+        TreeNode node2 = new TreeNode(3);
+        TreeNode node3 = new TreeNode(2);
+        TreeNode node4 = new TreeNode(1);
 
         node1.left = node2;
         node2.left = node3;
@@ -63,10 +62,10 @@ public class TreeCommonUtilsTest {
 
     @Test
     public void testPreOrderTraverseByRecursive() {
-        TreeCommonUtils.TreeNode node1 = new TreeCommonUtils.TreeNode(4);
-        TreeCommonUtils.TreeNode node2 = new TreeCommonUtils.TreeNode(3);
-        TreeCommonUtils.TreeNode node3 = new TreeCommonUtils.TreeNode(2);
-        TreeCommonUtils.TreeNode node4 = new TreeCommonUtils.TreeNode(1);
+        TreeNode node1 = new TreeNode(4);
+        TreeNode node2 = new TreeNode(3);
+        TreeNode node3 = new TreeNode(2);
+        TreeNode node4 = new TreeNode(1);
 
         node1.left = node2;
         node2.left = node3;

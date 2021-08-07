@@ -1,19 +1,23 @@
 package tree;
 
+import junit.framework.TestCase;
 import org.junit.Test;
 
 import java.util.List;
 
-public class ZigzagLevelOrder103Test {
+/**
+ * @author Baitao zou
+ * date 2021/01/04
+ */
+public class ZigzagLevelOrder103Test extends TestCase {
     private ZigzagLevelOrder103 zigzagLevelOrder103 = new ZigzagLevelOrder103();
 
-    @Test
     public void test1() {
-        ZigzagLevelOrder103.TreeNode node1 = new ZigzagLevelOrder103.TreeNode(3);
-        ZigzagLevelOrder103.TreeNode node2 = new ZigzagLevelOrder103.TreeNode(9);
-        ZigzagLevelOrder103.TreeNode node3 = new ZigzagLevelOrder103.TreeNode(20);
-        ZigzagLevelOrder103.TreeNode node4 = new ZigzagLevelOrder103.TreeNode(15);
-        ZigzagLevelOrder103.TreeNode node5 = new ZigzagLevelOrder103.TreeNode(7);
+        TreeNode node1 = new TreeNode(3);
+        TreeNode node2 = new TreeNode(9);
+        TreeNode node3 = new TreeNode(20);
+        TreeNode node4 = new TreeNode(15);
+        TreeNode node5 = new TreeNode(7);
 
         node1.left = node2;
         node1.right = node3;
@@ -27,17 +31,14 @@ public class ZigzagLevelOrder103Test {
         }
     }
 
-
-    @Test
     public void test2() {
-        ZigzagLevelOrder103.TreeNode node1 = new ZigzagLevelOrder103.TreeNode(3);
+        TreeNode node1 = new TreeNode(3);
         List<List<Integer>> list = zigzagLevelOrder103.zigzagLevelOrder(node1);
         for (List<Integer> tmpList : list) {
             System.out.println(tmpList);
         }
     }
 
-    @Test
     public void test3() {
         List<List<Integer>> list = zigzagLevelOrder103.zigzagLevelOrder(null);
         for (List<Integer> tmpList : list) {
@@ -45,16 +46,15 @@ public class ZigzagLevelOrder103Test {
         }
     }
 
-    @Test
     public void test4() {
-        ZigzagLevelOrder103.TreeNode node1 = new ZigzagLevelOrder103.TreeNode(3);
-        ZigzagLevelOrder103.TreeNode node2 = new ZigzagLevelOrder103.TreeNode(9);
-        ZigzagLevelOrder103.TreeNode node3 = new ZigzagLevelOrder103.TreeNode(20);
-        ZigzagLevelOrder103.TreeNode node4 = new ZigzagLevelOrder103.TreeNode(15);
-        ZigzagLevelOrder103.TreeNode node5 = new ZigzagLevelOrder103.TreeNode(7);
+        TreeNode node1 = new TreeNode(3);
+        TreeNode node2 = new TreeNode(9);
+        TreeNode node3 = new TreeNode(20);
+        TreeNode node4 = new TreeNode(15);
+        TreeNode node5 = new TreeNode(7);
 
-        ZigzagLevelOrder103.TreeNode node6 = new ZigzagLevelOrder103.TreeNode(18);
-        ZigzagLevelOrder103.TreeNode node7 = new ZigzagLevelOrder103.TreeNode(19);
+        TreeNode node6 = new TreeNode(18);
+        TreeNode node7 = new TreeNode(19);
 
         node1.left = node2;
         node1.right = node3;
@@ -70,16 +70,15 @@ public class ZigzagLevelOrder103Test {
         }
     }
 
-    @Test
     public void test5() {
-        ZigzagLevelOrder103.TreeNode node1 = new ZigzagLevelOrder103.TreeNode(3);
-        ZigzagLevelOrder103.TreeNode node2 = new ZigzagLevelOrder103.TreeNode(9);
-        ZigzagLevelOrder103.TreeNode node3 = new ZigzagLevelOrder103.TreeNode(20);
-        ZigzagLevelOrder103.TreeNode node4 = new ZigzagLevelOrder103.TreeNode(15);
-        ZigzagLevelOrder103.TreeNode node5 = new ZigzagLevelOrder103.TreeNode(7);
+        TreeNode node1 = new TreeNode(3);
+        TreeNode node2 = new TreeNode(9);
+        TreeNode node3 = new TreeNode(20);
+        TreeNode node4 = new TreeNode(15);
+        TreeNode node5 = new TreeNode(7);
 
-        ZigzagLevelOrder103.TreeNode node6 = new ZigzagLevelOrder103.TreeNode(18);
-        ZigzagLevelOrder103.TreeNode node7 = new ZigzagLevelOrder103.TreeNode(19);
+        TreeNode node6 = new TreeNode(18);
+        TreeNode node7 = new TreeNode(19);
 
         node1.left = node2;
         node1.right = node3;
