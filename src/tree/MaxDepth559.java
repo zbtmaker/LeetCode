@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * Created by Administrator on 2019\2\22 0022.
  */
-public class maxDepth559 {
+public class MaxDepth559 {
     private class Node {
         public int val;
         public List<Node> children;
