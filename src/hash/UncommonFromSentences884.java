@@ -1,23 +1,14 @@
 package hash;
 
-import org.junit.Test;
-
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
 /**
  * Created by Administrator on 2019\1\31 0031.
  */
-public class uncommonFromSentences884 {
-    @Test
-    public void test(){
-        String s1 = "apple apple";
-        String s2 = "banana";
-        String[] s = new uncommonFromSentences884().uncommonFromSentences(s1,s2);
-        System.out.println(Arrays.toString(s));
-    }
+public class UncommonFromSentences884 {
+
     public String[] uncommonFromSentences(String A, String B) {
         Map<String,Integer> map = new HashMap<String,Integer>();
         String[] s1 = A.split(" ");

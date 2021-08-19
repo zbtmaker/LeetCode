@@ -1,20 +1,14 @@
 package hash;
 
-import org.junit.Test;
-
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Created by Administrator on 2019\2\1 0001.
  */
-public class findRepeatedDnaSequences187 {
-    @Test
-    public void test(){
-
-        String s ="AAAAAAAAAAAAAAA";
-        List<String> lists= new findRepeatedDnaSequences187().findRepeatedDnaSequences(s);
-        System.out.println(Arrays.toString(lists.toArray()));
-    }
+public class FindRepeatedDnaSequences187 {
     public List<String> findRepeatedDnaSequences(String s) {
         List<String> arrayList = new ArrayList<>();
         Map<String,Integer> map = new HashMap<String,Integer>();

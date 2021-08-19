@@ -1,17 +1,10 @@
 package hash;
 
-import org.junit.Test;
-
 /**
  * Created by Administrator on 2019\1\29 0029.
  */
-public class isAnagram242 {
+public class IsAnagram242 {
 
-    @Test
-    public void test(){
-        boolean flag = new isAnagram242().isAnagram("rat","cat");
-        System.out.println(flag);
-    }
     public boolean isAnagram(String s, String t) {
         if(s.length() != t.length()){
             return false;

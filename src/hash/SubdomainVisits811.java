@@ -1,17 +1,14 @@
 package hash;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Created by Administrator on 2019\1\29 0029.
  */
-public class subdomainVisits811 {
-    public static void main(String[] args){
-
-        List<String> list = new subdomainVisits811().subdomainVisits(new String[]{"900 google.mail.com", "50 yahoo.com", "1 intel.mail.com", "5 wiki.org"});
-        System.out.println(Arrays.toString(list.toArray()));
-    }
-
+public class SubdomainVisits811 {
     public List<String> subdomainVisits(String[] cpdomains) {
         List<String> list = new ArrayList<String>();
         Map<String,Integer> map = new HashMap<String,Integer>();

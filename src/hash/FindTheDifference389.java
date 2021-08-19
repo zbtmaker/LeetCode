@@ -1,19 +1,13 @@
 package hash;
 
-import org.junit.Test;
-
 import java.util.HashMap;
 import java.util.Map;
 
 /**
  * Created by Administrator on 2019\1\29 0029.
  */
-public class findTheDifference389 {
-    @Test
-    public void test(){
-        char ch = new findTheDifference389().findTheDifference("ab","abc");
-        System.out.println(ch);
-    }
+public class FindTheDifference389 {
+
     public char findTheDifference(String s,String t){
         char diff = 0;
         Map<Character,Integer> map = new HashMap<Character,Integer>();

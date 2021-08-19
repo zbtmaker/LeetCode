@@ -1,25 +1,13 @@
 package hash;
 
-import org.junit.Test;
-
 import java.util.HashMap;
 import java.util.Map;
 
 /**
  * Created by Administrator on 2019\1\31 0031.
  */
-public class lengthOfLongestSubstring3 {
-    @Test
-    public void test(){
+public class LengthOfLongestSubstring3 {
 
-        int max = new lengthOfLongestSubstring3().lengthOfLongestSubstring("aab");
-        System.out.println(max);
-        /*Map<Character,Integer> map = new HashMap<>();
-        string s = "a b c";
-        for(int i = 0;i<s.length();i++){
-           map.put(s.charAt(i),i);
-        }*/
-    }
     public int lengthOfLongestSubstring(String s) {
         if(s.length()<1){
             return 0;

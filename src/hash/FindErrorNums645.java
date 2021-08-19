@@ -1,19 +1,10 @@
 package hash;
 
-import org.junit.Test;
-
-import java.util.Arrays;
-
 /**
  * Created by Administrator on 2019\2\1 0001.
  */
-public class findErrorNums645 {
-    @Test
-    public void test(){
-        int[] nums = new int[]{1,2,3,2};
-        int[] info = new findErrorNums645().findErrorNums(nums);
-        System.out.println(Arrays.toString(info));
-    }
+public class FindErrorNums645 {
+
     public int[] findErrorNums(int[] nums) {
         int[] right = new int[nums.length];
         int[] info = new int[2];

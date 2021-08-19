@@ -6,11 +6,7 @@ import java.util.Map;
 /**
  * Created by Administrator on 2019\1\11 0011.
  */
-public class numJewelsInStones771 {
-    public static  void main (String[] args){
-        int  i = 1;
-        System.out.println(new numJewelsInStones771().numJewelsInStones("a","AAAbbbb"));
-    }
+public class NumJewelsInStones771 {
     public int numJewelsInStones(String J,String S){
         int count = 0;
         Map<Character,Character> map = new HashMap<Character,Character>();

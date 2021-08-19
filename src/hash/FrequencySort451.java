@@ -1,19 +1,11 @@
 package hash;
 
-import org.junit.Test;
-
 import java.util.*;
 
 /**
  * Created by Administrator on 2019\1\29 0029.
  */
-public class frequencySort451 {
-    @Test
-    public void test(){
-        String s = new frequencySort451().frequencySort("Aabb");
-        System.out.println(s);
-
-    }
+public class FrequencySort451 {
     public String frequencySort(String s) {
         Map<Character,Integer> map = new HashMap<Character,Integer>();
         for(int i = 0;i<s.length();i++){

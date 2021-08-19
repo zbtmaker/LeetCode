@@ -8,19 +8,6 @@ import java.util.List;
  * date 2020/09/13
  */
 public class RecoverTree99 {
-    public static class TreeNode {
-        private int val;
-        public TreeNode left;
-        public TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-    }
 
     /**
      * plan1：这个题目一开始想的是采用中序遍历的方式实现二叉树的重建方案，最终需要的是修改二叉树的节点值，所以我们在存储的时候

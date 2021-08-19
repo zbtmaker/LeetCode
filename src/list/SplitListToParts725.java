@@ -14,14 +14,6 @@ package list;
  * date 2019/3/20
  */
 public class SplitListToParts725 {
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
 
     /**
      * 分割链表，这个题目分两步走，第一步是统计链表总节点个数，第二个是
@@ -37,7 +29,7 @@ public class SplitListToParts725 {
         }
         ListNode[] listNodes = new ListNode[k];
         int len = count(root);
-        int size = 0, res = 0;
+        int size, res = 0;
         if (len <= k) {
             size = 1;
         } else {

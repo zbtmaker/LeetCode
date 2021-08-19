@@ -1,7 +1,5 @@
 package hash;
 
-import org.junit.Test;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -10,14 +8,8 @@ import java.util.Map;
 /**
  * Created by Administrator on 2019\1\29 0029.
  */
-public class findRestaurant599 {
-    @Test
-    public void test(){
-        String[] s1 = new String[]{"Shogun", "Tapioca Express", "Burger King", "KFC"};
-        String[] s2 = new String[]{"Piatti", "The Grill at Torrey Pines", "Hungry Hunter Steakhouse", "Shogun"};
-        String[] strings = new findRestaurant599().findRestaurant(s1,s2);
-        System.out.println(Arrays.toString(strings));
-    }
+public class FindRestaurant599 {
+
     public String[] findRestaurant(String[] list1, String[] list2) {
         Map<String,Integer> map = new HashMap<String,Integer>();
         put(map,list1);

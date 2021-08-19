@@ -4,23 +4,6 @@ package tree;
  * Created by Administrator on 2019\3\22 0022.
  */
 public class SerializeBST449 {
-    public static void main(String[] args){
-        String str = "8!5!1!$!$!7!$!$!10!$!12!$!$!";
-        SerializeBST449 serialize = new SerializeBST449();
-        TreeNode root = serialize.deserialize(str);
-        String result = serialize.serialize(root);
-        System.out.println(str);
-        System.out.println(result);
-    }
-    private static class TreeNode{
-        private int val;
-        private TreeNode left;
-        private TreeNode right;
-        public TreeNode(int val){
-            this.val = val;
-        }
-    }
-
     /**
      * 这里我们使用前序遍历的方式实现二叉搜索树的序列化，那么我们只需要调用
      * preOrder的递归版本实现就可以了。

@@ -7,7 +7,7 @@ import java.util.Map;
 /**
  * Created by Administrator on 2019\1\29 0029.
  */
-public class topKFrequent347 {
+public class TopKFrequent347 {
     public List<Integer> topKFrequent(int[] nums, int k) {
         Map<Integer,Integer> map = new HashMap<Integer,Integer>();
         for(int i = 0;i<nums.length;i++){
