@@ -9,14 +9,6 @@ import java.util.Stack;
  * date 2019\2\20
  */
 public class IsPalindrome234 {
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
 
     public boolean isPalindrome(ListNode head) {
         return isPalindromeII(head);
@@ -58,8 +50,8 @@ public class IsPalindrome234 {
 
     /**
      * 上面我们使用Stack数据结构实现了时间复杂度O(N)，空间复杂度O(N)。那么我们如何实现空间复杂度为
-     * O(N),而时间复杂度为O(1)。我们之前的算法是采用一个辅助空间的方式，但是我们参考IsPalindrome9,
-     * 我们可以把一个链表进行翻转之后与原链表进行比较。但是如果是这样的话就会造成O(N),所以我们可以翻转一半
+     * O(1),而时间复杂度为O(N)。我们之前的算法是采用一个辅助空间的方式，但是我们参考IsPalindrome9,
+     * 我们可以把一个链表进行翻转之后与原链表进行比较。但是如果是这样的话就会造成空间复杂度O(N),所以我们可以翻转一半
      * 的链表的方式。其实我们可以翻转前一半链表或者是后一半链表来解决。所以这个题目就是回文判断和快慢指针。
      * 既然我们要将后一半链表翻转过来，那么我们就可以借鉴MiddleNode876的思路。
      * 第一步:使用快慢指针找到链表的中间节点(奇数链表)或者是偶数链表的后一半的起始位置
