@@ -6,14 +6,6 @@ import java.util.Stack;
  * Created by Administrator on 2019\2\21 0021.
  */
 public class AddTwoNumbersII445 {
-    private static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
 
     /**
      * 思路：这里我们借助堆栈Stack来实现两个链表的相加。具体步骤如下：
