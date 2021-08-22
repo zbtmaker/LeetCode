@@ -2,20 +2,13 @@ package list;
 
 import java.util.Comparator;
 import java.util.Iterator;
+import java.util.Objects;
 import java.util.PriorityQueue;
 
 /**
  * Created by Administrator on 2019\3\2 0002.
  */
 public class MergeKLists23 {
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
 
 
     public ListNode mergeKLists(ListNode[] lists) {
@@ -48,7 +41,7 @@ public class MergeKLists23 {
                 list = list.next;
             }
         }
-        ListNode head = new ListNode(queue.poll().val);
+        ListNode head = new ListNode(Objects.requireNonNull(queue.poll()).val);
         ListNode pre = head;
         for (Iterator<ListNode> iterator = queue.iterator(); iterator.hasNext(); ) {
             ListNode cur = queue.poll();

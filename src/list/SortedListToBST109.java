@@ -3,14 +3,7 @@ package list;
 /**
  * Created by Administrator on 2019\3\22 0022.
  */
-public class sortedListToBST109 {
-    private static class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x){
-            val = x;
-        }
-    }
+public class SortedListToBST109 {
     private static class TreeNode{
         private int val;
         private TreeNode left;

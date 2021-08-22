@@ -6,7 +6,7 @@ import junit.framework.TestCase;
  * @author Baitao Zou
  * date 2020/12/20
  */
-public class TestDeleteDuplicates83 extends TestCase {
+public class DeleteDuplicates83Test extends TestCase {
 
     private DeleteDuplicates83 delete = new DeleteDuplicates83();
 

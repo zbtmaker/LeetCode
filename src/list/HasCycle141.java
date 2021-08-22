@@ -7,14 +7,6 @@ import java.util.Map;
  * Created by Administrator on 2019\2\21 0021.
  */
 public class HasCycle141 {
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
 
     /**
      * MethodI :HashMap, time complexity O(N), space complexity O(N)

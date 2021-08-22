@@ -9,7 +9,7 @@ import java.util.ArrayList;
  * @author baitao zou
  * date 2020/06/15
  */
-public class TestMergeTwoLists21 extends TestCase {
+public class MergeTwoLists21Test extends TestCase {
     private MergeTwoLists21 merge = new MergeTwoLists21();
 
     public void test1() {

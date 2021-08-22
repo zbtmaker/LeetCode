@@ -3,32 +3,7 @@ package list;
 /**
  * Created by Administrator on 2019\2\19 0019.
  */
-public class removeElements203 {
-    private static class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x){
-            val = x;
-        }
-    }
-    public static void main(String[] args){
-        removeElements203 rem = new removeElements203();
-
-        ListNode h = new ListNode(4);
-        ListNode h1 = new ListNode(4);
-        ListNode h2 = new ListNode(4);
-        ListNode h3 = new ListNode(1);
-        h.next = h1;
-        h1.next = h2;
-        h2.next = h3;
-
-        ListNode curNode = rem.removeElements1(h,4);
-
-        while(curNode != null){
-            System.out.println(curNode.val);
-            curNode = curNode.next;
-        }
-    }
+public class RemoveElements203 {
     public ListNode removeElements(ListNode head,int val) {
         ListNode preNode = head;
         ListNode curNode = head;

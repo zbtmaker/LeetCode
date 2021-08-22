@@ -8,14 +8,6 @@ package list;
  * Created by Administrator on 2019\2\20 0020.
  */
 public class OddEvenList328 {
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
 
     /**
      * 这个题目比较巧的是可以在原地将链表中的元素进行分块，我们利用一个oddNode表示奇数链表的最后一个元素；

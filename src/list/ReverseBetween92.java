@@ -3,32 +3,8 @@ package list;
 /**
  * Created by Administrator on 2019\2\21 0021.
  */
-public class reverseBetween92 {
-    private static class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x){
-            val = x;
-        }
-    }
-    public static void main(String[] args){
-        ListNode head = new ListNode(1);
-        ListNode h1 = new ListNode(2);
-        ListNode h2 = new ListNode(3);
-        ListNode h3 = new ListNode(4);
-        ListNode h4 = new ListNode(5);
-        ListNode h5 = new ListNode(6);
-        /*head.next = h1;
-        h1.next = h2;
-        h2.next = h3;
-        h3.next = h4;
-        h4.next = h5;*/
-        ListNode curNode = new reverseBetween92().reverseBetween(head,1,1);
-        while(curNode != null){
-            System.out.println(curNode.val);
-            curNode = curNode.next;
-        }
-    }
+public class ReverseBetween92 {
+
 
     /**
      * 这里借助reverseList206的method3来解决这个题，同时我们还需要一个index指针用于表示我们遍历到

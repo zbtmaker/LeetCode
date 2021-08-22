@@ -3,32 +3,7 @@ package list;
 /**
  * Created by Administrator on 2019\3\2 0002.
  */
-public class reverseKGroup25 {
-    private static class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x){
-            val = x;
-        }
-    }
-    public static void main(String[] args){
-        ListNode head = new ListNode(1);
-        ListNode h1 = new ListNode(2);
-        ListNode h2 = new ListNode(3);
-        ListNode h3 = new ListNode(4);
-        ListNode h4 = new ListNode(5);
-        ListNode h5 = new ListNode(6);
-        head.next = h1;
-        h1.next = h2;
-        h2.next = h3;
-        h3.next = h4;
-        h4.next = h5;
-        ListNode curNode = new reverseKGroup25().reverseKGroup(head,4);
-        while(curNode != null){
-            System.out.println(curNode.val);
-            curNode = curNode.next;
-        }
-    }
+public class ReverseKGroup25 {
 
     /**
      * 这个题目借鉴的是reverseBetween92和reverseList206，其中我们每次都会将一组链表进行翻转，
@@ -88,10 +63,6 @@ public class reverseKGroup25 {
             preNode = curNode;
             curNode = nextNode;
         }
-        if(preNode != null){
-            return preNode;
-        }else{
-            return curNode;
-        }
+        return preNode;
     }
 }

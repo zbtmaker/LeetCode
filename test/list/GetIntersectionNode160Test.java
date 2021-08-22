@@ -7,9 +7,9 @@ import org.junit.Assert;
  * @author Baitao Zou
  * date 2020/12/23
  */
-public class TestGetIntersectionNode160 extends TestCase {
+public class GetIntersectionNode160Test extends TestCase {
 
-    private GetIntersectionNode160 intersection = new GetIntersectionNode160();
+    private final GetIntersectionNode160 intersection = new GetIntersectionNode160();
 
     public void test1() {
         ListNode headA = new ListNode(1);

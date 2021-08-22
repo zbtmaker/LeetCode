@@ -6,34 +6,7 @@ import java.util.Comparator;
 /**
  * Created by Administrator on 2019\3\2 0002.
  */
-public class sortList148 {
-    private static class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x){
-            val = x;
-        }
-    }
-    public static void main(String[] args){
-        ListNode head= null;/*new ListNode(3);
-        ListNode h1 = new ListNode(4);
-        ListNode h2 = new ListNode(2);
-        ListNode h3 = new ListNode(1);
-        ListNode h4 = new ListNode(6);
-        ListNode h5 = new ListNode(5);
-        head.next = h1;
-        h1.next = h2;
-        h2.next = h3;
-        h3.next = h4;
-        h4.next = h5;*/
-        sortList148 sort = new sortList148();
-        ListNode curNode = sort.sortList(head);
-        while(curNode != null){
-            System.out.println(curNode.val+"->");
-            curNode = curNode.next;
-        }
-    }
-
+public class SortList148 {
     /**
      * 不敢提什么高见，那么就用Collections.sort来实现吧，不是单纯的调用
      * Collections.sort方法，而是将head转换成一个数组，然后将其进行排序。

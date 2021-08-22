@@ -7,18 +7,9 @@ import java.util.Set;
  * Created by Administrator on 2019\2\21 0021.
  */
 public class DetectCycle142 {
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
-
     /**
-     * method1 : HashSet
-     * method2 : Fast-Slow Point
+     * method1 : HashSet time complexity O(1), space complexity O(N)
+     * method2 : Fast-Slow Point time complexity O(N), space complexity O(1)
      *
      * @param head 头节点
      * @return 环入口

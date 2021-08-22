@@ -6,14 +6,6 @@ import java.util.Stack;
  * Created by Administrator on 2019\2\8 0008.
  */
 public class ReverseList206 {
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
 
     public ListNode reverseList(ListNode head) {
         return reverseListIII(head);

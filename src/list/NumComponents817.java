@@ -13,14 +13,6 @@ import java.util.Set;
  * date 2020/07/10
  */
 public class NumComponents817 {
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
 
     /**
      * 通过标志位的方式实现，如果链表中的元素是G数组中的一个元素，那么我们就把标志为置为true，
