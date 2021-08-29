@@ -12,24 +12,12 @@ import java.util.*;
  * <p>
  * :
  *
- *
  * @author baitao zou
  * date 2020/03/07
  */
 public class NetworkDelayTime743 {
-
-    public class Edge {
-        int id;
-        int dist;
-
-        private Edge(int id, int dist) {
-            this.id = id;
-            this.dist = dist;
-        }
-    }
-
     public int networkDelayTime(int[][] times, int N, int K) {
-        Map<Integer, List<Edge>> adj = constructWeightedDirectedGraph(times);
+        Map<Integer, List<Edge<Integer,Integer>>> adj = CommonUtil.constructWeightedDirectedGraph(times);
         Map<Integer, Integer> queue = new HashMap<>();
         int[] dist = initDist(N, K);
         boolean[] marked = new boolean[N + 1];
@@ -39,15 +27,15 @@ public class NetworkDelayTime743 {
             int minIndex = removeMin(queue);
             marked[minIndex] = true;
             max = Math.max(dist[minIndex], max);
-            List<Edge> adjList = adj.get(minIndex);
+            List<Edge<Integer,Integer>> adjList = adj.get(minIndex);
             if (adjList == null) {
                 continue;
             }
-            for (Edge tmpEdge : adjList) {
-                if (!marked[tmpEdge.id]) {
-                    if (dist[tmpEdge.id] > dist[minIndex] + tmpEdge.dist) {
-                        dist[tmpEdge.id] = dist[minIndex] + tmpEdge.dist;
-                        queue.put(tmpEdge.id, dist[tmpEdge.id]);
+            for (Edge<Integer,Integer> tmpEdge : adjList) {
+                if (!marked[tmpEdge.des]) {
+                    if (dist[tmpEdge.des] > dist[minIndex] + tmpEdge.dis) {
+                        dist[tmpEdge.des] = dist[minIndex] + tmpEdge.dis;
+                        queue.put(tmpEdge.des, dist[tmpEdge.des]);
                     }
                 }
 
@@ -59,24 +47,6 @@ public class NetworkDelayTime743 {
             }
         }
         return max;
-    }
-
-    /**
-     * construct a weighted directed graph
-     *
-     * @param times
-     * @return
-     */
-    private Map<Integer, List<Edge>> constructWeightedDirectedGraph(int[][] times) {
-        Map<Integer, List<Edge>> adj = new HashMap<>();
-        List<Edge> list;
-        for (int[] time : times) {
-            list = (list = adj.get(time[0])) == null ? new LinkedList<>() : list;
-            Edge edge = new Edge(time[1], time[2]);
-            list.add(edge);
-            adj.put(time[0], list);
-        }
-        return adj;
     }
 
     private int[] initDist(int N, int K) {
