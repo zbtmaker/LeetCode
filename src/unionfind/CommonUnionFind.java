@@ -11,11 +11,16 @@ import java.util.Arrays;
  * date 2020/03/08
  */
 public class CommonUnionFind {
-    private int[] id;
+    protected final int[] id;
 
-    private int[] size;
+    protected final int[] size;
+
+
 
     public CommonUnionFind(int num) {
+        if (num <= 0) {
+            throw new IllegalArgumentException("the length must bigger than zero");
+        }
         id = new int[num];
         for (int i = 0; i < num; i++) {
             id[i] = i;
@@ -24,7 +29,7 @@ public class CommonUnionFind {
         Arrays.fill(size, 1);
     }
 
-    private int root(int i) {
+    public int root(int i) {
         while (i != id[i]) {
             i = id[i];
         }
@@ -37,53 +42,5 @@ public class CommonUnionFind {
         id[qid] = pid;
     }
 
-    /**
-     * 带权重的union算法
-     *
-     * @param p
-     * @param q
-     */
-    public void weightedUnion(int p, int q) {
-        int pid = root(p);
-        int qid = root(q);
-        if (size[pid] >= size[qid]) {
-            id[qid] = pid;
-            size[pid] += size[qid];
-        } else {
-            id[pid] = qid;
-            size[qid] += size[pid];
-        }
-    }
 
-    /**
-     * 路径压缩的union算法
-     *
-     * @param p
-     * @param q
-     */
-    public void pathCompressionUnion(int p, int q) {
-        int pid = pathCompressionRoot(p);
-        int qid = pathCompressionRoot(q);
-        if (size[pid] >= size[qid]) {
-            id[qid] = pid;
-            size[pid] += size[qid];
-        } else {
-            id[pid] = qid;
-            size[qid] += size[pid];
-        }
-    }
-
-    /**
-     * 路径压缩的find Root 方法
-     *
-     * @param i
-     * @return
-     */
-    private int pathCompressionRoot(int i) {
-        while (i != id[i]) {
-            id[i] = id[id[i]];
-            i = id[i];
-        }
-        return i;
-    }
 }
