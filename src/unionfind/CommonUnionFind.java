@@ -41,6 +41,4 @@ public class CommonUnionFind {
         int qid = root(q);
         id[qid] = pid;
     }
-
-
 }

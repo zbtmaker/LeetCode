@@ -9,6 +9,19 @@ import java.util.*;
  * date 2021/08/29
  */
 public class MinimumSpanningTree {
+
+    public int kruskal(int[][] edges) {
+        // 初始化图
+        List<Edge<Integer, Integer>> weightedEdges = CommonUtil.constructWeightedEdgeGraph(edges);
+        Set<Integer> set = new HashSet<>();
+        for (int[] edge : edges) {
+            set.add(edge[0]);
+            set.add(edge[1]);
+        }
+        List<Edge<Integer, Integer>> result = kruskalAlgo(weightedEdges, set.size());
+        return result.stream().mapToInt(Edge::getDis).sum();
+    }
+
     /**
      * Kruskal算法 Pseudocode
      * Input: The edge of the graph e, where each element in e is (u, v, w) denoting
@@ -23,15 +36,12 @@ public class MinimumSpanningTree {
      * <p>     result = result.add(edge)
      * return result.
      */
-    public List<Edge<Integer, Integer>> kruskal(int[][] edges) {
-        // 初始化图
-        List<Edge<Integer, Integer>> weightedEdges = CommonUtil.constructWeightedEdgeGraph(edges);
-
+    public List<Edge<Integer, Integer>> kruskalAlgo(List<Edge<Integer, Integer>> weightedEdges, int nodeSize) {
         // 按照边的weight从小到大排序
         weightedEdges.sort(Comparator.comparingInt(o -> o.dis));
 
         //初始化并查集
-        CommonUnionFind unionFind = new CommonUnionFind(weightedEdges.size());
+        CommonUnionFind unionFind = new CommonUnionFind(nodeSize);
 
         List<Edge<Integer, Integer>> result = new ArrayList<>();
         for (Edge<Integer, Integer> edge : weightedEdges) {
@@ -95,7 +105,7 @@ public class MinimumSpanningTree {
         while (!queue.isEmpty()) {
             Edge<Integer, Integer> minNode = queue.poll();
             result += minNode.dis;
-            for (Edge<Integer, Integer> cur : adj.get(minNode.dis)) {
+            for (Edge<Integer, Integer> cur : adj.get(minNode.des)) {
                 Edge<Integer, Integer> disNode = srcMapEdge.get(cur.des);
                 disNode.dis = Math.min(disNode.dis, cur.dis);
             }

@@ -6,7 +6,7 @@ package graph;
  * @author zoubaitao
  * date 2021/08/29
  */
-public class Edge<T,U> {
+public class Edge<T, U> {
     /**
      * 源节点
      */
@@ -32,5 +32,9 @@ public class Edge<T,U> {
     public Edge(T des, U dis) {
         this.des = des;
         this.dis = dis;
+    }
+
+    public U getDis() {
+        return this.dis;
     }
 }
