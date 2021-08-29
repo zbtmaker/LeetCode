@@ -1,6 +1,6 @@
 package graph;
 
-import unionfind.WeightedUnionFind;
+import unionfind.CommonUnionFind;
 
 import java.util.*;
 
@@ -8,7 +8,7 @@ import java.util.*;
  * @author zoubaitao
  * date 2021/08/29
  */
-public class MinimalSpanningTree {
+public class MinimumSpanningTree {
     /**
      * Kruskal算法 Pseudocode
      * Input: The edge of the graph e, where each element in e is (u, v, w) denoting
@@ -31,7 +31,7 @@ public class MinimalSpanningTree {
         weightedEdges.sort(Comparator.comparingInt(o -> o.dis));
 
         //初始化并查集
-        WeightedUnionFind unionFind = new WeightedUnionFind(weightedEdges.size());
+        CommonUnionFind unionFind = new CommonUnionFind(weightedEdges.size());
 
         List<Edge<Integer, Integer>> result = new ArrayList<>();
         for (Edge<Integer, Integer> edge : weightedEdges) {
