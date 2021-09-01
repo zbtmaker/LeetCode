@@ -37,4 +37,11 @@ public class MinCostConnectPoints1584Test extends TestCase {
         });
         Assert.assertEquals(result, 4000000);
     }
+
+    public void test5() {
+        int result = min.minCostConnectPoints(new int[][]{
+                {-1000000, -1000000}
+        });
+        Assert.assertEquals(result, 0);
+    }
 }

@@ -5,6 +5,10 @@ import unionfind.CommonUnionFind;
 import java.util.*;
 
 /**
+ * 参考连接
+ * https://oi-wiki.org/graph/mst/
+ * http://web.stanford.edu/class/archive/cs/cs161/cs161.1176/Lectures/CS161Lecture15.pdf
+ *
  * @author zoubaitao
  * date 2021/08/29
  */
@@ -82,32 +86,39 @@ public class MinimumSpanningTree {
      * @return
      */
 
-    public int prime(int[][] edges) {
+    public List<Edge<Integer, Integer>> primAlgo(int[][] edges) {
         Map<Integer, List<Edge<Integer, Integer>>> adj = CommonUtil.constructWeightedUndirectedGraph(edges);
-
-        int result = 0;
 
         // 初始化每一个节点的dis关系
         Iterator<Integer> iterator = adj.keySet().iterator();
         int root = iterator.next();
         Map<Integer, Edge<Integer, Integer>> srcMapEdge = new HashMap<>();
-        PriorityQueue<Edge<Integer, Integer>> queue = new PriorityQueue<>();
-        Edge<Integer, Integer> edge = new Edge<>(root, Integer.MAX_VALUE);
-        queue.add(edge);
+        PriorityQueue<Edge<Integer, Integer>> queue = new PriorityQueue<>(Comparator.comparingInt(o -> o.dis));
+        Edge<Integer, Integer> edge = new Edge<>(root, null, 0);
+        queue.offer(edge);
         srcMapEdge.put(root, edge);
+
         while (iterator.hasNext()) {
             root = iterator.next();
-            edge = new Edge<>(root, Integer.MAX_VALUE);
-            queue.add(edge);
+            edge = new Edge<>(root, null, Integer.MAX_VALUE);
+            queue.offer(edge);
             srcMapEdge.put(root, edge);
         }
 
+        List<Edge<Integer, Integer>> result = new LinkedList<>();
         while (!queue.isEmpty()) {
-            Edge<Integer, Integer> minNode = queue.poll();
-            result += minNode.dis;
-            for (Edge<Integer, Integer> cur : adj.get(minNode.des)) {
-                Edge<Integer, Integer> disNode = srcMapEdge.get(cur.des);
-                disNode.dis = Math.min(disNode.dis, cur.dis);
+            Edge<Integer, Integer> minEdge = queue.poll();
+            srcMapEdge.remove(minEdge.src);
+            result.add(minEdge);
+            List<Edge<Integer, Integer>> adjEdges = adj.get(minEdge.src);
+            for (Edge<Integer, Integer> cur : adjEdges) {
+                if (srcMapEdge.containsKey(cur.des)) {
+                    Edge<Integer, Integer> disNode = srcMapEdge.get(cur.des);
+                    disNode.dis = Math.min(disNode.dis, cur.dis);
+                    queue.remove(disNode);
+                    queue.offer(disNode);
+                }
+
             }
         }
         return result;

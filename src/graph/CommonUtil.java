@@ -48,14 +48,13 @@ public class CommonUtil {
      */
     public static Map<Integer, List<Edge<Integer, Integer>>> constructWeightedUndirectedGraph(int[][] edges) {
         Map<Integer, List<Edge<Integer, Integer>>> adj = new HashMap<>();
-        List<Edge<Integer, Integer>> list;
         for (int[] edge : edges) {
             List<Edge<Integer, Integer>> list1 = adj.computeIfAbsent(edge[0], k -> new LinkedList<>());
-            Edge<Integer, Integer> cur1 = new Edge<>(edge[1], edge[2]);
+            Edge<Integer, Integer> cur1 = new Edge<>(edge[0], edge[1], edge[2]);
             list1.add(cur1);
 
             List<Edge<Integer, Integer>> list2 = adj.computeIfAbsent(edge[1], k -> new ArrayList<>());
-            Edge<Integer, Integer> cur2 = new Edge<>(edge[0], edge[2]);
+            Edge<Integer, Integer> cur2 = new Edge<>(edge[1], edge[0], edge[2]);
             list2.add(cur2);
         }
         return adj;
