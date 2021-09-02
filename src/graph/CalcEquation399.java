@@ -16,7 +16,7 @@ public class CalcEquation399 {
      * @return 等式结果值
      */
     public double[] calcEquation(List<List<String>> equations, double[] values, List<List<String>> queries) {
-        return calcEquationByDFS(equations, values, queries);
+        return calcEquationByBFS(equations, values, queries);
     }
 
     /**
@@ -33,7 +33,7 @@ public class CalcEquation399 {
         }
 
         double[] result = new double[queries.size()];
-        Map<String, List<Edge>> graph = constructUndirectedWeightedGraph(equations, values);
+        Map<String, List<Edge<String, Double>>> graph = constructGraph(equations, values);
         int i = 0;
         for (List<String> query : queries) {
             String dividend = query.get(0);
@@ -43,44 +43,13 @@ public class CalcEquation399 {
             } else if (dividend.equals(divisor)) {
                 result[i] = 1;
             } else {
-                result[i] = bfsFindPath(divisor, dividend, graph);
+                result[i] = bfs(dividend, divisor, graph);
             }
             i++;
         }
         return result;
     }
 
-    /**
-     * 初始化一条无向有权图
-     *
-     * @param equations 边
-     * @param values    权重
-     * @return 有向图
-     */
-    private Map<String, List<Edge>> constructUndirectedWeightedGraph(List<List<String>> equations, double[] values) {
-        Map<String, List<Edge>> graph = new HashMap<>();
-        List<String> list;
-        List<Edge> set1;
-        List<Edge> set2;
-        Edge edge1;
-        Edge edge2;
-        double value;
-        for (int i = 0; i < equations.size(); i++) {
-            list = equations.get(i);
-            String dividend = list.get(0);
-            String divisor = list.get(1);
-            value = values[i];
-
-            edge1 = new Edge(dividend, value);
-            set1 = graph.computeIfAbsent(divisor, k -> new LinkedList<>());
-            set1.add(edge1);
-
-            edge2 = new Edge(divisor, 1.0 / value);
-            set2 = graph.computeIfAbsent(dividend, k -> new LinkedList<>());
-            set2.add(edge2);
-        }
-        return graph;
-    }
 
     /**
      * @param from  起始点
@@ -88,19 +57,19 @@ public class CalcEquation399 {
      * @param graph 无向有权图
      * @return
      */
-    private double bfsFindPath(String from, String end, Map<String, List<Edge>> graph) {
-        Map<String, Edge> path = new HashMap();
+    private double bfs(String from, String end, Map<String, List<Edge<String, Double>>> graph) {
+        Map<String, Edge<String, Double>> path = new HashMap<>();
         Set<String> marked = new HashSet<>();
         Queue<String> queue = new ArrayDeque<>();
         queue.add(from);
         while (!queue.isEmpty()) {
             String str = queue.poll();
-            List<Edge> edges = graph.get(str);
-            for (Edge edge : edges) {
-                if (!marked.contains(edge.dividend)) {
-                    queue.add(edge.dividend);
-                    path.put(edge.dividend, new Edge(str, edge.result));
-                    if (edge.dividend.equals(end)) {
+            List<Edge<String, Double>> edges = graph.get(str);
+            for (Edge<String, Double> edge : edges) {
+                if (!marked.contains(edge.des)) {
+                    queue.add(edge.des);
+                    path.put(edge.des, new Edge<>(str, edge.dis));
+                    if (edge.des.equals(end)) {
                         return calc(from, end, path);
                     }
                 }
@@ -118,25 +87,15 @@ public class CalcEquation399 {
      * @param path 路径
      * @return
      */
-    private double calc(String from, String end, Map<String, Edge> path) {
+    private double calc(String from, String end, Map<String, Edge<String, Double>> path) {
         String tmp = end;
         double result = 1.0;
         while (!tmp.equals(from)) {
-            Edge edge = path.get(tmp);
-            result *= edge.result;
-            tmp = edge.dividend;
+            Edge<String, Double> edge = path.get(tmp);
+            result *= edge.dis;
+            tmp = edge.des;
         }
         return result;
-    }
-
-    public class Edge {
-        String dividend;
-        double result;
-
-        private Edge(String dividend, double result) {
-            this.dividend = dividend;
-            this.result = result;
-        }
     }
 
     /**
@@ -148,7 +107,7 @@ public class CalcEquation399 {
      * @return 等式结果数组
      */
     public double[] calcEquationByDFS(List<List<String>> equations, double[] values, List<List<String>> queries) {
-        Map<String, List<Node>> graph = constructGraph(equations, values);
+        Map<String, List<Edge<String, Double>>> graph = constructGraph(equations, values);
         int len = queries.size();
         double[] result = new double[len];
         for (int i = 0; i < len; i++) {
@@ -174,20 +133,20 @@ public class CalcEquation399 {
      * @param value 上一步运算结果
      * @return -1-不存在 ｜ 运算结果
      */
-    private double dfs(String start, String end, Map<String, List<Node>> graph, Set<String> flag, double value) {
+    private double dfs(String start, String end, Map<String, List<Edge<String, Double>>> graph, Set<String> flag, double value) {
         flag.add(start);
-        List<Node> edges = graph.get(start);
+        List<Edge<String, Double>> edges = graph.get(start);
         if (edges == null) {
             return -1d;
         }
-        for (Node node : edges) {
-            if (flag.contains(node.des)) {
+        for (Edge<String, Double> edge : edges) {
+            if (flag.contains(edge.des)) {
                 continue;
             }
-            if (node.getDes().equals(end)) {
-                return value * node.getVal();
+            if (edge.des.equals(end)) {
+                return value * edge.dis;
             }
-            double result = dfs(node.getDes(), end, graph, flag, value * node.getVal());
+            double result = dfs(edge.des, end, graph, flag, value * edge.dis);
             if (result != -1) {
                 return result;
             }
@@ -200,38 +159,23 @@ public class CalcEquation399 {
      * @param values    等式右边结果数组
      * @return 邻接表
      */
-    private Map<String, List<Node>> constructGraph(List<List<String>> equations, double[] values) {
-        Map<String, List<Node>> graph = new HashMap<>();
+    private Map<String, List<Edge<String, Double>>> constructGraph(List<List<String>> equations, double[] values) {
+        Map<String, List<Edge<String, Double>>> graph = new HashMap<>();
 
         for (int i = 0; i < equations.size(); i++) {
             List<String> equation = equations.get(i);
+
             String divisor = equation.get(0);
             String dividend = equation.get(1);
-            double value = values[i];
-            List<Node> edges1 = graph.computeIfAbsent(divisor, k -> new ArrayList<>());
-            edges1.add(new Node(dividend, value));
 
-            List<Node> edges2 = graph.computeIfAbsent(dividend, k -> new ArrayList<>());
-            edges2.add(new Node(divisor, 1 / value));
+            double value = values[i];
+
+            List<Edge<String, Double>> edges1 = graph.computeIfAbsent(divisor, k -> new ArrayList<>());
+            edges1.add(new Edge<>(divisor, dividend, value));
+
+            List<Edge<String, Double>> edges2 = graph.computeIfAbsent(dividend, k -> new ArrayList<>());
+            edges2.add(new Edge<>(dividend, divisor, 1 / value));
         }
         return graph;
-    }
-
-    public static class Node {
-        private String des;
-        private Double val;
-
-        public Node(String des, Double val) {
-            this.des = des;
-            this.val = val;
-        }
-
-        public String getDes() {
-            return this.des;
-        }
-
-        public Double getVal() {
-            return this.val;
-        }
     }
 }

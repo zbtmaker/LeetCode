@@ -1,5 +1,6 @@
 package graph;
 
+import junit.framework.TestCase;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -11,11 +12,10 @@ import java.util.List;
  * @author baitao zou
  * date 2020/03/15
  */
-public class CalcEquation399Test {
+public class CalcEquation399Test extends TestCase {
 
-    private CalcEquation399 equation = new CalcEquation399();
+    private final CalcEquation399 equation = new CalcEquation399();
 
-    @Test
     public void test1() {
         List<List<String>> equations = new ArrayList<>();
         equations.add(Arrays.asList("a", "b"));
@@ -35,7 +35,6 @@ public class CalcEquation399Test {
         Assert.assertArrayEquals(result, new double[]{6.0, 0.5, -1.0, 1.0, -1.0, -1.0, -1.0}, 0);
     }
 
-    @Test
     public void test2() {
         List<List<String>> equations = new ArrayList<>();
         equations.add(Arrays.asList("x1", "x2"));
@@ -52,6 +51,6 @@ public class CalcEquation399Test {
         queries.add(Arrays.asList("x2", "x9"));
         queries.add(Arrays.asList("x9", "x9"));
         double[] result = equation.calcEquation(equations, values, queries);
-        Assert.assertArrayEquals(result, new double[]{360.0, 1 / 120.0, 20.0, 1.0 ,- 1.0, -1.0}, 0);
+        Assert.assertArrayEquals(result, new double[]{360.0, 1 / 120.0, 20.0, 1.0, -1.0, -1.0}, 0);
     }
 }
