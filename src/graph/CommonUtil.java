@@ -8,7 +8,6 @@ import java.util.*;
  */
 public class CommonUtil {
 
-
     /**
      * construct a weighted directed graph
      *
@@ -58,5 +57,14 @@ public class CommonUtil {
             list2.add(cur2);
         }
         return adj;
+    }
+
+
+    public static Map<Integer, Integer> initVertexMapColor(Map<Integer, List<Edge<Integer, Integer>>> adj) {
+        Map<Integer, Integer> vertexMapColor = new HashMap<>(adj.size());
+        for (Integer vertex : adj.keySet()) {
+            vertexMapColor.put(vertex, CommonConstants.WITHE);
+        }
+        return vertexMapColor;
     }
 }
