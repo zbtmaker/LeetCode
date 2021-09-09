@@ -12,8 +12,6 @@ import java.util.*;
  */
 public class BreadthFirstSearch {
 
-    private static final Integer NON_PARENT = -1;
-
     public void bfs(int[][] edges, int start) {
         // 初始化图
         Map<Integer, List<Edge<Integer, Integer>>> adj = CommonUtil.constructWeightedUndirectedGraph(edges);
@@ -22,7 +20,7 @@ public class BreadthFirstSearch {
         Map<Integer, Integer> vertexMapColor = CommonUtil.initVertexMapColor(adj);
 
         // 初始化各节点的父节点
-        Map<Integer, Integer> vertexMapParent = initVertexMapParent(adj);
+        Map<Integer, Integer> vertexMapParent = CommonUtil.initVertexMapParent(adj);
 
         Queue<Integer> queue = new LinkedList<>();
         queue.add(start);
@@ -39,14 +37,5 @@ public class BreadthFirstSearch {
             }
             vertexMapColor.put(vertex, CommonConstants.BLACK);
         }
-    }
-
-
-    private Map<Integer, Integer> initVertexMapParent(Map<Integer, List<Edge<Integer, Integer>>> adj) {
-        Map<Integer, Integer> vertexMapParent = new HashMap<>(adj.size());
-        for (Integer vertex : adj.keySet()) {
-            vertexMapParent.put(vertex, NON_PARENT);
-        }
-        return vertexMapParent;
     }
 }

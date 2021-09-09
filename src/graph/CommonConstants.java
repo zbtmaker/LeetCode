@@ -21,5 +21,8 @@ public class CommonConstants {
      */
     public static final Integer BLACK = 2;
 
+    /**
+     * parent节点
+     */
     public static final Integer NON_PARENT = -1;
 }

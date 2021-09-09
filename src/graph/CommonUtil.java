@@ -18,8 +18,8 @@ public class CommonUtil {
         Map<Integer, List<Edge<Integer, Integer>>> adj = new HashMap<>();
         List<Edge<Integer, Integer>> list;
         for (int[] time : edges) {
-            list = (list = adj.get(time[0])) == null ? new LinkedList<>() : list;
-            Edge<Integer, Integer> edge = new Edge<>(time[1], time[2]);
+            list = adj.computeIfAbsent(time[0], k -> new LinkedList<>());
+            Edge<Integer, Integer> edge = new Edge<>(time[0], time[1], time[2]);
             list.add(edge);
             adj.put(time[0], list);
         }
@@ -66,5 +66,35 @@ public class CommonUtil {
             vertexMapColor.put(vertex, CommonConstants.WITHE);
         }
         return vertexMapColor;
+    }
+
+
+    /**
+     * 节点的父节点
+     *
+     * @param adj 邻接表
+     * @return 每一个vertex的parent节点
+     */
+    public static Map<Integer, Integer> initVertexMapParent(Map<Integer, List<Edge<Integer, Integer>>> adj) {
+        Map<Integer, Integer> vertexMapParent = new HashMap<>(adj.size());
+        for (Integer vertex : adj.keySet()) {
+            vertexMapParent.put(vertex, CommonConstants.NON_PARENT);
+        }
+        return vertexMapParent;
+    }
+
+
+    /**
+     * 每一个节点到source节点的estimate距离（预估节点）
+     *
+     * @param adj 邻接表
+     * @return 每一个vertex的parent节点
+     */
+    public static Map<Integer, Integer> initVertexMapDistance(Map<Integer, List<Edge<Integer, Integer>>> adj) {
+        Map<Integer, Integer> vertexMapParent = new HashMap<>(adj.size());
+        for (Integer vertex : adj.keySet()) {
+            vertexMapParent.put(vertex, Integer.MAX_VALUE);
+        }
+        return vertexMapParent;
     }
 }
