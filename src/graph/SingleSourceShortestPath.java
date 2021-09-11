@@ -69,4 +69,40 @@ public class SingleSourceShortestPath {
         }
         return vertexMapDisEdge;
     }
+
+    public boolean bellmanFord(int[][] edges, int source) {
+        List<Edge<Integer, Integer>> adj = CommonUtil.constructWeightedEdgeGraph(edges);
+        Set<Integer> vertexSet = new HashSet<>();
+        for (Edge<Integer, Integer> edge : adj) {
+            vertexSet.add(edge.src);
+            vertexSet.add(edge.des);
+        }
+        Map<Integer, Integer> vertexMapDis = new HashMap<>();
+        for (Integer vertex : vertexSet) {
+            int dis = Integer.MAX_VALUE;
+            if (vertex.equals(source)) {
+                dis = 0;
+            }
+            vertexMapDis.put(vertex, dis);
+        }
+        for (int i = 0; i < vertexSet.size() - 1; i++) {
+            for (Edge<Integer, Integer> edge : adj) {
+                long desDis = (long) vertexMapDis.get(edge.des);
+                long srcDis = (long) vertexMapDis.get(edge.src);
+                if (desDis > srcDis + edge.dis) {
+                    vertexMapDis.put(edge.des, (int) srcDis + edge.dis);
+                }
+            }
+        }
+
+        // 判断负权环
+        for (Edge<Integer, Integer> edge : adj) {
+            long desDis = (long) vertexMapDis.get(edge.des);
+            long srcDis = (long) vertexMapDis.get(edge.src);
+            if (desDis > srcDis + edge.dis) {
+                return false;
+            }
+        }
+        return true;
+    }
 }
