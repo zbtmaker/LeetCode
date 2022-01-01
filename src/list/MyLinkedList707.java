@@ -13,7 +13,7 @@ public class MyLinkedList707 {
     private Node tail;
 
     private static class Node {
-        private int val;
+        private final int val;
         private Node last;
         private Node next;
 
