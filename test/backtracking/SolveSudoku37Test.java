@@ -27,8 +27,8 @@ public class SolveSudoku37Test extends TestCase {
     }
 
     private void print(char[][] arr) {
-        for(int i = 0; i < arr.length;i++) {
-            System.out.println(arr[i]);
+        for (char[] chars : arr) {
+            System.out.println(chars);
         }
     }
 }
