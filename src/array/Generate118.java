@@ -11,7 +11,6 @@ public class Generate118 {
 
     public List<List<Integer>> generate(int numRows) {
         List<List<Integer>> lists = new ArrayList<>(numRows);
-
         for (int i = 0; i < numRows; i++) {
             List<Integer> arr = new ArrayList<>(i + 1);
             for (int j = 0; j < i + 1; j++) {
