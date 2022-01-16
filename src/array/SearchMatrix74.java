@@ -3,13 +3,7 @@ package array;
 /**
  * Created by Administrator on 2019\2\28 0028.
  */
-public class searchMatrix74 {
-    public static void main(String[] args){
-        int[][] matrix = new int[][]{{1,3,5,7},
-                {10,11,16,20},
-                {23,30,34,50}};
-        System.out.println(new searchMatrix74().searchMatrix(matrix,7));
-    }
+public class SearchMatrix74 {
 
     /**
      * 只要是涉及到有序数组的查找，那么就是使用二分查找
