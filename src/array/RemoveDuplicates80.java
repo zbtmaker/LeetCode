@@ -21,8 +21,7 @@ public class RemoveDuplicates80 {
      * @return 不重复元素个数
      */
     public int removeDuplicates(int[] nums) {
-        int len = nums.length;
-        int slow = 0, fast = 1, count = 1;
+        int len = nums.length, slow = 0, fast = 1, count = 1;
         while (fast < len) {
             if (nums[fast] != nums[fast - 1]) {
                 nums[++slow] = nums[fast];
