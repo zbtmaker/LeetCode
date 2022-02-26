@@ -7,9 +7,9 @@ import org.junit.Assert;
  * @author Baitao Zou
  * date 2021/01/01
  */
-public class TestFindTargetSumWays494 extends TestCase {
+public class FindTargetSumWays494Test extends TestCase {
 
-    private FindTargetSumWays494 find = new FindTargetSumWays494();
+    private final FindTargetSumWays494 find = new FindTargetSumWays494();
 
     public void test1() {
         int result = find.findTargetSumWays(new int[]{1, 1, 1, 1, 1}, 3);
