@@ -3,8 +3,6 @@ package dp;
 import junit.framework.TestCase;
 import org.junit.Assert;
 
-import java.math.BigInteger;
-
 /**
  * @author zoubaitao
  * date 2022/02/22
@@ -101,8 +99,21 @@ public class NumberOfGoodSubsets1994Test extends TestCase {
 
     public void test9() {
         int result = goodSubsets.numberOfGoodSubsets(new int[]{1, 1, 2, 3, 3});
-        BigInteger res = new BigInteger("0");
-        System.out.println(res.intValue());
         Assert.assertEquals(result, 20);
+    }
+
+    public void test10() {
+        int result = goodSubsets.numberOfGoodSubsets(new int[]{1, 2, 3, 30, 30, 30, 30});
+        Assert.assertEquals(result, 14);
+    }
+
+    public void test11() {
+        int result = goodSubsets.numberOfGoodSubsets(new int[]{2, 3, 5, 6, 7, 10, 11, 13, 14, 15, 17, 19, 21, 22, 23, 26, 29, 30});
+        Assert.assertEquals(result, 3327);
+    }
+
+    public void test12() {
+        int result = goodSubsets.numberOfGoodSubsets(new int[]{2, 2, 3, 3});
+        Assert.assertEquals(result, 8);
     }
 }

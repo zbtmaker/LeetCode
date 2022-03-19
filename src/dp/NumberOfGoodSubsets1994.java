@@ -12,13 +12,23 @@ public class NumberOfGoodSubsets1994 {
 
     private final static int MAX_NUMBER = 30;
 
-    private final static long MOD = (long) Math.pow(10, 9) + 7;
+    private final static int MOD = 1000000007;
 
+    /**
+     * 好子集定义：如果 nums 的一个子集中，所有元素的乘积可以表示为一个或多个互不相同的质数的乘积，那么我们称它为好子集。
+     * 1、我们首先统计数组nums中每个数字出现的频次，
+     * <p>
+     * 2、数字1是可以添加1个或者多个到好子集中。假设数字1出现的次数为n，如果我们的好子集中不出现1，那么C(n,0) 如果好子集中出现1，
+     * 那么这是一个组合数学C(n,1) + C(n,2) + ...+ C(n,n)，那么对于总的组合数为C(n,0) + C(n,1) + C(n,2) + ...+ C(n,n) = 2^n。
+     * <p>
+     * 3、对于其中其他的质数，在每一个好子集中只能出现一次，比方说质数2，如果在nums数组中出现的次数为k，那么好子集出如果选择了2，可以出现的频次为
+     * <p>
+     * 4、这个题目到这里就变成了Subset78题。
+     *
+     * @param nums 数组
+     * @return 好子数集的总数
+     */
     public int numberOfGoodSubsets(int[] nums) {
-        boolean flag = Arrays.stream(nums).allMatch(num -> num == 1);
-        if (flag) {
-            return 0;
-        }
         double[] result = new double[1];
         Map<Integer, Set<Integer>> numMapPrimes = breakNum();
 
@@ -50,10 +60,10 @@ public class NumberOfGoodSubsets1994 {
         if (index >= len) {
             return;
         }
-        for (int i = index; i < nums.size(); i++) {
+        for (int i = index; i < len; i++) {
             int num = nums.get(i);
-            int count = numMapCount[num];
-            if ((numMapPrimes.containsKey(num) && hasUnion(numMapPrimes.get(num), addPrimes))) {
+            if (hasNonUnion(numMapPrimes.get(num), addPrimes)) {
+                int count = numMapCount[num];
                 mul *= count;
                 result[0] += mul;
                 Set<Integer> primes = numMapPrimes.get(num);
@@ -84,7 +94,7 @@ public class NumberOfGoodSubsets1994 {
                     continue;
                 }
                 if (i % j == 0 && numMapPrimes.containsKey(i / j)) {
-                    if (numMapPrimes.containsKey(j) && hasUnion(numMapPrimes.get(j), numMapPrimes.get(i / j))) {
+                    if (numMapPrimes.containsKey(j) && hasNonUnion(numMapPrimes.get(j), numMapPrimes.get(i / j))) {
                         primes.addAll(numMapPrimes.get(j));
                         primes.addAll(numMapPrimes.get(i / j));
                         break;
@@ -98,7 +108,7 @@ public class NumberOfGoodSubsets1994 {
         return numMapPrimes;
     }
 
-    private boolean hasUnion(Set<Integer> set1, Set<Integer> set2) {
+    private boolean hasNonUnion(Set<Integer> set1, Set<Integer> set2) {
         if (set1.size() < set2.size()) {
             return set1.stream().noneMatch(set2::contains);
         }
