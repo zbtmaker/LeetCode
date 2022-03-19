@@ -6,13 +6,6 @@ import java.util.*;
  * Created by Administrator on 2019\2\27 0027.
  */
 public class ThreeSum15 {
-    public static void main(String[] args){
-        int[] nums = new int[]{-1, 0, 1, 2, -1, -4};
-        List<List<Integer>> lists = new ThreeSum15().threeSumII(nums);
-        for(List<Integer> list :lists){
-            System.out.println(list);
-        }
-    }
 
     /**
      * 前面想到了用一个外循环+两数之和来做，但是再用HashMap的时候没法去重，所以我想到了去重的两种方法
@@ -23,29 +16,30 @@ public class ThreeSum15 {
      * 右边的元素泰塔）；如果首尾两个元素之和nums[j]+nums[k]<target，那么我们将左边的指针右移（j++因为左边
      * 的元素太小），一旦发现首尾两个元素之和nums[j]+nums[k]==target，我们便将其添加到List当中，与此同时我
      * 们的两个指针同时向中间靠拢(j++,k--),循环结束的条件就是j < k，以上就是整个题的思路。
-     * @param nums
-     * @return
+     *
+     * @param nums 数组
+     * @return 所有三数之和的组合
      */
-    public List<List<Integer>> threeSumII(int[] nums) {
+    public List<List<Integer>> threeSum(int[] nums) {
         Arrays.sort(nums);
         List<List<Integer>> lists = new LinkedList<>();
         LinkedList<Integer> list = new LinkedList<>();
-        for(int i = 0;i<nums.length - 2;i++){
-            if(i == 0 || (i > 0 && nums[i] != nums[i-1])){
-                int sum = 0 - nums[i];
+        for (int i = 0; i < nums.length - 2; i++) {
+            if (i == 0 || nums[i] != nums[i - 1]) {
+                int sum = -nums[i];
                 list.add(nums[i]);
                 int j = i + 1;
-                int k = nums.length-1;
-                while(j<k){
-                    if(nums[j] + nums[k]>sum){
+                int k = nums.length - 1;
+                while (j < k) {
+                    if (nums[j] + nums[k] > sum) {
                         k--;
-                    }else if(nums[j] + nums[k] < sum){
-                        j ++;
-                    }else{
-                        if(j  == i+1 ||(j>i+1 && nums[j] != nums[j-1])){
+                    } else if (nums[j] + nums[k] < sum) {
+                        j++;
+                    } else {
+                        if (j == i + 1 || (j > i + 1 && nums[j] != nums[j - 1])) {
                             list.add(nums[j]);
                             list.add(nums[k]);
-                            lists.add(new LinkedList<Integer>(list));
+                            lists.add(new LinkedList<>(list));
                             list.removeLast();
                             list.removeLast();
                         }
@@ -59,7 +53,4 @@ public class ThreeSum15 {
         }
         return lists;
     }
-
-    /**
-     */
 }
