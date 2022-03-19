@@ -1,5 +1,6 @@
 package dp;
 
+import java.math.BigInteger;
 import java.util.*;
 
 /**
@@ -24,6 +25,8 @@ public class NumberOfGoodSubsets1994 {
      * 3、对于其中其他的质数，在每一个好子集中只能出现一次，比方说质数2，如果在nums数组中出现的次数为k，那么好子集出如果选择了2，可以出现的频次为
      * <p>
      * 4、这个题目到这里就变成了Subset78题。
+     * <p>
+     * 这个题目最坑的就是计算的数据过大，只能借助BigInteger来计算了，我太难了。
      *
      * @param nums 数组
      * @return 好子数集的总数
@@ -45,7 +48,8 @@ public class NumberOfGoodSubsets1994 {
             }
         }
 
-        dfs(numList, numMapPrimes, 0, new HashSet<>(), result, numCountArr, 1);
+        dfs(numList, numMapPrimes, 0, new HashSet<>(), result, numCountArr, BigInteger.ONE);
+        result[0] = result[0] % MOD;
         for (int count = 1; count <= numCountArr[1]; count++) {
             result[0] = (result[0] * 2) % MOD;
         }
@@ -55,22 +59,23 @@ public class NumberOfGoodSubsets1994 {
 
     private void dfs(List<Integer> nums, Map<Integer, Set<Integer>> numMapPrimes, int index,
                      Set<Integer> addPrimes, double[] result,
-                     int[] numMapCount, double mul) {
+                     int[] numMapCount, BigInteger mul) {
         int len = nums.size();
         if (index >= len) {
+            result[0] = result[0] % MOD;
             return;
         }
         for (int i = index; i < len; i++) {
             int num = nums.get(i);
             if (hasNonUnion(numMapPrimes.get(num), addPrimes)) {
                 int count = numMapCount[num];
-                mul *= count;
-                result[0] += mul;
+                mul = mul.multiply(BigInteger.valueOf(count));
+                result[0] += mul.mod(BigInteger.valueOf(MOD)).longValue();
                 Set<Integer> primes = numMapPrimes.get(num);
                 addPrimes.addAll(primes);
                 dfs(nums, numMapPrimes, i + 1, addPrimes, result, numMapCount, mul);
                 addPrimes.removeAll(primes);
-                mul /= count;
+                mul = mul.divide(BigInteger.valueOf(count));
             }
         }
     }
