@@ -4,131 +4,56 @@ package backtracking;
  * Created by Administrator on 2019\3\21 0021.
  */
 public class LongestIncreasingPath329 {
-    public static void main(String[] args){
-        int[][] matrix = new int[][]{{3,4,5},
-                {3,2,6},
-                {2,2,1}};
-        int longest = new LongestIncreasingPath329().longestIncreasingPath(matrix);
-        System.out.println(longest);
-    }
+
+    // 方向数组
+    private static final int[][] DIRECTIONS = new int[][]{{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
 
     /**
-     * 使用回溯的方式会造成运行时间超时，那么我们就应该换一种思路来解决，在使用回溯的
-     * 思路的时候，一个节点
-     * @param matrix
-     * @return
+     * 1、回溯
+     * 2、回溯+记忆化
+     *
+     * @param matrix 矩阵数组
+     * @return 最长增长路径长度
      */
     public int longestIncreasingPath(int[][] matrix) {
-        if(matrix == null || matrix.length == 0){
-            return 0;
-        }
-        int row = matrix.length;
-        int col = matrix[0].length;
-        int[] maxPath = new int[]{0};
-        int path = 0;
-        boolean[][] sign = new boolean[row][col];
-        for(int i = 0;i < matrix.length;i++){
-            for(int j = 0;j < matrix[0].length;j++){
-                sign[i][j] = true;
-                path ++;
-                recurLongestPath(matrix,sign,i,j,path,maxPath);
-                sign[i][j] = false;
-                path --;
-            }
-        }
-        return maxPath[0];
-    }
-    private void recurLongestPath(int[][] matrix,boolean[][] sign,int i,int j,int path,int[] maxPath){
-        if(path > maxPath[0]){
-            maxPath[0] = path;
-        }
-        int row = matrix.length;
-        int col = matrix[0].length;
-        if(i-1 > -1 && !sign[i-1][j] && matrix[i][j] < matrix[i-1][j]){
-            sign[i-1][j] = true;
-            path ++;
-            recurLongestPath(matrix,sign,i - 1,j,path,maxPath);
-            sign[i-1][j] = false;
-            path --;
-        }
-        if(i+1 < row && !sign[i+1][j] && matrix[i][j] < matrix[i+1][j]){
-            sign[i+1][j] = true;
-            path ++;
-            recurLongestPath(matrix,sign,i + 1,j,path,maxPath);
-            sign[i+1][j] = false;
-            path --;
-        }
-        if(j-1 > -1 && !sign[i][j-1] && matrix[i][j] < matrix[i][j-1]){
-            sign[i][j-1] = true;
-            path ++;
-            recurLongestPath(matrix,sign,i,j - 1,path,maxPath);
-            sign[i][j-1] = false;
-            path --;
-        }
-        if(j + 1 < col && !sign[i][j+1] && matrix[i][j] < matrix[i][j+1]){
-            sign[i][j+1] = true;
-            path ++;
-            recurLongestPath(matrix,sign,i,j + 1,path,maxPath);
-            sign[i][j+1] = false;
-            path --;
-        }
-
+        return byMemorization(matrix);
     }
 
     /**
+     * 使用上面的DFS + 记忆数组
      *
-     * @param matrix
-     * @return
+     * @param matrix 矩阵数组
+     * @return 最长增长路径长度
      */
-    public int longestIncreasingPathII(int[][] matrix) {
-        if(matrix == null || matrix.length == 0){
+    public int byMemorization(int[][] matrix) {
+        if (matrix == null || matrix.length == 0) {
             return 0;
         }
-        int row = matrix.length;
-        int col = matrix[0].length;
-        int[] maxPath = new int[]{0};
-        int[][] path = new int[row][col];
-        boolean[][] sign = new boolean[row][col];
-        for(int i = 0;i < matrix.length;i++){
-            for(int j = 0;j < matrix[0].length;j++){
-                sign[i][j] = true;
-                //path[i][j] = recurLongestPathII(matrix,sign,i,j,0,path,maxPath);
+        int row = matrix.length, col = matrix[0].length, max = 1;
+        int[][] cache = new int[row][col];
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                int result = dfs(i, j, matrix, cache);
+                max = Math.max(result, max);
             }
         }
-        return maxPath[0];
+        return max;
     }
-    /*
-    private int recurLongestPathII(int[][] matrix,boolean sign,int i,int j,int count,int[][]path,int[]maxPath){
-        int row = matrix.length;
-        int col = matrix[0].length;
-        if(i-1 > -1 && !sign[i-1][j] && matrix[i][j] < matrix[i-1][j]){
-            sign[i-1][j] = true;
 
-            path[i][j -1]recurLongestPathII(matrix,sign,i - 1,j,path,maxPath);
-            sign[i-1][j] = false;
-            path --;
+    private int dfs(int i, int j, int[][] matrix, int[][] cache) {
+        if (cache[i][j] != 0) {
+            return cache[i][j];
         }
-        if(i+1 < row && !sign[i+1][j] && matrix[i][j] < matrix[i+1][j]){
-            sign[i+1][j] = true;
-            path ++;
-            recurLongestPathII(matrix,sign,i + 1,j,path,maxPath);
-            sign[i+1][j] = false;
-            path --;
+
+        int max = 0, row = matrix.length, col = matrix[0].length;
+        for (int[] direction : DIRECTIONS) {
+            int m = i + direction[0], n = j + direction[1];
+            if (m > -1 && m < row && n > -1 && n < col && matrix[i][j] < matrix[m][n]) {
+                int res = dfs(m, n, matrix, cache);
+                max = Math.max(res, max);
+            }
         }
-        if(j-1 > -1 && !sign[i][j-1] && matrix[i][j] < matrix[i][j-1]){
-            sign[i][j-1] = true;
-            path ++;
-            recurLongestPathII(matrix,sign,i,j - 1,path,maxPath);
-            sign[i][j-1] = false;
-            path --;
-        }
-        if(j + 1 < col && !sign[i][j+1] && matrix[i][j] < matrix[i][j+1]){
-            sign[i][j+1] = true;
-            path ++;
-            recurLongestPath(matrix,sign,i,j + 1,path,maxPath);
-            sign[i][j+1] = false;
-            path --;
-        }
-        return 0;
-    }*/
+        cache[i][j] = max + 1;
+        return cache[i][j];
+    }
 }
