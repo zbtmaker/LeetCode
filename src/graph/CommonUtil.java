@@ -40,6 +40,28 @@ public class CommonUtil {
     }
 
     /**
+     * 构造一个无权无向图
+     *
+     * @param edges 边数组，记录src和des
+     * @return 无向图数据结构
+     */
+    public static Map<Integer, List<Edge<Integer, Integer>>> constructUnionWeightedUndirectedGraph(int[][] edges) {
+        Map<Integer, List<Edge<Integer, Integer>>> adj = new HashMap<>();
+        List<Edge<Integer, Integer>> srcEdges;
+        List<Edge<Integer, Integer>> desEdges;
+        for (int[] time : edges) {
+            srcEdges = adj.computeIfAbsent(time[0], k -> new LinkedList<>());
+            Edge<Integer, Integer> srdEdge = new Edge<>(time[0], time[1], 1);
+            srcEdges.add(srdEdge);
+
+            desEdges = adj.computeIfAbsent(time[1], k -> new LinkedList<>());
+            Edge<Integer, Integer> desEdge = new Edge<>(time[1], time[0], 1);
+            desEdges.add(desEdge);
+        }
+        return adj;
+    }
+
+    /**
      * 创建一个无向带权重图
      *
      * @param edges 边集合
@@ -96,5 +118,37 @@ public class CommonUtil {
             vertexMapParent.put(vertex, Integer.MAX_VALUE);
         }
         return vertexMapParent;
+    }
+
+    /**
+     * 通过BFS算法计算从start节点出发到其他每个节点的距离
+     *
+     * @param graph 邻接矩阵
+     * @param start 起始节点
+     * @return 从start节点到其他所有节点的距离
+     */
+    public static Map<Integer, Integer> bfs(Map<Integer, List<Edge<Integer, Integer>>> graph, int start) {
+        Map<Integer, Integer> disMap = new HashMap<>();
+        disMap.put(start, 0);
+        Set<Integer> traverseSet = new HashSet<>(start);
+        traverseSet.add(start);
+        LinkedList<Integer> queue = new LinkedList<>();
+        queue.add(start);
+        while (!queue.isEmpty()) {
+            Integer node = queue.removeFirst();
+            List<Edge<Integer, Integer>> edges = graph.get(node);
+            if (edges == null) {
+                continue;
+            }
+            for (Edge<Integer, Integer> edge : edges) {
+                if (traverseSet.contains(edge.des)) {
+                    continue;
+                }
+                disMap.put(edge.des, disMap.get(edge.src) + 1);
+                queue.addLast(edge.des);
+                traverseSet.add(edge.des);
+            }
+        }
+        return disMap;
     }
 }
