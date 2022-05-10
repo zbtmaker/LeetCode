@@ -5,19 +5,18 @@ package array;
  * date 2019/07/29
  * 在给定范围内进行与运算
  */
-public class rangeBitwiseAnd201 {
+public class RangeBitwiseAnd201 {
     /**
-     *
-     * @param m 左范围
-     * @param n 右范围
+     * @param left  左范围
+     * @param right 右范围
      * @return
      */
-    public int rangeBitwiseAnd(int m, int n) {
-        if (m == n) {
-            return m;
+    public int rangeBitwiseAnd(int left, int right) {
+        if (left == right) {
+            return left;
         }
         int result = Integer.MAX_VALUE;
-        for (int i = m; i <= n; i++) {
+        for (int i = left; i <= right; i++) {
             result = result & i;
         }
         return result;

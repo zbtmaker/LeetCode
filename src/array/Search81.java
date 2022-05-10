@@ -6,6 +6,11 @@ package array;
  */
 public class Search81 {
     public boolean search(int[] nums, int target) {
+        int left = 0, right = nums.length - 1;
+        if (nums[left] < nums[right]) {
+
+        }
+
         int minIndex = findMin(nums);
         if (nums[minIndex] == target) {
             return true;

@@ -1,6 +1,8 @@
 package dp;
 
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * @author baitao zou
@@ -21,7 +23,13 @@ public class CanPartitionKSubsets698 {
             return false;
         }
         int avg = sum / k;
+        Arrays.sort(nums);
+        Set<Integer> indexSet = new HashSet<>();
 
         return false;
+    }
+
+    private void dfs(int[] nums, int index, int k, Set<Integer> indexSet) {
+
     }
 }
