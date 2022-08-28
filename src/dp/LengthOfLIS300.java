@@ -55,6 +55,18 @@ public class LengthOfLIS300 {
     /**
      * LeeCode上面有个大神用了一个时间复杂度更少的二分法来解决这个问题，这中方法很奇特，虽然也要一个O（N）的空间
      * 来维护一个数据保存一个尾数元素值最小的数组，最终数组的长度就是
+     * 根据前面的提出的动态规划，指针i如果想要找到[0,i-1]比指针i的数值更小，那么 我们需要找到所有比指针i小的所有索引。
+     * 那么如果我们把每一个最长上升子序列长度的最大值存起来，比方说，数组[1, 3, 6, 7, 9, 4, 10, 5, 6]，那么我们可以
+     * [1]
+     * [1, 3]
+     * [1, 3, 6, 7]
+     * [1, 3, 6, 7, 9]
+     * 此时下一个元素是4，因此这个元素和前面所有元素来说能够构成的一个最长上升子序列为[1,3,4]，[1,3,6]，如果后面再出现一个元素
+     * 5，那么能够构成的最长的序列就是[1, 3, 4, 5]。因此对于长度为3的最长上升子序列来说，4比6更合适。所以我们就可以用4这个元素来
+     * 替换6这个元素。
+     * 我们用数组aux来存储每个数组的元素，其中aux[i]表示长度为i+1的严格上升子序列最小的一个满足条件的元素。这种方式其实和单调队列的
+     * 思想有点像。如果能够在越后面找到一个比当前位置更小的元素，那么这个元素是有利于形成一个更长的上升子序列的，所以就需要aux数组维护一个
+     * 有序的单调递增的队列。
      *
      * @param nums
      * @return
@@ -66,46 +78,42 @@ public class LengthOfLIS300 {
         int len = nums.length;
         List<Integer> aux = new ArrayList<>();
         aux.add(nums[0]);
-        for (int i = 1; i < nums.length; i++) {
-            insertToList(nums[i], aux);
+        for (int i = 1; i < len; i++) {
+            int cur = nums[i];
+            if (cur > aux.get(aux.size() - 1)) {
+                aux.add(cur);
+            } else {
+                int index = findMinIndex(nums[i], aux);
+                aux.set(index, cur);
+            }
         }
         return aux.size();
     }
 
     /**
-     * 功能：找出aux链表中刚好大于num的与元素的位置index,如果num > aux.get(index),则aux.set(index + 1,num)
-     * 如果num < aux.get(index),则aux.set(index,num)
-     * 那么直接将aux中index位置的元素替换为num,如果index超出了aux的索引，那么直
-     * 接添加到aux当中。
+     * 功能：找出aux链表中刚好大于num的与元素的位置index；
+     * <p>
+     * 如果num > aux.get(index)，则aux.set(index + 1,num)；
+     * <p>
+     * 如果num < aux.get(index)，则aux.set(index,num)；
+     * <p>
+     * 如果index超出了aux的索引，那么直接添加到aux当中。
      *
      * @param num 判断是否需要插入的数据
      * @param aux 插入的目标链表
      */
-    private void insertToList(int num, List<Integer> aux) {
-        int high = aux.size() - 1;
-        if (num == aux.get(high)) {
-            return;
-        }
-        if (num > aux.get(high)) {
-            aux.add(num);
-            return;
-        }
-        int low = 0;
-        int mid = (low + high) >> 1;
-        while (low < high) {
-            if (num < aux.get(mid)) {
-                high = mid - 1;
-            } else if (num > aux.get(mid)) {
-                low = mid + 1;
+    private int findMinIndex(int num, List<Integer> aux) {
+        int left = 0;
+        int right = aux.size() - 1;
+
+        while (left < right) {
+            int mid = (left + right) >> 1;
+            if (aux.get(mid) < num) {
+                left = mid + 1;
             } else {
-                return;
+                right = mid;
             }
-            mid = (low + high) >> 1;
         }
-        if (aux.get(low) < num) {
-            aux.set(low + 1, num);
-        } else {
-            aux.set(low, num);
-        }
+        return left;
     }
 }

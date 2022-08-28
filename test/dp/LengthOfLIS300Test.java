@@ -1,37 +1,32 @@
 package dp;
 
-import org.junit.Test;
+import junit.framework.TestCase;
+import org.junit.Assert;
 
-/*
+/**
  * @author zoubaitao
  * date 2019/12/29
  */
-public class LengthOfLIS300Test {
-    @Test
-    public void test1(){
-        int[] nums = new int[]{10,9,2,5,3,7,101,18};
-        int result = new LengthOfLIS300().lengthOfLIS(nums);
-        System.out.println(result);
+public class LengthOfLIS300Test extends TestCase {
+    private final LengthOfLIS300 lengthOfLIS = new LengthOfLIS300();
+
+    public void test1() {
+        int result = lengthOfLIS.lengthOfLIS(new int[]{10, 9, 2, 5, 3, 7, 101, 18});
+        Assert.assertEquals(result, 4);
     }
 
-    @Test
-    public void test2(){
-        int[] nums = new int[]{1,3,6,7,9,4,10,5,6};
-        int result = new LengthOfLIS300().lengthOfLIS(nums);
-        System.out.println(result);
+    public void test2() {
+        int result = lengthOfLIS.lengthOfLIS(new int[]{1, 3, 6, 7, 9, 4, 10, 5, 6});
+        Assert.assertEquals(result, 6);
     }
 
-    @Test
-    public void test3(){
-        int[] nums = new int[]{10,9,2,5,3,7,101,18};
-        int result = new LengthOfLIS300().lengthOfLIS(nums);
-        System.out.println(result);
+    public void test3() {
+        int result = lengthOfLIS.lengthOfLIS(new int[]{10, 9, 2, 5, 3, 7, 101, 18});
+        Assert.assertEquals(result, 4);
     }
 
-    @Test
-    public void test4(){
-        int[] nums = new int[]{10,9,2,5,3,7,101,18};
-        int result = new LengthOfLIS300().lengthOfLIS(nums);
-        System.out.println(result);
+    public void test4() {
+        int result = lengthOfLIS.lengthOfLIS(new int[]{1, 3, 6, 7, 4, 5, 6});
+        Assert.assertEquals(result, 5);
     }
 }
