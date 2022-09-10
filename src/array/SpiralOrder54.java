@@ -48,7 +48,7 @@ public class SpiralOrder54 {
 
             //左侧一列，此时纵坐标变化，横坐标不变
             if (row > x && col > y) {
-                for (int m = row  - 1; m > y; m--) {
+                for (int m = row - 1; m > y; m--) {
                     list.add(matrix[m][x]);
                 }
             }
@@ -58,5 +58,36 @@ public class SpiralOrder54 {
             col--;
         }
         return list;
+    }
+
+    /**
+     * 螺旋三角形
+     *
+     * @param n n阶
+     * @return 螺旋三角形
+     */
+    public int[][] spiralTriangle(int n) {
+        int[][] arr = new int[n][n];
+        int count = 1;
+        int rowStart = 0, colStart = 0, rowEnd = n - 1, colEnd = n - 1;
+        while (rowStart <= rowEnd && colStart <= colEnd) {
+            for (int i = colStart; i <= colEnd; i++) {
+                arr[rowStart][i] = count++;
+            }
+            rowStart++;
+            colEnd--;
+            int tmp = rowStart;
+            for (int j = colEnd; j > colStart; j--) {
+                arr[tmp++][j] = count++;
+            }
+            colEnd--;
+            for (int k = rowEnd; k >= rowStart; k--) {
+                arr[k][colStart] = count++;
+            }
+            rowEnd -= 2;
+            colStart++;
+
+        }
+        return arr;
     }
 }

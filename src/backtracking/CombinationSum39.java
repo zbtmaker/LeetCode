@@ -44,38 +44,4 @@ public class CombinationSum39 {
             target += candidates[i];
         }
     }
-
-    /**
-     * @param candidates
-     * @param target
-     * @return
-     */
-    public List<List<Integer>> combinationSumII(int[] candidates, int target) {
-        List<List<Integer>> list = new LinkedList<>();
-        Arrays.sort(candidates);
-        combinationSumII(candidates, target, 0, list, new LinkedList<>(), new HashSet<>());
-        return list;
-    }
-
-    private void combinationSumII(int[] candidates, int target,
-                                  int index, List<List<Integer>> result,
-                                  LinkedList<Integer> array, HashSet<List<Integer>> set) {
-        if (0 == target) {
-            if(!set.contains(array)) {
-                List<Integer> tmp = new LinkedList<>(array);
-                set.add(tmp);
-                result.add(tmp);
-            }
-        }
-        if (target < 0) {
-            return;
-        }
-        for (int i = index; i < candidates.length; i++) {
-            target -= candidates[i];
-            array.add(candidates[i]);
-            combinationSumII(candidates, target, i + 1, result, array, set);
-            array.removeLast();
-            target += candidates[i];
-        }
-    }
 }
