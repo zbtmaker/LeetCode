@@ -45,4 +45,39 @@ public class GenerateMatrix59 {
         }
         return matrix;
     }
+
+    public static int[][] generateMatrixII(int n) {
+        int rowStart = 0, colStart = 0, rowEnd = n - 1, colEnd = n - 1;
+        int[][] res = new int[n][n];
+        int count = 1;
+        while (rowStart <= rowEnd && colStart <= colEnd) {
+            // 第一行
+            for (int i = colStart; i <= colEnd; i++) {
+                res[rowStart][i] = count++;
+            }
+            rowStart++;
+            // 最后一列
+            for (int j = rowStart; j < rowEnd; j++) {
+                res[j][colEnd] = count++;
+            }
+            // 最后一行
+            if (rowStart <= rowEnd) {
+                for (int k = colEnd; k >= colStart; k--) {
+                    res[rowEnd][k] = count++;
+                }
+                colEnd--;
+                rowEnd--;
+            }
+            // 第一列
+            if (colStart <= colEnd) {
+                for (int m = rowEnd; m >= rowStart; m--) {
+                    res[m][colStart] = count++;
+                }
+                colStart++;
+            }
+
+
+        }
+        return res;
+    }
 }
