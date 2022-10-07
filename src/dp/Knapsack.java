@@ -8,14 +8,10 @@ public class Knapsack {
 
 
     public int knapsack(int L, int[] A, int[] C) {
-        return knapsackByBottomUpMemorization(L, A, C);
+        return knapsackByBacktracking(L, A, C);
     }
 
     private int knapsackByBacktracking(int L, int[] A, int[] C) {
-        /*int[] maxValue = new int[]{0, Integer.MIN_VALUE};
-        knapsackBottomUpRecursive(amount, A, C, 0, maxValue);
-        return maxValue[1];*/
-        /*return knapsackTopDownRecursive(L, A, C, A.length - 1);*/
         int[][] F = new int[A.length + 1][L + 1];
         for (int i = 1; i <= A.length; i++) {
             for (int j = 1; j <= L; j++) {
@@ -33,6 +29,7 @@ public class Knapsack {
      * @param L        资源
      * @param A        物品成本数组
      * @param C        物品利润
+     * @param n        数组索引
      * @param maxValue 当前利润和最大利润
      */
     private void knapsackBottomUpRecursive(int L, int[] A, int[] C, int n, int[] maxValue) {
@@ -97,7 +94,7 @@ public class Knapsack {
         int[][] F = new int[A.length + 1][L + 1];
         for (int i = 1; i <= A.length; i++) {
             for (int j = 1; j <= L; j++) {
-                if (j < A[i-1]) {
+                if (j < A[i - 1]) {
                     F[i][j] = F[i - 1][j];
                 } else {
                     F[i][j] = Math.max(F[i - 1][j], F[i - 1][j - A[i - 1]] + C[i - 1]);
@@ -106,4 +103,25 @@ public class Knapsack {
         }
         return F[A.length][L];
     }
+
+    private int knapsackByBottomUpMemorizationON(int L, int[] A, int[] C) {
+        int[] cur = new int[L + 1];
+        int[] last = new int[L + 1];
+        for (int i = 1; i <= A.length; i++) {
+            for (int j = 1; j <= L; j++) {
+                if (j < A[i - 1]) {
+                    cur[j] = last[j];
+                } else {
+                    cur[j] = Math.max(last[j], last[j - A[i - 1]] + C[i - 1]);
+                }
+            }
+            for (int k = 0; k <= L; k++) {
+                last[k] = cur[k];
+                cur[k] = 0;
+            }
+        }
+        return last[L];
+    }
+
+
 }
