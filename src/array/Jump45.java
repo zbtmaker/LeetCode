@@ -13,34 +13,55 @@ public class Jump45 {
      * @return 最小跳跃数
      */
     public int jump(int[] nums) {
-        return byGreedy(nums);
+        return jumpPointer(nums);
     }
 
-    private int byDynamicProgramming(int[] nums) {
+    /**
+     * time complexity O(N^2)
+     * space complexity O(N)
+     * @param nums 跳跃数组
+     */
+    private int jumpWithMemo(int[] nums){
         int len = nums.length;
-        int[] aux = new int[len];
-        aux[0] = 0;
-        for (int i = 1; i < len; i++) {
-            aux[i] = len;
-            for (int j = i - 1; j >= 0; j--) {
-                if (i - j <= nums[j]) {
-                    aux[i] = Math.min(aux[j] + 1, aux[i]);
+        if(len <= 1) {
+            return 0;
+        }
+        int[] F = new int[len];
+        for(int i = 1; i < len; i++) {
+            int min = Integer.MAX_VALUE;
+            for(int j =  i - 1; j >= 0; j--) {
+                if(i - j <= nums[j]) {
+                    min = Math.min(min, F[j] + 1);
                 }
             }
+            F[i] = min;
         }
-        return aux[len - 1];
+        return F[len-1];
     }
 
-    private int byGreedy(int[] nums) {
-        int end = 0, maxPosition = 0, steps = 0;
-        for (int i = 0; i < nums.length - 1; i++) {
-            //找能跳的最远的
-            maxPosition = Math.max(maxPosition, nums[i] + i);
-            if (i == end) { //遇到边界，就更新边界，并且步数加一
-                end = maxPosition;
-                steps++;
-            }
+    /**
+     * 在原来跳跃游戏的双指针问题上，采用一个额外的数组将前面求解的问题
+     * 如果left + nums[left] > right ，那么表明边界扩张了。而扩张的
+     * 范围是[right + 1, left + nums[left]]内的数据需要重新计算跳跃的
+     * 次数。同时也需要更新right智者。
+     */
+    private int jumpPointer(int[] nums) {
+        int len = nums.length;
+        if(len <= 1) {
+            return 0;
         }
-        return steps;
+        int left =0, right = 0;
+        int[] F = new int[len];
+        while(left <=right && left < len) {
+            if(left + nums[left] > right) {
+                int k = right + 1;
+                while(k <= left + nums[left] && k < len) {
+                    F[k++] = F[left] + 1;
+                }
+                right = left + nums[left];
+            }
+            left ++;
+        }
+        return F[len - 1];
     }
 }

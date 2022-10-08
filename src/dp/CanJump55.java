@@ -110,14 +110,12 @@ public class CanJump55 {
      * @return
      */
     private boolean canJumpIV(int[] nums) {
-        int k = 0;
-        for (int i = 0; i < nums.length; i++) {
-            if (k < i) {
-                return false;
-            }
-            k = Math.max(k, i + nums[i]);
+        int left = 0, right = 0, len = nums.length;
+        while(left <= right && left < len) {
+            right = Math.max(right, left + nums[left]);
+            left++;
         }
-        return true;
+        return right >= len - 1;
     }
 
 }
