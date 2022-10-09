@@ -9,7 +9,7 @@ import org.junit.Assert;
  */
 public class CanJump55Test extends TestCase {
 
-    private CanJump55 canJump = new CanJump55();
+    private final CanJump55 canJump = new CanJump55();
 
     public void test1() {
         Assert.assertFalse(canJump.canJump(new int[]{3, 2, 1, 0, 4}));
