@@ -7,7 +7,7 @@ import org.junit.Assert;
  * @author Baitao Zou
  * date 2021/01/09
  */
-public class TestMaxProfit123 extends TestCase {
+public class MaxProfit123Test extends TestCase {
 
     private MaxProfit123 maxProfit = new MaxProfit123();
 
@@ -22,8 +22,13 @@ public class TestMaxProfit123 extends TestCase {
     }
 
     public void test3() {
-        int max = maxProfit.maxProfit(new int[]{6,1,3,2,4,7});
+        int max = maxProfit.maxProfit(new int[]{6, 1, 3, 2, 4, 7});
         Assert.assertEquals(max, 7);
+    }
+
+    public void test4() {
+        int ans = maxProfit.maxProfit(new int[]{1, 2, 4, 2, 5, 7, 2, 4, 9, 0});
+        Assert.assertEquals(ans, 13);
     }
 
 }
