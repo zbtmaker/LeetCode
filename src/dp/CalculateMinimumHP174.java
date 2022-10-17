@@ -22,76 +22,14 @@ public class CalculateMinimumHP174 {
      * @return
      */
     public int calculateMinimumHP(int[][] dungeon) {
-        int row = dungeon.length;
-        int col = dungeon[0].length;
-        Pair[][] pairs = init(row, col);
-        for (int i = 0; i < row; i++) {
-            for (int j = 0; j < col; j++) {
-                if (i == 0 && j == 0) {
-                    if (dungeon[i][j] >= 0) {
-                        pairs[i][j].min = 1;
-                    } else {
-                        pairs[i][j].min = -dungeon[i][j] + 1;
-                    }
-                } else if (i == 0) {
-
-                } else if (j == 0) {
-
-                } else {
-
-                }
-                int rowMin;
-                if (dungeon[i][j] + pairs[i - 1][j].res < 0) {
-                    rowMin = dungeon[i - 1][j - 1] + pairs[i - 1][j].res;
-                } else {
-                    rowMin = pairs[i - 1][j].min;
-                }
-                int colMin;
-                if (dungeon[i - 1][j - 1] + pairs[i][j - 1].res < 0) {
-                    colMin = dungeon[i - 1][j - 1] + pairs[i][j - 1].res;
-                } else {
-                    colMin = pairs[i][j - 1].min;
-                }
-                if (rowMin < colMin) {
-                    pairs[i][j].min = colMin;
-                    pairs[i][j].res = dungeon[i - 1][j - 1] + pairs[i][j - 1].res;
-                } else {
-                    pairs[i][j].min = rowMin;
-                    pairs[i][j].res = dungeon[i - 1][j - 1] + pairs[i - 1][j].res;
-                }
-            }
-        }
-        return pairs[row][col].min < 0 ? -pairs[row][col].min : 0;
+        return dfs(dungeon, dungeon.length - 1, dungeon[0].length - 1);
     }
 
-    public Pair[][] init(int row, int col) {
-        Pair[][] pairs = new Pair[row + 1][col + 1];
-        for (int i = 0; i < row; i++) {
-            for (int j = 0; j < col; j++) {
-                pairs[i][j] = new Pair(0, 0);
-            }
+    private int dfs(int[][] dungeon, int rowIndex, int colIndex) {
+        if (rowIndex < 0 || colIndex < 0) {
+            return Integer.MAX_VALUE;
         }
-        return pairs;
-    }
-
-    private class Pair {
-        /**
-         * 到达某个位置需要的最小的HP
-         */
-        private int min;
-
-        /**
-         * 达到某个位置剩余的HP
-         */
-        private int res;
-
-        public Pair() {
-            this(0, 0);
-        }
-
-        public Pair(int min, int res) {
-            this.min = min;
-            this.res = res;
-        }
+        int min = Math.min(dfs(dungeon, rowIndex - 1, colIndex), dfs(dungeon, rowIndex, colIndex - 1));
+        return dungeon[rowIndex][colIndex] <= 0 ? dungeon[rowIndex][colIndex] + 1 + min : min;
     }
 }
