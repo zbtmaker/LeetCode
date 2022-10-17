@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Created by Administrator on 2019\3\18 0018.
  */
-public class findLadders126 {
+public class FindLadders126 {
     public static void main(String[] args){
         String beginWord = "red";
         String endWord = "tax";
@@ -20,7 +20,7 @@ public class findLadders126 {
         wordList.add("den");
         wordList.add("rex");
         wordList.add("pee");
-        List<List<String>> lists = new findLadders126().findLadders(beginWord,endWord,wordList);
+        List<List<String>> lists = new FindLadders126().findLadders(beginWord,endWord,wordList);
         for(List<String> list : lists){
             System.out.println(list);
         }
