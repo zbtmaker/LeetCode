@@ -1,6 +1,5 @@
 package string;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -8,23 +7,6 @@ import java.util.List;
  * Created by Administrator on 2019\3\18 0018.
  */
 public class FindLadders126 {
-    public static void main(String[] args){
-        String beginWord = "red";
-        String endWord = "tax";
-        List<String> wordList = new ArrayList<>();
-        wordList.add("ted");
-        wordList.add("tex");
-        wordList.add("red");
-        wordList.add("tax");
-        wordList.add("tad");
-        wordList.add("den");
-        wordList.add("rex");
-        wordList.add("pee");
-        List<List<String>> lists = new FindLadders126().findLadders(beginWord,endWord,wordList);
-        for(List<String> list : lists){
-            System.out.println(list);
-        }
-    }
 
     /**
      * 毫无例外的超出了时间，我之前使用了BFS的方式实现了这个问题，但是对于BFS应该如何有效地记录

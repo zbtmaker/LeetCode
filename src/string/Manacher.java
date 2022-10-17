@@ -26,13 +26,16 @@ import java.util.Arrays;
 public class Manacher {
 
 
-    public static int[] manacher(String str) {
-        return manacherII(str);
+    public static int[] manacher(String s) {
+        StringBuilder sb = preManacher(s);
+        return manacherII(sb);
     }
 
-    private static int[] manacherI(String str) {
-        StringBuilder sb = preManacher(str);
-        printStringBuilder(sb);
+    public static int[] manacher(StringBuilder sb) {
+        return manacherII(sb);
+    }
+
+    private static int[] manacherI(StringBuilder sb) {
         int size = sb.length();
         int[] radius = new int[size];
         Arrays.fill(radius, 1);
@@ -51,7 +54,7 @@ public class Manacher {
                 }
                 radius[i] = count;
                 center = i;
-                R = (right - 1) > R ? (right - 1) : R;
+                R = Math.max((right - 1), R);
             } else {
                 if (i + radius[2 * center - i] - 1 == R) {
                     count = radius[2 * center - i];
@@ -75,13 +78,10 @@ public class Manacher {
                 }
             }
         }
-        printRadius(radius);
         return radius;
     }
 
-    private static int[] manacherII(String str) {
-        StringBuilder sb = preManacher(str);
-        printStringBuilder(sb);
+    private static int[] manacherII(StringBuilder sb) {
         int size = sb.length();
         int[] radius = new int[sb.length()];
         int R = -1;
@@ -109,11 +109,10 @@ public class Manacher {
                 radius[i] = radius[2 * center - i];
             }
         }
-        printRadius(radius);
         return radius;
     }
 
-    private static StringBuilder preManacher(String str) {
+    public static StringBuilder preManacher(String str) {
         StringBuilder sb = new StringBuilder(str.length() >> 1 + 1);
         for (int i = 0; i < str.length(); i++) {
             sb.append('#');
@@ -121,18 +120,5 @@ public class Manacher {
         }
         sb.append('#');
         return sb;
-    }
-
-    private static void printStringBuilder(StringBuilder sb) {
-        for (int i = 0; i < sb.length(); i++) {
-            System.out.print(sb.charAt(i) + " ");
-        }
-        System.out.println();
-    }
-
-    private static void printRadius(int[] radius) {
-        for (int value : radius) {
-            System.out.print(value + " ");
-        }
     }
 }
