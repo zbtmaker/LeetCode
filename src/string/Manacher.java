@@ -20,6 +20,9 @@ package string;
  * 四、版本说明
  * VersionI 是按照四种情况分别讨论
  * VersionII 是在VersionI的改进版本，将两种情况(I)和(II-c)进行合并，将(II-a)和(II-b)进行合并
+ * 五、例子
+ * #a#b#a#c#a#b#b#
+ * #b#b#a#c#a#b#a#
  */
 public class Manacher {
     /**

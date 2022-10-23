@@ -18,32 +18,29 @@ public class MaxProfit309 {
      * @return
      */
     public int maxProfit(int[] prices) {
-        int[][] F = new int[3][prices.length + 1];
+        int[][] F = new int[2][prices.length + 1];
         for (int[] aux : F) {
-            Arrays.fill(aux, -1);
+            Arrays.fill(aux, Integer.MIN_VALUE);
         }
-        return dfs(prices, 0, 0, F);
+        return dfs(prices, 0, 0, 1, F);
     }
 
-    private int dfs(int[] prices, int index, int status, int[][] F) {
-        int max = F[status][index];
-        if (max != -1) {
-            return max;
-        }
-        if (index == prices.length) {
+    private int dfs(int[] prices, int index, int status, int frozen, int[][] F) {
+        if (index >= prices.length) {
             return 0;
         }
-
-        if (status == 0) {
-            // 股票处于售出状态，此时可以继续保持当前状态，活着买入一支股票
-            max = Math.max(dfs(prices, index + 1, status, F), dfs(prices, index + 1, 1, F) - prices[index]);
-        } else if (status == 1) {
-            // 股票处于买入状态，此时可以继续持有当前股票，或者售出股票进入到下一个冷冻期
-            max = Math.max(dfs(prices, index + 1, status, F), dfs(prices, index + 1, 2, F) + prices[index]);
-        } else {
-            // 股票处于冷冻状态，冷冻期为一天，因此下一天的状态变更为
-            max = dfs(prices, index + 1, 0, F);
+        int max = F[status][index];
+        if (max != Integer.MIN_VALUE) {
+            return max;
         }
+        int keep = dfs(prices, index + 1, status, frozen, F);
+        int buy = 0, sale = 0;
+        if (status == 1) {
+            sale = dfs(prices, index + frozen + 1, 0, frozen, F) + prices[index];
+        } else {
+            buy = dfs(prices, index + 1, 1, frozen, F) - prices[index];
+        }
+        max = Math.max(Math.max(sale, buy), keep);
         F[status][index] = max;
         return max;
     }
